@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2026-11-05",
+    "timestamp": "2026-11-05 17:34:34",
+    "total_equity": 1000000,
+    "cash": 1000000,
+    "market_value": 0,
+    "return_pct": 0.0
+  },
+  {
+    "date": "2026-11-06",
+    "timestamp": "2026-11-06 16:15:51",
+    "total_equity": 1000000,
+    "cash": 1000000,
+    "market_value": 0,
+    "return_pct": 0.0
+  },
+  {
+    "date": "2026-11-09",
+    "timestamp": "2026-11-09 13:30:32",
+    "total_equity": 1002708,
+    "cash": 186408,
+    "market_value": 816300,
+    "return_pct": 0.27
+  },
+  {
+    "date": "2026-11-10",
+    "timestamp": "2026-11-10 13:30:31",
+    "total_equity": 1003508,
+    "cash": 186408,
+    "market_value": 817100,
+    "return_pct": 0.35
+  },
+  {
+    "date": "2026-11-11",
+    "timestamp": "2026-11-11 13:30:33",
+    "total_equity": 1021211,
+    "cash": 314911,
+    "market_value": 706300,
+    "return_pct": 2.12
+  },
+  {
+    "date": "2026-11-12",
+    "timestamp": "2026-11-12 13:30:33",
+    "total_equity": 1004956,
+    "cash": 782656,
+    "market_value": 222300,
+    "return_pct": 0.5
+  },
+  {
+    "date": "2026-11-13",
+    "timestamp": "2026-11-13 13:30:30",
+    "total_equity": 1009632,
+    "cash": 733132,
+    "market_value": 276500,
+    "return_pct": 0.96
+  }
+]

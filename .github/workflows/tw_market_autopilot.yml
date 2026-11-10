@@ -1,0 +1,62 @@
+# ☁️ 台股雲端排程：每次只跑一輪 --once，不跑長迴圈、不裝瀏覽器。
+#   1. 盤中每次排程都由本腳本檢查一次報價與進出場（Streamlit 休眠也照跑），只有實際成交才 commit。
+#   2. 盤前川大帝MAGA 早報、收盤結算、新聞 TOP 10 與明日建議買進價。
+#   3. 設有 STREAMLIT_APP_URL 時順便送一次輕量 HTTP GET。
+# 排程時間是 UTC；台灣時間 = UTC + 8。證交所休市日由 tools/tw_market_calendar.py 判斷，休市日只跑幾秒就結束。
+# 估算用量：每個交易日 12 次 × 約 1–2 分鐘 ≈ 每月 300–550 分鐘（私人 repo 免費額度 2,000 分鐘）。
+name: tw-market-autopilot
+
+on:
+  schedule:
+    - cron: "35 23 * * 0-4"          # 台灣週一至週五 07:35：川大帝MAGA 美股早報
+    - cron: "0,30 1,2,3,4 * * 1-5"   # 台灣 09:00、09:30 … 12:30：檢查一次報價與進出場
+    - cron: "0,25 5 * * 1-5"         # 台灣 13:00、13:25：同上
+    - cron: "35 5 * * 1-5"           # 台灣 13:35：收盤結算、新聞 TOP 10、明日建議買進價
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tw-market-autopilot          # 同一時間只跑一個，避免 push 衝突
+  cancel-in-progress: false
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Taipei
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: utf-8
+      AUTOPILOT_MODE: ${{ vars.AUTOPILOT_MODE || 'cloud_master' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      FINMIND_API_TOKEN: ${{ secrets.FINMIND_API_TOKEN }}
+      STREAMLIT_APP_URL: ${{ vars.STREAMLIT_APP_URL || secrets.STREAMLIT_APP_URL }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 還原 20 強 K 線／籌碼預抓快取（reports/data 不進 git）
+        uses: actions/cache@v4
+        with:
+          path: reports/data
+          key: prefetch-${{ github.run_id }}
+          restore-keys: prefetch-
+
+      - name: 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 設定 git 身分（github-actions bot）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: 雲端單次排程（--once）
+        run: python tools/cloud_autopilot_tick.py --once

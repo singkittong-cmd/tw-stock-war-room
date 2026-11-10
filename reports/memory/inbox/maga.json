@@ -1,0 +1,17 @@
+{
+  "member": "maga",
+  "recorded_at": "2026-11-02 23:05:00",
+  "conclusions": [
+    {
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "price_at": 44920.140625,
+      "direction": "中性",
+      "support": 44399.1015625,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": "美股半導體開高被賣（TSM ADR 由 +2.1% 翻 -0.55%、MU 盤前 +2.39% 翻 -1.43%），機構反彈減碼；台股外資前日賣超 735 億、投信買超 338 億",
+      "note": "夜盤初判：NASDAQ +0.77% 但 SOX 僅 +0.15%，TSM 溢價 +12.88% 為緩衝而非開高理由；預估開平盤附近，以前日低點 44,399 為支撐，待早上收盤確認"
+    }
+  ]
+}

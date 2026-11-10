@@ -1,0 +1,125 @@
+{
+  "stock_id": "2379",
+  "name": "瑞昱",
+  "generated_at": "2026-11-11 08:32:07",
+  "latest_bar_date": "2026-11-11",
+  "hits": 2,
+  "gaps": 1,
+  "total": 3,
+  "headline": "K線技術人：11-10 14:00 預判守 658 元支撐偏多（當時 767），今日盤中實際最低 758、現價 758（-1.17%） -> 觸發【方向落差、支撐守住】",
+  "lessons": [
+    "偏多判斷落空：下次先檢查隔日沖、Priced-in 與美股連動再給多方"
+  ],
+  "reviews": [
+    {
+      "member": "chips",
+      "member_name": "籌碼王",
+      "source": "standby",
+      "recorded_at": "2026-11-10 14:11:49",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 745.0,
+        "direction": "偏多",
+        "support": null,
+        "resistance": null,
+        "stop_loss": null,
+        "chip_view": "投信連買鎖碼（8 日）｜外資 5 日 -934 張、投信 5 日 +1,493 張",
+        "note": "投信連買鎖碼（8 日）｜外資 5 日 -934 張、投信 5 日 +1,493 張"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 758.0,
+        "low": 758.0,
+        "high": 758.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.74,
+      "tags": [],
+      "gap_text": "11-10 14:11 預判偏多（當時 745），今日盤中實際最低 758、現價 758（+1.74%）",
+      "corrections": [
+        "判斷準確，維持原邏輯"
+      ]
+    },
+    {
+      "member": "kline",
+      "member_name": "K線技術人",
+      "source": "zhu_auto",
+      "recorded_at": "2026-11-10 14:00:00",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 767.0,
+        "direction": "偏多",
+        "support": 658.0,
+        "resistance": 845.0,
+        "stop_loss": 732.0,
+        "chip_view": null,
+        "note": "多頭趨勢｜四線糾結（排列未定）｜葛蘭碧⑥反彈不過賣點｜紅三兵"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 758.0,
+        "low": 758.0,
+        "high": 758.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": -1.17,
+      "tags": [
+        "方向落差",
+        "支撐守住"
+      ],
+      "gap_text": "11-10 14:00 預判守 658 元支撐偏多（當時 767），今日盤中實際最低 758、現價 758（-1.17%） -> 觸發【方向落差、支撐守住】",
+      "corrections": [
+        "偏多判斷落空：下次先檢查隔日沖、Priced-in 與美股連動再給多方"
+      ]
+    },
+    {
+      "member": "kline",
+      "member_name": "K線技術人",
+      "source": "standby",
+      "recorded_at": "2026-11-10 14:11:49",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 745.0,
+        "direction": "中性",
+        "support": 731.0,
+        "resistance": 845.0,
+        "stop_loss": 702.0,
+        "chip_view": null,
+        "note": "跌破月線回測季線"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 758.0,
+        "low": 758.0,
+        "high": 758.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.74,
+      "tags": [
+        "支撐守住"
+      ],
+      "gap_text": "11-10 14:11 預判守 731 元支撐中性（當時 745），今日盤中實際最低 758、現價 758（+1.74%） -> 觸發【支撐守住】",
+      "corrections": [
+        "判斷準確，維持原邏輯"
+      ]
+    }
+  ]
+}

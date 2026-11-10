@@ -1,0 +1,30 @@
+# 金鑰與密碼（只放在本機 .env 或 Streamlit Secrets）
+.env
+.streamlit/secrets.toml
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.tmp
+*.lock
+
+# 🔒 個人真實持股（股數、成本、損益）：即使是 Private repo 也絕不上傳
+reports/portfolio.json
+reports/portfolio_live_status.json
+reports/portfolio_intraday_decisions.json
+reports/portfolio_diagnosis.md
+reports/stocks/
+reports/data/
+reports/intraday_snapshot.json
+reports/intraday_proposals_role2.json
+reports/intraday_proposals_role3.json
+reports/intraday_alerts.log
+reports/sentinel_state.json
+reports/sentinel_logs/
+
+# 本機同步狀態與指令檔
+reports/.github_sync_state.json
+reports/simulation/daemon_command.json
+# 盤前持股開盤叮嚀（含股數，由 tools/privacy_guard.py 從 tw_premarket_summary.json 拆出）
+reports/us_market/tw_premarket_holdings_alert.json

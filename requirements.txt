@@ -1,0 +1,9 @@
+FinMind
+pandas
+numpy
+plotly
+streamlit
+python-dotenv
+requests
+truststore
+tzdata

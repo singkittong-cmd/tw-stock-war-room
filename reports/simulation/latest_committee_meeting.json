@@ -1,0 +1,105 @@
+{
+  "held_at": "2026-11-13 13:28:24",
+  "mode": "intraday_hunt",
+  "trading_allowed": true,
+  "engine": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "account_before": {
+    "total_equity": 1009132,
+    "cash": 733132
+  },
+  "account_after": {
+    "total_equity": 1009132,
+    "cash": 733132,
+    "return_pct": 0.91,
+    "holdings": 1
+  },
+  "goal": {
+    "low_target": 1100000,
+    "high_target": 1200000,
+    "gap_to_low": 90868,
+    "gap_to_high": 190868,
+    "low_progress_pct": 9.1,
+    "high_progress_pct": 4.6,
+    "days_left": 48,
+    "cash_pct": 72.6
+  },
+  "candidates": [
+    {
+      "stock_id": "2382",
+      "name": "廣達",
+      "held": true,
+      "score": 5,
+      "signal": "🎯 達建議買進價",
+      "zhu_trend": "盤整趨勢",
+      "price": 276.0
+    },
+    {
+      "stock_id": "3324",
+      "name": "雙鴻",
+      "held": false,
+      "score": 5,
+      "signal": "⏳ 高於買進價・等待回檔",
+      "zhu_trend": "盤整趨勢",
+      "price": 1155.0
+    },
+    {
+      "stock_id": "2379",
+      "name": "瑞昱",
+      "held": false,
+      "score": 4,
+      "signal": "🎯 達建議買進價",
+      "zhu_trend": "空頭趨勢",
+      "price": 740.0
+    },
+    {
+      "stock_id": "2317",
+      "name": "鴻海",
+      "held": false,
+      "score": 4,
+      "signal": "🎯 達建議買進價",
+      "zhu_trend": "空頭趨勢",
+      "price": 241.0
+    },
+    {
+      "stock_id": "3711",
+      "name": "日月光投控",
+      "held": false,
+      "score": 2,
+      "signal": "⏳ 高於買進價・等待回檔",
+      "zhu_trend": "盤整趨勢",
+      "price": 597.0
+    },
+    {
+      "stock_id": "2330",
+      "name": "台積電",
+      "held": false,
+      "score": 1,
+      "signal": "⏳ 高於買進價・等待回檔",
+      "zhu_trend": "空頭趨勢",
+      "price": 2345.0
+    }
+  ],
+  "reflection": "昨日新聞達人看錯大盤方向，今日修正空方訊號需收盤確認，低檔乖離過大時不追空。",
+  "members": {
+    "maga": "美股費半下跌0.3%，台積電ADR溢價14.08%，費半次產業呈現分化，費城半導體短線震盪，台積電ADR換算價高於現貨，需留意收斂效應。",
+    "news": "鴻海10月營收YoY+46%、MoM+12.7%，基本面強勁且具備AI伺服器題材催化，新聞達人準確率雖低但數據明確，營收成長為實質支撐。",
+    "chips": "籌碼王指出鴻海近期外資急翻5次且有隔日沖疑慮，但投信連買13日，融資減少2652張，五檔比0.33外盤主動買進，籌碼相對集中。",
+    "kline": "K線技術人觀察鴻海目前 MA 糾結，現價241.0，壓253.5、撐212.5，建議停損設在 232.5，未跌破關鍵轉折前維持多方看法。"
+  },
+  "chairman": {
+    "challenge": "挑戰前四位成員：鴻海雖然營收佳且投信連買，但外資急翻次數多且有隔日沖干擾，風報比僅1.27未達1.5標準，必須嚴格控管部位。",
+    "summary": "考量距離年底目標仍有時間壓力，本次納入符合流動性與投信鎖碼的鴻海進行佈局，其餘個股風報比不足或乖離過大暫不進場。"
+  },
+  "decisions": [
+    {
+      "stock_id": "2317",
+      "proposed_action": "BUY",
+      "proposed_shares": 1000,
+      "reason": "鴻海10月營收年增46%，投信連買13日支撐籌碼，現價241.0符合進場區間，分批建立基本部位。",
+      "team_view": "基本面與投信籌碼偏多，但需防範外資短線隔日沖波動。",
+      "status": "rejected",
+      "reject_reason": "空頭趨勢且未見轉折紅 K（安全矩陣：暫不買進）"
+    }
+  ]
+}

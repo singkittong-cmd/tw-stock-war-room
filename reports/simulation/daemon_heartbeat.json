@@ -1,0 +1,52 @@
+{
+  "thread_name": "SimRoomDaemon",
+  "pid": 40228,
+  "started_at": "2026-11-09 23:03:37",
+  "date": "2026-11-15",
+  "scans_today": 0,
+  "triggers_today": 0,
+  "meetings_today": 0,
+  "trades_today": 0,
+  "cooldowns": {},
+  "patrol_slot_done": null,
+  "daily_close_settled_date": "2026-11-13",
+  "last_trigger": null,
+  "last_meeting": null,
+  "last_settlement": {
+    "date": "2026-11-13",
+    "at": "2026-11-13 13:30:30",
+    "late": false,
+    "total_equity": 1009632,
+    "return_pct": 0.96,
+    "errors": [],
+    "learning": {
+      "closed_now": 0,
+      "open": 10,
+      "lessons": 500
+    }
+  },
+  "last_ping": {
+    "ping_id": "f52705605ca2",
+    "requested_at": "2026-11-10 10:33:40",
+    "acked_at": "2026-11-10 10:33:40",
+    "ok": true,
+    "probe": "2330 台積電 $2265.0（Yahoo 成交價（10:13:24））",
+    "latency_sec": 1.18
+  },
+  "last_error": {
+    "at": "2026-11-13 09:52:11",
+    "where": "Tick 帳本鎖",
+    "error": "SimError: 模擬帳本忙碌中（背景投決會或盯盤進行中），請稍後再試"
+  },
+  "last_heartbeat": "2026-11-15 21:38:03",
+  "phase": "STANDBY",
+  "status": "STANDBY_AFTER_HOURS (背景守護待命中，將於下個交易日 09:00:00 自動啟動盤中盯盤至 13:30 收盤)",
+  "auto_trade_enabled": true,
+  "provider": "gemini",
+  "next_open": "2026-11-16 09:00:00",
+  "last_tick_at": "2026-11-13 13:30:15",
+  "last_tick_elapsed_sec": 3.2,
+  "last_scan_errors": [],
+  "total_equity": 1009632,
+  "holdings_count": 1
+}

@@ -1,0 +1,467 @@
+{
+  "stock_id": "2330",
+  "name": "台積電",
+  "generated_at": "2026-11-11 08:32:07",
+  "latest_bar_date": "2026-11-11",
+  "hits": 6,
+  "gaps": 4,
+  "total": 10,
+  "headline": "新聞達人：10-30 12:03 預判偏多（當時 2415），今日盤中實際最低 2020、現價 2320（-3.93%） -> 觸發【方向落差】",
+  "lessons": [
+    "偏多判斷落空：下次先檢查隔日沖、Priced-in 與美股連動再給多方",
+    "支撐 2340 微幅跌破：改以實際低點 2020 重新定錨，並降低進場量",
+    "已觸及停損 2330：依紀律出場，不攤平",
+    "預期盤整但實際波動 +2.20%：區間假設失效，改用趨勢方向判斷",
+    "預期盤整但實際波動 -3.93%：區間假設失效，改用趨勢方向判斷"
+  ],
+  "reviews": [
+    {
+      "member": "news",
+      "member_name": "新聞達人",
+      "source": "summary",
+      "recorded_at": "2026-10-30 12:03:43",
+      "target_date": "2026-10-30",
+      "prediction": {
+        "price_at": 2415.0,
+        "direction": "偏多",
+        "support": null,
+        "resistance": null,
+        "stop_loss": null,
+        "chip_view": null,
+        "note": "偏多"
+      },
+      "actual": {
+        "dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2020.0,
+        "high": 2380.0,
+        "is_partial": true,
+        "foreign_net": -106982.0,
+        "trust_net": 28469.0,
+        "chips_dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10"
+        ]
+      },
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": -3.93,
+      "tags": [
+        "方向落差"
+      ],
+      "gap_text": "10-30 12:03 預判偏多（當時 2415），今日盤中實際最低 2020、現價 2320（-3.93%） -> 觸發【方向落差】",
+      "corrections": [
+        "偏多判斷落空：下次先檢查隔日沖、Priced-in 與美股連動再給多方"
+      ]
+    },
+    {
+      "member": "chips",
+      "member_name": "籌碼王",
+      "source": "summary",
+      "recorded_at": "2026-10-30 12:03:43",
+      "target_date": "2026-10-30",
+      "prediction": {
+        "price_at": 2415.0,
+        "direction": "偏空",
+        "support": null,
+        "resistance": null,
+        "stop_loss": null,
+        "chip_view": "偏空",
+        "note": "偏空"
+      },
+      "actual": {
+        "dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2020.0,
+        "high": 2380.0,
+        "is_partial": true,
+        "foreign_net": -106982.0,
+        "trust_net": 28469.0,
+        "chips_dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10"
+        ]
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": -3.93,
+      "tags": [],
+      "gap_text": "10-30 12:03 預判偏空（當時 2415），今日盤中實際最低 2020、現價 2320（-3.93%）",
+      "corrections": [
+        "判斷準確，維持原邏輯"
+      ]
+    },
+    {
+      "member": "chips",
+      "member_name": "籌碼王",
+      "source": "standby",
+      "recorded_at": "2026-11-10 14:11:49",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 2285.0,
+        "direction": "中性",
+        "support": null,
+        "resistance": null,
+        "stop_loss": null,
+        "chip_view": "投信連買鎖碼（27 日）｜外資 5 日 -75,162 張、投信 5 日 +17,298 張",
+        "note": "投信連買鎖碼（27 日）｜外資 5 日 -75,162 張、投信 5 日 +17,298 張"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2320.0,
+        "high": 2320.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.53,
+      "tags": [],
+      "gap_text": "11-10 14:11 預判中性（當時 2285），今日盤中實際最低 2320、現價 2320（+1.53%）",
+      "corrections": [
+        "判斷準確，維持原邏輯"
+      ]
+    },
+    {
+      "member": "chips",
+      "member_name": "籌碼王",
+      "source": "intraday_decision",
+      "recorded_at": "2026-11-10 16:17:59",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 2285.0,
+        "direction": "中性",
+        "support": 2231.0,
+        "resistance": 2299.0,
+        "stop_loss": null,
+        "chip_view": "續抱",
+        "note": "外資單日賣超8759張但投信連買27日，五檔比0.17外盤主動買進，籌碼尚穩定。"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2320.0,
+        "high": 2320.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.53,
+      "tags": [
+        "支撐守住",
+        "突破壓力"
+      ],
+      "gap_text": "11-10 16:17 預判守 2231 元支撐中性（當時 2285），今日盤中實際最低 2320、現價 2320（+1.53%） -> 觸發【支撐守住、突破壓力】",
+      "corrections": [
+        "壓力 2299 已突破：上修目標至下一個壓力"
+      ]
+    },
+    {
+      "member": "kline",
+      "member_name": "K線技術人",
+      "source": "summary",
+      "recorded_at": "2026-10-30 12:03:43",
+      "target_date": "2026-10-30",
+      "prediction": {
+        "price_at": 2415.0,
+        "direction": "偏空",
+        "support": 2340.0,
+        "resistance": 2450.0,
+        "stop_loss": 2330.0,
+        "chip_view": null,
+        "note": "偏空"
+      },
+      "actual": {
+        "dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2020.0,
+        "high": 2380.0,
+        "is_partial": true,
+        "foreign_net": -106982.0,
+        "trust_net": 28469.0,
+        "chips_dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10"
+        ]
+      },
+      "verdict": "落差",
+      "score": 0,
+      "return_pct": -3.93,
+      "tags": [
+        "支撐微幅跌破落差警示",
+        "觸發停損"
+      ],
+      "gap_text": "10-30 12:03 預判守 2340 元支撐偏空（當時 2415），今日盤中實際最低 2020、現價 2320（-3.93%） -> 觸發【支撐微幅跌破落差警示、觸發停損】",
+      "corrections": [
+        "支撐 2340 微幅跌破：改以實際低點 2020 重新定錨，並降低進場量",
+        "已觸及停損 2330：依紀律出場，不攤平"
+      ]
+    },
+    {
+      "member": "kline",
+      "member_name": "K線技術人",
+      "source": "zhu_auto",
+      "recorded_at": "2026-11-10 14:00:00",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 2270.0,
+        "direction": "中性",
+        "support": 2020.0,
+        "resistance": 2535.0,
+        "stop_loss": 2020.0,
+        "chip_view": null,
+        "note": "盤整趨勢｜四線空頭排列（5<10<20<60）｜位於月線之下（乖離 -3.9%），未觸發八大法則訊號｜跳空向下缺口"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2320.0,
+        "high": 2320.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": 2.2,
+      "tags": [
+        "方向落差",
+        "支撐守住"
+      ],
+      "gap_text": "11-10 14:00 預判守 2020 元支撐中性（當時 2270），今日盤中實際最低 2320、現價 2320（+2.20%） -> 觸發【方向落差、支撐守住】",
+      "corrections": [
+        "預期盤整但實際波動 +2.20%：區間假設失效，改用趨勢方向判斷"
+      ]
+    },
+    {
+      "member": "kline",
+      "member_name": "K線技術人",
+      "source": "standby",
+      "recorded_at": "2026-11-10 14:11:49",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 2285.0,
+        "direction": "中性",
+        "support": 1995.0,
+        "resistance": 2365.0,
+        "stop_loss": 1915.0,
+        "chip_view": null,
+        "note": "觀望等待底部確認"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2320.0,
+        "high": 2320.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.53,
+      "tags": [
+        "支撐守住"
+      ],
+      "gap_text": "11-10 14:11 預判守 1995 元支撐中性（當時 2285），今日盤中實際最低 2320、現價 2320（+1.53%） -> 觸發【支撐守住】",
+      "corrections": [
+        "判斷準確，維持原邏輯"
+      ]
+    },
+    {
+      "member": "kline",
+      "member_name": "K線技術人",
+      "source": "intraday_decision",
+      "recorded_at": "2026-11-10 16:17:59",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 2285.0,
+        "direction": "中性",
+        "support": 2231.0,
+        "resistance": 2299.0,
+        "stop_loss": null,
+        "chip_view": null,
+        "note": "均線呈現空頭排列且有跳空缺口，未見明確反轉結構，但尚未跌破停損價2020元。"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2320.0,
+        "high": 2320.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.53,
+      "tags": [
+        "支撐守住",
+        "突破壓力"
+      ],
+      "gap_text": "11-10 16:17 預判守 2231 元支撐中性（當時 2285），今日盤中實際最低 2320、現價 2320（+1.53%） -> 觸發【支撐守住、突破壓力】",
+      "corrections": [
+        "壓力 2299 已突破：上修目標至下一個壓力"
+      ]
+    },
+    {
+      "member": "chairman",
+      "member_name": "巴董事長",
+      "source": "summary",
+      "recorded_at": "2026-10-30 12:03:43",
+      "target_date": "2026-10-30",
+      "prediction": {
+        "price_at": 2415.0,
+        "direction": "中性",
+        "support": 2340.0,
+        "resistance": 2450.0,
+        "stop_loss": 2330.0,
+        "chip_view": "偏空",
+        "note": "持有觀望：基本面偏多（Q3 EPS 29.43 元、年增 68.7%）對上籌碼偏空（外資連賣 15 日、融資增）與 K 線偏空（跌破 20 日底 2,380）；依矩陣第 6 條站籌碼與 K 線，持有觀望不追。"
+      },
+      "actual": {
+        "dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2020.0,
+        "high": 2380.0,
+        "is_partial": true,
+        "foreign_net": -106982.0,
+        "trust_net": 28469.0,
+        "chips_dates": [
+          "2026-10-30",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09",
+          "2026-11-10"
+        ]
+      },
+      "verdict": "落差",
+      "score": -2,
+      "return_pct": -3.93,
+      "tags": [
+        "方向落差",
+        "支撐微幅跌破落差警示",
+        "觸發停損"
+      ],
+      "gap_text": "10-30 12:03 預判守 2340 元支撐中性（當時 2415），今日盤中實際最低 2020、現價 2320（-3.93%） -> 觸發【方向落差、支撐微幅跌破落差警示、觸發停損】",
+      "corrections": [
+        "預期盤整但實際波動 -3.93%：區間假設失效，改用趨勢方向判斷",
+        "支撐 2340 微幅跌破：改以實際低點 2020 重新定錨，並降低進場量",
+        "已觸及停損 2330：依紀律出場，不攤平"
+      ]
+    },
+    {
+      "member": "chairman",
+      "member_name": "巴董事長",
+      "source": "intraday_decision",
+      "recorded_at": "2026-11-10 16:17:59",
+      "target_date": "2026-11-11",
+      "prediction": {
+        "price_at": 2285.0,
+        "direction": "中性",
+        "support": 2231.0,
+        "resistance": 2299.0,
+        "stop_loss": null,
+        "chip_view": "續抱",
+        "note": "⚪ 續抱觀察"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-11"
+        ],
+        "close": 2320.0,
+        "low": 2320.0,
+        "high": 2320.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.53,
+      "tags": [
+        "支撐守住",
+        "突破壓力"
+      ],
+      "gap_text": "11-10 16:17 預判守 2231 元支撐中性（當時 2285），今日盤中實際最低 2320、現價 2320（+1.53%） -> 觸發【支撐守住、突破壓力】",
+      "corrections": [
+        "壓力 2299 已突破：上修目標至下一個壓力"
+      ]
+    }
+  ]
+}

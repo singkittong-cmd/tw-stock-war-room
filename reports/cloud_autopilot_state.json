@@ -1,0 +1,19 @@
+{
+  "last_run_started_at": "2026-11-10 14:11:21",
+  "host": "cloud_tick_cli",
+  "can_trade": false,
+  "morning_done_date": "2026-11-10",
+  "last_run": {
+    "finished_at": "2026-11-10 22:16:18",
+    "phase": "CLOSE",
+    "elapsed_sec": 0.0,
+    "host": "cloud_tick_cli",
+    "trades_today": 0,
+    "errors": [],
+    "log_tail": [
+      "[22:16:18] ☁️ 雲端單次排程（cloud_tick_cli・local_master・gemini）｜目前 🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）",
+      "[22:16:18] 🧾 今日已由 cloud_tick_cli 完成收盤結算"
+    ]
+  },
+  "close_reports_date": "2026-11-10"
+}
