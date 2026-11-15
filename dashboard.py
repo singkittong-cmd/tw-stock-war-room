@@ -17,6 +17,7 @@ import json
 import os
 import re
 import time
+import traceback
 from datetime import datetime
 from datetime import time as dtime
 from pathlib import Path
@@ -1560,6 +1561,16 @@ def learning_history(member):
         st.caption("🔐 戰術金庫鎖定中：持股相關的對帳紀錄已隱藏，解鎖後顯示。")
 
 
+def error_where(exc):
+    """簡短錯誤位置：例外類型＋最後一個專案內的程式位置（例：AttributeError at fast_team_runner.py:565 ask_war_room_guest）。
+    不含例外訊息，避免把資料內容顯示在畫面上。"""
+    frames = [f for f in traceback.extract_tb(exc.__traceback__) if str(ROOT) in str(f.filename)]
+    if not frames:
+        return type(exc).__name__
+    f = frames[-1]
+    return f"{type(exc).__name__} at {Path(f.filename).name}:{f.lineno} {f.name}"
+
+
 GUEST_QA_COOLDOWN_SEC = 10
 GUEST_QA_KEEP = 5
 
@@ -1586,8 +1597,8 @@ def guest_qa_section():
                         qa = ftr.ask_war_room_guest(question.strip(), provider="gemini")  # 來賓固定用免費引擎
                         history.insert(0, qa)
                         del history[GUEST_QA_KEEP:]
-                    except Exception as exc:  # 模型或報價失敗：只顯示錯誤類型，不顯示任何後端細節
-                        st.error(f"⚠️ 這次會診沒有完成（{type(exc).__name__}），請稍後再試。")
+                    except Exception as exc:  # 只顯示錯誤類型與程式位置（檔名:行號 函式），不顯示錯誤內容或任何資料
+                        st.error(f"⚠️ 這次會診沒有完成（{error_where(exc)}），請稍後再試。")
         if not history:
             st.caption("尚無提問紀錄。送出後，五位成員的回答會顯示在這裡。")
             return

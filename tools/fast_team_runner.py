@@ -87,16 +87,45 @@ def _write_text(path, text):
     path.write_text(text, encoding="utf-8")
 
 
+def _as_dict(obj):
+    """模型 JSON 一律轉成 dict：模型偶爾把答案包成 [{...}]（只有一個元素的陣列）。
+    陣列取其中的 dict（多個時合併，先出現者優先）；其他型別（字串、數字、空陣列）視為解析失敗。"""
+    if isinstance(obj, dict):
+        return obj
+    if isinstance(obj, list):
+        dicts = [x for x in obj if isinstance(x, dict)]
+        if len(dicts) == 1:
+            return dicts[0]
+        if dicts:
+            merged = {}
+            for d in dicts:
+                for k, v in d.items():
+                    merged.setdefault(k, v)
+            return merged
+    raise ValueError(f"模型回覆的 JSON 是 {type(obj).__name__}，不是物件")
+
+
 def _ask_json(system, user, provider, max_tokens=4096):
-    """單次請求並解析 JSON；第一次解析失敗時同一引擎重試一次。"""
+    """單次請求並解析成 dict；解析失敗或結構不對時同一引擎重試一次。"""
     last = None
     for _ in range(2):
         r = llm_router.call_llm_ex(system, user, provider=provider, temperature=0.3, json_mode=True, max_tokens=max_tokens)
+        if not isinstance(r, dict) or not isinstance(r.get("text"), str):
+            last = ValueError(f"llm_router 回傳 {type(r).__name__}，缺少文字欄位")
+            continue
         try:
-            return llm_router.parse_json(r["text"]), r
+            return _as_dict(llm_router.parse_json(r["text"])), r
         except (json.JSONDecodeError, ValueError) as exc:
             last = exc
-    raise llm_router.LLMError(f"模型回覆不是合法 JSON：{last}")
+    raise llm_router.LLMError(f"模型回覆不是合法 JSON 物件：{last}")
+
+
+def _dict(x):
+    return x if isinstance(x, dict) else {}
+
+
+def _list(x):
+    return x if isinstance(x, list) else []
 
 
 def _pick(value, allowed, default):
@@ -499,43 +528,45 @@ def _guest_stock_block(sid, name):
     """即時快查（報價＋日K均線＋法人籌碼），加上預抓檔與 20 強監控表的公開價位。不讀 portfolio 相關檔案。"""
     from tools import quick_stock_lookup as qsl
     r = qsl.lookup(sid, resolved=(sid, name))
-    q, k = r.get("quote") or {}, r.get("kline") or {}
-    zhu, cv, boss = k.get("zhu") or {}, r.get("chip_verdict") or {}, r.get("chairman") or {}
+    r = _dict(r)
+    q, k = _dict(r.get("quote")), _dict(r.get("kline"))
+    zhu, cv, boss = _dict(k.get("zhu")), _dict(r.get("chip_verdict")), _dict(r.get("chairman"))
     lines = [f"■{sid}{r.get('name') or name} 現價{_fmt(q.get('price') or k.get('close'))}({_fmt(q.get('change_pct'), '{:+.2f}')}%)"
              f" 開{_fmt(q.get('open'))} 高{_fmt(q.get('high'))} 低{_fmt(q.get('low'))} VWAP{_fmt(q.get('vwap'))}"
              f" 五檔比{_fmt(q.get('bid_ask_ratio'))}{q.get('tick_side') or ''}（{q.get('price_source') or k.get('source') or ''}）",
              f"【技術】{zhu.get('trend', 'N/A')}；MA5/10/20/60={_fmt(k.get('ma5'))}/{_fmt(k.get('ma10'))}/{_fmt(k.get('ma20'))}/"
              f"{_fmt(k.get('ma60'))}；月線乖離{_fmt(k.get('bias20_pct'), '{:+.1f}')}%；量比{_fmt(k.get('vol_ratio_20'))}；"
              f"5日{_fmt(k.get('change_5d_pct'), '{:+.1f}')}%；20日高/低{_fmt(k.get('high20'))}/{_fmt(k.get('low20'))}；"
-             f"{zhu.get('ma_summary', '')}；轉折K:{'、'.join(p['pattern'] for p in zhu.get('patterns') or []) or '無'}；"
+             f"{zhu.get('ma_summary', '')}；轉折K:{'、'.join(str(_dict(p).get('pattern', '')) for p in _list(zhu.get('patterns'))) or '無'}；"
              f"停損依據:{zhu.get('stop_basis', '')}",
-             f"【籌碼】{cv.get('label', 'N/A')}：" + "；".join((cv.get("alerts") or [])[:2] + (cv.get("points") or [])[:3])[:260],
+             f"【籌碼】{cv.get('label', 'N/A')}：" + "；".join(str(x) for x in _list(cv.get("alerts"))[:2] + _list(cv.get("points"))[:3])[:260],
              f"【系統快篩】支撐{_fmt(boss.get('support'))} 壓力{_fmt(boss.get('resistance'))} 停損{_fmt(boss.get('stop'))}"
              f" 風報比{_fmt(boss.get('rr'))}；{boss.get('line', '')}"]
     if (REPORTS / "data" / f"{sid}_fundamental.json").exists():
         lines.append(cdb.fundamental_line(sid))
-    radar = next((x for x in cdb._read(REPORTS / "watchlist_radar_live.json").get("results") or [] if x["stock_id"] == sid), None)
+    radar = next((x for x in _list(_dict(cdb._read(REPORTS / "watchlist_radar_live.json")).get("results"))
+                  if isinstance(x, dict) and x.get("stock_id") == sid), None)
     if radar:
         lines.append(f"【20 強監控表】{radar.get('signal_label') or radar.get('signal')} 建議買進{_fmt(radar.get('entry_low'))}–"
                      f"{_fmt(radar.get('entry_high'))} 停損{_fmt(radar.get('stop_loss'))} 停利目標{_fmt(radar.get('target_1'))}"
                      f" 風報比{_fmt(radar.get('risk_reward'))}；{radar.get('role4_note') or ''}")
-    if r.get("errors"):
-        lines.append("【資料缺口】" + "；".join(r["errors"])[:160])
+    if _list(r.get("errors")):
+        lines.append("【資料缺口】" + "；".join(str(e) for e in r["errors"])[:160])
     return "\n".join(lines)
 
 
 def _guest_background():
     """公開背景：大盤、美股、新聞、20 大龍頭監控表、100 萬模擬基金公開持倉。"""
     from tools import sim_portfolio_engine as sim
-    radar = cdb._read(REPORTS / "watchlist_radar_live.json")
-    rows = [f"{x['stock_id']}{x.get('name', '')} {x.get('signal_label') or x.get('signal')} 現價{_fmt(x.get('price'))}"
+    radar = _dict(cdb._read(REPORTS / "watchlist_radar_live.json"))
+    rows = [f"{x.get('stock_id', '')}{x.get('name', '')} {x.get('signal_label') or x.get('signal')} 現價{_fmt(x.get('price'))}"
             f" 建議買進{_fmt(x.get('entry_low'))}–{_fmt(x.get('entry_high'))} 停損{_fmt(x.get('stop_loss'))}"
-            for x in (radar.get("results") or [])[:20]]
+            for x in _list(radar.get("results"))[:20] if isinstance(x, dict)]
     try:
-        acct = sim.load_account()
-        hold = "；".join(f"{h['stock_id']}{h.get('name', '')} {h['shares']}股 均價{_fmt(h.get('avg_cost'))}"
+        acct = _dict(sim.load_account())
+        hold = "；".join(f"{h.get('stock_id', '')}{h.get('name', '')} {h.get('shares', 0)}股 均價{_fmt(h.get('avg_cost'))}"
                         f" 未實現{_fmt(h.get('unrealized_pct'), '{:+.2f}')}% 停損{_fmt(h.get('stop_loss'))} 目標{_fmt(h.get('target_price'))}"
-                        for h in acct.get("holdings") or []) or "空手"
+                        for h in _list(acct.get("holdings")) if isinstance(h, dict)) or "空手"
         sim_line = (f"【100萬模擬基金公開持倉】總淨值{_fmt(acct.get('total_equity'), '{:,.0f}')} 可用現金"
                     f"{_fmt(acct.get('cash_balance'), '{:,.0f}')}；{hold}")
     except Exception as exc:
@@ -560,8 +591,10 @@ def ask_war_room_guest(question, provider="gemini"):
     data, meta = _ask_json(GUEST_QA_SYSTEM, f"問題：{question}\n\n【提問個股即時資料】\n{focus}\n\n【公開背景】\n"
                            f"{_guest_background()}", provider, max_tokens=2800)
     clean = privacy_guard.redact_holdings_text  # 最後一道：真實股數／成本一律遮掉
+    if not any(str(data.get(k) or "").strip() for k in ("news", "chips", "kline", "maga", "chairman")):
+        raise llm_router.LLMError("模型回覆缺少五位成員的回答欄位")
     return {"question": question, "asked_at": _now(), "stock_ids": [s for s, _ in stocks], "engine": meta["provider"],
-            "elapsed_sec": round(time.perf_counter() - started, 2), "errors": errors + list(meta.get("errors") or []),
+            "elapsed_sec": round(time.perf_counter() - started, 2), "errors": errors + [str(e) for e in _list(_dict(meta).get("errors"))],
             **{k: clean(str(data.get(k) or "")) for k in ("news", "chips", "kline", "maga", "chairman")}}
 
 
