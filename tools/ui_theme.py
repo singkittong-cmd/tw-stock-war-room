@@ -98,6 +98,12 @@ header[data-testid="stHeader"] { background: transparent; height: 0; }
                    border-radius: 5px; padding: 0 6px; margin-right: 4px; font: 600 .7rem 'JetBrains Mono', monospace; }
 .top10 .pub-date.none { color: var(--faint); border-color: var(--border); background: none; }
 .top10 .src { margin-top: 3px; }
+.top10 .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 5px; }
+.top10 .meta .pub-date { margin-right: 0; }
+.top10 .src-pill { display: inline-flex; align-items: center; max-width: 100%; padding: 1px 9px; border-radius: 999px;
+                   background: rgba(96, 165, 250, .10); border: 1px solid rgba(96, 165, 250, .35);
+                   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.top10 .src-pill.none { background: none; border-color: var(--border); }
 .top10 .src-link { color: #60A5FA; font-size: .72rem; text-decoration: none; }
 .top10 .src-link:hover { text-decoration: underline; color: #93C5FD; }
 .top10 .src-link.none { color: var(--faint); }
@@ -239,6 +245,81 @@ header[data-testid="stHeader"] { background: transparent; height: 0; }
   border: 1px solid #FCA5A5 !important; font-weight: 800 !important; }
 .st-key-btn_chair button { background: linear-gradient(180deg, #FDE68A, #D4A017) !important; color: #1C1206 !important;
   border: 0 !important; font-weight: 800 !important; }
+
+/* ---------- 📱 精簡卡片視圖（持股／20 大龍頭；電腦與手機皆可切換） ---------- */
+.scard-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; margin: 6px 0 10px; }
+.scard { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 10px; padding: 10px 12px;
+         background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--c, #64748B); border-radius: 12px; }
+.scard .id { color: var(--text); font-weight: 700; font-size: .92rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.scard .px { font: 700 1.15rem 'JetBrains Mono', monospace; color: var(--text); margin: 3px 0; white-space: nowrap; }
+.scard .sub { color: var(--muted); font-size: .72rem; }
+.scard .kv2 { display: grid; grid-template-columns: auto 1fr; gap: 3px 8px; font-size: .78rem; align-content: start; }
+.scard .kv2 .k { color: var(--muted); white-space: nowrap; }
+.scard .kv2 .v { color: #E2E8F0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+                 font-variant-numeric: tabular-nums; }
+.scard .note { grid-column: 1 / -1; color: #FDE68A; font-size: .76rem; line-height: 1.45;
+               border-top: 1px dashed rgba(148, 163, 184, .2); padding-top: 6px; }
+
+/* ---------- 📱 手機導航列（只在手機顯示） ---------- */
+.st-key-mnav { display: none; }
+
+/* ================================================================ 📱 手機直式（≤ 768px） */
+@media (max-width: 768px) {
+  /* 優化 1：左右留白縮到 0.6rem；頂部 1.5rem＋固定導航列高度 */
+  .block-container, [data-testid="stMainBlockContainer"] {
+    padding-left: .6rem !important; padding-right: .6rem !important; padding-top: calc(1.5rem + 52px) !important; }
+  .wr-title { font-size: 1.1rem; }
+
+  /* 優化 2：模擬室 5 張指標卡 → 每排 2 張（2×2＋1） */
+  .kpi-grid { display: flex !important; flex-wrap: wrap; gap: 8px; }
+  .kpi { flex: 1 1 46%; min-width: 0; padding: 9px 10px; }
+  .kpi .l { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: .7rem; }
+  .kpi .v { font-size: 1.15rem; white-space: nowrap; }
+  .kpi .s { font-size: .68rem; }
+  .kv-grid, .levels { display: flex !important; flex-wrap: wrap; gap: 6px; }
+  .kv-grid .kv, .levels > * { flex: 1 1 46%; min-width: 0; }
+  .kv .v, .micro .val, .close-big, .lookup-price { white-space: nowrap; }
+  .verdict-row, .close-grid, .md-grid, .committee, .qa-grid { grid-template-columns: 1fr !important; }
+  .md-grid .ring { margin: 0 auto; }
+
+  /* 優化 3：四位成員公仔卡 → 手指左右滑動的卡片列（每張 145px，一屏約 2.3 張） */
+  .st-key-member_row [data-testid="stHorizontalBlock"] {
+    flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
+    gap: 10px !important; padding-bottom: 6px; scrollbar-width: thin; }
+  .st-key-member_row [data-testid="stColumn"] {
+    flex: 0 0 145px !important; width: 145px !important; min-width: 145px !important; scroll-snap-align: start; }
+  .st-key-member_row .seat { min-height: 0; padding: 8px 6px; }
+  .st-key-member_row .seat .st { min-height: 0; font-size: .7rem; }
+  .st-key-member_row .seat .rf { display: none; }
+  .st-key-member_row .acc-badge { white-space: normal; }
+  .st-key-member_row button p { font-size: .74rem; }
+  .st-key-war_table { padding: 14px 8px 8px; }
+  .chair-seat { padding: 8px 8px 6px; }
+
+  /* 優化 4：資料表與卡片 */
+  [data-testid="stDataFrame"] { -webkit-overflow-scrolling: touch; }
+  .scard-list { grid-template-columns: 1fr; }
+
+  /* 優化 5：TOP 10 新聞手機閱讀 */
+  .top10 li { grid-template-columns: 20px minmax(0, 1fr) auto; gap: 6px; padding: 10px 2px; }
+  .top10 .t { font-size: .95rem; line-height: 1.55; }
+  .top10 .p { font-size: .95rem; line-height: 1.55; }
+  .top10 .src-link { font-size: .78rem; }
+  .top10 .meta .pub-date, .top10 .src-pill { padding: 3px 10px; }
+  .close-bullets li { font-size: .92rem; }
+
+  /* 優化 6：頂部固定雙按鈕導航（各 50%、高 44px） */
+  .st-key-mnav { display: block; position: fixed; top: 0; left: 0; right: 0; z-index: 999990;
+    padding: 6px .6rem; background: rgba(5, 8, 10, .94); backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(148, 163, 184, .2); }
+  .st-key-mnav [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; gap: 8px !important; }
+  .st-key-mnav [data-testid="stColumn"] { flex: 1 1 50% !important; width: 50% !important; min-width: 0 !important; }
+  .st-key-mnav button { min-height: 44px; width: 100%; font-weight: 700; }
+  /* 各視圖標題列裡的切換按鈕由手機導航列取代 */
+  [data-testid="stColumn"]:has(.st-key-btn_enter_war_room), [data-testid="stColumn"]:has(.st-key-btn_enter_sim),
+  [data-testid="stColumn"]:has(.st-key-btn_leave_war_room), [data-testid="stColumn"]:has(.st-key-btn_war_to_sim),
+  [data-testid="stColumn"]:has(.st-key-btn_sim_home), [data-testid="stColumn"]:has(.st-key-btn_sim_to_war) { display: none !important; }
+}
 </style>
 """
 
@@ -501,13 +582,14 @@ def render_top10_list(items):
     for it in items[:10]:
         url = _safe_link(it.get("url") or it.get("link"))
         date = it.get("pub_date") or it.get("meta")
-        badge = f'<span class="pub-date">[{esc(date)}]</span>' if date else '<span class="pub-date none">[時間不明]</span>'
+        badge = f'<span class="pub-date">{esc(date)}</span>' if date else '<span class="pub-date none">時間不明</span>'
         source = esc(it.get("source") or "出處")
-        link = (f'<a class="src-link" href="{esc(url)}" target="_blank" rel="noopener noreferrer">🔗 查看原文出處 ({source})</a>'
-                if url != "#" else '<span class="src-link none">⚠️ 無可驗證出處</span>')
+        link = (f'<span class="src-pill"><a class="src-link" href="{esc(url)}" target="_blank" rel="noopener noreferrer">'
+                f'🔗 原文出處・{source}</a></span>' if url != "#"
+                else '<span class="src-pill none"><span class="src-link none">⚠️ 無可驗證出處</span></span>')
         tag = it.get("tag") or "中性"
-        rows.append(f'<li><div><div class="t">{badge} {esc(it.get("title"))}</div><div class="p">{esc(it.get("point"))}</div>'
-                    f'<div class="src">{link}</div></div>{pill(tag, TAG_TYPES.get(tag, "neutral"))}</li>')
+        rows.append(f'<li><div><div class="t">{esc(it.get("title"))}</div><div class="p">{esc(it.get("point"))}</div>'
+                    f'<div class="meta">{badge}{link}</div></div>{pill(tag, TAG_TYPES.get(tag, "neutral"))}</li>')
     return f'<ol class="top10">{"".join(rows)}</ol>'
 
 
@@ -633,6 +715,25 @@ def render_qa_board(answers):
         cells.append(box(5, "🦅 川大帝MAGA 美股連動補充", answers["maga"]))
     cells.append(box(4, "👑 巴董事長 反向 Challenge 與最終總結", answers.get("chairman"), "boss"))
     return f'<div class="qa-grid">{"".join(cells)}</div>'
+
+
+def render_stock_cards(cards):
+    """📱 精簡卡片視圖：每檔一張雙欄小卡。
+    cards: [{"stock_id", "name", "price", "change_pct", "sub"（左下小字）, "kind"（左邊框色：bull/bear/amber/info/neutral）,
+             "rows": [(標籤, 已轉義的 HTML 值)], "note"（底部一句話，須已遮罩）}]"""
+    if not cards:
+        return '<p class="tl-src">尚無資料</p>'
+    colors = {"bull": "#EF4444", "bear": "#10B981", "amber": "#F59E0B", "info": "#3B82F6", "neutral": "#64748B"}
+    out = []
+    for c in cards:
+        rows = "".join(f'<span class="k">{esc(k)}</span><span class="v">{v}</span>' for k, v in c.get("rows") or [])
+        note = f'<div class="note">{esc(c["note"])}</div>' if c.get("note") else ""
+        out.append(f'<div class="scard" style="--c:{colors.get(c.get("kind"), colors["neutral"])}">'
+                   f'<div><div class="id"><span class="code-badge">{esc(c.get("stock_id"))}</span> {esc(c.get("name") or "")}</div>'
+                   f'<div class="px">{esc(fmt_price(c.get("price")))}</div><div>{change_pill(c.get("change_pct"))}</div>'
+                   f'<div class="sub" style="margin-top:4px">{esc(c.get("sub") or "")}</div></div>'
+                   f'<div class="kv2">{rows}</div>{note}</div>')
+    return f'<div class="scard-list">{"".join(out)}</div>'
 
 
 # ---------------------------------------------------------------- 🧪 SIMULATION ROOM 元件

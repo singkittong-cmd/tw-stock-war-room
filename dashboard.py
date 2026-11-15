@@ -275,6 +275,37 @@ def money_table(df, money=(), signed_money=(), signed_pct=(), price=()):
     return sty
 
 
+def _detect_mobile():
+    """以瀏覽器 User-Agent 判斷手機（平板與電腦視為寬螢幕）；讀不到時視為電腦。"""
+    try:
+        ua = str(st.context.headers.get("User-Agent") or "")
+    except Exception:
+        ua = ""
+    return bool(re.search(r"iPhone|iPod|Android.*Mobile|Mobile.*Android|Windows Phone", ua))
+
+
+IS_MOBILE = _detect_mobile()
+PIN_COLUMNS = ("代號", "名稱", "標的")  # 手機左右滑動表格時固定在左側的首欄
+
+
+def show_table(data, column_config=None, **kwargs):
+    """st.dataframe 包裝：自動凍結「代號／名稱／標的」欄（手機左右滑動時不消失），其餘參數照傳。
+    st.dataframe 以 canvas 繪製、儲存格不換行，金額與價格不會被折成兩行。"""
+    cols = list(getattr(getattr(data, "data", data), "columns", []))
+    config = dict(column_config or {})
+    for c in PIN_COLUMNS:
+        if c in cols:
+            base = config.get(c)
+            config[c] = st.column_config.Column(pinned=True) if base is None else {**base, "pinned": True}
+    return st.dataframe(data, column_config=config, **kwargs)
+
+
+def card_view_toggle(key):
+    """📱 精簡卡片視圖開關：手機預設開啟、電腦預設關閉。"""
+    st.session_state.setdefault(key, IS_MOBILE)
+    return st.toggle("📱 精簡卡片視圖", key=key, help="每檔一張雙欄小卡，不用左右滑表格；關閉改回首欄凍結、可左右滑動的完整表格")
+
+
 def market_open_now(now=None):
     now = now or datetime.now()
     return now.weekday() < 5 and dtime(9, 0) <= now.time() <= dtime(13, 35)
@@ -853,12 +884,29 @@ def holdings_table():
             "昨日覆盤修正": mem.holding_hint(p["stock_id"]),
         })
     df = pd.DataFrame(rows)
-    st.dataframe(money_table(df, price=["現價", "成本價"], signed_money=["未實現損益"], signed_pct=["漲跌%", "損益%"]),
-                 width="stretch", hide_index=True, height=min(80 + 36 * len(df), 520), column_config={
-                     "五檔買賣比": st.column_config.NumberColumn(format="%.2f"),
-                     "持有股數": st.column_config.NumberColumn(format="%d"),
-                     "昨日覆盤修正": st.column_config.TextColumn(width="large"),
-                 })
+    if card_view_toggle("card_view_holdings"):
+        cards = []
+        for p in held:
+            d = decisions.get(p["stock_id"]) or {}
+            chg = to_float(p.get("change_pct"))
+            cards.append({
+                "stock_id": p["stock_id"], "name": p.get("name"), "price": p.get("current_price"), "change_pct": chg,
+                "sub": f"成本 {ui.fmt_price(p.get('cost_price'))}｜{int(p.get('shares') or 0):,} 股",
+                "kind": "neutral" if not chg else "bull" if chg > 0 else "bear",
+                "rows": [("未實現", ui.signed_html(to_float(p.get("net_pnl")), pct=to_float(p.get("net_return_pct")))),
+                         ("巴董事長", ui.esc(d.get("role4_final_action") or (p.get("quant_suggestion") or {}).get("signal") or "—")),
+                         ("支撐", ui.esc(ui.fmt_price(d.get("key_support_intraday")))),
+                         ("壓力", ui.esc(ui.fmt_price(d.get("key_resistance_intraday")))),
+                         ("五檔比", ui.esc(f"{to_float(p.get('bid_ask_ratio')):.2f}" if to_float(p.get("bid_ask_ratio")) is not None else "N/A"))],
+                "note": mask(d.get("role4_execution_plan") or "")})
+        html(ui.render_stock_cards(cards))
+    else:
+        show_table(money_table(df, price=["現價", "成本價"], signed_money=["未實現損益"], signed_pct=["漲跌%", "損益%"]),
+                   width="stretch", hide_index=True, height=min(80 + 36 * len(df), 520), column_config={
+                       "五檔買賣比": st.column_config.NumberColumn(format="%.2f"),
+                       "持有股數": st.column_config.NumberColumn(format="%d"),
+                       "昨日覆盤修正": st.column_config.TextColumn(width="large"),
+                   })
     totals = live.get("totals", {})
     pct = totals.get("total_net_return_pct")
     html(f'<div class="tl-src">💰 總市值 {ui.fmt_money(totals.get("total_market_value", 0))}｜總成本 '
@@ -936,6 +984,30 @@ def radar_table():
         html(ui.render_radar_banner("目前 20 大半導體龍頭沒有標的達建議買進價或接近買進價 (差距1.5%內)，不追高"
                                    "（右側可勾選「強制展開全部 20 檔備用清單」檢視）"))
         return
+    if card_view_toggle("card_view_radar"):
+        kinds = {"HIT_ENTRY": "bull", "APPROACHING": "amber", "BROKEN": "bear"}
+        html(ui.render_stock_cards([{
+            "stock_id": r["stock_id"], "name": r.get("name"), "price": r.get("price"), "change_pct": r.get("change_pct"),
+            "sub": r.get("sector") or "", "kind": kinds.get(r.get("signal"), "neutral"),
+            "rows": [("燈號", ui.esc(radar_mod.SIGNAL_LABELS.get(r.get("signal"), r.get("signal_label") or "—"))),
+                     ("建議買進", ui.esc(f"{ui.fmt_price(r.get('entry_low'))}–{ui.fmt_price(r.get('entry_high'))}")),
+                     ("距買進價", ui.esc(ui.fmt_pct(r.get("dist_to_entry_pct")))),
+                     ("停損／停利", ui.esc(f"{ui.fmt_price(r.get('stop_loss'))}／{ui.fmt_price(r.get('target_1'))}")),
+                     ("風報比", ui.esc(f"{to_float(r.get('risk_reward')):.2f}" if to_float(r.get("risk_reward")) is not None else "N/A"))],
+            "note": mask(r.get("role4_note") or "")} for r in shown]))
+    else:
+        radar_full_table(shown)
+    p1, p2 = st.columns([3, 1.4], vertical_alignment="bottom")
+    pick = p1.selectbox("帶入巴董事長深度研究", [r["stock_id"] for r in shown], key="radar_pick",
+                        format_func=lambda s: f"{s} {sector_names.get(s, '')}")
+    if p2.button("🔎 交給巴董事長研究", width="stretch", key="btn_radar_pick"):
+        st.session_state["focus_pending"] = pick
+        st.session_state["member"] = "chairman"
+        st.rerun(scope="app")
+
+
+def radar_full_table(shown):
+    """20 大龍頭完整表格（首欄凍結、可左右滑動）。"""
     df = pd.DataFrame([{
         "代號": r["stock_id"], "名稱": r.get("name"), "次產業": r.get("sector"), "燈號": radar_mod.SIGNAL_LABELS.get(r.get("signal"), r.get("signal_label")),
         "現價": to_float(r.get("price")), "漲跌%": to_float(r.get("change_pct")),
@@ -945,19 +1017,12 @@ def radar_table():
         "五檔比": to_float(r.get("bid_ask_ratio")), "VWAP": r.get("vwap_position"), "籌碼王": r.get("chip_trend"),
         "巴董事長備註": r.get("role4_note"),
     } for r in shown])
-    st.dataframe(money_table(df, price=["現價", "停損價", "停利目標價"], signed_pct=["漲跌%", "距買進價%"]), width="stretch",
+    show_table(money_table(df, price=["現價", "停損價", "停利目標價"], signed_pct=["漲跌%", "距買進價%"]), width="stretch",
                  hide_index=True, height=min(80 + 36 * len(df), 560), column_config={
         "風報比": st.column_config.NumberColumn(format="%.2f"),
         "五檔比": st.column_config.NumberColumn(format="%.2f"),
         "巴董事長備註": st.column_config.TextColumn(width="large"),
     })
-    p1, p2 = st.columns([3, 1.4], vertical_alignment="bottom")
-    pick = p1.selectbox("帶入巴董事長深度研究", [r["stock_id"] for r in shown], key="radar_pick",
-                        format_func=lambda s: f"{s} {sector_names.get(s, '')}")
-    if p2.button("🔎 交給巴董事長研究", width="stretch", key="btn_radar_pick"):
-        st.session_state["focus_pending"] = pick
-        st.session_state["member"] = "chairman"
-        st.rerun(scope="app")
 
 
 # ---------------------------------------------------------------- 成員個人報告
@@ -1018,7 +1083,7 @@ def reflection_section(member, sid):
         rows.append({"標的": label_of(g["stock_id"]), "來源": "近期落差", "結論時間": g["recorded_at"][5:16], "結果": "落差",
                      "覆盤": mask(g["text"]), "修正": mask(g["correction"])})
     if rows:
-        st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True,
+        show_table(pd.DataFrame(rows), width="stretch", hide_index=True,
                      column_config={"覆盤": st.column_config.TextColumn(width="large"),
                                     "修正": st.column_config.TextColumn(width="medium")})
         st.caption(f"記憶庫：reports/memory/｜覆盤 {mem.load_index().get('generated_at', 'N/A')}｜"
@@ -1086,7 +1151,7 @@ def panel_chips(sid):
         if not daily.empty:
             names = {"date": "日期", "foreign": "外資", "trust": "投信", "dealer_self": "自營自行", "dealer_hedging": "自營避險",
                      "dealer": "自營合計", "total": "合計"}
-            st.dataframe(daily[[c for c in names if c in daily.columns]].rename(columns=names), width="stretch", hide_index=True)
+            show_table(daily[[c for c in names if c in daily.columns]].rename(columns=names), width="stretch", hide_index=True)
         st.caption(f"法人資料日 {inst.get('latest_date')}（張）")
     else:
         st.info(f"{sid} 尚無籌碼預抓檔，請按「🚨 戰情室全員同步更新」。")
@@ -1097,7 +1162,7 @@ def panel_chips(sid):
     if radar:
         with st.expander("🏦 20 大龍頭法人籌碼排行"):
             board = sorted(radar, key=lambda r: -(r.get("chip_score") or 0))
-            st.dataframe(pd.DataFrame([{"代號": r["stock_id"], "名稱": r.get("name"), "次產業": r.get("sector"),
+            show_table(pd.DataFrame([{"代號": r["stock_id"], "名稱": r.get("name"), "次產業": r.get("sector"),
                                         "籌碼分數": r.get("chip_score"), "法人籌碼": r.get("chip_trend"),
                                         "五檔比": r.get("bid_ask_ratio")} for r in board]),
                          width="stretch", hide_index=True, height=420)
@@ -1371,7 +1436,8 @@ def conference_table():
             if st.button("🔎 點擊巴董事長：進入深入個股研究 & 總裁決報告", width="stretch", key="btn_chair"):
                 st.session_state["member"] = "chairman"
                 st.rerun()
-        cols = st.columns(4)
+        with st.container(key="member_row"):  # 手機版：左右滑動的卡片列（CSS 見 ui_theme）
+            cols = st.columns(4)
         for col, num in zip(cols, (1, 2, 3, 5)):
             a = ui.AGENTS[num]
             with col:
@@ -1486,7 +1552,7 @@ def learning_history(member):
         "本次如何修正": mask("；".join(x["text"].replace("【歷史落差檢討與修正原則】", "")
                                    for x in p["grade"].get("principles") or []) or "判斷準確，維持原邏輯"),
     } for p in rows])
-    st.dataframe(money_table(df, price=["預測時股價", "建議買進價", "停損價", "目標價", "實際開盤", "盤中最高", "盤中最低", "收盤/最新"],
+    show_table(money_table(df, price=["預測時股價", "建議買進價", "停損價", "目標價", "實際開盤", "盤中最高", "盤中最低", "收盤/最新"],
                              signed_pct=["預測後漲跌%"]), width="stretch", hide_index=True,
                  column_config={"判定依據": st.column_config.TextColumn(width="medium"),
                                 "本次如何修正": st.column_config.TextColumn(width="large")})
@@ -1718,7 +1784,7 @@ def sim_live_board():
                 "市值": h.get("market_value"), "未實現損益": h.get("unrealized_pnl"), "未實現%": h.get("unrealized_pct"),
                 "防守停損": h.get("stop_loss"), "目標停利": h.get("target_price"), "建倉理由": mask(h.get("buffett_thesis") or "")}
                 for h in acct["holdings"]])
-            st.dataframe(money_table(df, money=["市值"], price=["買進均價", "現價", "防守停損", "目標停利"],
+            show_table(money_table(df, money=["市值"], price=["買進均價", "現價", "防守停損", "目標停利"],
                                      signed_money=["未實現損益"], signed_pct=["漲跌%", "未實現%"]),
                          width="stretch", hide_index=True, column_config={"建倉理由": st.column_config.TextColumn(width="large"),
                                                                            "價別": st.column_config.TextColumn(width="medium")})
@@ -1737,7 +1803,7 @@ def sim_live_board():
                 "K線技術人": f"{p.get('zhu_trend') or 'N/A'}" + (f"｜{p['zhu_reversal']}" if p.get("zhu_reversal") else ""),
                 "五檔比": to_float(p.get("bid_ask_ratio")), "風報比": to_float(p.get("risk_reward")),
                 "持有": "✅" if p.get("held") else ""} for p in prey])
-            st.dataframe(money_table(df, money=["100股需"], price=["現價"], signed_pct=["漲跌%", "距買進價%"]), width="stretch",
+            show_table(money_table(df, money=["100股需"], price=["現價"], signed_pct=["漲跌%", "距買進價%"]), width="stretch",
                          hide_index=True, height=420, column_config={"五檔比": st.column_config.NumberColumn(format="%.2f"),
                                                                     "風報比": st.column_config.NumberColumn(format="%.2f")})
         else:
@@ -1772,7 +1838,7 @@ def sim_meeting_section():
              "巴董事長理由 / 風控結果": mask(" ｜ ".join(x for x in (d.get("reason"), d.get("reject_reason"), d.get("note")) if x)),
              "成員共識": mask(d.get("team_view") or "")} for d in meeting.get("decisions") or []]
     if rows:
-        st.dataframe(money_table(pd.DataFrame(rows), price=["價格", "停損", "目標"]), width="stretch", hide_index=True,
+        show_table(money_table(pd.DataFrame(rows), price=["價格", "停損", "目標"]), width="stretch", hide_index=True,
                      column_config={"巴董事長理由 / 風控結果": st.column_config.TextColumn(width="large"),
                                     "成員共識": st.column_config.TextColumn(width="large")})
     else:
@@ -1805,7 +1871,7 @@ def sim_history_section():
             "成交金額": t["gross_amount"], "手續費+稅": t["fee_and_tax"], "實現損益": t["realized_pnl"], "交易後現金": t["cash_after"],
             "五人共識": mask(t.get("team_discussion") or ""), "巴董事長拍板": mask(t.get("buffett_verdict") or "")}
             for t in reversed(trades)])
-        st.dataframe(money_table(df, money=["成交金額", "手續費+稅", "交易後現金"], price=["均價"], signed_money=["實現損益"]),
+        show_table(money_table(df, money=["成交金額", "手續費+稅", "交易後現金"], price=["均價"], signed_money=["實現損益"]),
                      width="stretch", hide_index=True, column_config={
                          "價別": st.column_config.TextColumn(width="medium"),
                          "五人共識": st.column_config.TextColumn(width="large"),
@@ -1882,6 +1948,19 @@ def identity_bar():
     c2.button("🚪 登出", width="stretch", on_click=_logout, key="btn_logout")
 
 
+MOBILE_NAV = {"home": "🏠 首頁", "war_room": "🎖️ WAR ROOM", "sim_room": "🧪 SIMULATION ROOM"}
+
+
+def mobile_nav():
+    """📱 手機頂部固定雙按鈕導航：顯示目前所在以外的兩個視圖（電腦版以 CSS 隱藏）。"""
+    current = st.session_state.get("view", "home")
+    targets = [v for v in MOBILE_NAV if v != current][:2]
+    with st.container(key="mnav"):
+        for col, view in zip(st.columns(2), targets):
+            col.button(MOBILE_NAV[view], width="stretch", key=f"mnav_{view}", on_click=goto_view, args=(view,))
+
+
 VIEWS = {"home": render_daily, "war_room": render_war_room, "sim_room": render_sim_room}
+mobile_nav()
 identity_bar()
 VIEWS.get(st.session_state["view"], render_daily)()
