@@ -366,9 +366,10 @@ def chairman_call(quote, kline, chip):
 
 # ---------------------------------------------------------------- 主流程
 
-def lookup(query):
+def lookup(query, resolved=None):
+    """resolved=(代號, 名稱) 時略過名稱解析（來賓提問用：resolve() 會讀 portfolio.json 補名稱）。"""
     started = time.perf_counter()
-    stock_id, name = resolve(query)
+    stock_id, name = resolved or resolve(query)
     errors = []
     with ThreadPoolExecutor(max_workers=3) as pool:
         futures = {"quote": pool.submit(fetch_quote, stock_id), "kline": pool.submit(fetch_kline, stock_id),

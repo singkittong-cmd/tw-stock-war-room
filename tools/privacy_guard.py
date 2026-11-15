@@ -104,6 +104,24 @@ def _patterns():
     return out
 
 
+def redact_holdings_text(text):
+    """來賓畫面用：真實持股代號附近 250 字內出現的真實股數（全部／一半／三分之一＋「股」）、整數張數與成本價換成 ●。
+    只看代號附近，避免模擬基金剛好相同的股數被誤遮；也不遮代號或名稱本身，避免「被遮的就是持股」反而洩露持倉。
+    沒有 portfolio.json 時原樣回傳。"""
+    text = str(text or "")
+    spans = []
+    for sid_re, pats in _patterns():
+        sids = [m.start() for m in sid_re.finditer(text)]
+        if not sids:
+            continue
+        for pat in pats:
+            spans += [(m.start(), m.end()) for m in pat.finditer(text)
+                      if any(abs(m.start() - i) <= WINDOW for i in sids)]  # 只遮真實持股代號附近的數字，不誤遮巧合
+    for a, b in sorted(set(spans), reverse=True):
+        text = text[:a] + "●" + text[b:]
+    return text
+
+
 def find_leaks(rel_paths):
     """回傳含真實持股股數／成本的檔案（相對路徑）。沒有 portfolio.json（雲端）時一律回傳空清單。"""
     pats = _patterns()

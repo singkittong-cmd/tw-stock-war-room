@@ -447,6 +447,124 @@ def ask_war_room(question, stock=None, scope=None, provider="gemini"):
             "chairman": qa["chairman"][:120], "errors": meta["errors"]}
 
 
+
+# ---------------------------------------------------------------- 3b) VIP 來賓提問（隔離真實持股）
+
+GUEST_QA_SYSTEM = PERSONAS + (
+    "\n這是開放給來賓的提問台。數據只有公開市場資料、半導體 20 大龍頭建議買進價監控表與 100 萬模擬基金的公開持倉，"
+    "不含任何人的私人持股；嚴禁猜測或提到任何人的私人持股、股數、成本或損益，也不要說「你的持股」。"
+    "請一次輸出五位成員的回答 JSON：{\"news\":\"新聞達人回答（消息面與基本面查核）\","
+    "\"chips\":\"籌碼王回答（法人、融資券、五檔與隔日沖判讀）\",\"kline\":\"K線技術人回答（趨勢、均線位階、轉折K與停損位）\","
+    "\"maga\":\"川大帝MAGA回答（美股、費半與 ADR 對這個問題的影響）\","
+    "\"chairman\":\"巴董事長：點出前四位的盲點或衝突，給出具體的建議買進價區間、停損價、停利目標價與風報比；"
+    "風報比<1.5 或數據不足時寫明「暫不建議進場」與資料缺口，不硬給價位\"}。"
+    "每位 3–6 行，所有數字只能來自數據。巴董事長最後一行固定寫「僅供研究參考，非投資建議」。"
+)
+GUEST_MAX_STOCKS = 3
+
+
+def guest_stocks_in(question, limit=GUEST_MAX_STOCKS):
+    """從來賓問題找出提到的台股（代號或名稱），依出現順序回傳 [(代號, 名稱)]。只認名稱表內的代號，避免把價位當代號。"""
+    import re
+    from tools import quick_stock_lookup as qsl
+    names = dict(qsl.COMMON)  # 不呼叫 load_name_map()：它會讀 portfolio.json，來賓流程完全不碰真實持股檔
+    names.update(qsl._read_json(qsl.NAME_CACHE, {}))
+    names.update({str(r["stock_id"]): r["name"] for r in qsl._read_json(REPORTS / "sector_watchlist.json", [])
+                  if r.get("stock_id") and r.get("name")})
+    q = str(question or "")
+    nq = qsl._norm(q)
+    found = {}
+    for m in re.finditer(r"(?<![\d.$＄])(\d{4}|00\d{2,4}[A-Z]?)(?![\d.])(?!\s*(?:元|塊|點|%|％|張|股|萬|億))", q.upper()):
+        found.setdefault(m.group(1), m.start())
+    hits = sorted(((c, n) for c, n in names.items() if len(qsl._norm(n)) >= 2 and qsl._norm(n) in nq),
+                  key=lambda x: -len(qsl._norm(x[1])))
+    taken = []
+    for code, name in hits:  # 長名稱優先（南亞科 先於 南亞），被長名稱包住的短名稱略過
+        n = qsl._norm(name)
+        if any(n in t for t in taken):
+            continue
+        taken.append(n)
+        found.setdefault(code, nq.find(n))
+    return [(c, names.get(c, c)) for c, _ in sorted(found.items(), key=lambda x: x[1])][:limit]
+
+
+def _fmt(v, f="{:,.2f}"):
+    try:
+        return f.format(float(v))
+    except (TypeError, ValueError):
+        return "N/A"
+
+
+def _guest_stock_block(sid, name):
+    """即時快查（報價＋日K均線＋法人籌碼），加上預抓檔與 20 強監控表的公開價位。不讀 portfolio 相關檔案。"""
+    from tools import quick_stock_lookup as qsl
+    r = qsl.lookup(sid, resolved=(sid, name))
+    q, k = r.get("quote") or {}, r.get("kline") or {}
+    zhu, cv, boss = k.get("zhu") or {}, r.get("chip_verdict") or {}, r.get("chairman") or {}
+    lines = [f"■{sid}{r.get('name') or name} 現價{_fmt(q.get('price') or k.get('close'))}({_fmt(q.get('change_pct'), '{:+.2f}')}%)"
+             f" 開{_fmt(q.get('open'))} 高{_fmt(q.get('high'))} 低{_fmt(q.get('low'))} VWAP{_fmt(q.get('vwap'))}"
+             f" 五檔比{_fmt(q.get('bid_ask_ratio'))}{q.get('tick_side') or ''}（{q.get('price_source') or k.get('source') or ''}）",
+             f"【技術】{zhu.get('trend', 'N/A')}；MA5/10/20/60={_fmt(k.get('ma5'))}/{_fmt(k.get('ma10'))}/{_fmt(k.get('ma20'))}/"
+             f"{_fmt(k.get('ma60'))}；月線乖離{_fmt(k.get('bias20_pct'), '{:+.1f}')}%；量比{_fmt(k.get('vol_ratio_20'))}；"
+             f"5日{_fmt(k.get('change_5d_pct'), '{:+.1f}')}%；20日高/低{_fmt(k.get('high20'))}/{_fmt(k.get('low20'))}；"
+             f"{zhu.get('ma_summary', '')}；轉折K:{'、'.join(p['pattern'] for p in zhu.get('patterns') or []) or '無'}；"
+             f"停損依據:{zhu.get('stop_basis', '')}",
+             f"【籌碼】{cv.get('label', 'N/A')}：" + "；".join((cv.get("alerts") or [])[:2] + (cv.get("points") or [])[:3])[:260],
+             f"【系統快篩】支撐{_fmt(boss.get('support'))} 壓力{_fmt(boss.get('resistance'))} 停損{_fmt(boss.get('stop'))}"
+             f" 風報比{_fmt(boss.get('rr'))}；{boss.get('line', '')}"]
+    if (REPORTS / "data" / f"{sid}_fundamental.json").exists():
+        lines.append(cdb.fundamental_line(sid))
+    radar = next((x for x in cdb._read(REPORTS / "watchlist_radar_live.json").get("results") or [] if x["stock_id"] == sid), None)
+    if radar:
+        lines.append(f"【20 強監控表】{radar.get('signal_label') or radar.get('signal')} 建議買進{_fmt(radar.get('entry_low'))}–"
+                     f"{_fmt(radar.get('entry_high'))} 停損{_fmt(radar.get('stop_loss'))} 停利目標{_fmt(radar.get('target_1'))}"
+                     f" 風報比{_fmt(radar.get('risk_reward'))}；{radar.get('role4_note') or ''}")
+    if r.get("errors"):
+        lines.append("【資料缺口】" + "；".join(r["errors"])[:160])
+    return "\n".join(lines)
+
+
+def _guest_background():
+    """公開背景：大盤、美股、新聞、20 大龍頭監控表、100 萬模擬基金公開持倉。"""
+    from tools import sim_portfolio_engine as sim
+    radar = cdb._read(REPORTS / "watchlist_radar_live.json")
+    rows = [f"{x['stock_id']}{x.get('name', '')} {x.get('signal_label') or x.get('signal')} 現價{_fmt(x.get('price'))}"
+            f" 建議買進{_fmt(x.get('entry_low'))}–{_fmt(x.get('entry_high'))} 停損{_fmt(x.get('stop_loss'))}"
+            for x in (radar.get("results") or [])[:20]]
+    try:
+        acct = sim.load_account()
+        hold = "；".join(f"{h['stock_id']}{h.get('name', '')} {h['shares']}股 均價{_fmt(h.get('avg_cost'))}"
+                        f" 未實現{_fmt(h.get('unrealized_pct'), '{:+.2f}')}% 停損{_fmt(h.get('stop_loss'))} 目標{_fmt(h.get('target_price'))}"
+                        for h in acct.get("holdings") or []) or "空手"
+        sim_line = (f"【100萬模擬基金公開持倉】總淨值{_fmt(acct.get('total_equity'), '{:,.0f}')} 可用現金"
+                    f"{_fmt(acct.get('cash_balance'), '{:,.0f}')}；{hold}")
+    except Exception as exc:
+        sim_line = f"【100萬模擬基金】讀取失敗：{type(exc).__name__}"
+    news, _ = cdb.news_digest(limit=10, max_chars=500)
+    return "\n".join([cdb.market_digest(), cdb.us_digest(), f"新聞：\n{news}",
+                      f"【半導體 20 大龍頭建議買進價監控表】（{radar.get('updated_at', 'N/A')}）", *rows, sim_line])
+
+
+def ask_war_room_guest(question, provider="gemini"):
+    """VIP 來賓提問：Prompt 只含公開資料，絕不讀 portfolio.json／持股報價檔／持股叮嚀／持股覆盤；結果不寫檔，由呼叫端存在 session。"""
+    from tools import privacy_guard
+    started = time.perf_counter()
+    stocks = guest_stocks_in(question)
+    blocks, errors = [], []
+    for sid, name in stocks:
+        try:
+            blocks.append(_guest_stock_block(sid, name))
+        except Exception as exc:  # 單檔失敗不影響其他
+            errors.append(f"{sid} 即時快查失敗：{type(exc).__name__}")
+    focus = "\n\n".join(blocks) if blocks else "（問題未提到特定個股，請以大盤、美股與 20 大龍頭回答）"
+    data, meta = _ask_json(GUEST_QA_SYSTEM, f"問題：{question}\n\n【提問個股即時資料】\n{focus}\n\n【公開背景】\n"
+                           f"{_guest_background()}", provider, max_tokens=2800)
+    clean = privacy_guard.redact_holdings_text  # 最後一道：真實股數／成本一律遮掉
+    return {"question": question, "asked_at": _now(), "stock_ids": [s for s, _ in stocks], "engine": meta["provider"],
+            "elapsed_sec": round(time.perf_counter() - started, 2), "errors": errors + list(meta.get("errors") or []),
+            **{k: clean(str(data.get(k) or "")) for k in ("news", "chips", "kline", "maga", "chairman")}}
+
+
 # ================================================================ 4) 巴董事長深入個股研究（單次深潛）
 
 DEEP_SYSTEM = PERSONAS + (

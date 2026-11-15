@@ -1560,7 +1560,51 @@ def learning_history(member):
         st.caption("🔐 戰術金庫鎖定中：持股相關的對帳紀錄已隱藏，解鎖後顯示。")
 
 
+GUEST_QA_COOLDOWN_SEC = 10
+GUEST_QA_KEEP = 5
+
+
+def guest_qa_section():
+    """👋 VIP 來賓提問台：Prompt 只含公開資料（不讀真實持股），結果只存在該來賓自己的 session，不覆蓋主人的共用紀錄。"""
+    st.markdown("### 💬 盤中戰術提問指揮台（新聞達人／籌碼王／K線技術人／川大帝MAGA 回答 ➔ 巴董事長 Challenge 總結）")
+    history = st.session_state.setdefault("guest_qa_history", [])
+    with st.container(border=True):
+        st.caption("👋 VIP 來賓提問：問題裡提到股票名稱或代號（例：2330、鴻海、奇鋐現在能買嗎），會自動抓即時報價、"
+                   "K 線均線位階與法人籌碼，並參考 20 大龍頭監控表與 100 萬模擬基金的公開持倉。提問紀錄只存在你這個瀏覽器分頁。")
+        question = st.text_area("戰術提問", key="guest_qa_question", height=80, max_chars=300,
+                                placeholder="例：奇鋐現在能買嗎？建議買進價和停損價是多少？")
+        if st.button("🚀 發送戰術提問", type="primary", key="btn_guest_qa_send"):
+            wait = GUEST_QA_COOLDOWN_SEC - (time.time() - st.session_state.get("guest_qa_last", 0))
+            if not question.strip():
+                st.warning("請先輸入問題。")
+            elif wait > 0:
+                st.warning(f"⏳ 防連點保護：請 {wait:.0f} 秒後再提問。")
+            else:
+                st.session_state["guest_qa_last"] = time.time()
+                with st.spinner("五位成員會診中（即時快查＋單次五人設請求，約 10–30 秒）…"):
+                    try:
+                        qa = ftr.ask_war_room_guest(question.strip(), provider="gemini")  # 來賓固定用免費引擎
+                        history.insert(0, qa)
+                        del history[GUEST_QA_KEEP:]
+                    except Exception as exc:  # 模型或報價失敗：只顯示錯誤類型，不顯示任何後端細節
+                        st.error(f"⚠️ 這次會診沒有完成（{type(exc).__name__}），請稍後再試。")
+        if not history:
+            st.caption("尚無提問紀錄。送出後，五位成員的回答會顯示在這裡。")
+            return
+        for i, qa in enumerate(history):
+            stocks = "、".join(qa.get("stock_ids") or []) or "大盤"
+            with st.expander(f"Q：{qa['question'][:40]}（{qa['asked_at'][11:16]}・{stocks}）", expanded=(i == 0)):
+                st.markdown(f"**Q（{ui.esc(qa['asked_at'])}・{ui.esc(qa.get('engine', ''))}・{qa.get('elapsed_sec', '')} 秒）：** "
+                            f"{ui.esc(qa['question'])}")
+                html(ui.render_qa_board({k: ui.name_roles(qa.get(k) or "") for k in ("news", "chips", "kline", "maga", "chairman")}))
+                if qa.get("errors"):
+                    st.caption("⚠️ 資料缺口：" + "；".join(str(e)[:80] for e in qa["errors"][:3]))
+
+
 def qa_section():
+    if IS_GUEST:  # 來賓走隔離版提問台
+        guest_qa_section()
+        return
     st.markdown("### 💬 盤中戰術提問指揮台（新聞達人／籌碼王／K線技術人 回答 ➔ 巴董事長 Challenge 總結）")
     with st.container(border=True):
         c1, c2 = st.columns([2.2, 2], vertical_alignment="bottom")
@@ -1571,11 +1615,9 @@ def qa_section():
         question = st.text_area("戰術提問", key="qa_question", height=80,
                                 placeholder="例：2408 現在盤中五檔賣壓重，該在這裡攤平還是等尾盤？")
         locked_holdings = scope == "holdings" and not is_unlocked()
-        if IS_GUEST:
-            st.caption("👋 VIP 來賓體驗模式：可瀏覽最近一次提問紀錄，發送新提問只開放給戰情室主人。")
-        elif locked_holdings:
+        if locked_holdings:
             st.caption("🔐 針對手上持股提問需先解鎖上方戰術金庫。")
-        if st.button("🚀 發送戰術提問", type="primary", key="btn_qa_send", disabled=locked_holdings or IS_GUEST):
+        if st.button("🚀 發送戰術提問", type="primary", key="btn_qa_send", disabled=locked_holdings):
             if not question.strip():
                 st.warning("請先輸入問題。")
             else:
@@ -1941,8 +1983,8 @@ def identity_bar():
     """所有視圖頂部：目前身分與登出。"""
     c1, c2 = st.columns([7, 1], vertical_alignment="center")
     if IS_GUEST:
-        c1.info("👋 歡迎來到 VIP 來賓體驗模式：可瀏覽今日新聞與美股 TOP 10、個股即時快篩、100 萬模擬基金即時盯盤與 "
-                "20 大龍頭監控表；真實持股與會改動帳本的按鈕不開放。")
+        c1.info("👋 歡迎來到 VIP 來賓體驗模式：可瀏覽今日新聞與美股 TOP 10、個股即時快篩、100 萬模擬基金即時盯盤、"
+                "20 大龍頭監控表，並在 WAR ROOM 的盤中戰術提問指揮台請五位成員會診；真實持股與會改動帳本的按鈕不開放。")
     else:
         c1.caption("👑 老闆模式：完整權限｜" + ("🔓 個人持倉金庫已解鎖" if is_unlocked() else "🔒 個人持倉金庫已手動鎖上"))
     c2.button("🚪 登出", width="stretch", on_click=_logout, key="btn_logout")
