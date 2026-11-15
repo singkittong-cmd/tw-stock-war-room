@@ -63,6 +63,24 @@ def load_premarket_alert(pre):
     return (priv.get("holdings_alert") or []) if priv.get("date") == (pre or {}).get("date") else []
 
 
+def materialize_portfolio_from_secret(raw=None):
+    """Streamlit Cloud：沒有 reports/portfolio.json 時，用 Secrets 的 PORTFOLIO_JSON 建立（.gitignore 已排除，不會推送）。
+    已存在時不覆蓋（金庫解鎖後在雲端編輯的內容保留到伺服器重開）。回傳持股檔數，沒有建立回傳 0。"""
+    raw = str(raw or os.environ.get("PORTFOLIO_JSON") or "").strip()
+    if not raw or PORTFOLIO_PATH.exists():
+        return 0
+    try:
+        rows = json.loads(raw)
+    except ValueError:
+        return 0
+    rows = rows if isinstance(rows, list) else (rows or {}).get("holdings") or []
+    if not rows:
+        return 0
+    PORTFOLIO_PATH.parent.mkdir(parents=True, exist_ok=True)
+    _write(PORTFOLIO_PATH, rows)
+    return len(rows)
+
+
 def _patterns():
     rows = _read(PORTFOLIO_PATH)
     rows = rows if isinstance(rows, list) else (rows or {}).get("holdings") or []

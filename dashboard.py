@@ -52,6 +52,16 @@ from tools.claude_runner import run_prefetch  # noqa: E402
 from tools.privacy_mask import mask_sensitive_text, set_private_terms  # noqa: E402
 
 load_dotenv(ROOT / ".env", encoding="utf-8")
+
+
+def _secret(name):
+    try:
+        return st.secrets.get(name, "")
+    except Exception:  # 本機沒有 secrets.toml
+        return ""
+
+
+privacy_guard.materialize_portfolio_from_secret(_secret("PORTFOLIO_JSON"))  # Streamlit Cloud：Secrets → reports/portfolio.json（不進 git）
 llm_router.ensure_env_defaults()
 
 # ⚡ AI 運算引擎：日常預設免費 Gemini；Claude 只在使用者主動選擇時才用（單次、無工具、不派子代理）
