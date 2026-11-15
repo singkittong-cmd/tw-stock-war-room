@@ -50,6 +50,7 @@ AUTOPILOT_MODE = "cloud_master"
 GEMINI_API_KEY = "貼上金鑰"
 FINMIND_API_TOKEN = "貼上金鑰"
 PRIVACY_PIN = "你的金庫密碼"
+GUEST_PIN = "給家人朋友的來賓密碼"   # 選填；沒設定時使用程式內建的預設來賓密碼
 GITHUB_REPO = "<你的帳號>/tw-stock-war-room"
 GITHUB_TOKEN = "github_pat_..."
 ```
@@ -59,7 +60,11 @@ GITHUB_TOKEN = "github_pat_..."
 - Repository access：只選這個 repo。
 - Permissions：**Contents: Read and write**。
 
-3. App 可以維持 Private（只有你登入後看得到）。
+3. **分享給家人朋友（不需 GitHub 帳號）**：App 右上 **Share → Who can view this app** 改成 **Public**。
+   - 網頁本身有雙層通行門禁：輸入 `PRIVACY_PIN` 是老闆模式（完整權限、持倉金庫自動解鎖）；輸入 `GUEST_PIN` 是 VIP 來賓模式。
+   - 來賓模式：真實持股區塊完全不顯示；一鍵更新、全員同步、深度診斷、戰術提問、模擬室投決會與刷新、背景引擎開關等按鈕都停用。
+   - 連續輸錯 5 次鎖 60 秒（以瀏覽器分頁為單位）。來賓密碼請設成不易猜的數字，並定期更換。
+   - `?keepalive=1` 輕量喚醒不需要密碼，只回傳狀態字串、不顯示任何資料。
 
 ## 步驟 4：測試
 

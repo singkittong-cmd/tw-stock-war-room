@@ -346,5 +346,5 @@
 - `tools/llm_router.py`：多模型免費路由器（gemini／groq／claude_lite=`claude -p --tools ""` 單次無工具）；`--test` 檢查金鑰
 - `tools/compact_data_builder.py`：把 reports/ 明細濃縮成每檔約 400 字摘要（持股只帶報酬率%，不帶股數成本）
 - `tools/fast_team_runner.py`：dashboard 與盤中哨兵的預設 AI 引擎（daily_home_update／war_room_sync／ask_war_room／deep_dive，單次多人設請求、不派子代理）
-- `intraday_sentinel.py`：盤中哨兵；`dashboard.py`：Streamlit 🏠 日常主畫面 ⇄ 🎖️ SEAL OP BASE 戰術會議室
+- `intraday_sentinel.py`：盤中哨兵；`dashboard.py`：Streamlit 🏠 日常主畫面 ⇄ 🎖️ SEAL OP BASE 戰術會議室。最外層有雙層通行門禁：`PRIVACY_PIN` → 老闆模式（金庫自動解鎖）；`GUEST_PIN` → VIP 來賓模式（`IS_GUEST`：不顯示真實持股、停用會改動帳本或耗用 AI 額度的按鈕）。新增按鈕時，凡會寫入資料或呼叫 AI 的，一律加 `disabled=IS_GUEST`
 - `.claude/agents/`：四位成員定義（新聞達人、籌碼王、K線技術人、川大帝MAGA）

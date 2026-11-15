@@ -12,9 +12,11 @@
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
+import hmac
 import json
 import os
 import re
+import time
 from datetime import datetime
 from datetime import time as dtime
 from pathlib import Path
@@ -136,6 +138,86 @@ def goto_view(view):
 st.session_state.setdefault("member", None)
 
 
+# ---------------------------------------------------------------- 🏛️ 雙層身分通行門禁（老闆 owner／VIP 來賓 guest）
+DEFAULT_GUEST_PIN = "8888"  # 未在 .env／Streamlit Secrets 設定 GUEST_PIN 時的預設來賓密碼（畫面上永遠不顯示）
+GATE_MAX_TRIES, GATE_COOLDOWN_SEC = 5, 60
+GUEST_LOCK_HELP = "👋 VIP 來賓體驗模式：這個功能只開放給戰情室主人操作"
+
+
+def _secret_pin(name, default=""):
+    """密碼一律從 .env（環境變數）或 Streamlit Secrets 讀取。"""
+    pin = (os.getenv(name) or "").strip() or str(_secret(name) or "").strip()
+    return pin or default
+
+
+def guest_pin():
+    return _secret_pin("GUEST_PIN", DEFAULT_GUEST_PIN)
+
+
+def _pin_match(code, pin):
+    return bool(code and pin) and hmac.compare_digest(code.encode("utf-8"), pin.encode("utf-8"))
+
+
+def _gate_submit():
+    now = time.time()
+    code = str(st.session_state.get("gate_pin") or "").strip()
+    st.session_state["gate_pin"] = ""
+    if now < st.session_state.get("gate_locked_until", 0):
+        return
+    if _pin_match(code, _secret_pin("PRIVACY_PIN")):  # 老闆密碼優先
+        st.session_state.update(role="owner", privacy_unlocked=True, gate_fails=0, gate_error="")
+    elif _pin_match(code, guest_pin()):
+        st.session_state.update(role="guest", privacy_unlocked=False, gate_fails=0, gate_error="")
+        goto_view("home")
+    else:
+        fails = st.session_state.get("gate_fails", 0) + 1
+        if fails >= GATE_MAX_TRIES:
+            st.session_state.update(gate_fails=0, gate_locked_until=now + GATE_COOLDOWN_SEC,
+                                    gate_error=f"⛔ 連續輸錯 {GATE_MAX_TRIES} 次，請 {GATE_COOLDOWN_SEC} 秒後再試。")
+        else:
+            st.session_state.update(gate_fails=fails,
+                                    gate_error=f"❌ 通行密碼不正確，還可再試 {GATE_MAX_TRIES - fails} 次。")
+
+
+def _logout():
+    for k in ("role", "lookup_result", "member"):
+        st.session_state.pop(k, None)
+    st.session_state["privacy_unlocked"] = False
+    goto_view("home")
+
+
+def render_gate():
+    """尚未通過驗證：畫面正中央只顯示通行驗證框，不渲染任何戰情室資料。"""
+    _, mid, _ = st.columns([1, 1.3, 1])
+    with mid:
+        st.markdown(
+            '<div style="margin:12vh 0 18px 0;text-align:center">'
+            '<div style="font-size:2.6rem;line-height:1">🏛️</div>'
+            '<div style="font-size:1.55rem;font-weight:800;margin-top:10px;letter-spacing:.02em">台股 AI 戰情室 — 專屬通行驗證</div>'
+            '<div style="opacity:.72;margin-top:8px;font-size:.92rem">請輸入通行密碼。戰情室主人進入完整模式；'
+            '受邀來賓進入 VIP 體驗模式，可瀏覽新聞、個股快篩與 100 萬模擬基金。</div></div>',
+            unsafe_allow_html=True)
+        with st.form("gate_form", border=True):
+            st.text_input("通行密碼", type="password", key="gate_pin", placeholder="輸入通行密碼…",
+                          label_visibility="collapsed")
+            st.form_submit_button("🔓 驗證並進入戰情室", type="primary", width="stretch", on_click=_gate_submit)
+        wait = int(st.session_state.get("gate_locked_until", 0) - time.time())
+        if wait > 0:
+            st.error(f"⛔ 嘗試次數過多，請 {wait} 秒後再試。")
+        elif st.session_state.get("gate_error"):
+            st.error(st.session_state["gate_error"])
+        if not _secret_pin("PRIVACY_PIN"):
+            st.caption("⚠️ 尚未設定 PRIVACY_PIN：目前只能以來賓身分進入。")
+        st.caption("僅供研究參考，非投資建議。")
+
+
+if st.session_state.get("role") not in ("owner", "guest"):
+    render_gate()
+    st.stop()
+ROLE = st.session_state["role"]
+IS_OWNER, IS_GUEST = ROLE == "owner", ROLE == "guest"
+
+
 # ---------------------------------------------------------------- 共用工具
 
 def read_text(path):
@@ -199,7 +281,8 @@ def market_open_now(now=None):
 
 
 def is_unlocked():
-    return bool(st.session_state.get("privacy_unlocked"))
+    """只有老闆身分能解鎖個人持倉金庫；來賓永遠視為鎖定。"""
+    return IS_OWNER and bool(st.session_state.get("privacy_unlocked"))
 
 
 def mask(text):
@@ -306,6 +389,8 @@ def engine_selector(view):
 
 def engine_key_box(view):
     """選了免費引擎但 .env 沒金鑰時，在頁面上方顯示金鑰輸入框（不回顯金鑰）。"""
+    if IS_GUEST:  # 來賓不能寫入金鑰
+        return
     provider = current_engine()
     if provider not in ENGINE_KEYS or llm_router.has_key(provider):
         if provider == "claude_lite":
@@ -482,7 +567,8 @@ def ai_tasks_popover():
     """⋯ 0 Token 工具與最近一次 AI 任務輸出。"""
     with st.popover("⋯", width="stretch"):
         st.markdown("**更多任務**")
-        if st.button("🌙 盤後 20 強重新定錨（0 Token）", width="stretch"):
+        if st.button("🌙 盤後 20 強重新定錨（0 Token）", width="stretch", disabled=IS_GUEST,
+                     help=GUEST_LOCK_HELP if IS_GUEST else None):
             with st.spinner("計算 20 強備用進場價…"):
                 standby = standby_mod.build(fetch=True)
                 radar_mod.run()
@@ -595,7 +681,8 @@ def lookup_section():
         if r.get("errors"):
             st.caption("⚠️ 部分資料缺口：" + "；".join(r["errors"]))
         b1, b2, b3 = st.columns([2.2, 1.2, 1.6])
-        if b1.button("🔥 請巴董事長召集團隊深度診斷此股（AI 深度重算）", type="primary", width="stretch", key="btn_lookup_deep"):
+        if b1.button("🔥 請巴董事長召集團隊深度診斷此股（AI 深度重算）", type="primary", width="stretch", key="btn_lookup_deep",
+                     disabled=IS_GUEST, help=GUEST_LOCK_HELP if IS_GUEST else None):
             deep_research(r["stock_id"])
             add_focus(r["stock_id"], r.get("name"))
             goto_view("war_room")
@@ -627,7 +714,8 @@ def render_daily():
         if st.button("🧪 進入 SIMULATION ROOM", width="stretch", key="btn_enter_sim"):
             goto_view("sim_room")
             st.rerun()
-    if h3.button("🔄 一鍵更新今日早晚報與收盤數據", width="stretch", key="btn_daily_refresh"):
+    if h3.button("🔄 一鍵更新今日早晚報與收盤數據", width="stretch", key="btn_daily_refresh", disabled=IS_GUEST,
+                 help=GUEST_LOCK_HELP if IS_GUEST else None):
         daily_refresh()
     with h5:
         engine_selector("daily")
@@ -688,13 +776,7 @@ def render_daily():
 
 def vault_pin():
     """金庫密碼只從 .env 或 Streamlit Secrets 的 PRIVACY_PIN 讀取；程式碼內沒有任何預設密碼。都沒設定時回傳空字串（金庫永久鎖定）。"""
-    pin = (os.getenv("PRIVACY_PIN") or "").strip()
-    if not pin:
-        try:
-            pin = str(st.secrets.get("PRIVACY_PIN", "") or "").strip()
-        except Exception:  # 沒有 secrets.toml
-            pin = ""
-    return pin
+    return _secret_pin("PRIVACY_PIN")
 
 
 def _vault_unlock():
@@ -785,6 +867,8 @@ def holdings_table():
 
 
 def holdings_section():
+    if IS_GUEST:  # 來賓完全不顯示真實持股區塊（連金庫輸入框都不出現）
+        return
     st.markdown("### 💼 戰術表一：手上持股盤中實戰表")
     if not is_unlocked():
         vault_locked_bar()
@@ -1348,7 +1432,8 @@ def member_panel(intraday_mode):
         h1.markdown(ui.render_panel_head(role, f"焦點標的：{label_of(focus)}｜{'⚡ 盤中' if intraday_mode else '🌙 盤後'}"),
                     unsafe_allow_html=True)
         with h2:
-            if st.button(f"🔄 單獨更新【{nick}】最新報告", type="primary", width="stretch", key=f"btn_update_{member}"):
+            if st.button(f"🔄 單獨更新【{nick}】最新報告", type="primary", width="stretch", key=f"btn_update_{member}",
+                         disabled=IS_GUEST, help=GUEST_LOCK_HELP if IS_GUEST else None):
                 with st.spinner(f"只更新{nick}（{current_engine()}）…"):
                     run_ai(f"{nick} 單獨更新", ftr.update_single_agent, MEMBER_AGENT[member],
                            None if member == "maga" else focus, current_engine())
@@ -1420,9 +1505,11 @@ def qa_section():
         question = st.text_area("戰術提問", key="qa_question", height=80,
                                 placeholder="例：2408 現在盤中五檔賣壓重，該在這裡攤平還是等尾盤？")
         locked_holdings = scope == "holdings" and not is_unlocked()
-        if locked_holdings:
+        if IS_GUEST:
+            st.caption("👋 VIP 來賓體驗模式：可瀏覽最近一次提問紀錄，發送新提問只開放給戰情室主人。")
+        elif locked_holdings:
             st.caption("🔐 針對手上持股提問需先解鎖上方戰術金庫。")
-        if st.button("🚀 發送戰術提問", type="primary", key="btn_qa_send", disabled=locked_holdings):
+        if st.button("🚀 發送戰術提問", type="primary", key="btn_qa_send", disabled=locked_holdings or IS_GUEST):
             if not question.strip():
                 st.warning("請先輸入問題。")
             else:
@@ -1462,7 +1549,8 @@ def render_war_room():
     with t6:
         engine_selector("war")
     with t4:
-        run_all = st.button("🚨 戰情室全員同步更新 (含昨日落差覆盤)", width="stretch", key="btn_war_sync")
+        run_all = st.button("🚨 戰情室全員同步更新 (含昨日落差覆盤)", width="stretch", key="btn_war_sync",
+                            disabled=IS_GUEST, help=GUEST_LOCK_HELP if IS_GUEST else None)
     intraday_mode = st.session_state.get("intraday_mode", open_now)
     with t5:
         ai_tasks_popover()
@@ -1546,7 +1634,8 @@ def cloud_sync_controls():
         return
     c1.caption("👀 觀看端：背景每 30 秒從 GitHub 拉回雲端帳本，這台電腦不會發起任何模擬下單。"
                "要改回本機交易，請在 .env 設 AUTOPILOT_MODE=local_master。")
-    if c2.button("☁️ 立即從 GitHub 同步最新雲端帳本", width="stretch", key="btn_cloud_pull"):
+    if c2.button("☁️ 立即從 GitHub 同步最新雲端帳本", width="stretch", key="btn_cloud_pull", disabled=IS_GUEST,
+                 help=GUEST_LOCK_HELP if IS_GUEST else None):
         with st.spinner("從 GitHub 拉取最新模擬帳本…"):
             r = ghsync.pull_latest(force=True, paths=ghsync.MIRROR_PATHS, scope="mirror")
         st.session_state["toast"] = (f"☁️ 已同步 commit {r.get('commit')}（更新 {r.get('files', 0)} 個檔案）" if r.get("ok")
@@ -1581,10 +1670,11 @@ def daemon_panel():
             return
         c1, c2 = st.columns([2, 1.6], vertical_alignment="center")
         c1.toggle("🟢 啟用背景自動進出場 (至 13:30 收盤)", value=view["auto_trade_enabled"], key="daemon_auto_trade",
+                  disabled=IS_GUEST,
                   on_change=lambda: sim_daemon.save_config(auto_trade_enabled=st.session_state["daemon_auto_trade"]),
                   help="開啟：盤中觸及停損/停利、達建議買進價或每 20 分鐘巡檢時，背景自動召開五人投決會並交割。"
                        "關閉：背景仍每 15 秒更新報價與淨值，但不自動下單。設定存在 reports/simulation/daemon_config.json")
-        if c2.button("🔍 立即測試背景心跳與掃描連線", width="stretch", key="btn_daemon_ping"):
+        if c2.button("🔍 立即測試背景心跳與掃描連線", width="stretch", key="btn_daemon_ping", disabled=IS_GUEST):
             if not sim_daemon.running_thread():
                 sim_daemon.start_daemon()
             with st.spinner("等待背景守護執行緒回應（最多 12 秒）…"):
@@ -1744,8 +1834,9 @@ def render_sim_room():
     engine_key_box("sim")
     daemon_panel()
     c1, c2 = st.columns([1.4, 2])
-    lock_ui = CLOUD_MODE or VIEWER
-    cloud_help = ("☁️ 單一帳本：模擬交易只由背景盯盤執行緒執行（交易前後與 GitHub 同步），網頁按鈕不寫入帳本，避免兩本帳"
+    lock_ui = CLOUD_MODE or VIEWER or IS_GUEST
+    cloud_help = (GUEST_LOCK_HELP if IS_GUEST else
+                  "☁️ 單一帳本：模擬交易只由背景盯盤執行緒執行（交易前後與 GitHub 同步），網頁按鈕不寫入帳本，避免兩本帳"
                   if lock_ui else None)
     if c1.button("⚡ 1秒刷新模擬房淨值與 TOP 20 建議買進價監控表 (0 Token)", width="stretch", key="btn_sim_refresh",
                  disabled=lock_ui, help=cloud_help):
@@ -1780,5 +1871,17 @@ def render_sim_room():
 
 # ---------------------------------------------------------------- 進入點
 
+def identity_bar():
+    """所有視圖頂部：目前身分與登出。"""
+    c1, c2 = st.columns([7, 1], vertical_alignment="center")
+    if IS_GUEST:
+        c1.info("👋 歡迎來到 VIP 來賓體驗模式：可瀏覽今日新聞與美股 TOP 10、個股即時快篩、100 萬模擬基金即時盯盤與 "
+                "20 大龍頭監控表；真實持股與會改動帳本的按鈕不開放。")
+    else:
+        c1.caption("👑 老闆模式：完整權限｜" + ("🔓 個人持倉金庫已解鎖" if is_unlocked() else "🔒 個人持倉金庫已手動鎖上"))
+    c2.button("🚪 登出", width="stretch", on_click=_logout, key="btn_logout")
+
+
 VIEWS = {"home": render_daily, "war_room": render_war_room, "sim_room": render_sim_room}
+identity_bar()
 VIEWS.get(st.session_state["view"], render_daily)()
