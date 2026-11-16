@@ -1,119 +1,109 @@
 {
-  "date": "2026-11-11",
-  "generated_at": "2026-11-11 08:32:28",
-  "sox_chg_pct": -0.35,
-  "tsm_adr_chg_pct": 2.02,
-  "tsm_premium_pct": 14.08,
-  "us_key_drivers": [
-    "美債殖利率飆升壓抑高估值科技股，資金轉向防禦型與具實際營收支持的個股。",
-    "NVDA受高階管理層調查議題影響引發市場避險拋售，引發AI伺服器供應鏈短期評價修正。",
-    "TSM ADR保持高溢價（+14.08%）與博通逆勢大漲，提供半導體龍頭與ASIC族群強勁下檔支撐。"
-  ],
-  "tw_index_forecast": "預計台股開高走低橫盤震盪，關鍵點位看41,500點支撐與42,000點壓力區。",
-  "opening_strategy": "開盤若跳空開高不追高，觀察前高壓力；若低開至月線負乖離區，分批逢低承接績優股。",
+  "date": "2026-11-17",
+  "generated_at": "2026-11-16 15:29:40",
+  "sox_chg_pct": -3.43,
+  "tsm_adr_chg_pct": -1.67,
+  "tsm_premium_pct": 18.71,
+  "us_key_drivers": [],
+  "tw_index_forecast": "",
+  "opening_strategy": "",
   "holdings_alert": [],
   "top_sector_picks": {
-    "favor": [
-      "矽智財與ASIC：受益於博通及AMD走強傳導與營收成長強勁",
-      "載板與高階PCB：產業庫存去化完成且高階需求持續強勁"
-    ],
-    "avoid": [
-      "CoWoS 設備：設備拉貨動能短期放緩且籌碼賣壓仍待消化",
-      "晶圓代工：成熟製程價格競爭持續且法人賣超動能未止"
-    ]
+    "favor": [],
+    "avoid": []
   },
   "us_top10": [
     {
       "ref": "Q1",
-      "title": "費半指數微幅震盪整理",
-      "point": "費半收跌0.35%，半導體族群短線呈現高檔橫盤震盪，傳導台股半導體大盤維持整理走勢。",
-      "tag": "中性",
+      "title": "費城半導體指數(^SOX)",
+      "point": "費半重挫3.43%跌破萬點大關，直接壓抑台股半導體與權值股表現。",
+      "tag": "利空",
       "url": "https://finance.yahoo.com/quote/%5ESOX",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 06:15"
+      "pub_date": "2026-11-14 06:15"
     },
     {
       "ref": "Q2",
-      "title": "TSM ADR大幅溢價14.08%",
-      "point": "TSM ADR上漲2.02%且溢價高達14.08%，直接護航台股台積電(2330)開盤支撐力道。",
-      "tag": "利多",
+      "title": "台積電 ADR(TSM)",
+      "point": "TSM ADR下跌1.67%但對台股2330仍保持18.71%高溢價，支撐台積電下檔韌性。",
+      "tag": "中性",
       "url": "https://finance.yahoo.com/quote/TSM",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 05:00"
+      "pub_date": "2026-11-14 05:00"
     },
     {
       "ref": "Q3",
-      "title": "輝達股價大跌5.47%",
-      "point": "NVDA修正5.47%，短線衝擊台股鴻海(2317)、廣達(2382)等AI伺服器代工供應鏈。",
+      "title": "輝達(NVDA)",
+      "point": "輝達收跌2.01%，財報前市場避險情緒升溫，影響台股廣達(2382)、緯創(3231)等AI組裝鏈。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/NVDA",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 05:00"
+      "pub_date": "2026-11-14 05:00"
     },
     {
       "ref": "Q7",
-      "title": "美光高檔拉回跌1.10%",
-      "point": "美光拉回跌1.10%，壓制台股記憶體族群南亞科(2408)、華邦電(2344)追高動能。",
+      "title": "美光(MU)",
+      "point": "美光下跌2.52%，記憶體族群高檔回檔，影響台股南亞科(2408)、威剛(3260)開盤走勢。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/MU",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 05:00"
+      "pub_date": "2026-11-14 05:00"
     },
     {
       "ref": "Q11",
-      "title": "Vertiv走跌3.12%",
-      "point": "VRT下跌3.12%，散熱與電力需求回檔傳導至台股奇鋐(3017)、雙鴻(3324)短線壓勢。",
+      "title": "Vertiv(VRT)",
+      "point": "VRT回檔3.61%，散熱與機櫃電力需求短線冷卻，傳導至台股奇鋐(3017)、雙鴻(3324)。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/VRT",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 05:00"
+      "pub_date": "2026-11-14 05:00"
     },
     {
       "ref": "N2",
-      "title": "黃仁勳政策影響力受疑",
-      "point": "市場關注執行長政治與政策影響力變數，利空情緒擴散至整體AI軟硬體供應鏈。",
+      "title": "Nvidia Down 30% as AI Selloff Resumes Before Earnings",
+      "point": "輝達財報前AI板塊遭逢拋售潮，衝擊台股AI伺服器與相關供應鏈短期評價。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLU83a2xneFBnaHNPWFBTdGswMjBtdXZRSDdyeGhGTTVCdVpiRW90TmFBdUI3Tk03VEVmQ2tYR21INDJyVFFtYllQQzdYOWRqQTlZWTByVlpudnNQRmptc1V4WWl2d0dTbEJ6TGNNN3l2cXhILXpieWpkLXd6Tnk3N3ZiNzl4T1ktMGZOMUVCU0pyeXJndlo5OFh6SjhVeXdaRElCQnl6MWI4dXl0UXF2ckZhS3k5aUt0VGJZ?oc=5",
-      "source": "Fortune",
-      "pub_date": "2026-11-11 08:12"
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMG5STHk3TnluVVZkdGhXV3pQQVpib2t2U0FUNXBkWndXRlNWdXlFRG1iNzVBUjFiS2RYc24wanBpbG1PeWFjR0twTzJXUjlVLXlpcEE4TUJvSDJadFNFcUZPUHZOU1VnVGo4NUhfcG96TVFUQ1ZNYWNpSEVNSzlzMkVUWHRWZw?oc=5",
+      "source": "shattered.io",
+      "pub_date": "2026-11-16 15:20"
     },
     {
       "ref": "N3",
-      "title": "市場對AI產業態度轉趨謹慎",
-      "point": "風波增加投資人對AI評價過高的警戒，加劇台股伺服器與AI概念股拉回壓力。",
+      "title": "Stocks extend losses as traders digest Nvidia fallout",
+      "point": "交易員消化輝達相關負面消息，美股延續跌勢，加重台股加權指數跳空開低壓力。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Wb3kxRWs1ZUlWeVVTaTBmRjhhMnY5b3VEUU41YllwU3RzMUVBdnAwTW5YWGYwLTBLSGtlNUJ5N0tzWGhKV2Zjai1YT3Z6bDBiLXZjVjZYNlY3VFE?oc=5",
-      "source": "Fox Business",
-      "pub_date": "2026-11-11 08:11"
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-extend-losses-traders-digest-030006305.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-16 15:14"
     },
     {
-      "ref": "N4",
-      "title": "美債殖利率飆升與輝達拉回衝擊期貨",
-      "point": "公債殖利率攀升壓抑科技股估值，間接壓制台股電子權值股開盤漲勢。",
+      "ref": "N5",
+      "title": "Michael Burry Holds NVDA Puts Into Earnings",
+      "point": "機構法人財報前押注避險空單，市場波動加劇，壓抑台股電子權值股買盤。",
       "tag": "利空",
-      "url": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures%3A-stock.html?.tsrc=rss",
+      "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-nvda-puts-earnings-retail-rally-musk-jensen-handshake-deals/cNb7LcRR9Xh?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 08:07"
+      "pub_date": "2026-11-16 15:02"
     },
     {
       "ref": "Q4",
-      "title": "AMD逆勢上揚1.30%",
-      "point": "AMD上漲1.30%，帶動台股ASIC與伺服器板塊如世芯-KY(3661)部分買盤承接。",
-      "tag": "利多",
+      "title": "超微(AMD)",
+      "point": "AMD大跌8.75%領跌晶片股，嚴重打擊台股IC設計與晶圓代工供應鏈氣氛。",
+      "tag": "利空",
       "url": "https://finance.yahoo.com/quote/AMD",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 05:00"
+      "pub_date": "2026-11-14 05:00"
     },
     {
       "ref": "Q5",
-      "title": "博通強勢上漲3.91%",
-      "point": "AVGO大漲3.91%，為台股高階網通與矽智財族群智原(3035)、立積(4968)提供支撐。",
-      "tag": "利多",
+      "title": "博通(AVGO)",
+      "point": "博通重挫4.76%，網通與網通晶片需求面臨修正，影響台股世芯-KY(3661)等ASIC族群。",
+      "tag": "利空",
       "url": "https://finance.yahoo.com/quote/AVGO",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-11 05:00"
+      "pub_date": "2026-11-14 05:00"
     }
   ],
   "generated_by": "fast_team_runner（gemini）",
-  "us_top10_updated_at": "2026-11-11 08:32:28"
+  "us_top10_updated_at": "2026-11-16 15:29:40"
 }

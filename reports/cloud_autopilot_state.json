@@ -4,16 +4,19 @@
   "can_trade": false,
   "morning_done_date": "2026-11-10",
   "last_run": {
-    "finished_at": "2026-11-10 22:16:18",
+    "finished_at": "2026-11-16 15:30:16",
     "phase": "CLOSE",
-    "elapsed_sec": 0.0,
-    "host": "cloud_tick_cli",
-    "trades_today": 0,
+    "elapsed_sec": 58.0,
+    "host": "github_actions",
+    "trades_today": 1,
     "errors": [],
     "log_tail": [
-      "[22:16:18] ☁️ 雲端單次排程（cloud_tick_cli・local_master・gemini）｜目前 🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）",
-      "[22:16:18] 🧾 今日已由 cloud_tick_cli 完成收盤結算"
+      "[15:29:16] ☁️ 雲端單次排程（github_actions・cloud_master・gemini）｜目前 🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）",
+      "[15:29:18] 💓 Streamlit 輕量 Ping：HTTP 200",
+      "[15:29:18] 🧾 模擬室收盤結算：更新收盤價、寫入 sim_nav_history、五人準確率對帳",
+      "[15:29:21] ✅ 結算完成：總淨值 1001594（0.16%）",
+      "[15:29:21] 📰 今日財經新聞 TOP 10、收盤重點、明日 20 強建議買進價定錨"
     ]
   },
-  "close_reports_date": "2026-11-10"
+  "close_reports_date": "2026-11-16"
 }

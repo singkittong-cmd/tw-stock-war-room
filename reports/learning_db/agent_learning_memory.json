@@ -6752,13 +6752,13 @@
   },
   "chairman": {
    "name": "巴董事長",
-   "total": 416,
-   "correct": 203,
+   "total": 417,
+   "correct": 204,
    "deviated": 204,
    "wrong": 9,
-   "accuracy_pct": 48.8,
-   "recent10_pct": 50.0,
-   "last_result": "DEVIATED",
+   "accuracy_pct": 48.9,
+   "recent10_pct": 60.0,
+   "last_result": "CORRECT",
    "last_wrong": {
     "stock_id": "2344",
     "date": "2026-11-11",
@@ -6781,5 +6781,5 @@
    }
   }
  },
- "updated_at": "2026-11-16 10:59:39"
+ "updated_at": "2026-11-16 15:30:07"
 }
