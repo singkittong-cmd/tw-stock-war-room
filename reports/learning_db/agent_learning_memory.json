@@ -1,18 +1,6 @@
 {
  "lessons": [
   {
-   "prediction_id": "chips|3017|standby|2026-11-04 22:05:30",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3017",
-   "name": "奇鋐",
-   "target_date": "2026-11-05",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-04 22:05收盤後籌碼王對 3017 觀望（當時 2820），預期盤整但實際波動 -9.04% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-04觀望)預期盤整但實際波動 -9.04% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
    "prediction_id": "kline|3324|standby|2026-11-04 22:05:30",
    "member": "kline",
    "member_name": "K線技術人",
@@ -4789,6 +4777,18 @@
    "short": "K線技術人(11-10觀望)預期盤整但實際波動 +6.15% → 區間假設失效，改依趨勢方向判斷"
   },
   {
+   "prediction_id": "maga|TAIEX|premarket|2026-11-11 08:32:28",
+   "member": "maga",
+   "member_name": "川大帝MAGA",
+   "stock_id": "TAIEX",
+   "name": "加權指數",
+   "target_date": "2026-11-11",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-11 08:32開盤前川大帝MAGA對 TAIEX 觀望（當時 41661.7），預期盤整但實際波動 +6.23% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "川大帝MAGA(11-11觀望)預期盤整但實際波動 +6.23% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
    "prediction_id": "chairman|2330|sim_committee|2026-11-11 09:15:35",
    "member": "chairman",
    "member_name": "巴董事長",
@@ -6391,9 +6391,9 @@
   },
   "TAIEX": {
    "maga": [
-    "川大帝MAGA(11-04看多)看多後收 41574.7（-7.45%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
     "川大帝MAGA(11-04觀望)預期盤整但實際波動 -3.20% → 區間假設失效，改依趨勢方向判斷",
-    "川大帝MAGA(11-04觀望)預期盤整但實際波動 -3.20% → 區間假設失效，改依趨勢方向判斷"
+    "川大帝MAGA(11-04觀望)預期盤整但實際波動 -3.20% → 區間假設失效，改依趨勢方向判斷",
+    "川大帝MAGA(11-11觀望)預期盤整但實際波動 +6.23% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chairman": [
     "巴董事長(11-04觀望)預期盤整但實際波動 -3.20% → 區間假設失效，改依趨勢方向判斷",
@@ -6616,7 +6616,7 @@
   },
   "TAIEX": {
    "建議買進價失守": 1,
-   "盤整失效": 4,
+   "盤整失效": 5,
    "看多落空": 3,
    "看空反漲": 2
   },
@@ -6707,13 +6707,13 @@
  "member_stats": {
   "news": {
    "name": "新聞達人",
-   "total": 24,
-   "correct": 4,
+   "total": 27,
+   "correct": 7,
    "deviated": 9,
    "wrong": 11,
-   "accuracy_pct": 16.7,
-   "recent10_pct": 10.0,
-   "last_result": "WRONG",
+   "accuracy_pct": 25.9,
+   "recent10_pct": 40.0,
+   "last_result": "CORRECT",
    "last_wrong": {
     "stock_id": "TAIEX",
     "date": "2026-11-10",
@@ -6752,11 +6752,11 @@
   },
   "chairman": {
    "name": "巴董事長",
-   "total": 413,
-   "correct": 200,
+   "total": 416,
+   "correct": 203,
    "deviated": 204,
    "wrong": 9,
-   "accuracy_pct": 48.4,
+   "accuracy_pct": 48.8,
    "recent10_pct": 50.0,
    "last_result": "DEVIATED",
    "last_wrong": {
@@ -6767,13 +6767,13 @@
   },
   "maga": {
    "name": "川大帝MAGA",
-   "total": 15,
-   "correct": 9,
-   "deviated": 4,
+   "total": 18,
+   "correct": 11,
+   "deviated": 5,
    "wrong": 2,
-   "accuracy_pct": 60.0,
-   "recent10_pct": 70.0,
-   "last_result": "CORRECT",
+   "accuracy_pct": 61.1,
+   "recent10_pct": 90.0,
+   "last_result": "DEVIATED",
    "last_wrong": {
     "stock_id": "TAIEX",
     "date": "2026-11-05",
@@ -6781,5 +6781,5 @@
    }
   }
  },
- "updated_at": "2026-11-13 13:30:33"
+ "updated_at": "2026-11-16 10:59:39"
 }

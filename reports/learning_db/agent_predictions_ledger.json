@@ -36388,8 +36388,29 @@
    "target_price": null,
    "rationale": "費半 +6.85%、TSM 溢價 11.73%",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 3.62,
+    "reasons": [
+     "預測後收 44257.1（+3.62%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "chairman|TAIEX|premarket|2026-11-10 14:11:43",
@@ -36408,8 +36429,29 @@
    "target_price": null,
    "rationale": "台股下一交易日預期在半導體與台積電ADR溢價帶動下開高，關鍵點位關注加權指數MA20反壓與42,000點支撐。",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 3.62,
+    "reasons": [
+     "預測後收 44257.1（+3.62%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "news|TAIEX|news_brief|2026-11-10 14:11:47",
@@ -36428,8 +36470,29 @@
    "target_price": null,
    "rationale": "中立偏多：低檔乖離過大搭配國安基金護盤與限空令，半導體與AI相關族群絕地反彈，空方訊號需收盤確認，不再盲目追空。",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 3.62,
+    "reasons": [
+     "預測後收 44257.1（+3.62%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "kline|2330|standby|2026-11-10 14:11:49",
@@ -38326,8 +38389,29 @@
    "target_price": null,
    "rationale": "費半 +6.85%、TSM 溢價 11.74%",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 11.47,
+    "reasons": [
+     "預測後收 44257.1（+11.47%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "chairman|TAIEX|premarket|2026-11-10 14:21:40",
@@ -38346,8 +38430,29 @@
    "target_price": null,
    "rationale": "台股下一交易日預判震盪偏多，關鍵點位關注建議買進價 42,100點、停損價 41,500點、停利目標價 43,500點。",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 11.47,
+    "reasons": [
+     "預測後收 44257.1（+11.47%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "news|TAIEX|news_brief|2026-11-10 14:21:40",
@@ -38366,8 +38471,29 @@
    "target_price": null,
    "rationale": "中立偏多：台股續彈收42711點，半導體與權值股反彈，空方訊號需收盤確認且低檔乖離過大不追空。",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 11.47,
+    "reasons": [
+     "預測後收 44257.1（+11.47%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "chairman|2330|intraday_decision|2026-11-10 16:17:59",
@@ -39535,8 +39661,36 @@
    "target_price": null,
    "rationale": "費半 -0.35%、TSM 溢價 14.08%",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 6.23,
+    "reasons": [
+     "預測後收 44257.1（+6.23%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-11 08:32開盤前川大帝MAGA對 TAIEX 觀望（當時 41661.7），預期盤整但實際波動 +6.23% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "川大帝MAGA(11-11觀望)預期盤整但實際波動 +6.23% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
   },
   {
    "id": "chairman|TAIEX|premarket|2026-11-11 08:32:28",
@@ -39555,8 +39709,29 @@
    "target_price": null,
    "rationale": "預計台股開高走低橫盤震盪，關鍵點位看41,500點支撐與42,000點壓力區。",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 6.23,
+    "reasons": [
+     "預測後收 44257.1（+6.23%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "news|TAIEX|news_brief|2026-11-11 08:32:30",
@@ -39575,8 +39750,29 @@
    "target_price": null,
    "rationale": "中立偏多：台股展現強勁反彈站回41000點，CoreWeave上修AI財測激勵科技股，唯需留意外資連賣與匯率壓抑。",
    "target_date": "2026-11-11",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 6.23,
+    "reasons": [
+     "預測後收 44257.1（+6.23%）"
+    ],
+    "graded_at": "2026-11-16 10:59:20",
+    "actual": {
+     "date": "2026-11-11",
+     "open": 43135.76171875,
+     "high": 44257.1484375,
+     "low": 42708.05078125,
+     "last": 44257.1484375,
+     "close": 44257.1484375,
+     "gap_pct": 0.99,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   },
   {
    "id": "chairman|2330|sim_committee|2026-11-11 09:15:35",
@@ -47521,18 +47717,59 @@
      }
     ]
    }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-16 10:59:39",
+   "timestamp": "2026-11-16 10:59:39",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": null,
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 269.5,
+   "stance": "看空",
+   "action": "停損",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "系統風控：現價 269.5 ≤ 停損 272",
+   "target_date": "2026-11-16",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 269.5（+0.00%）"
+    ],
+    "graded_at": "2026-11-16 10:59:39",
+    "actual": {
+     "date": "2026-11-16",
+     "open": 275.0,
+     "high": 276.5,
+     "low": 267.5,
+     "last": 269.5,
+     "close": null,
+     "gap_pct": -0.54,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
   }
  ],
  "member_stats": {
   "news": {
    "name": "新聞達人",
-   "total": 24,
-   "correct": 4,
+   "total": 27,
+   "correct": 7,
    "deviated": 9,
    "wrong": 11,
-   "accuracy_pct": 16.7,
-   "recent10_pct": 10.0,
-   "last_result": "WRONG",
+   "accuracy_pct": 25.9,
+   "recent10_pct": 40.0,
+   "last_result": "CORRECT",
    "last_wrong": {
     "stock_id": "TAIEX",
     "date": "2026-11-10",
@@ -47571,11 +47808,11 @@
   },
   "chairman": {
    "name": "巴董事長",
-   "total": 413,
-   "correct": 200,
+   "total": 416,
+   "correct": 203,
    "deviated": 204,
    "wrong": 9,
-   "accuracy_pct": 48.4,
+   "accuracy_pct": 48.8,
    "recent10_pct": 50.0,
    "last_result": "DEVIATED",
    "last_wrong": {
@@ -47586,13 +47823,13 @@
   },
   "maga": {
    "name": "川大帝MAGA",
-   "total": 15,
-   "correct": 9,
-   "deviated": 4,
+   "total": 18,
+   "correct": 11,
+   "deviated": 5,
    "wrong": 2,
-   "accuracy_pct": 60.0,
-   "recent10_pct": 70.0,
-   "last_result": "CORRECT",
+   "accuracy_pct": 61.1,
+   "recent10_pct": 90.0,
+   "last_result": "DEVIATED",
    "last_wrong": {
     "stock_id": "TAIEX",
     "date": "2026-11-05",
@@ -47600,5 +47837,5 @@
    }
   }
  },
- "updated_at": "2026-11-13 13:30:32"
+ "updated_at": "2026-11-16 10:59:39"
 }

@@ -1,17 +1,53 @@
 {
   "thread_name": "SimRoomDaemon",
-  "pid": 40228,
-  "started_at": "2026-11-09 23:03:37",
-  "date": "2026-11-15",
-  "scans_today": 0,
-  "triggers_today": 0,
-  "meetings_today": 0,
-  "trades_today": 0,
-  "cooldowns": {},
-  "patrol_slot_done": null,
+  "pid": 2324,
+  "host": "github_actions",
+  "autopilot_mode": "cloud_master",
+  "started_at": "2026-11-16 10:59:04",
+  "date": "2026-11-16",
+  "scans_today": 1,
+  "triggers_today": 1,
+  "meetings_today": 1,
+  "trades_today": 1,
+  "cooldowns": {
+    "2382": "2026-11-16 10:59:04",
+    "2344": "2026-11-16 10:59:04"
+  },
+  "patrol_slot_done": 5,
   "daily_close_settled_date": "2026-11-13",
-  "last_trigger": null,
-  "last_meeting": null,
+  "last_trigger": {
+    "at": "2026-11-16 10:59:04",
+    "items": [
+      {
+        "type": "STOP",
+        "stock_id": "2382",
+        "text": "現價 269.5 ≤ 停損 272",
+        "label": "🚨 觸及停損價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2382",
+        "text": "廣達 現價 269.5 達建議買進價、五檔委買比 1.20",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2344",
+        "text": "華邦電 現價 115.5 達建議買進價、五檔委買比 1.43",
+        "label": "🎯 達建議買進價"
+      }
+    ]
+  },
+  "last_meeting": {
+    "at": "2026-11-16 10:59:04",
+    "trigger": "🚨 觸及停損價 2382、🎯 達建議買進價 2382、🎯 達建議買進價 2344",
+    "executed": 1,
+    "rejected": 0,
+    "engine": "gemini",
+    "total_equity": 1001594,
+    "errors": [],
+    "elapsed_sec": 19.2
+  },
   "last_settlement": {
     "date": "2026-11-13",
     "at": "2026-11-13 13:30:30",
@@ -33,20 +69,18 @@
     "probe": "2330 台積電 $2265.0（Yahoo 成交價（10:13:24））",
     "latency_sec": 1.18
   },
-  "last_error": {
-    "at": "2026-11-13 09:52:11",
-    "where": "Tick 帳本鎖",
-    "error": "SimError: 模擬帳本忙碌中（背景投決會或盯盤進行中），請稍後再試"
-  },
-  "last_heartbeat": "2026-11-15 21:38:03",
-  "phase": "STANDBY",
-  "status": "STANDBY_AFTER_HOURS (背景守護待命中，將於下個交易日 09:00:00 自動啟動盤中盯盤至 13:30 收盤)",
+  "last_sync": null,
+  "last_error": null,
+  "prefetch_done": "github_actions|2026-11-16",
+  "last_heartbeat": "2026-11-16 10:59:39",
+  "phase": "TRADING",
+  "status": "⚡ TRADING (盤中背景自動盯盤中，每 15 秒更新報價並檢查進出場，一路跑到 13:30 收盤)",
   "auto_trade_enabled": true,
   "provider": "gemini",
-  "next_open": "2026-11-16 09:00:00",
-  "last_tick_at": "2026-11-13 13:30:15",
-  "last_tick_elapsed_sec": 3.2,
+  "next_open": "2026-11-17 09:00:00",
+  "last_tick_at": "2026-11-16 10:59:04",
+  "last_tick_elapsed_sec": 1.64,
   "last_scan_errors": [],
-  "total_equity": 1009632,
+  "total_equity": 1002632,
   "holdings_count": 1
 }

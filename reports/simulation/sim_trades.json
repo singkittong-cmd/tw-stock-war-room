@@ -286,5 +286,29 @@
     "target_price": 315.5,
     "team_discussion": "籌碼王與川大帝看好投信鎖碼與美股龍頭帶動，K線技術人確認接近支撐位。",
     "buffett_verdict": "投信連20日買超籌碼鎖碼，股價回檔至強支撐區，風報比2.83符合標準，建立27.85萬部位衝刺績效。｜停損 272.0｜目標 315.5｜風報比 5.69"
+  },
+  {
+    "trade_id": "T0013",
+    "timestamp": "2026-11-16 10:59:21",
+    "stock_id": "2382",
+    "name": "廣達",
+    "action": "EXIT_STOP",
+    "price": 269.5,
+    "shares": 1000,
+    "gross_amount": 269500,
+    "board_shares": 1000,
+    "board_price": 269.5,
+    "odd_shares": 0,
+    "odd_price": null,
+    "odd_price_source": null,
+    "price_note": "【整張價 $269.5】×1,000 股",
+    "fee_and_tax": 1038,
+    "net_amount": 268462,
+    "realized_pnl": -10276,
+    "cash_after": 1001594,
+    "stop_loss": 272.0,
+    "target_price": 315.5,
+    "team_discussion": "",
+    "buffett_verdict": "【系統風控】現價 269.5 ≤ 停損 272，依紀律停損出清"
   }
 ]

@@ -4,33 +4,15 @@
   "initial_capital": 1000000,
   "target_return_low_pct": 10.0,
   "target_return_high_pct": 20.0,
-  "cash_balance": 733132,
-  "realized_pnl": 11870,
-  "unrealized_pnl": -3303,
-  "market_value": 276500,
-  "total_equity": 1009632,
-  "total_return_pct": 0.96,
-  "holdings": [
-    {
-      "stock_id": "2382",
-      "name": "廣達",
-      "shares": 1000,
-      "avg_cost": 278.738,
-      "cost_total": 278738,
-      "entry_date": "2026-11-13",
-      "current_price": 276.5,
-      "stop_loss": 272.0,
-      "target_price": 315.5,
-      "buffett_thesis": "投信連20日買超籌碼鎖碼，股價回檔至強支撐區，風報比2.83符合標準，建立27.85萬部位衝刺績效。",
-      "market_value": 276500,
-      "unrealized_pnl": -3303,
-      "unrealized_pct": -1.18,
-      "change_pct": -0.72,
-      "vwap": 279.56
-    }
-  ],
+  "cash_balance": 1001594,
+  "realized_pnl": 1594,
+  "unrealized_pnl": 0,
+  "market_value": 0,
+  "total_equity": 1001594,
+  "total_return_pct": 0.16,
+  "holdings": [],
   "status_note": "🟢 模擬室盤中交易運作中",
-  "updated_at": "2026-11-13 13:30:30",
-  "last_trade_timestamp": "2026-11-13 11:35:11",
-  "last_trade_id": "T0012"
+  "updated_at": "2026-11-16 10:59:21",
+  "last_trade_timestamp": "2026-11-16 10:59:21",
+  "last_trade_id": "T0013"
 }
