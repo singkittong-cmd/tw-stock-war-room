@@ -1,63 +1,29 @@
 {
   "thread_name": "SimRoomDaemon",
-  "pid": 2280,
+  "pid": 2492,
   "host": "github_actions",
   "autopilot_mode": "cloud_master",
-  "started_at": "2026-11-16 15:29:16",
-  "date": "2026-11-16",
-  "scans_today": 1,
-  "triggers_today": 1,
-  "meetings_today": 1,
-  "trades_today": 1,
-  "cooldowns": {
-    "2382": "2026-11-16 10:59:04",
-    "2344": "2026-11-16 10:59:04"
-  },
-  "patrol_slot_done": 5,
-  "daily_close_settled_date": "2026-11-16",
-  "last_trigger": {
-    "at": "2026-11-16 10:59:04",
-    "items": [
-      {
-        "type": "STOP",
-        "stock_id": "2382",
-        "text": "現價 269.5 ≤ 停損 272",
-        "label": "🚨 觸及停損價"
-      },
-      {
-        "type": "HIT_ENTRY",
-        "stock_id": "2382",
-        "text": "廣達 現價 269.5 達建議買進價、五檔委買比 1.20",
-        "label": "🎯 達建議買進價"
-      },
-      {
-        "type": "HIT_ENTRY",
-        "stock_id": "2344",
-        "text": "華邦電 現價 115.5 達建議買進價、五檔委買比 1.43",
-        "label": "🎯 達建議買進價"
-      }
-    ]
-  },
-  "last_meeting": {
-    "at": "2026-11-16 10:59:04",
-    "trigger": "🚨 觸及停損價 2382、🎯 達建議買進價 2382、🎯 達建議買進價 2344",
-    "executed": 1,
-    "rejected": 0,
-    "engine": "gemini",
-    "total_equity": 1001594,
-    "errors": [],
-    "elapsed_sec": 19.2
-  },
+  "started_at": "2026-11-17 16:41:51",
+  "date": "2026-11-17",
+  "scans_today": 0,
+  "triggers_today": 0,
+  "meetings_today": 0,
+  "trades_today": 0,
+  "cooldowns": {},
+  "patrol_slot_done": null,
+  "daily_close_settled_date": "2026-11-17",
+  "last_trigger": null,
+  "last_meeting": null,
   "last_settlement": {
-    "date": "2026-11-16",
-    "at": "2026-11-16 15:29:16",
+    "date": "2026-11-17",
+    "at": "2026-11-17 16:41:51",
     "late": true,
     "total_equity": 1001594,
     "return_pct": 0.16,
     "errors": [],
     "learning": {
       "closed_now": 0,
-      "open": 1,
+      "open": 0,
       "lessons": 500
     }
   },
@@ -71,10 +37,10 @@
   },
   "last_sync": null,
   "last_error": null,
-  "last_heartbeat": "2026-11-16 15:29:21",
+  "last_heartbeat": "2026-11-17 16:41:56",
   "phase": "STANDBY",
   "status": "STANDBY_AFTER_HOURS (背景守護待命中，將於下個交易日 09:00:00 自動啟動盤中盯盤至 13:30 收盤)",
   "auto_trade_enabled": true,
   "provider": "gemini",
-  "next_open": "2026-11-17 09:00:00"
+  "next_open": "2026-11-18 09:00:00"
 }

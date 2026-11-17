@@ -1,104 +1,102 @@
 {
-  "updated_at": "2026-11-16 15:30:07",
+  "updated_at": "2026-11-17 16:43:05",
   "generated_by": "fast_team_runner（gemini）",
   "market_sentiment": "偏空警戒",
-  "one_line_takeaway": "大盤崩跌創史上第2大跌點，三大法人同步重砍逾千億，資金短線全面退場保命。",
+  "one_line_takeaway": "加權指數重挫破4萬點，外資大舉調節且國際地緣政治與AI產業雜音增加，短線維持空頭嚴格控管風險。",
   "top_themes": [
-    "晶圓代工 (2330台積電)",
-    "主動式ETF (00403A)",
-    "航運 (2603長榮)"
+    "記憶體與控制IC (11.群聯逆勢收紅！外資連5買)"
   ],
   "top_news_10": [
     {
-      "title": "台股收盤重挫2635點創史上第2大跌點險守41000",
-      "point": "市場情緒極度恐慌，短線大盤失守多條均線，偏空趨勢明確。",
+      "title": "外資大屠殺！賣超前10大「ETF包辦6席」",
+      "point": "外資大幅提款ETF與權值股，籌碼面呈現龐大賣壓。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Ja2MxLUZQRmpvd2VBeU5fUjE3OVVHUFp2SHZpdEp5VnNyTU10dHdWajE2Xy1WT19hLThZUkkxVE1vWVFKcVFmVU56c0xYVmVEcHp5WW5FZzY?oc=5",
-      "source": "Taiwan News",
-      "pub_date": "2026-11-16 15:24"
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1KX0RaVWVic0o4VXVKLVRRcXlFelV5VWZKS0o5LWJTbzBOQkp5RklHdFFJNXZzWGZZR0NFV2s1SjQxdGZtSjE1bkxCTQ?oc=5",
+      "source": "三立新聞網SETN.com",
+      "pub_date": "2026-11-17 16:37"
     },
     {
-      "title": "台積電下跌135元至2215元拖累大盤",
-      "point": "權值龍頭台積電遭重壓，拖累權值股與半導體供應鏈表現。",
+      "title": "《台股盤後》收跌947點、險守40K，日K連四黑",
+      "point": "加權指數跌破4萬點大關，日K連四黑顯示空頭趨勢延續。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxOYXdlVjQtdmZYUVpzZ3NYNTlkZ2drbEdEc0xObFFidWNwOEVWLURUQ1luVEJ0Z3l6NnNzamN2MkJQUG9jOTh3dkNjOWVOSmlLUUFYNjFZb1lVNEp6UzdHTFIxRkVEaGhqZjUzOFpUbUI5RnJwckFHdWY5S1FlWjZDMnkxQlZxMmk0M3RmTWpnUUJ2VnBzanh4M1dYQXBWa3RPZXdVcTV2bkl1b3BIc19xMWpEa3lTbkp2amhmMWF2SVEtYW9UdXpITlVRWFZZZ1NQR2hrS1pDakpncXBTY2JpNVFKXzBHVVFDeDBzVkl4dEMzMkp2YnVUZThRQmk4cmNycmdNQ0x6bFdzeEotS1d2clJZZEw5WVhsT0FYQ1U5WEFtSFA0UE1TUUN6TW12SkthQUM1ck40X1pxMVRHRnR0V2hVdkVSa0VXclZTbmhwdk5CU3N5Ni1UQXAtcXVndjhrN2dtN3ZlQXdGcmVJ?oc=5",
-      "source": "Yahoo新聞",
-      "pub_date": "2026-11-16 15:23"
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOczNBM2JzUDMySHkzY3F3QkJnT1ZnUWE1czc3UkhmV1pkaDJ5OHZFd3pSd0VDRzlnOHEzMl8wOW43RlpjWDBjQ3c3M2FXVUFDZlhBNjJmWWhIOWkyVjhvMHFRS0NnSlhEa3lTZG1kMmgtWG94VXdfNG9xZjFxX1VkWG5nMVBOd3N6R0JSSU5zcmI?oc=5",
+      "source": "MoneyDJ",
+      "pub_date": "2026-11-17 16:33"
     },
     {
-      "title": "三大法人賣超1140億，投信終結連24買反手賣超",
-      "point": "法人同步站在賣方，投信買盤中斷，市場缺乏本土資金支撐。",
+      "title": "輝達成空頭最肥的肉 帳面暴賺240億美元、散戶上週買進創新高",
+      "point": "美股AI指標股遭機構調節且散戶逆勢接刀，短線衝擊台股相關供應鏈信心。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE54UDl0akhRc1VpY2hkVk5Mamdrb3AzTlNHc1A2Wl9mdE5pWi1zQmQ2NGxZaEFjTUpwYXNPWFZYTlNjbTVaWWp3REdQVzVJQQ?oc=5",
-      "source": "風傳媒",
-      "pub_date": "2026-11-16 15:18"
+      "url": "https://news.cnyes.com/news/id/6664743",
+      "source": "鉅亨網",
+      "pub_date": "2026-11-17 16:30"
     },
     {
-      "title": "外資連7賣上週減碼967億，今年累計賣超近3兆",
-      "point": "外資持續提款台股，資金失血壓力沉重，壓制台股反彈動能。",
+      "title": "〈陸股盤後〉「川習會」前美國收緊對中AI晶片管制",
+      "point": "美國再度收緊對中AI晶片管制，增添科技股籌碼不確定性。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9feE5yLXRya0Y5a05Hc3BQOWtIR1l6eWh4OGxoN2REOENlc1BsMTBjQ2JTZmJtVGdETFg1Umk0bFZyOWxFdklLbXY0RFllcUt3b0Jxc2lKY3pJbnBkZE1sN182c0NkbVE0WUJzT1Z3MGxYcTlLVGZLbEMxRQ?oc=5",
+      "url": "https://news.cnyes.com/news/id/6664566",
+      "source": "鉅亨網",
+      "pub_date": "2026-11-17 16:30"
+    },
+    {
+      "title": "群聯逆勢收紅！外資連5買 60元現金股利除息",
+      "point": "獲外資連續買超且具備高股利題材，逆勢抗跌成資金避風港。",
+      "tag": "利多",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1WQVg3em52RWpvUS1TcUxfeko2M3oxbXl1S0ptZlR4QldUSEJaVHEwaGlwNzdqS1F0TWRsZDFXT1pHZUR0MXlxTjA5VTdKZ3V00gFWQVVfeXFMTU9TVWREUXlDQ0xiWEFjWmNXSTNKclNNeTRnY0xuR1FqdVo3VWJCY0RaMXdzM3hlRHA3OXgzVHZOZHQxWHN6dUtzLTZMeVVneTZXOF9Eemc?oc=5",
       "source": "UDN",
-      "pub_date": "2026-11-16 15:13"
+      "pub_date": "2026-11-17 16:24"
     },
     {
-      "title": "外資上周賣超台股狂敲主動式ETF 00403A",
-      "point": "外資現貨大賣但避險與主動式布局增強，資金轉向防守型與主動策略產品。",
+      "title": "台股一度暴跌1254點！投信逆勢狂買「這檔」1.25萬張",
+      "point": "大盤重挫之際投信逆勢鎖碼特定標的，具備短線防守契機。",
       "tag": "中性",
-      "url": "https://news.cnyes.com/news/id/6663827",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-16 15:26"
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9rSmhEWnFuRW5JUlJZU3cxZmItUDFwbTFYNjZrRVMwYkN6bUZqQ1lISUgwVmllREVVT0pGMXFtSHdYOEtwUnhrZ3B1TDBBc3gwVTJTTkNuQ3A?oc=5",
+      "source": "自由時報",
+      "pub_date": "2026-11-17 16:23"
     },
     {
-      "title": "長榮法說前三季EPS達32.77元，裝載需求樂觀",
-      "point": "航運基本面亮眼且獲利穩健，在大盤急跌中具備抗跌資金避風港屬性。",
-      "tag": "利多",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQkNuRzdnc1hWT3NCekpWdkFyOUxZcmNYTmJQS0NVblV0Y3pGZmI3UjNPYnhkOTlydWJnLUFUZkVWdnhyZ2VEZzAzeUtUNnZ4TFhlRkt5LU04WjE3TDZfNWFxeEQyZjRmbTNHR1c5X3VZa3BJaGwtc0N3bGNCWXUwM211NVpac1Z1ZVBRZENqbnE?oc=5",
-      "source": "CMoney投資網誌",
-      "pub_date": "2026-11-16 15:08"
-    },
-    {
-      "title": "高盛估2027年美元反轉，AI投資熱度為核心支撐",
-      "point": "長線AI資本支出預期仍在，但短期無法扭轉資金回流美元的流動性收緊趨勢。",
+      "title": "桂盟私募股訂每股100元發行籌資4.5億元",
+      "point": "導入策略投資人進行資金募集，對基本面具中長期正面效益。",
       "tag": "中性",
-      "url": "https://news.cnyes.com/news/id/6663179",
+      "url": "https://news.cnyes.com/news/id/6665115",
       "source": "鉅亨網",
-      "pub_date": "2026-11-16 15:20"
+      "pub_date": "2026-11-17 16:22"
     },
     {
-      "title": "嘉晶竹科廠火災後順利復原，產線恢復正常出貨",
-      "point": "火災利空排除，公司營運回歸正軌，消除市場對產能中斷的疑慮。",
-      "tag": "利多",
-      "url": "https://news.cnyes.com/news/id/6663817",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-16 15:12"
+      "title": "半導體廠在台重金擴產 科技業缺工燒到產線",
+      "point": "半導體廠持續擴產帶動資本支出與用人需求，基本面支撐力道仍在。",
+      "tag": "中性",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOazlsLVJZOGNpMExXYjZ3UUZuMkdhRUxqZEVKQ2N2cTVqV0lzZ05PUlRaRWlobnVnc0RqYXAycUFtX01aclZ6RlZobDRicTRhZEV2UlZDbDBWZThWTVJMeUZrNC0yaWRmZXRQVEt2bW1ITXphY1prd0FDNHJsNGhEc0o5TWZUX00wVGozNTVadmJSWlExUzAw?oc=5",
+      "source": "DIGITIMES",
+      "pub_date": "2026-11-17 16:19"
     },
     {
-      "title": "半導體類股頹勢拖累日經收跌逾2%",
-      "point": "亞太半導體供應鏈同步回檔，顯示全球半導體板塊面臨系統性修正。",
-      "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KamVyT0d5VFhKeTZYT2JyMWpBbzlGT05mWlp4cFNHRjBpbXBRbWpfSkhPNGdXM29ER3VCVnBIVUh2UnkwdmllLW9pV1gtcVNpU2FNOVVBWE1zUdIBX0FVX3lxTE51Yzh0QTJqaUlNdnkxcHFJLXBaN09lMjdXVXVaUU9YaGF6NkFBbzFaZHlrZExYUWE0V1A0NDZocGgzNmNmZm5ocGhVZGxpaXNNbXZSa3A5eWFweXpVanFF?oc=5",
-      "source": "經濟日報",
-      "pub_date": "2026-11-16 15:12"
+      "title": "台股險保40K！在建工程飆4981億創高",
+      "point": "營建資產個案在建工程創新高且獲利穩健，在盤勢弱勢時具備防禦色彩。",
+      "tag": "中性",
+      "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPczFXY2FzczBENXRxQW1nVnFTZEdDenF1VnZyVDNVVi1BMldOYld1Y3labTJCWE9kR3FLX0hoWkVON3dkUzNTRUFsLXRRd3BROVp5eWI5WHViektpZjFFc1pHMHdCbnhHd3RZNzN4aEZTaUp3dDNEbk45TXg1NGF1bTNVeFloeS13RjNCSjExV0VsYlcycUtibFM4QW9Id1VrMm1LTE1zMGV1SFVOUk9pTGlhbDFJMWRmVzdoYmFrZHBvZjhPUXVaeVpVQ0x6NFRoVl9iZmJ4VjhYTEFEU3dJakxuZE0zempyWEFJUUtIUG9VbUE2Q3ZiSi1IRUl5a3lQMEQ1QnJmVDc3QlRlYk5XYVdsQWpXTUprZm1SVWNEWTlNdWVsV3RYU0o2dTdOWVg0ZmVNSTJnZ0xscHd4blRFSXdkbllvS0NpNzBj?oc=5",
+      "source": "Yahoo股市",
+      "pub_date": "2026-11-17 16:15"
     },
     {
-      "title": "南韓連續6個月穩居中國第一大進口來源國，AI半導體為核心",
-      "point": "亞洲AI半導體貿易需求依然強勁，長線基本面需求未變。",
-      "tag": "利多",
-      "url": "https://news.cnyes.com/news/id/6663699",
+      "title": "鉅亨速報 - Factset 最新調查：技嘉目標價",
+      "point": "法人機構持續更新AI伺服器供應鏈目標價，提供市場評價依據。",
+      "tag": "中性",
+      "url": "https://news.cnyes.com/news/id/6665111",
       "source": "鉅亨網",
-      "pub_date": "2026-11-16 15:10"
+      "pub_date": "2026-11-17 16:10"
     }
   ],
   "non_holding_opportunities": [
     {
-      "stock_id": "2603",
-      "name": "長榮",
-      "catalyst": "前三季EPS高達32.77元，高殖利率與強勁獲利提供大盤急跌下的資金避風港效益。"
+      "stock_id": "8299",
+      "name": "群聯",
+      "catalyst": "外資連續買超且逆勢收紅，具備籌碼支撐。"
     }
   ],
   "risk_warnings": [
-    "三大法人單日聯手賣超達1140億元且投信轉賣，籌碼面呈現無差別拋售。",
-    "加權指數跌破41000關卡且離20日均線(44337.91)負乖離大，防範融資多頭踩踏與斷頭賣壓。"
+    "大盤處於空頭趨勢且MA20下彎，嚴禁無轉折訊號提前摸底。",
+    "外資單日大幅賣超並提款ETF，需留意系統性下殺風險。"
   ]
 }
