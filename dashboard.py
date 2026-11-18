@@ -1816,6 +1816,8 @@ def cloud_sync_controls():
             + (f"（commit {syn['commit']}・{syn.get('method')}）" if syn.get("commit") else "")]
     if syn.get("error"):
         info.append(f"同步錯誤：{syn['error']}")
+    elif syn.get("warning"):
+        info.append(f"同步提醒：{syn['warning']}")
     last_sync = DAEMON_VIEW["raw"].get("last_sync") or {}
     if last_sync:
         info.append(f"最近推送：{(last_sync.get('at') or '')[11:]} {last_sync.get('what')} {'✅' if last_sync.get('ok') else '⚠️'}"
@@ -1830,8 +1832,12 @@ def cloud_sync_controls():
                    "只有實際成交與收盤結算才寫回 GitHub。"
                    "要暫停自動交易，請在 GitHub repo 的 Variables 把 AUTOPILOT_MODE 改為 local_master，並重新啟動 Streamlit app。")
         return
-    c1.caption("👀 觀看端：背景每 30 秒從 GitHub 拉回雲端帳本，這台電腦不會發起任何模擬下單。"
-               "要改回本機交易，請在 .env 設 AUTOPILOT_MODE=local_master。")
+    if ghsync.where() == "streamlit_cloud":
+        c1.caption("👀 雲端觀看端：" + ghsync.token_status()[1] + "。這台伺服器只用 git 拉回帳本、不下單，模擬交易由 GitHub Actions "
+                   "每 30 分鐘執行。要讓 Streamlit 也能盯盤下單並寫回 GitHub，請在 Streamlit Secrets 填入有效的 GITHUB_TOKEN（github_pat_…）。")
+    else:
+        c1.caption("👀 觀看端：背景每 30 秒從 GitHub 拉回雲端帳本，這台電腦不會發起任何模擬下單。"
+                   "要改回本機交易，請在 .env 設 AUTOPILOT_MODE=local_master。")
     if c2.button("☁️ 立即從 GitHub 同步最新雲端帳本", width="stretch", key="btn_cloud_pull", disabled=IS_GUEST,
                  help=GUEST_LOCK_HELP if IS_GUEST else None):
         with st.spinner("從 GitHub 拉取最新模擬帳本…"):

@@ -150,7 +150,10 @@ def autopilot_mode():
 
 
 def is_trader_here():
-    """這台主機是否有權寫入模擬帳本（下單、結算）。"""
+    """這台主機是否有權寫入模擬帳本（下單、結算）。
+    Streamlit Cloud 沒有有效 GITHUB_TOKEN 時成交寫不回 GitHub（會被下一次拉帳本蓋掉），自動降為觀看端，交易交給 GitHub Actions。"""
+    if where() == "streamlit_cloud" and not _token():
+        return False
     return (where() == "local") == (autopilot_mode() == "local_master")
 
 
@@ -167,13 +170,26 @@ def has_git_repo():
     return (ROOT / ".git").exists()
 
 
+REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
+# GitHub token 格式：classic ghp_、fine-grained github_pat_、OAuth gho_、App ghs_／ghu_、舊式 40 碼十六進位
+TOKEN_RE = re.compile(r"^(?:(?:ghp|gho|ghs|ghu|ghr)_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|[0-9a-f]{40})$")
+
+
 def repo_slug():
-    slug = os.getenv("GITHUB_REPO") or os.getenv("GITHUB_REPOSITORY") or ""
-    if not slug and has_git_repo():
+    """GITHUB_REPO（或 Actions 的 GITHUB_REPOSITORY）必須是「帳號/專案」的純 ASCII 格式；
+    不合格（空白、中文預留字、網址）時改用 git remote origin 的網址解析。"""
+    for raw in (os.getenv("GITHUB_REPO"), os.getenv("GITHUB_REPOSITORY")):
+        slug = (raw or "").strip().removesuffix(".git")
+        m = re.search(r"github\.com[:/]([^/]+/[^/]+?)$", slug)
+        slug = m.group(1) if m else slug
+        if slug.isascii() and REPO_RE.match(slug):
+            return slug
+    if has_git_repo():
         url = _git("remote", "get-url", "origin").stdout.strip()
         m = re.search(r"github\.com[:/]([^/]+/[^/]+?)(?:\.git)?$", url)
-        slug = m.group(1) if m else ""
-    return slug.strip()
+        if m and REPO_RE.match(m.group(1)):
+            return m.group(1)
+    return ""
 
 
 def branch_name():
@@ -183,8 +199,21 @@ def branch_name():
     return b if b and b != "HEAD" else "main"
 
 
+def token_status():
+    """回傳 ("ok"|"missing"|"invalid", 說明)。說明不含 token 內容。"""
+    raw = (os.getenv("GITHUB_TOKEN") or "").strip()
+    if not raw:
+        return "missing", "未設定 GITHUB_TOKEN"
+    if not raw.isascii():
+        return "invalid", "GITHUB_TOKEN 含中文或非 ASCII 字元（可能還是範本預留字），已忽略、不放進 HTTP 標頭"
+    if not TOKEN_RE.match(raw):
+        return "invalid", "GITHUB_TOKEN 格式不對（應為 github_pat_… 或 ghp_… 開頭），已忽略"
+    return "ok", "GITHUB_TOKEN 格式正確"
+
+
 def _token():
-    return (os.getenv("GITHUB_TOKEN") or "").strip()
+    """只回傳通過驗證的 token；空白、中文預留字或格式錯誤一律視為沒有 token（避免 requests 以 latin-1 編碼標頭時崩潰）。"""
+    return (os.getenv("GITHUB_TOKEN") or "").strip() if token_status()[0] == "ok" else ""
 
 
 def use_api():
@@ -306,11 +335,19 @@ def pull_latest(force=False, paths=None, scope="all", every=PULL_EVERY_SEC):
     info = {"last_check_epoch_" + scope: time.time(), "checked_at": _now(), "repo": repo_slug(), "branch": branch,
             "scope": scope}
     errors = []
-    for method in ("api",) if use_api() else ("git", "api"):
+    # 讀取順序：Streamlit Cloud 有有效 token 時先用 API；沒有（或 token 是預留字）時先用容器內建的 git clone 拉取，
+    # API 失敗也會改用 git，git 失敗再試 API（公開 repo 不需 token）
+    if use_api() and _token():
+        methods = ("api", "git") if has_git_repo() else ("api",)
+    else:
+        methods = ("git", "api") if has_git_repo() else ("api",)
+    if token_status()[0] == "invalid":
+        errors.append(f"token：{token_status()[1]}")
+    for method in methods:
         try:
             sha, n, remote = _pull_git(branch, paths) if method == "git" else _pull_api(paths)
-            return _update_state(**info, ok=True, method=method, commit=sha[:7], files=n, synced_at=_now(), error=None,
-                                 baseline=remote)
+            return _update_state(**info, ok=True, method=method, commit=sha[:7], files=n, synced_at=_now(),
+                                 error=None, warning="；".join(errors)[:300] or None, baseline=remote)
         except Exception as exc:  # git 失敗改用 API；都失敗時保留本機檔案
             errors.append(f"{method}：{exc}")
     return _update_state(**info, ok=False, error="；".join(errors)[:400])
@@ -322,13 +359,22 @@ def sync_status():
 
 def remote_text(rel):
     """GitHub 分支最新版的單一檔案內容（不寫入本機）；找不到時回傳 None。"""
-    if not use_api():
+    if use_api() and _token():
+        try:
+            r = _api("GET", f"/contents/{rel}", params={"ref": branch_name()}, headers=_headers(raw=True))
+            if r.status_code == 200:
+                return r.content.decode("utf-8")
+        except (RuntimeError, requests.RequestException):
+            pass  # API 失敗改用 git
+    if has_git_repo():
         branch = branch_name()
         if _git("fetch", "-q", "origin", branch).returncode == 0:
             r = _git("show", f"FETCH_HEAD:{rel}")
             return r.stdout if r.returncode == 0 else None
-    r = _api("GET", f"/contents/{rel}", params={"ref": branch_name()}, headers=_headers(raw=True))
-    return r.content.decode("utf-8") if r.status_code == 200 else None
+    if not _token():
+        r = _api("GET", f"/contents/{rel}", params={"ref": branch_name()}, headers=_headers(raw=True))  # 公開 repo
+        return r.content.decode("utf-8") if r.status_code == 200 else None
+    return None
 
 
 # ---------------------------------------------------------------- 推送
@@ -375,7 +421,9 @@ def commit_and_push(message, paths=None, retries=3):
 def push_api(message, paths=None, retries=3):
     """REST API：只推送「本機內容 ≠ 上次同步基準」的檔案，以 Git Data API 一次 commit。"""
     if not _token():
-        return {"pushed": False, "reason": "未設定 GITHUB_TOKEN（Streamlit Secrets 需要可寫入 Contents 的 token）"}
+        state, why = token_status()
+        return {"pushed": False, "reason": f"{why}：Streamlit Cloud 寫回 GitHub 需要在 Secrets 填入可寫入 Contents 的 "
+                                           f"fine-grained token（github_pat_…）" if state != "ok" else why}
     paths = paths or SYNC_PATHS
     baseline = _read_state().get("baseline") or {}
     shas = {rel: _blob_sha(ROOT / rel) for rel in _local_files(paths)}
@@ -483,7 +531,7 @@ def main():
     if args.status or not (args.pull or args.push):
         print(json.dumps({"where": where(), "autopilot_mode": autopilot_mode(), "trader_here": is_trader_here(),
                           "ledger_sync_active": ledger_sync_active(), "repo": repo_slug(), "branch": branch_name(),
-                          "git_repo": has_git_repo(), "use_api": use_api(),
+                          "git_repo": has_git_repo(), "use_api": use_api(), "token": token_status()[1],
                           **{k: v for k, v in sync_status().items() if k != "baseline"}}, ensure_ascii=False, indent=2))
 
 
