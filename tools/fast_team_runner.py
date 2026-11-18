@@ -827,7 +827,16 @@ def sim_trade_session(mode="intraday_hunt", provider="gemini"):
               f"總淨值 {acct['total_equity']:,}（{acct['total_return_pct']:+.2f}%）｜現金 {acct['cash_balance']:,}（{goal['cash_pct']}%）"
               f"｜距 110 萬還差 {goal['gap_to_low']:,}、距 120 萬還差 {goal['gap_to_high']:,}｜持倉 {len(acct['holdings'])} 檔")
     cards = "\n\n".join(_sim_card(sid, p, sim.holding_of(acct, sid)) for sid, p, _ in cands)
-    user = f"{header}\n{cdb.us_digest()}\n{cdb.market_digest()}\n{cdb.market_reflection_line()}\n\n候選名單：\n{cards}"
+    try:  # 0050 同期對標：讓巴董事長知道目前是否跑贏大盤
+        from tools import universe_pool
+        b = universe_pool.benchmark_0050(acct.get("start_date") or _now()[:10])
+        if b.get("return_pct") is not None:
+            header += (f"\n對標 0050：同期 {b['return_pct']:+.2f}%（{b['base_date']}→{b['last_date']}），"
+                       f"模擬基金超額報酬 Alpha {acct['total_return_pct'] - b['return_pct']:+.2f}%")
+    except Exception:
+        pass
+    user = (f"{header}\n{cdb.us_digest()}\n{cdb.market_digest()}\n{cdb.market_reflection_line()}\n\n"
+            f"候選名單（從 0050 核心＋高潛力動能母體池量化精選的 Potential TOP 20）：\n{cards}")
     data, meta = _ask_json(SIM_SYSTEM, user, provider, max_tokens=4000)
     quotes = sim.latest_quotes(list(cand_map))
     members = {k: str(data.get(k) or "") for k in ("maga", "news", "chips", "kline")}

@@ -51,6 +51,7 @@ from tools import ui_theme as ui  # noqa: E402
 import importlib; importlib.reload(ui)  # noqa: E402,E702  每次重新整理強制載入最新版 ui_theme，避免舊模組快取
 from tools import us_semi_tracker as us_mod  # noqa: E402
 from tools import watchlist_intraday_radar as radar_mod  # noqa: E402
+from tools import universe_pool as up  # noqa: E402
 from tools.claude_runner import run_prefetch  # noqa: E402
 from tools.privacy_mask import mask_sensitive_text, set_private_terms  # noqa: E402
 
@@ -159,31 +160,61 @@ def _pin_match(code, pin):
     return bool(code and pin) and hmac.compare_digest(code.encode("utf-8"), pin.encode("utf-8"))
 
 
+def _set_role(role):
+    """切換身分：owner＝管理者全功能（金庫自動解鎖）；guest＝VIP 來賓。user_role／vault_unlocked 為對外別名。"""
+    owner = role == "owner"
+    st.session_state.update(role=role, user_role=role, privacy_unlocked=owner, vault_unlocked=owner,
+                            gate_fails=0, gate_error="", upgrade_error="")
+
+
+def _gate_fail(now, key):
+    fails = st.session_state.get("gate_fails", 0) + 1
+    if fails >= GATE_MAX_TRIES:  # 進站框與管理者解鎖框共用同一個錯誤計數
+        st.session_state.update(gate_fails=0, gate_locked_until=now + GATE_COOLDOWN_SEC,
+                                **{key: f"⛔ 連續輸錯 {GATE_MAX_TRIES} 次，請 {GATE_COOLDOWN_SEC} 秒後再試。"})
+    else:
+        st.session_state.update(gate_fails=fails, **{key: f"❌ 密碼不正確，還可再試 {GATE_MAX_TRIES - fails} 次。"})
+
+
 def _gate_submit():
     now = time.time()
     code = str(st.session_state.get("gate_pin") or "").strip()
     st.session_state["gate_pin"] = ""
     if now < st.session_state.get("gate_locked_until", 0):
         return
-    if _pin_match(code, _secret_pin("PRIVACY_PIN")):  # 老闆密碼優先
-        st.session_state.update(role="owner", privacy_unlocked=True, gate_fails=0, gate_error="")
+    if _pin_match(code, _secret_pin("PRIVACY_PIN")):  # 管理者密碼優先
+        _set_role("owner")
     elif _pin_match(code, guest_pin()):
-        st.session_state.update(role="guest", privacy_unlocked=False, gate_fails=0, gate_error="")
+        _set_role("guest")
         goto_view("home")
     else:
-        fails = st.session_state.get("gate_fails", 0) + 1
-        if fails >= GATE_MAX_TRIES:
-            st.session_state.update(gate_fails=0, gate_locked_until=now + GATE_COOLDOWN_SEC,
-                                    gate_error=f"⛔ 連續輸錯 {GATE_MAX_TRIES} 次，請 {GATE_COOLDOWN_SEC} 秒後再試。")
-        else:
-            st.session_state.update(gate_fails=fails,
-                                    gate_error=f"❌ 通行密碼不正確，還可再試 {GATE_MAX_TRIES - fails} 次。")
+        _gate_fail(now, "gate_error")
+
+
+def _owner_upgrade(key):
+    """來賓畫面上輸入管理者密碼 → 不重新整理直接切換成管理者全功能模式。"""
+    now = time.time()
+    code = str(st.session_state.get(key) or "").strip()
+    st.session_state[key] = ""
+    if now < st.session_state.get("gate_locked_until", 0):
+        st.session_state["upgrade_error"] = "⛔ 嘗試次數過多，請稍後再試。"
+    elif _pin_match(code, _secret_pin("PRIVACY_PIN")):
+        _set_role("owner")
+        st.session_state["toast"] = "👑 已切換為管理者全功能模式"
+    else:
+        _gate_fail(now, "upgrade_error")
+
+
+def _downgrade_guest():
+    """管理者測試用：一鍵退回純來賓視角（金庫同時鎖上）。"""
+    _set_role("guest")
+    st.session_state["toast"] = "👋 已退回純來賓視角；輸入管理者密碼可隨時切回全功能"
 
 
 def _logout():
-    for k in ("role", "lookup_result", "member"):
+    for k in ("role", "user_role", "lookup_result", "member"):
         st.session_state.pop(k, None)
-    st.session_state["privacy_unlocked"] = False
+    st.session_state.update(privacy_unlocked=False, vault_unlocked=False)
     goto_view("home")
 
 
@@ -217,6 +248,8 @@ if st.session_state.get("role") not in ("owner", "guest"):
     st.stop()
 ROLE = st.session_state["role"]
 IS_OWNER, IS_GUEST = ROLE == "owner", ROLE == "guest"
+st.session_state["user_role"] = ROLE
+st.session_state["vault_unlocked"] = IS_OWNER and bool(st.session_state.get("privacy_unlocked"))
 
 
 # ---------------------------------------------------------------- 共用工具
@@ -454,6 +487,9 @@ def run_ai(label, fn, *args, **kwargs):
     except (llm_router.LLMError, LookupError) as exc:
         remember_run(label, error=exc)
         return None
+    except Exception as exc:  # 非預期錯誤：只記錄類型與程式位置，不讓整頁當掉，也不顯示錯誤內容
+        remember_run(label, error=error_where(exc))
+        return None
 
 
 def editor_to_rows(df):
@@ -525,7 +561,9 @@ all_names = {**extra_focus, **sector_names, **{k: v for k, v in portfolio_names.
 us_status = us_mod.check_status()
 us_locked = us_status["status"] == "LOCKED_COMPLETED"
 # 只存在於持股（不在 20 大龍頭與 WATCHLIST）的代號與名稱，金庫鎖定時在成員文字中一律打碼
-_public_ids = set(sector_ids) | set(WATCHLIST)
+sector_pool = {r["stock_id"]: r.get("pool") or "" for r in sector}
+# 公開代號＝整個母體池＋目前 TOP 20＋WATCHLIST：TOP 20 每天洗牌，用母體池當基準，持股的打碼狀態才不會跟著名單變動
+_public_ids = set(up.UNIVERSE_IDS) | set(sector_ids) | set(WATCHLIST)
 _private_ids = [sid for sid in portfolio_ids if sid not in _public_ids]
 set_private_terms(_private_ids + [portfolio_names.get(sid, "").rstrip("*") for sid in _private_ids])
 
@@ -961,6 +999,42 @@ def holdings_section():
                 st.markdown(diagnosis)
 
 
+UNIVERSE_SYNC_PATHS = ["reports/sector_watchlist.json", "reports/universe_pool_scores.json",
+                       "reports/watchlist_standby.json", "reports/watchlist_radar_live.json"]
+
+
+def universe_refresh():
+    """🎯 重新篩選：母體池日 K 評分 → 寫入 TOP 20 → 重建建議買進價定錨 → 刷新監控表；雲端交易主機另推回 GitHub。"""
+    with st.status("🎯 從 0050 核心＋高潛力動能母體池重新篩選 Potential TOP 20…", expanded=True) as box:
+        st.write(f"📦 預抓母體池 {len(up.UNIVERSE)} 檔日 K（Yahoo，不耗 FinMind 額度；4 小時內新鮮檔沿用）→ 量化評分…")
+        r = up.refresh_top20()
+        if r.get("error"):
+            box.update(label=f"⚠️ {r['error']}", state="error")
+            return
+        st.write(f"🎯 選出 {len(r.get('selected') or [])} 檔：{r.get('pool_counts')}｜保留模擬持倉 {r.get('kept_sim_holdings') or '無'}")
+        if CLOUD_MODE and IS_TRADER and ghsync.can_sync():
+            p = ghsync.publish("universe: 重新篩選 Potential TOP 20", UNIVERSE_SYNC_PATHS)
+            st.write(f"☁️ 推回 GitHub：{'✅ ' + str(p.get('commit')) if p.get('pushed') else p.get('reason')}")
+        box.update(label="🎯 Potential TOP 20 重新篩選完成", state="complete")
+    st.session_state["toast"] = f"🎯 已重新篩選 Potential TOP 20：{r.get('pool_counts')}"
+    st.cache_data.clear()
+    st.rerun()
+
+
+def universe_header(where):
+    """監控表上方：說明這 20 檔怎麼來的＋管理者一鍵重新篩選（來賓停用）。"""
+    sc = up.load_scores()
+    counts = sc.get("pool_counts") or {}
+    c1, c2 = st.columns([4, 1.6], vertical_alignment="center")
+    c1.caption(f"🎯 名單來源：從「0050 台灣五十核心 ＋ 高潛力動能」母體池 {sc.get('universe_size') or len(up.UNIVERSE)} 檔，"
+               f"依趨勢、均線、量能、籌碼與距建議買進價量化評分，精選 Potential TOP {len(sector_ids)}"
+               f"（0050核心 {counts.get(up.CORE, '—')} 檔・高潛力動能 {counts.get(up.MOMENTUM, '—')} 檔）｜"
+               f"篩選時間 {sc.get('generated_at') or '尚未篩選'}｜每個交易日收盤後自動重選，模擬基金持有中的個股一律保留")
+    if c2.button("🎯 重新篩選 0050 池最新 TOP 20 潛力股", key=f"btn_universe_{where}", width="stretch",
+                 disabled=IS_GUEST, help=GUEST_LOCK_HELP if IS_GUEST else "約 30–90 秒：重新評分母體池、重建建議買進價定錨與監控表"):
+        universe_refresh()
+
+
 @st.fragment(run_every=RUN_EVERY)
 def radar_table():
     """🎯 20 大龍頭建議買進價監控表：預設只顯示「達建議買進價」與「接近買進價 (差距1.5%內)」。"""
@@ -989,7 +1063,8 @@ def radar_table():
         kinds = {"HIT_ENTRY": "bull", "APPROACHING": "amber", "BROKEN": "bear"}
         html(ui.render_stock_cards([{
             "stock_id": r["stock_id"], "name": r.get("name"), "price": r.get("price"), "change_pct": r.get("change_pct"),
-            "sub": r.get("sector") or "", "kind": kinds.get(r.get("signal"), "neutral"),
+            "sub": "｜".join(x for x in (r.get("pool") or sector_pool.get(r["stock_id"], ""), r.get("sector") or "") if x),
+            "kind": kinds.get(r.get("signal"), "neutral"),
             "rows": [("燈號", ui.esc(radar_mod.SIGNAL_LABELS.get(r.get("signal"), r.get("signal_label") or "—"))),
                      ("建議買進", ui.esc(f"{ui.fmt_price(r.get('entry_low'))}–{ui.fmt_price(r.get('entry_high'))}")),
                      ("距買進價", ui.esc(ui.fmt_pct(r.get("dist_to_entry_pct")))),
@@ -1010,7 +1085,8 @@ def radar_table():
 def radar_full_table(shown):
     """20 大龍頭完整表格（首欄凍結、可左右滑動）。"""
     df = pd.DataFrame([{
-        "代號": r["stock_id"], "名稱": r.get("name"), "次產業": r.get("sector"), "燈號": radar_mod.SIGNAL_LABELS.get(r.get("signal"), r.get("signal_label")),
+        "代號": r["stock_id"], "名稱": r.get("name"), "母體": r.get("pool") or sector_pool.get(r["stock_id"], ""),
+        "次產業": r.get("sector"), "燈號": radar_mod.SIGNAL_LABELS.get(r.get("signal"), r.get("signal_label")),
         "現價": to_float(r.get("price")), "漲跌%": to_float(r.get("change_pct")),
         "建議買進價": f"{ui.fmt_price(r.get('entry_low'))}–{ui.fmt_price(r.get('entry_high'))}",
         "距買進價%": to_float(r.get("dist_to_entry_pct")),
@@ -1682,7 +1758,8 @@ def render_war_room():
     conference_table()
     member_panel(intraday_mode)
     holdings_section()
-    st.markdown("### 🎯 戰術表二：半導體 20 大龍頭建議買進價監控表 — 僅顯示「達建議買進價」與「接近買進價 (差距1.5%內)」")
+    st.markdown("### 🎯 戰術表二：Potential TOP 20 潛力股建議買進價監控表 — 僅顯示「達建議買進價」與「接近買進價 (差距1.5%內)」")
+    universe_header("war")
     with st.container(border=True):
         radar_table()
     qa_section()
@@ -1823,7 +1900,11 @@ def sim_live_board():
           f"+{acct['target_return_high_pct']:.0f}%（$1,100,000～$1,200,000）")
     if acct.get("status_note"):
         (st.info if acct["status_note"].startswith("⏳") else st.success)(acct["status_note"])
-    html(ui.render_sim_kpis(acct, sim.goal_status(acct), sim.trade_stats()))
+    try:  # 0050 同期對標（10 分鐘快取；失敗時卡片顯示 N/A）
+        bench = up.benchmark_0050(acct.get("start_date") or datetime.now().strftime("%Y-%m-%d"))
+    except Exception:
+        bench = None
+    html(ui.render_sim_kpis(acct, sim.goal_status(acct), sim.trade_stats(), bench))
     for a in scan.get("alerts") or []:
         (st.error if a["type"] == "STOP" else st.success)(f"{'🛑' if a['type'] == 'STOP' else '🎯'} {a['stock_id']}：{a['text']}")
     left, right = st.columns([1.05, 1])
@@ -1844,12 +1925,13 @@ def sim_live_board():
         else:
             st.info("目前空手（100% 現金 $1,000,000）。台股盤中按「🧠 召開五人投決會」由巴董事長挑選建倉標的。")
     with right:
-        st.markdown("#### 📡 TOP 20 半導體龍頭 — 建議買進價監控表")
+        st.markdown("#### 📡 Potential TOP 20 潛力股 — 建議買進價監控表")
         stamp(scan.get("updated_at"), sim.SCAN_PATH, f"監控表報價 {scan.get('radar_updated_at', 'N/A')}")
         prey = scan.get("prey") or []
         if prey:
             df = pd.DataFrame([{
-                "代號": p["stock_id"], "名稱": p.get("name"), "買進評分": p.get("score"), "燈號": radar_mod.SIGNAL_LABELS.get(p.get("signal"), p.get("signal_label")),
+                "代號": p["stock_id"], "名稱": p.get("name"), "母體": sector_pool.get(p["stock_id"], ""),
+                "買進評分": p.get("score"), "燈號": radar_mod.SIGNAL_LABELS.get(p.get("signal"), p.get("signal_label")),
                 "現價": to_float(p.get("price")), "漲跌%": to_float(p.get("change_pct")), "距買進價%": to_float(p.get("dist_to_entry_pct")),
                 "100股需": (to_float(p.get("price")) or 0) * 100,
                 "籌碼王": f"{p.get('chip_score', 0):+d}｜{(p.get('chip_trend') or '')[:14]}",
@@ -1933,6 +2015,35 @@ def sim_history_section():
         st.caption("尚無任何模擬交易。")
 
 
+def manual_meeting(trading):
+    """👑 管理者手動召開五人投決會。
+    - 盤中＋雲端交易主機（單一帳本同步啟用）：交給背景引擎的 meeting()：交易前取回 GitHub 帳本 → 投決會 → 成交後比對 last_trade_timestamp 再寫回。
+    - 盤中＋本機交易主機（local_master）：在帳本鎖內直接開會（不需 GitHub 同步）。
+    - 非盤中：只產出明日開盤預備劇本，不扣款交割。"""
+    provider = current_engine()
+    with st.spinner(f"五人投決會進行中（{provider}・{'盤中下單' if trading else '只產出明日預備劇本'}）…"):
+        daemon = sim_daemon.running_thread()
+        if trading and IS_TRADER and daemon is not None and ghsync.ledger_sync_active():
+            daemon.meeting([{"type": "MANUAL", "stock_id": None, "text": "管理者手動召開"}],
+                           {"provider": provider, "auto_trade_enabled": True}, datetime.now())
+            m = daemon.hb.get("last_meeting") or {}
+            if m.get("error"):
+                remember_run("五人投決會", error=m["error"])
+            else:
+                remember_run("五人投決會", {"task": "sim_trade_session", "executed": m.get("executed", 0),
+                                         "rejected": m.get("rejected", 0), "provider": m.get("engine"),
+                                         "total_equity": m.get("total_equity"), "errors": m.get("errors") or [],
+                                         "elapsed_sec": m.get("elapsed_sec")})
+        else:
+            mode = "intraday_hunt" if trading else "watchlist_plan"
+            try:
+                with sim.ledger_lock(timeout=120):  # 背景投決會進行中時排隊等候，避免兩場同時交割
+                    run_ai("五人投決會", ftr.sim_trade_session, mode, provider)
+            except sim.SimError as exc:
+                remember_run("五人投決會", error=exc)
+    st.rerun()
+
+
 def render_sim_room():
     sim.init_account()
     trading = sim.is_tw_market_trading_hours()
@@ -1953,12 +2064,14 @@ def render_sim_room():
     engine_key_box("sim")
     daemon_panel()
     c1, c2 = st.columns([1.4, 2])
-    lock_ui = CLOUD_MODE or VIEWER or IS_GUEST
-    cloud_help = (GUEST_LOCK_HELP if IS_GUEST else
-                  "☁️ 單一帳本：模擬交易只由背景盯盤執行緒執行（交易前後與 GitHub 同步），網頁按鈕不寫入帳本，避免兩本帳"
-                  if lock_ui else None)
+    # 管理者全功能：在「交易主機」上可手動刷新與召開投決會；觀看端（cloud_master 下的本機）盤中不能下單，避免兩本帳
+    lock_refresh = IS_GUEST or VIEWER
+    lock_meeting = IS_GUEST or (VIEWER and trading)
+    viewer_help = ("👀 這台電腦是觀看端：模擬帳本由雲端交易主機負責。盤中請在 Streamlit Cloud 網頁以管理者身分召開，"
+                   "交易前後會自動與 GitHub 帳本同步")
+    cloud_help = GUEST_LOCK_HELP if IS_GUEST else viewer_help if lock_refresh else None
     if c1.button("⚡ 1秒刷新模擬房淨值與 TOP 20 建議買進價監控表 (0 Token)", width="stretch", key="btn_sim_refresh",
-                 disabled=lock_ui, help=cloud_help):
+                 disabled=lock_refresh, help=cloud_help):
         with st.spinner("刷新模擬持倉與 20 強建議買進價監控表…"):
             try:
                 with sim.ledger_lock(timeout=30):
@@ -1969,18 +2082,13 @@ def render_sim_room():
         st.rerun()
     label = ("🧠 召開五人投決會 ➔ 巴董事長拍板下單 (搜尋 TOP 20 交易機會)" if trading else
              "🔒 非盤中時段禁止交易（明日 09:00 開盤後開放實盤模擬下單，目前僅供預覽明日選股計畫）")
-    if c2.button(label, width="stretch", key="btn_sim_meeting", disabled=lock_ui, help=cloud_help):
-        mode = "intraday_hunt" if trading else "watchlist_plan"
-        with st.spinner(f"五人投決會進行中（{current_engine()}・{'盤中下單' if trading else '只產出明日預備劇本'}）…"):
-            try:
-                with sim.ledger_lock(timeout=120):  # 背景投決會進行中時排隊等候，避免兩場同時交割
-                    run_ai("五人投決會", ftr.sim_trade_session, mode, current_engine())
-            except sim.SimError as exc:
-                remember_run("五人投決會", error=exc)
-        st.rerun()
+    if c2.button(label, width="stretch", key="btn_sim_meeting", disabled=lock_meeting,
+                 help=GUEST_LOCK_HELP if IS_GUEST else viewer_help if lock_meeting else None):
+        manual_meeting(trading)
     if not trading:
         st.caption("🔒 交易時段：台股週一至週五 09:00–13:30。非盤中按下投決會只會產出「明日開盤預備劇本」，不會扣款交割（國定假日未納入判斷）。")
     task_banner()
+    universe_header("sim")
     sim_live_board()
     sim_meeting_section()
     sim_history_section()
@@ -1990,15 +2098,44 @@ def render_sim_room():
 
 # ---------------------------------------------------------------- 進入點
 
+def owner_unlock_form(where):
+    """🔑 管理者密碼解鎖全功能（頂部導航列與側邊欄各一份，widget key 不同）。"""
+    with st.form(f"owner_unlock_{where}", border=False):
+        st.text_input("管理者密碼", type="password", key=f"owner_pin_{where}", placeholder="輸入管理者密碼…",
+                      label_visibility="collapsed")
+        st.form_submit_button("🔓 解鎖全功能", type="primary", width="stretch", on_click=_owner_upgrade,
+                              args=(f"owner_pin_{where}",))
+    if st.session_state.get("upgrade_error"):
+        st.error(st.session_state["upgrade_error"])
+
+
 def identity_bar():
-    """所有視圖頂部：目前身分與登出。"""
-    c1, c2 = st.columns([7, 1], vertical_alignment="center")
+    """所有視圖頂部：目前身分、管理者解鎖／退回來賓視角、登出。"""
     if IS_GUEST:
+        c1, c2, c3 = st.columns([5.6, 1.6, 0.8], vertical_alignment="center")
         c1.info("👋 歡迎來到 VIP 來賓體驗模式：可瀏覽今日新聞與美股 TOP 10、個股即時快篩、100 萬模擬基金即時盯盤、"
-                "20 大龍頭監控表，並在 WAR ROOM 的盤中戰術提問指揮台請五位成員會診；真實持股與會改動帳本的按鈕不開放。")
+                "Potential TOP 20 監控表，並在 WAR ROOM 的盤中戰術提問指揮台請五位成員會診；真實持股與會改動帳本的按鈕不開放。")
+        with c2.popover("🔑 管理者密碼解鎖全功能", width="stretch"):
+            owner_unlock_form("top")
     else:
-        c1.caption("👑 老闆模式：完整權限｜" + ("🔓 個人持倉金庫已解鎖" if is_unlocked() else "🔒 個人持倉金庫已手動鎖上"))
-    c2.button("🚪 登出", width="stretch", on_click=_logout, key="btn_logout")
+        c1, c2, c3 = st.columns([5.6, 1.6, 0.8], vertical_alignment="center")
+        c1.caption("👑 管理者全功能模式｜" + ("🔓 個人持倉金庫已解鎖" if is_unlocked() else "🔒 個人持倉金庫已手動鎖上"))
+        c2.button("🔒 退回純來賓視角", width="stretch", on_click=_downgrade_guest, key="btn_to_guest")
+    c3.button("🚪 登出", width="stretch", on_click=_logout, key="btn_logout")
+
+
+def role_sidebar():
+    """側邊欄：同樣的身分切換（預設收合，點左上角 > 展開）。"""
+    with st.sidebar:
+        st.markdown("### 🏛️ 通行身分")
+        if IS_GUEST:
+            st.caption("目前：👋 VIP 來賓體驗模式")
+            st.markdown("**🔑 管理者密碼解鎖全功能**")
+            owner_unlock_form("side")
+        else:
+            st.caption("目前：👑 管理者全功能模式")
+            st.button("🔒 退回純來賓視角", width="stretch", on_click=_downgrade_guest, key="btn_to_guest_side")
+        st.button("🚪 登出", width="stretch", on_click=_logout, key="btn_logout_side")
 
 
 MOBILE_NAV = {"home": "🏠 首頁", "war_room": "🎖️ WAR ROOM", "sim_room": "🧪 SIMULATION ROOM"}
@@ -2016,4 +2153,5 @@ def mobile_nav():
 VIEWS = {"home": render_daily, "war_room": render_war_room, "sim_room": render_sim_room}
 mobile_nav()
 identity_bar()
+role_sidebar()
 VIEWS.get(st.session_state["view"], render_daily)()

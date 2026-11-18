@@ -215,7 +215,7 @@
 
 ## 9. 半導體與 AI 產業 20 大龍頭觀察池（備用定錨與建議買進價監控表）
 
-- **觀察池**：`reports/sector_watchlist.json`（10 大次產業、20 家龍頭，含 stock_id、name、sector）。
+- **觀察池**：`reports/sector_watchlist.json`（Potential TOP 20，含 stock_id、name、sector、pool、score、reasons）。由 `tools/universe_pool.py` 從「0050 核心＋高潛力動能」母體池（約 50 檔）依趨勢、均線、量能、已快取籌碼與距建議買進價量化評分後精選；模擬基金持有中的個股一律保留。GitHub Actions 每個交易日收盤後自動重選（`refresh_top20()`：重選＋重新定錨＋刷新監控表），管理者也可在 WAR ROOM／SIMULATION ROOM 按「🎯 重新篩選 0050 池最新 TOP 20 潛力股」。母體評分寫入 `reports/universe_pool_scores.json`；模擬室以 `benchmark_0050()` 對標 0050 同期報酬（Alpha）。
 - **盤後定錨**：`C:/Users/singk/anaconda3/python.exe tools/build_watchlist_standby.py`
   - 只預抓 K 線（Yahoo 日 K，不耗 FinMind 額度）與籌碼（FinMind，4 小時快取），不抓基本面。
   - 依均線結構選戰術（強勢整理回測10日線／多頭拉回守月線低接／跌破月線回測季線／觀望等待底部確認），算出 `entry_low`、`entry_high`、`stop_loss`、`target_1`、`risk_reward`、`chip_trend`、`kline_trend`、`role4_note`（巴董事長備註），寫入 `reports/watchlist_standby.json`。
@@ -347,4 +347,5 @@
 - `tools/compact_data_builder.py`：把 reports/ 明細濃縮成每檔約 400 字摘要（持股只帶報酬率%，不帶股數成本）
 - `tools/fast_team_runner.py`：dashboard 與盤中哨兵的預設 AI 引擎（daily_home_update／war_room_sync／ask_war_room／deep_dive，單次多人設請求、不派子代理）
 - `intraday_sentinel.py`：盤中哨兵；`dashboard.py`：Streamlit 🏠 日常主畫面 ⇄ 🎖️ SEAL OP BASE 戰術會議室。最外層有雙層通行門禁：`PRIVACY_PIN` → 老闆模式（金庫自動解鎖）；`GUEST_PIN` → VIP 來賓模式（`IS_GUEST`：不顯示真實持股、停用會改動帳本或耗用 AI 額度的按鈕）。新增按鈕時，凡會寫入資料或呼叫 AI 的，一律加 `disabled=IS_GUEST`。例外：盤中戰術提問指揮台開放來賓，走 `fast_team_runner.ask_war_room_guest`（Prompt 只含即時快查、20 大龍頭、模擬基金公開持倉與大盤／美股／新聞，不讀 portfolio 相關檔案、覆盤與學習對帳；回答經 `privacy_guard.redact_holdings_text` 過濾；結果只存在來賓的 `st.session_state["guest_qa_history"]`，固定用免費引擎，10 秒防連點）
+- `tools/universe_pool.py`：0050 母體池 → Potential TOP 20 精選與 0050 對標（`--dry-run` 只印評分）
 - `.claude/agents/`：四位成員定義（新聞達人、籌碼王、K線技術人、川大帝MAGA）

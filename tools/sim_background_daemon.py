@@ -183,7 +183,8 @@ def find_triggers(scan, acct, cooldowns, now):
     return out
 
 
-TRIGGER_LABEL = {"STOP": "🚨 觸及停損價", "TARGET": "💰 觸及停利目標價", "HIT_ENTRY": "🎯 達建議買進價", "PATROL": "🕒 定時巡檢"}
+TRIGGER_LABEL = {"STOP": "🚨 觸及停損價", "TARGET": "💰 觸及停利目標價", "HIT_ENTRY": "🎯 達建議買進價", "PATROL": "🕒 定時巡檢",
+                 "MANUAL": "👑 管理者手動召開"}
 
 
 # ---------------------------------------------------------------- 守護執行緒

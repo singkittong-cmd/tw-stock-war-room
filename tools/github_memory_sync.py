@@ -55,6 +55,7 @@ TIME_FMT = "%Y-%m-%d %H:%M:%S"
 SYNC_PATHS = [
     "reports/simulation", "reports/learning_db", "reports/news", "reports/us_market", "reports/memory",
     "reports/market_close_summary.json", "reports/watchlist_standby.json", "reports/watchlist_radar_live.json",
+    "reports/sector_watchlist.json", "reports/universe_pool_scores.json",
     "reports/cloud_autopilot_state.json",
 ]
 SIM_PATHS = ["reports/simulation"]

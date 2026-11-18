@@ -184,7 +184,12 @@ class Autopilot:
             r = self.step("新聞 TOP 10 與收盤重點", ftr.daily_home_update, self.provider, True)
             if r:
                 self.errors += [f"每日更新：{e}"[:300] for e in r.get("errors") or []]
-            self.step("20 強建議買進價重新定錨", standby_mod.build)
+            from tools import universe_pool
+            picked = self.step("0050 母體池重新篩選 Potential TOP 20 並重新定錨", universe_pool.refresh_top20)
+            if picked and not picked.get("error"):
+                self.say(f"🎯 Potential TOP 20：{picked.get('pool_counts')}｜保留模擬持倉 {picked.get('kept_sim_holdings') or '無'}")
+            else:  # 篩選失敗：沿用既有名單，只重新定錨
+                self.step("20 強建議買進價重新定錨", standby_mod.build)
             self.save_state(close_reports_date=today)
             self.push_paths = ghsync.ACTIONS_OWNED
         if settled_here:

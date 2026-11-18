@@ -124,6 +124,8 @@ def run(save=True):
             "stock_id": sid,
             "name": item.get("name"),
             "sector": item.get("sector"),
+            "pool": item.get("pool"),
+            "pool_score": item.get("score"),
             "price": price,
             "price_source": a.get("price_source"),
             "price_age_sec": a.get("price_age_sec"),

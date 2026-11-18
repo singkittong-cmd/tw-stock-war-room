@@ -226,7 +226,8 @@ header[data-testid="stHeader"] { background: transparent; height: 0; }
   border: 0 !important; font-weight: 800 !important; min-height: 2.8rem; }
 
 /* ---------- 🧪 SIMULATION ROOM ---------- */
-.kpi-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 6px 0 10px; }
+.kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin: 6px 0 10px; }
+@media (max-width: 1280px) { .kpi-grid { grid-template-columns: repeat(3, 1fr); } }
 .kpi { background: linear-gradient(180deg, #0F1F1A 0%, #0B1222 100%); border: 1px solid rgba(16, 185, 129, .35);
        border-radius: 14px; padding: 12px 14px; }
 .kpi .l { color: #A7F3D0; font-size: .74rem; font-weight: 600; }
@@ -738,8 +739,8 @@ def render_stock_cards(cards):
 
 # ---------------------------------------------------------------- 🧪 SIMULATION ROOM 元件
 
-def render_sim_kpis(acct, goal, stats):
-    """🏆 年底目標儀表板：5 張大字卡＋目標進度條（110 萬低標、120 萬高標）；金額 $、損益紅正綠負。"""
+def render_sim_kpis(acct, goal, stats, bench=None):
+    """🏆 年底目標儀表板：6 張大字卡（含 0050 對標）＋目標進度條（110 萬低標、120 萬高標）；金額 $、損益紅正綠負。"""
     eq, cap = acct.get("total_equity", 0), acct.get("initial_capital", 1_000_000)
     pnl = eq - cap
     ret = acct.get("total_return_pct", 0.0)
@@ -763,7 +764,20 @@ def render_sim_kpis(acct, goal, stats):
             + card("💵 可用現金 & 資金水位", fmt_money(acct.get("cash_balance", 0)),
                    f'現金 {goal["cash_pct"]:.1f}%｜持股 {100 - goal["cash_pct"]:.1f}%｜{len(acct.get("holdings") or [])} 檔')
             + card("📊 累計出手 & 勝率", f'{stats.get("trades", 0)} 筆', f'買 {stats.get("buys", 0)}｜賣 {stats.get("sells", 0)}｜勝率 {win}')
+            + bench_card(card, ret, bench)
             + '</div>')
+
+
+def bench_card(card, ret, bench):
+    """📊 0050 台灣五十同期表現 vs 模擬室超額報酬（Alpha）。bench 來自 universe_pool.benchmark_0050()。"""
+    b = bench or {}
+    if b.get("return_pct") is None:
+        return card("📊 0050 同期表現 vs Alpha", "N/A", esc(f"0050 報價暫時無法取得{('：' + b['error'][:40]) if b.get('error') else ''}"))
+    alpha = ret - b["return_pct"]
+    verdict = "跑贏 0050" if alpha > 0 else "落後 0050" if alpha < 0 else "與 0050 持平"
+    return card("📊 0050 同期表現 vs 超額報酬 (Alpha)", signed_html(pct=alpha),
+                f'0050 同期 {signed_html(pct=b["return_pct"])}（{esc(b["base_close"])}→{esc(b["last_close"])}）｜{verdict}'
+                f'<br><span class="tl-time">{esc(b["base_date"])} 收盤起算・{esc(b.get("source", ""))}</span>')
 
 
 def render_committee(meeting):
