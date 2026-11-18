@@ -52,6 +52,7 @@ import importlib; importlib.reload(ui)  # noqa: E402,E702  每次重新整理強
 from tools import us_semi_tracker as us_mod  # noqa: E402
 from tools import watchlist_intraday_radar as radar_mod  # noqa: E402
 from tools import universe_pool as up  # noqa: E402
+from tools import strategy_optimizer as so  # noqa: E402
 from tools.claude_runner import run_prefetch  # noqa: E402
 from tools.privacy_mask import mask_sensitive_text, set_private_terms  # noqa: E402
 
@@ -1763,6 +1764,7 @@ def render_war_room():
     with st.container(border=True):
         radar_table()
     qa_section()
+    owner_brain_section("war")
     st.caption("資料來源：FinMind、證交所 MIS、Yahoo Finance、鉅亨網、Google News｜僅供研究參考，非投資建議。")
 
 
@@ -2015,6 +2017,69 @@ def sim_history_section():
         st.caption("尚無任何模擬交易。")
 
 
+def owner_brain_section(where):
+    """🧠 管理者高階大腦：只有 user_role == "owner" 才渲染（來賓連標題、提示文字都不出現）。"""
+    if st.session_state.get("user_role") != "owner" or not IS_OWNER:
+        return
+    st.markdown("### 🧠 管理者高階大腦：五人戰略深度覆盤與規則修正")
+    rules = sim.load_strategy_rules()
+    rv = so.load_review()
+    with st.container(border=True):
+        c1, c2 = st.columns([3.2, 1.8], vertical_alignment="center")
+        c1.caption(f"高階推理引擎：{llm_router.high_tier_provider()}／{llm_router.high_tier_model() or '預設模型'}"
+                   f"（.env 或 Streamlit Secrets 的 HIGH_TIER_PROVIDER、HIGH_TIER_MODEL 可切換）｜目前操盤規則 v{rules['_version']}"
+                   f"（{rules['_updated_at'] or '預設值'}）｜上次覆盤 {rv.get('generated_at') or '尚未執行'}")
+        if c2.button("🧠 啟動高階模型・深度覆盤與修正今日策略", type="primary", width="stretch", key=f"btn_brain_{where}",
+                     help="打包模擬帳本、交易明細、每日淨值、五位成員預測對帳與收盤快照 → 高階模型五人深度檢討 → 自動修正 strategy_rules.json 並推回 GitHub"):
+            with st.status("🧠 高階模型五人深度檢討會進行中（深度思考約 1–5 分鐘）…", expanded=True) as box:
+                st.write("📦 打包實盤證據（模擬帳本、交易明細、淨值、預測對帳、收盤快照；真實持股資料不送出）…")
+                try:
+                    out = so.run_review(publish=True)
+                    pub = out.get("publish") or {}
+                    st.write(f"⚙️ 已套用操盤規則 v{out.get('rules_version')}；"
+                             f"GitHub 備份：{'✅ ' + str(pub.get('commit')) if pub.get('pushed') else pub.get('reason') or '未推送'}")
+                    box.update(label=f"🧠 深度覆盤完成（{out['engine']}／{out['model']}，{out.get('total_sec')} 秒）", state="complete")
+                    st.session_state["toast"] = "🧠 深度覆盤完成，最新操盤規則已套用"
+                except llm_router.LLMError as exc:
+                    box.update(label="⚠️ 高階模型沒有完成檢討，規則未變更", state="error")
+                    st.error(f"⚠️ {str(exc)[:400]}")
+                    return
+                except Exception as exc:
+                    box.update(label="⚠️ 深度覆盤失敗，規則未變更", state="error")
+                    st.error(f"⚠️ {error_where(exc)}")
+                    return
+            st.rerun()
+        if not rv:
+            st.caption("尚未執行深度覆盤。按右上按鈕後，五位成員的檢討、巴董事長診斷書與修正後的操盤參數會顯示在這裡。")
+            return
+        stamp(rv.get("generated_at"), so.REVIEW_PATH, f"{rv.get('engine')}／{rv.get('model')}・{rv.get('elapsed_sec')} 秒・"
+              f"證據 {(rv.get('evidence') or {}).get('trades', 0)} 筆交易／{(rv.get('evidence') or {}).get('predictions', 0)} 筆預測對帳")
+        st.markdown(f"**📊 {ui.esc(rv.get('period') or '')}績效：** {ui.esc(rv.get('performance_summary') or '')}")
+        d = rv.get("diagnosis") or {}
+        html('<div class="verdict-row" style="grid-template-columns:1fr 1fr">'
+             + "".join(f'<div class="say"><div class="who">{label}</div>{ui.esc(d.get(key) or "—")}</div>'
+                       for key, label in (("stock_selection", "🎯 選股邏輯"), ("entry_timing", "⏱️ 進場價位與時機"),
+                                          ("stop_loss", "🛑 停損設定"), ("position_sizing", "⚖️ 部位與現金配置")))
+             + '</div>')
+        st.error(f"🩺 巴董事長診斷根因：{d.get('root_cause') or '—'}")
+        challenges = "\n".join(f"・{so.MEMBER_NAMES.get(c.get('member'), c.get('member'))}：{c.get('challenge')}"
+                               for c in rv.get("chairman_challenge") or [])
+        html(ui.render_qa_board({**{k: ui.name_roles((rv.get("members") or {}).get(k) or "") for k in ("news", "chips", "kline", "maga")},
+                                 "chairman": ui.name_roles(f"{rv.get('chairman_summary') or ''}\n\n【逐一 Challenge】\n{challenges}")}))
+        st.markdown("#### ⚙️ 已自動套用的最新操盤參數對照表（修正前 vs 修正後）")
+        rows = rv.get("rule_changes") or []
+        if rows:
+            st.dataframe(pd.DataFrame([{"參數": r["label"], "修正前": f"{r['before']}{r['unit'] if r['unit'] and not isinstance(r['before'], str) else ''}",
+                                        "修正後": f"{r['after']}{r['unit'] if r['unit'] and not isinstance(r['after'], str) else ''}",
+                                        "變動": "⚙️ 已修正" if r["changed"] else "維持", "修正理由": r.get("reason") or ""} for r in rows]),
+                         width="stretch", hide_index=True,
+                         column_config={"修正理由": st.column_config.TextColumn(width="large"),
+                                        "修正後": st.column_config.TextColumn(width="medium")})
+        pub = rv.get("publish") or {}
+        st.caption(f"規則檔 reports/simulation/strategy_rules.json v{rv.get('rules_version')}｜下一場投決會、背景盯盤與交割即依此規則硬性檢查"
+                   + (f"｜GitHub 備份 commit {pub.get('commit')}" if pub.get("pushed") else ""))
+
+
 def manual_meeting(trading):
     """👑 管理者手動召開五人投決會。
     - 盤中＋雲端交易主機（單一帳本同步啟用）：交給背景引擎的 meeting()：交易前取回 GitHub 帳本 → 投決會 → 成交後比對 last_trade_timestamp 再寫回。
@@ -2092,6 +2157,7 @@ def render_sim_room():
     sim_live_board()
     sim_meeting_section()
     sim_history_section()
+    owner_brain_section("sim")
     st.caption("🧪 模擬交易以證交所 MIS 最新真實成交價交割：整張用整張價、零股（不足一張的部分）用盤中零股報價；"
                "手續費 0.1425%×0.6（每筆最低 $20）、證交稅 0.3%｜與真實持股完全分開，僅供研究，非投資建議。")
 

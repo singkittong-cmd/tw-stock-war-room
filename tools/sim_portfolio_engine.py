@@ -59,6 +59,103 @@ BUY_ACTIONS, SELL_ACTIONS = ("BUY", "ADD"), ("TRIM", "EXIT_PROFIT", "EXIT_STOP")
 
 
 BOARD_LOT = 1000                                 # 整張 1,000 股；不足一張的部分走盤中零股撮合池
+
+# ---------------------------------------------------------------- 動態操盤規則（tools/strategy_optimizer.py 每日覆盤後更新）
+RULES_PATH = SIM_DIR / "strategy_rules.json"
+DEFAULT_RULES = {  # 預設值＝導入規則引擎前的行為（寬鬆上限），第一次高階覆盤後才依證據收緊
+    "max_single_position_pct": 30.0,   # 單一持股最高占總淨值 %（30% ≈ 原本的 30 萬上限）
+    "stop_loss_pct": 15.0,             # 硬性停損：持股虧損達 X% 系統直接出清；新買進的停損價不得低於買價 −X%
+    "take_profit_pct": 40.0,           # 分批停利目標：目標價不得高於買價 +X%（觸及即召開投決會討論減碼）
+    "cash_reserve_pct": 10.0,          # 平常最低現金水位 %
+    "min_cash_reserve_pct": 10.0,      # 大盤偏弱（加權跌破月線或空頭趨勢）時強制保留的最低現金水位 %
+    "avoid_chase_pct": 10.0,           # 禁止追高：當日已上漲 ≥ X% 不買進、不加碼（10% 即漲停附近）
+    "agent_weights": {"news": 1.0, "chips": 1.0, "kline": 1.0, "maga": 1.0},
+    "custom_disciplines": [],          # 巴董事長自訂鐵律（每場投決會強制注入 Prompt）
+}
+RULE_BOUNDS = {"max_single_position_pct": (5.0, 40.0), "stop_loss_pct": (2.0, 15.0), "take_profit_pct": (3.0, 40.0),
+               "cash_reserve_pct": (0.0, 50.0), "min_cash_reserve_pct": (0.0, 80.0), "avoid_chase_pct": (1.0, 10.0)}
+WEIGHT_BOUNDS = (0.2, 2.0)
+AGENT_KEYS = ("news", "chips", "kline", "maga")
+
+
+def clamp_rules(raw):
+    """把任何來源（預設、檔案、模型輸出）的規則轉成合法值：缺的補預設、超出範圍的夾到邊界、型別不對的用預設。"""
+    raw = raw if isinstance(raw, dict) else {}
+    out = {}
+    for key, (lo, hi) in RULE_BOUNDS.items():
+        try:
+            out[key] = round(min(hi, max(lo, float(raw.get(key, DEFAULT_RULES[key])))), 2)
+        except (TypeError, ValueError):
+            out[key] = DEFAULT_RULES[key]
+    out["min_cash_reserve_pct"] = max(out["min_cash_reserve_pct"], out["cash_reserve_pct"])  # 弱勢水位不得低於平常水位
+    weights = raw.get("agent_weights") if isinstance(raw.get("agent_weights"), dict) else {}
+    out["agent_weights"] = {}
+    for k in AGENT_KEYS:
+        try:
+            out["agent_weights"][k] = round(min(WEIGHT_BOUNDS[1], max(WEIGHT_BOUNDS[0], float(weights.get(k, 1.0)))), 2)
+        except (TypeError, ValueError):
+            out["agent_weights"][k] = 1.0
+    disc = raw.get("custom_disciplines")
+    disc = disc if isinstance(disc, list) else [disc] if isinstance(disc, str) and disc.strip() else []
+    out["custom_disciplines"] = [str(x).strip()[:120] for x in disc if str(x).strip()][:8]
+    return out
+
+
+def load_strategy_rules():
+    """讀取 reports/simulation/strategy_rules.json（不存在或損毀時用預設），回傳已驗證的規則＋版本資訊。"""
+    data = _read(RULES_PATH, {}) if RULES_PATH.exists() else {}
+    data = data if isinstance(data, dict) else {}
+    rules = clamp_rules(data.get("rules") if isinstance(data.get("rules"), dict) else data)
+    rules["_version"] = data.get("version", 0)
+    rules["_updated_at"] = data.get("updated_at")
+    return rules
+
+
+def market_is_weak():
+    """大盤偏弱：加權指數收盤跌破月線，或趨勢判讀含「空頭」。回傳 (是否偏弱, 說明)。"""
+    t = (_read(REPORTS / "market_close_summary.json", {}) or {}).get("taiex") or {}
+    close, ma20, trend = t.get("close"), t.get("ma20"), str(t.get("trend") or "")
+    if "空頭" in trend:
+        return True, f"加權趨勢 {trend}"
+    if close and ma20 and close < ma20:
+        return True, f"加權 {close:,.0f} 跌破月線 {ma20:,.0f}"
+    return False, (f"加權 {close:,.0f} 站上月線 {ma20:,.0f}" if close and ma20 else "大盤資料不足，以平常水位計")
+
+
+def cash_reserve_pct(rules=None):
+    rules = rules or load_strategy_rules()
+    return rules["min_cash_reserve_pct"] if market_is_weak()[0] else rules["cash_reserve_pct"]
+
+
+def position_max(acct, rules=None):
+    """單一持股上限（元）＝總淨值 × max_single_position_pct。"""
+    rules = rules or load_strategy_rules()
+    return float(acct.get("total_equity") or INITIAL_CAPITAL) * rules["max_single_position_pct"] / 100
+
+
+def position_min(acct, rules=None):
+    """新建倉下限（元）：原本 15 萬，但不得高於單一持股上限的 60%（上限調降時才買得進去）。"""
+    return min(POSITION_MIN, position_max(acct, rules) * 0.6)
+
+
+def rules_prompt(acct, rules=None):
+    """投決會 Prompt 用：把最新操盤鐵律寫成條列，數字已換算成元。"""
+    rules = rules or load_strategy_rules()
+    weak, why = market_is_weak()
+    reserve = cash_reserve_pct(rules)
+    w = rules["agent_weights"]
+    names = {"news": "新聞達人", "chips": "籌碼王", "kline": "K線技術人", "maga": "川大帝MAGA"}
+    lines = [f"【巴董事長最新操盤鐵律（strategy_rules v{rules['_version']}，{rules['_updated_at'] or '預設值'}）— 系統會硬性檢查，違反即否決】",
+             f"1. 單一持股上限 {rules['max_single_position_pct']:g}% 總淨值（約 {position_max(acct, rules):,.0f} 元）；"
+             f"新建倉下限約 {position_min(acct, rules):,.0f} 元；股數為 100 的倍數。",
+             f"2. 硬性停損 −{rules['stop_loss_pct']:g}%：新買進的停損價不得低於買價 −{rules['stop_loss_pct']:g}%，持股虧損達此幅度由系統直接出清。",
+             f"3. 分批停利目標 +{rules['take_profit_pct']:g}%：目標價不得高於買價 +{rules['take_profit_pct']:g}%。",
+             f"4. 最低現金水位 {reserve:g}%（{'大盤偏弱' if weak else '大盤正常'}：{why}）。",
+             f"5. 禁止追高：當日已上漲 ≥ {rules['avoid_chase_pct']:g}% 的個股不買進、不加碼。",
+             "6. 成員發言權重（依近期實盤準確率）：" + "、".join(f"{names[k]} {w[k]:g}" for k in AGENT_KEYS)
+             + "；巴董事長拍板時權重高者意見優先，權重 < 1 者的多方論點需要其他成員佐證。"]
+    lines += [f"{i}. {d}" for i, d in enumerate(rules["custom_disciplines"], 7)]
+    return "\n".join(lines)
 READY_NOTE = "⏳ 模擬室已就緒（現金 $1,000,000），等待明日台股開盤 (09:00) 正式啟動盤中交易"
 RUNNING_NOTE = "🟢 模擬室盤中交易運作中"
 
@@ -353,6 +450,16 @@ def execute_trade(stock_id, action, shares, price=None, name=None, stop_loss=Non
         net = gross + fee
         if net > acct["cash_balance"]:
             raise SimError(f"現金不足：需 ${net:,}，可用 ${acct['cash_balance']:,}")
+        rules = load_strategy_rules()  # 最後一道：strategy_rules.json 的單檔上限與現金水位，任何來源的買單都要通過
+        cap = position_max(acct, rules)
+        held_after = (h["shares"] * board_price if h else 0) + gross
+        if held_after > cap * 1.03:
+            raise SimError(f"【操盤鐵律】單一持股上限 {rules['max_single_position_pct']:g}%（約 ${cap:,.0f}），"
+                           f"本筆後將達 ${held_after:,.0f}")
+        reserve = float(acct.get("total_equity") or INITIAL_CAPITAL) * cash_reserve_pct(rules) / 100
+        if acct["cash_balance"] - net < reserve - 1:
+            raise SimError(f"【操盤鐵律】最低現金水位 {cash_reserve_pct(rules):g}%（${reserve:,.0f}），"
+                           f"本筆後現金只剩 ${acct['cash_balance'] - net:,.0f}")
         if h is not None and action == "BUY":
             action = "ADD"  # 已持有時一律記為加碼
         if h is None:

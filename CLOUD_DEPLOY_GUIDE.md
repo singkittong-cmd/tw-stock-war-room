@@ -51,6 +51,10 @@ GEMINI_API_KEY = "貼上金鑰"
 FINMIND_API_TOKEN = "貼上金鑰"
 PRIVACY_PIN = "你的金庫密碼"
 GUEST_PIN = "給家人朋友的來賓密碼"   # 選填；沒設定時使用程式內建的預設來賓密碼
+# 選填：管理者「🧠 高階大腦」每日深度覆盤用的高階推理模型（雲端沒有 claude 指令，需要付費 API 額度）
+# ANTHROPIC_API_KEY = "sk-ant-..."          # 設定後預設使用 Anthropic
+# HIGH_TIER_PROVIDER = "anthropic"          # anthropic／gemini（Gemini Pro 需付費額度，免費金鑰會 429）
+# HIGH_TIER_MODEL = "claude-sonnet-4-6"
 GITHUB_REPO = "<你的帳號>/tw-stock-war-room"
 GITHUB_TOKEN = "github_pat_..."
 ```

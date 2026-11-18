@@ -25,6 +25,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import time
 from pathlib import Path
@@ -81,7 +82,7 @@ def has_key(provider):
 def _scrub(text):
     """錯誤訊息中移除任何金鑰字串，避免洩漏到畫面或日誌。"""
     text = str(text)
-    for name in ("GEMINI_API_KEY", "GROQ_API_KEY"):
+    for name in ("GEMINI_API_KEY", "GROQ_API_KEY", "ANTHROPIC_API_KEY"):
         k = _key(name)
         if k:
             text = text.replace(k, "***")
@@ -171,19 +172,22 @@ def _groq(system_prompt, user_prompt, temperature, json_mode, max_tokens):
     return resp.json()["choices"][0]["message"]["content"], model
 
 
-def _claude_lite(system_prompt, user_prompt, temperature, json_mode, max_tokens):
+def _claude_lite(system_prompt, user_prompt, temperature, json_mode, max_tokens, timeout=CLAUDE_TIMEOUT_SEC, model=None):
     """單次 claude -p：`--tools ""` 停用全部工具（不能 Read 檔、不能派子代理），提示詞走 stdin。"""
     prompt = f"{system_prompt}\n\n{user_prompt}"
     if json_mode:
         prompt += "\n\n只輸出一個 JSON 物件，不要任何說明文字或 Markdown 圍欄。"
     env = os.environ.copy()
     env["PYTHONIOENCODING"] = "utf-8"
+    cmd = 'claude -p --tools "" --output-format text'
+    if model and re.fullmatch(r"[A-Za-z0-9.\-]+", model):  # 只接受模型代號字元，避免組進 shell 指令時被注入
+        cmd += f" --model {model}"
     try:
-        result = subprocess.run('claude -p --tools "" --output-format text', input=prompt, shell=True,
+        result = subprocess.run(cmd, input=prompt, shell=True,
                                 encoding="utf-8", errors="replace", capture_output=True, cwd=str(ROOT), env=env,
-                                timeout=CLAUDE_TIMEOUT_SEC)
+                                timeout=timeout)
     except subprocess.TimeoutExpired as exc:
-        raise LLMError(f"claude -p 逾時（>{CLAUDE_TIMEOUT_SEC} 秒）") from exc
+        raise LLMError(f"claude -p 逾時（>{timeout} 秒）") from exc
     if result.returncode != 0 or not result.stdout.strip():
         raise LLMError(f"claude -p 失敗（rc={result.returncode}）：{(result.stderr or result.stdout)[-300:]}")
     # 偶爾會在開頭多出一行 <tag> 雜訊，去掉後才回傳
@@ -192,6 +196,135 @@ def _claude_lite(system_prompt, user_prompt, temperature, json_mode, max_tokens)
 
 
 CALLERS = {"gemini": _gemini, "groq": _groq, "claude_lite": _claude_lite}
+
+
+# ---------------------------------------------------------------- 👑 高階推理（管理者每日深度覆盤專用）
+# HIGH_TIER_PROVIDER：gemini（預設）／anthropic（有 ANTHROPIC_API_KEY 時為預設）／claude_cli（本機已登入的 claude -p，0 額外 API 費用）
+# HIGH_TIER_MODEL：覆寫該引擎的模型代號（例：gemini-2.5-pro、claude-sonnet-4-6、claude CLI 的 opus）
+HIGH_TIER_PROVIDERS = ("gemini", "anthropic", "claude_cli")
+# gemini-2.5-pro 已不開放新使用者（HTTP 404），預設改用 gemini-3.1-pro-preview；Pro 模型需要付費額度，免費金鑰會 429
+HIGH_TIER_DEFAULT_MODEL = {"gemini": "gemini-3.1-pro-preview", "anthropic": "claude-sonnet-4-6", "claude_cli": ""}
+HIGH_TIER_GEMINI_FALLBACKS = ("gemini-pro-latest", "gemini-3.5-flash")
+HIGH_TIER_TIMEOUT_SEC = 420          # 單一引擎上限（claude -p、Anthropic、Gemini Pro）
+HIGH_TIER_FLASH_TIMEOUT_SEC = 180    # Flash 備援：深度思考偶爾卡住，不空等
+ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
+ANTHROPIC_VERSION = "2023-06-01"
+
+
+def high_tier_provider():
+    """HIGH_TIER_PROVIDER 未設定時：有 ANTHROPIC_API_KEY → anthropic；這台有已登入的 claude 指令 → claude_cli；其餘 → gemini。"""
+    p = (os.getenv("HIGH_TIER_PROVIDER") or "").strip().lower()
+    if p in HIGH_TIER_PROVIDERS:
+        return p
+    if _key("ANTHROPIC_API_KEY"):
+        return "anthropic"
+    return "claude_cli" if shutil.which("claude") else "gemini"
+
+
+def high_tier_model(provider=None):
+    provider = provider or high_tier_provider()
+    custom = (os.getenv("HIGH_TIER_MODEL") or "").strip()
+    return custom if custom and provider == high_tier_provider() else HIGH_TIER_DEFAULT_MODEL.get(provider, "")
+
+
+def _gemini_high(model, system_prompt, user_prompt, json_mode, max_tokens):
+    """Gemini 深度思考：2.5 系列給 thinkingBudget 16384，3.x 用 thinkingLevel=high；輸出額度放大、逾時 10 分鐘。"""
+    config = {"temperature": 0.4, "maxOutputTokens": max_tokens}
+    if json_mode:
+        config["responseMimeType"] = "application/json"
+    flash = "flash" in model
+    if model.startswith("gemini-2.5"):
+        config["thinkingConfig"] = {"thinkingBudget": 16384}
+    else:  # Flash 備援用 medium，避免深度思考卡住
+        config["thinkingConfig"] = {"thinkingLevel": "medium" if flash else "high"}
+    body = {"systemInstruction": {"parts": [{"text": system_prompt}]},
+            "contents": [{"role": "user", "parts": [{"text": user_prompt}]}], "generationConfig": config}
+    headers = {"Content-Type": "application/json", "x-goog-api-key": _key("GEMINI_API_KEY")}
+    timeout = HIGH_TIER_FLASH_TIMEOUT_SEC if flash else HIGH_TIER_TIMEOUT_SEC
+    for attempt in range(3):
+        resp = requests.post(GEMINI_URL.format(model=model), json=body, timeout=timeout, headers=headers)
+        if resp.status_code == 400 and "thinkingConfig" in config:  # 模型不接受此思考參數 → 不帶再試
+            config.pop("thinkingConfig")
+            continue
+        if resp.status_code == 429 and "quota" in resp.text.lower():
+            break  # 額度用完（免費金鑰沒有 Pro 配額）：重試也沒用，直接換下一個模型
+        if resp.status_code in RETRY_STATUS and attempt < 2:
+            time.sleep(RETRY_WAITS[min(attempt, len(RETRY_WAITS) - 1)])
+            continue
+        break
+    if resp.status_code != 200:
+        raise LLMError(f"{model} HTTP {resp.status_code}：{_scrub(resp.text)}")
+    data = resp.json()
+    try:
+        parts = data["candidates"][0]["content"]["parts"]
+    except (KeyError, IndexError) as exc:
+        raise LLMError(f"{model} 無回覆內容：{_scrub(json.dumps(data, ensure_ascii=False))}") from exc
+    text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+    if not text.strip():
+        raise LLMError(f"{model} 回覆為空（可能思考用盡輸出額度）")
+    return text, model
+
+
+def _anthropic_high(model, system_prompt, user_prompt, json_mode, max_tokens):
+    """Anthropic Messages API（REST，不需安裝 SDK）＋延伸思考；模型不支援思考參數時改為不帶再試。"""
+    if not _key("ANTHROPIC_API_KEY"):
+        raise LLMError("未設定 ANTHROPIC_API_KEY")
+    user = user_prompt + ("\n\n只輸出一個 JSON 物件，不要任何說明文字或 Markdown 圍欄。" if json_mode else "")
+    body = {"model": model, "max_tokens": max_tokens, "system": system_prompt,
+            "messages": [{"role": "user", "content": user}],
+            "thinking": {"type": "enabled", "budget_tokens": max(1024, min(16000, max_tokens // 2))}}
+    headers = {"x-api-key": _key("ANTHROPIC_API_KEY"), "anthropic-version": ANTHROPIC_VERSION, "content-type": "application/json"}
+    for attempt in range(3):
+        resp = requests.post(ANTHROPIC_URL, json=body, headers=headers, timeout=HIGH_TIER_TIMEOUT_SEC)
+        if resp.status_code == 400 and "thinking" in body and "thinking" in resp.text:
+            body.pop("thinking")
+            continue
+        if resp.status_code in (429, 500, 529) and attempt < 2:
+            time.sleep(RETRY_WAITS[min(attempt, len(RETRY_WAITS) - 1)] * 2)
+            continue
+        break
+    if resp.status_code != 200:
+        raise LLMError(f"Anthropic {model} HTTP {resp.status_code}：{_scrub(resp.text)}")
+    blocks = resp.json().get("content") or []
+    text = "".join(b.get("text", "") for b in blocks if isinstance(b, dict) and b.get("type") == "text")
+    if not text.strip():
+        raise LLMError(f"Anthropic {model} 回覆為空")
+    return text, model
+
+
+def _claude_cli_high(model, system_prompt, user_prompt, json_mode, max_tokens):
+    if not shutil.which("claude"):
+        raise LLMError("這台主機找不到 claude 指令（claude_cli 只能在已登入 Claude Code 的本機使用）")
+    text, _ = _claude_lite(system_prompt, user_prompt, 0.4, json_mode, max_tokens, timeout=HIGH_TIER_TIMEOUT_SEC,
+                           model=model or None)
+    return text, f"claude -p（本機{('・' + model) if model else ''}）"
+
+
+HIGH_TIER_CALLERS = {"gemini": _gemini_high, "anthropic": _anthropic_high, "claude_cli": _claude_cli_high}
+
+
+def call_high_tier_reasoning(prompt, system_prompt="你是嚴謹的機構操盤檢討會主持人。", json_mode=True, max_tokens=24000):
+    """👑 高階推理：依 HIGH_TIER_PROVIDER 選引擎，開啟深度思考與大輸出額度；失敗時依序改用 Gemini 高階模型鏈。
+    回傳 {"text", "provider", "model", "elapsed_sec", "errors"}；全部失敗丟出 LLMError。"""
+    started = time.perf_counter()
+    first = high_tier_provider()
+    plan = [(first, high_tier_model(first))]
+    if first == "gemini":
+        plan += [("gemini", m) for m in HIGH_TIER_GEMINI_FALLBACKS if m != plan[0][1]]
+    elif has_key("gemini"):
+        plan += [("gemini", HIGH_TIER_DEFAULT_MODEL["gemini"])] + [("gemini", m) for m in HIGH_TIER_GEMINI_FALLBACKS]
+    errors = []
+    for provider, model in plan:
+        if provider == "gemini" and not has_key("gemini"):
+            errors.append("gemini：未設定金鑰")
+            continue
+        try:
+            text, used = HIGH_TIER_CALLERS[provider](model, system_prompt, prompt, json_mode, max_tokens)
+            return {"text": text, "provider": provider, "model": used, "errors": errors,
+                    "elapsed_sec": round(time.perf_counter() - started, 1)}
+        except (LLMError, requests.RequestException, OSError) as exc:
+            errors.append(f"{provider}/{model or 'default'}：{_scrub(exc)[:200]}")
+    raise LLMError("高階推理全部引擎失敗｜" + "｜".join(errors))
 
 
 def _order(provider):

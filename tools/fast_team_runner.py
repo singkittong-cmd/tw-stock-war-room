@@ -688,7 +688,8 @@ SIM_SYSTEM = PERSONAS + (
     "\n你們正在召開「2026 年底衝刺 +10%～+20%」100 萬模擬基金投決會（與使用者真實持股無關）。依序發言："
     "川大帝MAGA（美股費半與對應次產業風向）→ 新聞達人（營收、法說會、題材催化劑）→ 籌碼王（投信/外資鎖碼度、自營商權證避險、"
     "融資增減、盤中五檔內外盤，嚴防隔日沖倒貨）→ K線技術人（頭頭高底底高趨勢、四線排列、關鍵轉折K、精確停損位）→ "
-    "巴董事長 challenge 前四位盲點並拍板。鐵律：單一持股部位 15～30 萬元；股數必須是 100 的倍數；至少保留總淨值 10% 現金；"
+    "巴董事長 challenge 前四位盲點並拍板。鐵律：數據中的【巴董事長最新操盤鐵律】（單檔上限、硬性停損、停利目標、現金水位、"
+    "禁止追高、成員權重、自訂鐵律）每一條都必須遵守，系統會硬性檢查；股數必須是 100 的倍數；"
     "風報比<1.5 不買；空頭趨勢且未見轉折紅K不買；停損必須低於現價且不得比 K 線停損寬鬆；寧可空手也不亂買，"
     "但也要考慮距離年底目標的時間壓力與資金效率。已持有者可 ADD/TRIM/EXIT_PROFIT/EXIT_STOP/HOLD（HOLD 可上移停損做移動停利）。"
     "輸出 JSON：{\"reflection\":\"昨日預判落差覆盤一句話\",\"maga\":\"\",\"news\":\"\",\"chips\":\"\",\"kline\":\"\","
@@ -704,9 +705,12 @@ def _sim_candidates(sim, scan, top_n=5):
     acct = sim.load_account()
     held = [h["stock_id"] for h in acct["holdings"]]
     prey = {p["stock_id"]: p for p in scan.get("prey") or []}
-    # 最小下單單位 100 股就超過單檔 30 萬上限的高價股（如聯發科、創意）無法依規則建倉，不列入新機會
+    # 最小下單單位 100 股就超過單檔上限（strategy_rules.json）的高價股無法依規則建倉；當日漲幅已達禁止追高門檻的也不列入
+    rules = sim.load_strategy_rules()
+    cap = sim.position_max(acct, rules)
     fresh = [p["stock_id"] for p in scan.get("prey") or []
-             if not p["held"] and p.get("price") and p["price"] * sim.LOT_UNIT <= sim.POSITION_MAX][:top_n]
+             if not p["held"] and p.get("price") and p["price"] * sim.LOT_UNIT <= cap
+             and (_num(p.get("change_pct")) or 0) < rules["avoid_chase_pct"]][:top_n]
     return [(sid, prey.get(sid, {}), sid in held) for sid in held + fresh]
 
 
@@ -743,13 +747,20 @@ def _sim_guard(sim, d, quotes, acct, candidates):
         if shares <= 0:
             return None, "減碼股數不足 100 股"
         return {"sid": sid, "action": action, "price": price, "shares": min(shares, h["shares"])}, None
-    # ---- BUY / ADD
+    # ---- BUY / ADD（所有門檻來自 strategy_rules.json）
+    rules = sim.load_strategy_rules()
+    chg = _num((q or {}).get("change_pct"))
+    if chg is not None and chg >= rules["avoid_chase_pct"]:
+        return None, f"【操盤鐵律】當日已上漲 {chg:+.2f}% ≥ 禁止追高門檻 {rules['avoid_chase_pct']:g}%"
     zhu = sim._zhu(sid)
     if zhu.get("trend") == "空頭趨勢" and not zhu.get("has_reversal_signal"):
         return None, "空頭趨勢且未見轉折紅 K（安全矩陣：暫不買進）"
     k_stop = _stop_of(sid)
     if k_stop and k_stop < price and (not stop or stop < k_stop):
         stop = k_stop  # 停損不得比 K線技術人寬鬆
+    hard_stop = round(price * (1 - rules["stop_loss_pct"] / 100), 2)
+    if not stop or stop < hard_stop:
+        stop = hard_stop  # 硬性停損：不得比買價 −stop_loss_pct% 更寬鬆
     if not stop or stop >= price:
         return None, f"停損 {stop} 必須低於現價 {price}"
     prey = candidates[sid]
@@ -757,28 +768,31 @@ def _sim_guard(sim, d, quotes, acct, candidates):
         target = _num(prey.get("target_1"))
     if not target or target <= price:
         return None, "沒有高於現價的目標價"
+    target = min(target, round(price * (1 + rules["take_profit_pct"] / 100), 2))  # 分批停利目標上限
     rr = (target - price) / (price - stop)
     if rr < 1.5:
-        return None, f"風報比 {rr:.2f} < 1.5"
+        return None, f"風報比 {rr:.2f} < 1.5（停利目標 +{rules['take_profit_pct']:g}%、硬性停損 −{rules['stop_loss_pct']:g}%）"
+    cap, floor = sim.position_max(acct, rules), sim.position_min(acct, rules)
+    reserve_pct = sim.cash_reserve_pct(rules)
     held_value = (h["shares"] * price) if h else 0
-    room = sim.POSITION_MAX - held_value
-    reserve = acct["total_equity"] * sim.CASH_RESERVE_PCT / 100
+    room = cap - held_value
+    reserve = acct["total_equity"] * reserve_pct / 100
     budget = min(room, acct["cash_balance"] - reserve)
     want = (_num(d.get("shares")) or 0) * price
     if action == "BUY" or not h:
-        want = max(want, sim.POSITION_MIN)  # 新建倉至少 15 萬
+        want = max(want, floor)  # 新建倉下限
     value = min(want, budget)
     shares = int(value // price // sim.LOT_UNIT * sim.LOT_UNIT)
-    if not h and shares * price < sim.POSITION_MIN:  # 新建倉：無條件進位到滿足 15 萬下限的最小 100 股單位
-        shares = int(-(-sim.POSITION_MIN // (price * sim.LOT_UNIT)) * sim.LOT_UNIT)
+    if not h and shares * price < floor:  # 新建倉：無條件進位到滿足下限的最小 100 股單位
+        shares = int(-(-floor // (price * sim.LOT_UNIT)) * sim.LOT_UNIT)
     while shares > 0 and shares * price + sim.fee_of(shares * price) > budget:
         shares -= sim.LOT_UNIT  # 含手續費超出預算時退一單位
     if shares <= 0:
-        if price * sim.LOT_UNIT > sim.POSITION_MAX:
-            return None, f"單價 {price:g} 元，最小單位 100 股需 {price * sim.LOT_UNIT:,.0f} 元，超過單檔上限 30 萬"
-        return None, f"可用預算 {budget:,.0f} 元（保留 10% 現金、單檔上限 30 萬）買不到 100 股"
-    if not h and shares * price < sim.POSITION_MIN * 0.95:
-        return None, f"預算只夠 {shares * price:,.0f} 元，低於新建倉下限 15 萬"
+        if price * sim.LOT_UNIT > cap:
+            return None, f"單價 {price:g} 元，最小單位 100 股需 {price * sim.LOT_UNIT:,.0f} 元，超過單檔上限 {cap:,.0f}"
+        return None, f"可用預算 {budget:,.0f} 元（保留 {reserve_pct:g}% 現金、單檔上限 {cap:,.0f}）買不到 100 股"
+    if not h and shares * price < floor * 0.95:
+        return None, f"預算只夠 {shares * price:,.0f} 元，低於新建倉下限 {floor:,.0f}"
     return {"sid": sid, "action": "ADD" if h else "BUY", "price": price, "shares": shares, "stop": round(stop, 2),
             "target": round(target, 2), "rr": round(rr, 2)}, None
 
@@ -812,6 +826,21 @@ def sim_trade_session(mode="intraday_hunt", provider="gemini"):
                                  "shares": t["shares"], "price": t["price"], "reason": f"系統風控：{a['text']}"})
             except sim.SimError as exc:
                 out["errors"].append(f"停損出清 {a['stock_id']}：{exc}")
+    # ---- 硬性停損 %（strategy_rules.json）：虧損達門檻直接出清，不等模型
+    rules = sim.load_strategy_rules()
+    done = {e["stock_id"] for e in executed}
+    for h in list(sim.load_account()["holdings"]) if trading else []:
+        pct = _num(h.get("unrealized_pct"))
+        if h["stock_id"] in done or pct is None or pct > -rules["stop_loss_pct"]:
+            continue
+        try:
+            t = sim.execute_trade(h["stock_id"], "EXIT_STOP", h["shares"],
+                                  buffett_verdict=f"【操盤鐵律】虧損 {pct:.2f}% 達硬性停損 −{rules['stop_loss_pct']:g}%，系統出清")
+            executed.append({"stock_id": h["stock_id"], "action": "EXIT_STOP", "status": "executed", "trade_id": t["trade_id"],
+                             "shares": t["shares"], "price": t["price"],
+                             "reason": f"操盤鐵律：虧損 {pct:.2f}% 達硬性停損 −{rules['stop_loss_pct']:g}%"})
+        except sim.SimError as exc:
+            out["errors"].append(f"硬性停損 {h['stock_id']}：{exc}")
     acct = sim.load_account()
     goal = sim.goal_status(acct)
     cands = _sim_candidates(sim, scan)
@@ -835,7 +864,7 @@ def sim_trade_session(mode="intraday_hunt", provider="gemini"):
                        f"模擬基金超額報酬 Alpha {acct['total_return_pct'] - b['return_pct']:+.2f}%")
     except Exception:
         pass
-    user = (f"{header}\n{cdb.us_digest()}\n{cdb.market_digest()}\n{cdb.market_reflection_line()}\n\n"
+    user = (f"{header}\n{sim.rules_prompt(acct, rules)}\n{cdb.us_digest()}\n{cdb.market_digest()}\n{cdb.market_reflection_line()}\n\n"
             f"候選名單（從 0050 核心＋高潛力動能母體池量化精選的 Potential TOP 20）：\n{cards}")
     data, meta = _ask_json(SIM_SYSTEM, user, provider, max_tokens=4000)
     quotes = sim.latest_quotes(list(cand_map))

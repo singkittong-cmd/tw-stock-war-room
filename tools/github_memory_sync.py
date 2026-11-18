@@ -67,6 +67,8 @@ TRADE_PUSH_PATHS = SIM_PATHS + ["reports/learning_db"]  # 實際成交後才 com
 # Streamlit 交易主機自己產生的資料；其餘（新聞、美股早報、記憶庫、明日建議買進價）由 GitHub Actions 產生
 TRADER_OWNED = ["reports/simulation", "reports/learning_db", "reports/watchlist_radar_live.json"]
 ACTIONS_OWNED = [p for p in SYNC_PATHS if p not in TRADER_OWNED]
+# 管理者每日深度覆盤後的操盤規則與診斷書（tools/strategy_optimizer.py）：交易主機每 10 分鐘拉回，投決會即時套用
+STRATEGY_PATHS = ["reports/simulation/strategy_rules.json", "reports/simulation/strategy_review_latest.json"]
 SKIP_RE = re.compile(r"(\.lock|\.tmp|daemon_command\.json)$")
 PULL_EVERY_SEC = 120
 MIRROR_EVERY_SEC = 30

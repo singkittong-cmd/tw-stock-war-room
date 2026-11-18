@@ -153,17 +153,24 @@ def patrol_slot(now):
 # ---------------------------------------------------------------- 觸發條件
 
 def can_buy(acct, p):
-    """可用現金足夠（扣 10% 保留現金後 ≥ 新建倉下限或 100 股）且該股未滿倉（距單檔上限還放得下 100 股）。"""
+    """依 strategy_rules.json：未達禁止追高門檻、扣最低現金水位後 ≥ 新建倉下限或 100 股、距單檔上限還放得下 100 股。"""
+    rules = sim.load_strategy_rules()
     price = p.get("price") or 0
-    if price <= 0 or price * sim.LOT_UNIT > sim.POSITION_MAX:
+    cap = sim.position_max(acct, rules)
+    if price <= 0 or price * sim.LOT_UNIT > cap:
         return False
-    reserve = acct["total_equity"] * sim.CASH_RESERVE_PCT / 100
+    try:
+        if float(p.get("change_pct") or 0) >= rules["avoid_chase_pct"]:
+            return False
+    except (TypeError, ValueError):
+        pass
+    reserve = acct["total_equity"] * sim.cash_reserve_pct(rules) / 100
     free = acct["cash_balance"] - reserve
     h = sim.holding_of(acct, p["stock_id"])
     held_value = h["shares"] * price if h else 0
-    if sim.POSITION_MAX - held_value < price * sim.LOT_UNIT:
+    if cap - held_value < price * sim.LOT_UNIT:
         return False
-    return free >= (price * sim.LOT_UNIT if h else sim.POSITION_MIN)
+    return free >= (price * sim.LOT_UNIT if h else sim.position_min(acct, rules))
 
 
 def find_triggers(scan, acct, cooldowns, now):
@@ -279,7 +286,8 @@ class SimRoomDaemon(threading.Thread):
         mono = time.monotonic()
         if ghsync.where() == "streamlit_cloud" and mono - self._last_pull_actions >= PULL_ACTIONS_EVERY_SEC:
             self._last_pull_actions = mono
-            r = ghsync.pull_latest(force=True, paths=ghsync.ACTIONS_OWNED, scope="actions")
+            # 管理者在別台主機（本機或 GitHub）更新的操盤規則也一併拉回，下一場投決會即生效
+            r = ghsync.pull_latest(force=True, paths=ghsync.ACTIONS_OWNED + ghsync.STRATEGY_PATHS, scope="actions")
             if not r.get("ok"):
                 self.sync_note("取回早報與新聞", r)
 
