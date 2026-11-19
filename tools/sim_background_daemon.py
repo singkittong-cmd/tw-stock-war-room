@@ -268,7 +268,9 @@ class SimRoomDaemon(threading.Thread):
                 self._next_tick = time.monotonic() + TICK_SEC
                 self.tick(now)
             return
-        if phase == "SETTLE" and self.hb.get("daily_close_settled_date") != now.strftime("%Y-%m-%d"):
+        # 收盤結算補課：13:30 後任何時間醒來，只要心跳與 sim_nav_history.json 都還沒有今天的結算就補做
+        if (phase == "SETTLE" and self.hb.get("daily_close_settled_date") != now.strftime("%Y-%m-%d")
+                and not sim.nav_has(now.strftime("%Y-%m-%d"))):
             self.settle(now)
             return
         if time.monotonic() - self._last_beat >= STANDBY_BEAT_SEC:

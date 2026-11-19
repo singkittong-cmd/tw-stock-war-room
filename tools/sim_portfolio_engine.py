@@ -122,6 +122,18 @@ def market_is_weak():
     return False, (f"加權 {close:,.0f} 站上月線 {ma20:,.0f}" if close and ma20 else "大盤資料不足，以平常水位計")
 
 
+def nav_has(date_str):
+    """sim_nav_history.json 是否已有該日的收盤結算紀錄（任何主機結算過、且已同步到這台都算）。"""
+    nav = _read(NAV_PATH, []) if NAV_PATH.exists() else []
+    return any(isinstance(n, dict) and n.get("date") == date_str for n in (nav if isinstance(nav, list) else []))
+
+
+def meeting_date():
+    """最近一場投決會的日期（YYYY-MM-DD），沒有時回傳空字串。"""
+    m = _read(MEETING_PATH, {}) if MEETING_PATH.exists() else {}
+    return str((m or {}).get("held_at") or "")[:10] if isinstance(m, dict) else ""
+
+
 def cash_reserve_pct(rules=None):
     rules = rules or load_strategy_rules()
     return rules["min_cash_reserve_pct"] if market_is_weak()[0] else rules["cash_reserve_pct"]

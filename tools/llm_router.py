@@ -204,7 +204,11 @@ CALLERS = {"gemini": _gemini, "groq": _groq, "claude_lite": _claude_lite}
 HIGH_TIER_PROVIDERS = ("gemini", "anthropic", "claude_cli")
 # gemini-2.5-pro 已不開放新使用者（HTTP 404），預設改用 gemini-3.1-pro-preview；Pro 模型需要付費額度，免費金鑰會 429
 HIGH_TIER_DEFAULT_MODEL = {"gemini": "gemini-3.1-pro-preview", "anthropic": "claude-sonnet-4-6", "claude_cli": ""}
-HIGH_TIER_GEMINI_FALLBACKS = ("gemini-pro-latest", "gemini-3.5-flash")
+# 3.1-pro 免費金鑰常 429 → 等 3 秒改用 Flash 深度思考。實測（2026-11-19）gemini-2.5-flash 與 2.5-pro 一樣回 404
+# 「不再開放給新使用者」，故不列入預設鏈；gemini-3-flash-preview 實測 22 秒完成五人覆盤，gemini-3.5-flash 為最後備援。
+# 舊帳號仍可用 2.5 系列時，可在 HIGH_TIER_MODEL 指定（2.5-flash 會自動帶 thinkingBudget 8192）。
+HIGH_TIER_GEMINI_FALLBACKS = ("gemini-3-flash-preview", "gemini-3.5-flash")
+HIGH_TIER_429_WAIT_SEC = 3
 HIGH_TIER_TIMEOUT_SEC = 420          # 單一引擎上限（claude -p、Anthropic、Gemini Pro）
 HIGH_TIER_FLASH_TIMEOUT_SEC = 180    # Flash 備援：深度思考偶爾卡住，不空等
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
@@ -233,9 +237,9 @@ def _gemini_high(model, system_prompt, user_prompt, json_mode, max_tokens):
     if json_mode:
         config["responseMimeType"] = "application/json"
     flash = "flash" in model
-    if model.startswith("gemini-2.5"):
-        config["thinkingConfig"] = {"thinkingBudget": 16384}
-    else:  # Flash 備援用 medium，避免深度思考卡住
+    if model.startswith("gemini-2.5"):  # 2.5-flash 深度思考 8192 token（免費額度內），2.5-pro 16384
+        config["thinkingConfig"] = {"thinkingBudget": 8192 if flash else 16384}
+    else:  # 3.x Flash 用 medium，避免深度思考卡住；Pro 用 high
         config["thinkingConfig"] = {"thinkingLevel": "medium" if flash else "high"}
     body = {"systemInstruction": {"parts": [{"text": system_prompt}]},
             "contents": [{"role": "user", "parts": [{"text": user_prompt}]}], "generationConfig": config}
@@ -324,6 +328,8 @@ def call_high_tier_reasoning(prompt, system_prompt="你是嚴謹的機構操盤�
                     "elapsed_sec": round(time.perf_counter() - started, 1)}
         except (LLMError, requests.RequestException, OSError) as exc:
             errors.append(f"{provider}/{model or 'default'}：{_scrub(exc)[:200]}")
+            if "HTTP 429" in str(exc):
+                time.sleep(HIGH_TIER_429_WAIT_SEC)  # 限流：稍等再換下一個模型
     raise LLMError("高階推理全部引擎失敗｜" + "｜".join(errors))
 
 

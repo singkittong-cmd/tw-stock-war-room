@@ -49,6 +49,7 @@ llm_router.ensure_env_defaults()
 
 STATE_PATH = ROOT / "reports" / "cloud_autopilot_state.json"
 PRE_START, OPEN_T = dtime(7, 30), dtime(9, 0)
+CATCH_UP_START, CATCH_UP_END = dtime(9, 0), dtime(16, 30)   # 補課視窗：早報與當日投決會評估
 PHASE_TEXT = {"PREMARKET": "🌅 盤前（美股收盤匯報與台股開盤預判）", "TRADING": "⚡ 盤中（檢查報價與進出場）",
               "CLOSE": "🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）", "IDLE": "🌙 非交易時段（不呼叫任何 API）",
               "HOLIDAY": "🌙 今日休市（不呼叫任何 API）"}
@@ -168,8 +169,8 @@ class Autopilot:
     def close(self, now):
         today = now.strftime("%Y-%m-%d")
         settled_here = False
-        if self.d.hb.get("daily_close_settled_date") == today:
-            self.say(f"🧾 今日已由 {self.d.hb.get('host')} 完成收盤結算")
+        if self.d.hb.get("daily_close_settled_date") == today or sim.nav_has(today):
+            self.say(f"🧾 今日已完成收盤結算（sim_nav_history 已有 {today}）")
         elif self.may_trade("結算"):
             self.say("🧾 模擬室收盤結算：更新收盤價、寫入 sim_nav_history、五人準確率對帳")
             self.d.cloud_sync = False  # 結算結果由本腳本最後統一 commit 一次
@@ -195,6 +196,28 @@ class Autopilot:
         if settled_here:
             self.push_paths = ghsync.SYNC_PATHS   # 結算過：帳本、淨值、學習資料庫一起 commit
 
+    # ---- 補課：排程延遲或漏掉時，09:00–16:30 之間任一次被喚醒就補齊當日該做的事
+    def catch_up(self, now, phase):
+        if not (cal.is_trading_day(now) and CATCH_UP_START <= now.time() <= CATCH_UP_END):
+            return
+        today = now.strftime("%Y-%m-%d")
+        if self.state.get("morning_done_date") != today:
+            self.say("📚 補課：今日 07:35 川大帝MAGA 早報沒有完成（排程延遲或漏掉），現在補跑一次")
+            self.premarket(now)
+        if phase != "CLOSE":
+            return  # 盤中每次排程本來就會掃描行情與觸發投決會；收盤結算由 close() 負責（13:30 後任何時間都會補做）
+        if sim.meeting_date() != today and self.may_trade("補跑投決會評估"):
+            from tools import fast_team_runner as ftr
+            self.say("📚 補課：今天沒有任何投決會紀錄（盤中排程可能延遲或漏掉），補跑一次當日行情掃描與五人投決會評估"
+                     "（已收盤，只產出明日開盤預備劇本，不下單）")
+            with sim.ledger_lock(timeout=120):
+                r = self.step("補跑當日行情掃描與五人投決會評估", ftr.sim_trade_session, "watchlist_plan", self.provider)
+            if r:
+                self.say(f"✅ 補課完成：明日預備劇本 {sum(1 for d in r.get('decisions') or [] if d.get('status') == 'plan')} 檔"
+                         f"（{r.get('provider')}）")
+                self.errors += [f"補課投決會：{e}"[:300] for e in (r.get("errors") or [])[:3]]
+                self.push_paths = sorted(set(self.push_paths or []) | set(ghsync.SIM_PATHS) | set(ghsync.ACTIONS_OWNED))
+
     def idle(self, now):
         pass
 
@@ -217,6 +240,8 @@ class Autopilot:
                 self.say(f"💓 Streamlit 輕量 Ping：{ping}")
         started = time.monotonic()
         getattr(self, phase.lower())(now)
+        if phase in ("TRADING", "CLOSE"):
+            self.catch_up(now, phase)
         summary = {"finished_at": f"{tw_clock.now_tw():%Y-%m-%d %H:%M:%S}", "phase": phase,
                    "elapsed_sec": round(time.monotonic() - started, 1), "host": os.environ["AUTOPILOT_HOST"],
                    "trades_today": self.d.hb.get("trades_today"), "errors": self.errors[-10:], "log_tail": self.log[-15:]}

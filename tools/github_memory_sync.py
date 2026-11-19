@@ -216,6 +216,17 @@ def _token():
     return (os.getenv("GITHUB_TOKEN") or "").strip() if token_status()[0] == "ok" else ""
 
 
+def git_fetch_usable():
+    """git 能不能拿來拉取：要有 .git；Streamlit Cloud 容器的 remote 是 SSH（git@github.com:…）且沒有金鑰，
+    git fetch 必定「Host key verification failed」，視為不可用（不再嘗試，也不顯示這個假警報）。"""
+    if not has_git_repo():
+        return False
+    if where() == "streamlit_cloud":
+        url = _git("remote", "get-url", "origin").stdout.strip()
+        return url.startswith("https://")
+    return True
+
+
 def use_api():
     """Streamlit Cloud 一律用 REST API（雲端容器的 git 沒有推送權限）；沒有 git repo 時也用 API。"""
     return where() == "streamlit_cloud" or not has_git_repo()
@@ -338,11 +349,14 @@ def pull_latest(force=False, paths=None, scope="all", every=PULL_EVERY_SEC):
     # 讀取順序：Streamlit Cloud 有有效 token 時先用 API；沒有（或 token 是預留字）時先用容器內建的 git clone 拉取，
     # API 失敗也會改用 git，git 失敗再試 API（公開 repo 不需 token）
     if use_api() and _token():
-        methods = ("api", "git") if has_git_repo() else ("api",)
+        methods = ("api",)  # 有有效 token：只用 API，不做 git 備援（避免顯示 git fetch 假警報）
     else:
-        methods = ("git", "api") if has_git_repo() else ("api",)
+        methods = ("git", "api") if git_fetch_usable() else ("api",)
     if token_status()[0] == "invalid":
         errors.append(f"token：{token_status()[1]}")
+    if use_api() and not _token() and not git_fetch_usable():
+        return _update_state(**info, ok=False, error=f"{token_status()[1]}；Streamlit Cloud 的 git 是 SSH 且沒有金鑰、無法拉取，"
+                                                     "請在 Streamlit Secrets 填入有效的 GITHUB_TOKEN（github_pat_…）")
     for method in methods:
         try:
             sha, n, remote = _pull_git(branch, paths) if method == "git" else _pull_api(paths)
@@ -365,8 +379,9 @@ def remote_text(rel):
             if r.status_code == 200:
                 return r.content.decode("utf-8")
         except (RuntimeError, requests.RequestException):
-            pass  # API 失敗改用 git
-    if has_git_repo():
+            return None  # 有 token 時只信任 API，不做 git 備援
+        return None
+    if git_fetch_usable():
         branch = branch_name()
         if _git("fetch", "-q", "origin", branch).returncode == 0:
             r = _git("show", f"FETCH_HEAD:{rel}")
