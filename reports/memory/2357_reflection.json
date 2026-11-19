@@ -1,0 +1,88 @@
+{
+  "stock_id": "2357",
+  "name": "華碩",
+  "generated_at": "2026-11-19 16:12:00",
+  "latest_bar_date": "2026-11-19",
+  "hits": 1,
+  "gaps": 1,
+  "total": 2,
+  "headline": "K線技術人：11-18 16:09 預判守 782 元支撐中性（當時 841），今日實際最低 800、收 800（-4.88%） -> 觸發【方向落差、支撐守住】",
+  "lessons": [
+    "預期盤整但實際波動 -4.88%：區間假設失效，改用趨勢方向判斷"
+  ],
+  "reviews": [
+    {
+      "member": "chips",
+      "member_name": "籌碼王",
+      "source": "standby",
+      "recorded_at": "2026-11-18 16:09:26",
+      "target_date": "2026-11-19",
+      "prediction": {
+        "price_at": 841.0,
+        "direction": "偏空",
+        "support": null,
+        "resistance": null,
+        "stop_loss": null,
+        "chip_view": "法人調節中｜外資 5 日 -91 張、投信 5 日 -949 張",
+        "note": "法人調節中｜外資 5 日 -91 張、投信 5 日 -949 張"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-19"
+        ],
+        "close": 800.0,
+        "low": 800.0,
+        "high": 840.0,
+        "is_partial": false,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": -4.88,
+      "tags": [],
+      "gap_text": "11-18 16:09 預判偏空（當時 841），今日實際最低 800、收 800（-4.88%）",
+      "corrections": [
+        "判斷準確，維持原邏輯"
+      ]
+    },
+    {
+      "member": "kline",
+      "member_name": "K線技術人",
+      "source": "standby",
+      "recorded_at": "2026-11-18 16:09:26",
+      "target_date": "2026-11-19",
+      "prediction": {
+        "price_at": 841.0,
+        "direction": "中性",
+        "support": 782.0,
+        "resistance": 901.0,
+        "stop_loss": 750.0,
+        "chip_view": null,
+        "note": "觀望等待底部確認"
+      },
+      "actual": {
+        "dates": [
+          "2026-11-19"
+        ],
+        "close": 800.0,
+        "low": 800.0,
+        "high": 840.0,
+        "is_partial": false,
+        "foreign_net": null,
+        "trust_net": null
+      },
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": -4.88,
+      "tags": [
+        "方向落差",
+        "支撐守住"
+      ],
+      "gap_text": "11-18 16:09 預判守 782 元支撐中性（當時 841），今日實際最低 800、收 800（-4.88%） -> 觸發【方向落差、支撐守住】",
+      "corrections": [
+        "預期盤整但實際波動 -4.88%：區間假設失效，改用趨勢方向判斷"
+      ]
+    }
+  ]
+}

@@ -1,29 +1,29 @@
 {
   "thread_name": "SimRoomDaemon",
-  "pid": 2306,
+  "pid": 2471,
   "host": "github_actions",
   "autopilot_mode": "cloud_master",
-  "started_at": "2026-11-18 16:07:23",
-  "date": "2026-11-18",
+  "started_at": "2026-11-19 16:11:52",
+  "date": "2026-11-19",
   "scans_today": 0,
   "triggers_today": 0,
   "meetings_today": 0,
   "trades_today": 0,
   "cooldowns": {},
   "patrol_slot_done": null,
-  "daily_close_settled_date": "2026-11-18",
+  "daily_close_settled_date": "2026-11-19",
   "last_trigger": null,
   "last_meeting": null,
   "last_settlement": {
-    "date": "2026-11-18",
-    "at": "2026-11-18 16:07:23",
+    "date": "2026-11-19",
+    "at": "2026-11-19 16:11:52",
     "late": true,
     "total_equity": 1001594,
     "return_pct": 0.16,
     "errors": [],
     "learning": {
       "closed_now": 0,
-      "open": 12,
+      "open": 18,
       "lessons": 500
     }
   },
@@ -37,10 +37,10 @@
   },
   "last_sync": null,
   "last_error": null,
-  "last_heartbeat": "2026-11-18 16:07:34",
+  "last_heartbeat": "2026-11-19 16:11:57",
   "phase": "STANDBY",
   "status": "STANDBY_AFTER_HOURS (背景守護待命中，將於下個交易日 09:00:00 自動啟動盤中盯盤至 13:30 收盤)",
   "auto_trade_enabled": true,
   "provider": "gemini",
-  "next_open": "2026-11-19 09:00:00"
+  "next_open": "2026-11-20 09:00:00"
 }

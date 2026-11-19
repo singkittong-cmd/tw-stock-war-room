@@ -1,241 +1,259 @@
 {
-  "updated_at": "2026-11-18 16:07:38",
-  "errors": [],
+  "updated_at": "2026-11-19 16:11:58",
+  "errors": [
+    "Google News US ：not well-formed (invalid token): line 1, column 252"
+  ],
   "count": 25,
   "news": [
     {
-      "title": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027",
-      "source": "NVIDIA Newsroom",
-      "pub_date": "2026-11-18 16:03",
-      "epoch": 1794989018,
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNS1NfbkFJSF9aUlBlMkphNjFXMERWTUluUWdsNjQxajFFbjdEdEJHU0FwRU1USGh2MkVWMUYtNDRFNU1qVHlRSzNyQ2ZUQXZuY2M4bWhmdHVaczZqXzJWaExTVXVIQlIyVWNQMUZsV09Ua0F1UDJ5Wkg0engwakZkbDdkaGRTOHZpN200clNRVXR5QXZRNXo0NDlBaVZJdDE0?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Nvidia: No intent to reinstate Huang",
-      "source": "Northwest Arkansas Democrat-Gazette",
-      "pub_date": "2026-11-18 15:53",
-      "epoch": 1794988380,
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObW90VVdFMG9kelpoaW5KWGZfdGJ2R2Q5NXlOTGFUUUNlOHplXzNKQzJWLWlMdmdjMENweDJDV0VlRTY3cTFvcWIwVUx5NnIwVnVLZDR2VEN3Snc0V0U3TmJkS0dHd1A4UHU0MmR6X09mVUZIckNRbXMzRmdlcGR2cTVxQnVtQQ?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Anthropic Is Likely to Price Above $78 a Share After a 1,200% Revenue Surge",
+      "title": "If a Stock Market Crash Is Coming, History Says This 1 Investing Move Has Never Once Failed",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:51",
-      "epoch": 1794988262,
-      "url": "https://www.fool.com/investing/2026/11/18/anthropic-is-likely-to-price-above-78-a-share-after-a-1200-revenue-surge/?.tsrc=rss",
+      "pub_date": "2026-11-19 15:50",
+      "epoch": 1795074602,
+      "url": "https://www.fool.com/investing/2026/11/19/if-a-stock-market-crash-is-coming-history-says-this-1-investing-move-has-never-once-failed/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "The $1.1 Trillion Market GXO Has Barely Tapped",
+      "title": "‘Near Zero Chance’: Gary Black Explains Why Nvidia Board Won’t Reconsider Jensen Huang, Crypto Bettors See This Outcome",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:50",
-      "epoch": 1794988202,
-      "url": "https://www.fool.com/investing/2026/11/18/the-usd1-1-trillion-market-gxo-has-barely-tapped/?.tsrc=rss",
+      "pub_date": "2026-11-19 15:38",
+      "epoch": 1795073882,
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63418572/gary-black-nvidia-jensen-huang-ceo-polymarket?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Nvidia Looks Past Jensen Huang With Raised Outlook, Strong Earnings",
-      "source": "Bloomberg.com",
-      "pub_date": "2026-11-18 15:35",
-      "epoch": 1794987300,
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOd1N1RmJJZTQ2ZnZzU2tORFJxdWpxbVdjdUZ5aVIzd0paQjc3Y081Q203cUUtOHRuQzVRYzVvZXF4akxUVTdOTmdsMG1sbE9yOHdBVUFxUENpOFVSQWFBTkhNOU51dVJDaFFGNjFBbkdNZGNudEdsVV9WUDRQTmFNOGZBTV9HMWFuSi0tZjdYbmlpdDF6NFdIT2JtYzRHRFRFb1RiaTRPc2pJOUpRY3ByTjVvREhnQUFXUTRmRw?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Catch up: Nvidia’s post-Huang earnings beat expectations; Putin, Trump and Xi to meet in China",
-      "source": "The Economist",
-      "pub_date": "2026-11-18 15:28",
-      "epoch": 1794986920,
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNeFZ6c3V2RjlSeGdtY1VQQ042RkFYMjlZa0RvWFpWMUhvRmxPRTVha3JoSklZTlEwNC1VcVRqUnJVc1Y1T3ExUmpLaUthTE5oZWdDTUI2bl9OU3FoQm1NN3FTaEhXSU5SU0RyaHEzbXRjblhKVklEcmVvZXhxcFMtTk1Odi1DMXh1OGNPYXl4OVY3cXVfYlpJ?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Down 36% in a month at 48x P/E: Is Marvell a dip or a trap?",
+      "title": "3 Energy Stocks to Buy Before 2026 Ends That Could Help You Make a Fortune",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:23",
-      "epoch": 1794986619,
-      "url": "https://finance.yahoo.com/markets/stocks/articles/down-36-month-48x-p-072339117.html?.tsrc=rss",
+      "pub_date": "2026-11-19 15:25",
+      "epoch": 1795073102,
+      "url": "https://www.fool.com/investing/2026/11/19/3-energy-stocks-to-buy-before-2026-ends-that-could-help-you-make-a-fortune/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "UnitedHealth Is Targeting 13% to 16% Long-Term Earnings Growth. Where Will the Stock Be in 5 Years?",
+      "title": "Tech firms rise after record Anthropic IPO but Nvidia casts shadow",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:20",
-      "epoch": 1794986400,
-      "url": "https://www.fool.com/investing/2026/11/18/unitedhealth-is-targeting-13-to-16-long-term-earni/?.tsrc=rss",
+      "pub_date": "2026-11-19 15:16",
+      "epoch": 1795072581,
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-drop-anthropics-record-025108034.html?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Stocks drop as booming Nvidia results drowned by spy scandal",
+      "title": "Does AI Workflow Launch Change The Bull Case For Box (BOX)?",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:14",
-      "epoch": 1794986043,
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-drop-booming-nvidia-results-024500677.html?.tsrc=rss",
+      "pub_date": "2026-11-19 15:12",
+      "epoch": 1795072355,
+      "url": "https://finance.yahoo.com/technology/ai/articles/does-ai-workflow-launch-change-071235295.html?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Kinsus stock jumps nearly 7% as Nvidia commits over $1 billion to Taiwan supplier",
+      "title": "3 Undervalued Stocks With Revenue Growth Up To 44%",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:10",
-      "epoch": 1794985838,
-      "url": "https://finance.yahoo.com/markets/stocks/articles/kinsus-stock-jumps-nearly-7-071038434.html?.tsrc=rss",
+      "pub_date": "2026-11-19 15:11",
+      "epoch": 1795072281,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-undervalued-stocks-revenue-growth-071121352.html?.tsrc=rss",
+      "symbols": [
+        "MU"
+      ]
+    },
+    {
+      "title": "Taiwan stocks plunge 4.6% as AI rout deepens; chip and PCB shares hit limit-down",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 15:08",
+      "epoch": 1795072111,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-stocks-plunge-4-6-070831391.html?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Greatland Resources And 2 Australian Undervalued Stocks To Watch",
+      "title": "Planet Labs Teams Up With Stoke Space -- Just In Case SpaceX Really Retires the Falcon 9",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:09",
-      "epoch": 1794985759,
-      "url": "https://finance.yahoo.com/markets/stocks/articles/greatland-resources-2-australian-undervalued-070919931.html?.tsrc=rss",
+      "pub_date": "2026-11-19 14:50",
+      "epoch": 1795071001,
+      "url": "https://www.fool.com/investing/2026/11/19/planet-labs-teams-up-with-stoke-space-just-in-case-spacex-really-retires-the-falcon-9/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Nvidia Spending Pushes AI Data Center Infrastructure Stocks Into Focus",
+      "title": "Is Summit Insights Wrong to Give Up on NVIDIA? Wall Street Still Sees $251",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 15:07",
-      "epoch": 1794985665,
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-spending-pushes-ai-data-070745601.html?.tsrc=rss",
+      "pub_date": "2026-11-19 14:33",
+      "epoch": 1795070036,
+      "url": "https://www.tikr.com/blog/is-summit-insights-wrong-to-give-up-on-nvidia-wall-street-still-sees-251?ref=yahoofinance&tlnk=yf-261119-26g4w6wq&.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Asian Stocks to Fall, Nvidia Sales Outlook Beats: Markets Wrap",
-      "source": "Bloomberg.com",
-      "pub_date": "2026-11-18 15:01",
-      "epoch": 1794985260,
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUHhZZG5FcFhON3BCMkRyY201M2FVdVRTaUF2a29ScWc3ZTd4TkI1Zm44SXNOcmZoOE9tN29nalFxMllaQV9ZQVp5SFNKbFlmVWtxVmtjdGl4WVVRRnpFeVZaVjVCVGozeFVWYzF6NnM1dERENnQ5SWpLTlNsejBDS21mS2k2aUhQeHZHNU80V2dvbG9h?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Samsung Electro-Mechanics shares jump on expanded Nvidia supply deal",
+      "title": "Kevin O’Leary Sees No Way Back for Jensen Huang at Nvidia: ‘Forget About the Affairs...There’s Another Problem’",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:57",
-      "epoch": 1794985067,
-      "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electro-mechanics-shares-jump-065747188.html?.tsrc=rss",
+      "pub_date": "2026-11-19 14:25",
+      "epoch": 1795069559,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kevin-o-leary-sees-no-062559128.html?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "1 AI Stock I’d Buy Right Now Without Hesitation",
+      "title": "Moderna's Cancer Vaccine Worked -- and the Stock Plunged Anyway. Here's What Investors Are Missing.",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:54",
-      "epoch": 1794984842,
-      "url": "https://www.fool.com/investing/2026/11/18/1-ai-stock-id-buy-right-now-without-hesitation/?.tsrc=rss",
+      "pub_date": "2026-11-19 14:20",
+      "epoch": 1795069200,
+      "url": "https://www.fool.com/investing/2026/11/19/modernas-cancer-vaccine-worked-and-the-stock-plung/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
+      "title": "‘Unprecedented Results’: AMD Packs a Year of Chip Progress Into 5 Months Using OpenAI, Greg Brockman Says",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:37",
-      "epoch": 1794983833,
-      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63376257/stock-market-will-sp-500-open-up-or-down-today-80?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+      "pub_date": "2026-11-19 14:12",
+      "epoch": 1795068724,
+      "url": "https://finance.yahoo.com/technology/ai/articles/unprecedented-results-amd-packs-chip-061204255.html?.tsrc=rss",
+      "symbols": [
+        "AVGO"
+      ]
+    },
+    {
+      "title": "Michaël Van De Poppe Says BTC Demand Will Come After Liquidity Is Sucked Into Anthropic IPO — Critics Dispute Mega-IPO Squeeze Narrative",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 14:02",
+      "epoch": 1795068129,
+      "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/michael-van-de-poppe-says-btc-demand-will-come-after-liquidity-is-sucked-into-anthropic-ipo-critics-dispute-mega-ipo-squeeze-narrative/cNbLzDOR9ij?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "SpaceX vs. Anthropic: Here’s Which Mega-IPO Stock I’d Buy After Anthropic Goes Public.",
+      "title": "Anthropic's record IPO lands as Nvidia suffers its worst run since 2008",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:29",
-      "epoch": 1794983342,
-      "url": "https://www.fool.com/investing/2026/11/18/spacex-vs-anthropic-here-s-which-mega-ipo-stock-i-d-buy-after-anthropic-goes-public/?.tsrc=rss",
+      "pub_date": "2026-11-19 13:53",
+      "epoch": 1795067585,
+      "url": "https://www.euronews.com/2026/11/19/anthropics-record-ipo-lands-as-nvidia-suffers-its-worst-run-since-2008?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Nvidia Isn’t the Problem. Why Are Stock Markets Really Falling?",
-      "source": "tastylive",
-      "pub_date": "2026-11-18 14:22",
-      "epoch": 1794982924,
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWElPZmZwd1ZMSFNGaU9qQjBsZDZ4Zm5TcUhiREQyVE9yLTRUOEFSNXpwRFlmeFpfVUJ0ZGJJb2k0aGxnMmNPTVh3UUFyOExxQjdySmVnZGZhNlBUdElibVNwN0FaXzdQVzJrcVRFM3d1NWxXaDQwVjlHMnlfRlRtaVJ5VnRBcnBGSFU3V1c0aVFSNEF5Sk5iSHFXSkYzeG1Gd21ueg?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Can Anthropic’s IPO Burn NVDA Stock Bears? Jim Cramer Thinks So — Jeff Bezos Weighs In On Jensen Huang’s Successor",
+      "title": "Anthropic’s Cash Pile Tops Amazon And Nvidia Combined After Record IPO – Meet The New ETF Tracking ANT-Linked Companies",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:19",
-      "epoch": 1794982748,
-      "url": "https://stocktwits.com/news-articles/markets/equity/can-anthropic-ipo-burn-nvda-bears-jim-cramer-jeff-bezos-weighs-jensen-huang-successor/cNbXs4oR9hv?.tsrc=rss",
+      "pub_date": "2026-11-19 13:47",
+      "epoch": 1795067277,
+      "url": "https://stocktwits.com/news-articles/markets/equity/anthropic-s-cash-pile-tops-amazon-and-nvidia-combined-after-record-ipo-meet-the-new-etf-tracking-ant-linked-companies/cNbLyKgR9i1?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Anthropic’s IPO price is due today. What should investors know?",
+      "title": "Why Anthropic Could Be a $5 Trillion Company By 2030",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:14",
-      "epoch": 1794982499,
-      "url": "https://www.euronews.com/2026/11/18/anthropics-ipo-price-is-due-today-what-should-investors-know?.tsrc=rss",
+      "pub_date": "2026-11-19 13:39",
+      "epoch": 1795066770,
+      "url": "https://www.fool.com/investing/2026/11/19/why-anthropic-could-be-a-usd5-trillion-by-2030/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Home Depot’s Comparable Sales Rose 2.2% Even as Customer Transactions Fell 0.5%. Here’s What’s Behind the Gap.",
+      "title": "Anthropic to begin trading after record-breaking market debut tops SpaceX record",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:12",
-      "epoch": 1794982333,
-      "url": "https://www.fool.com/investing/2026/11/18/home-depots-comparable-sales-rose-22-even-as-customer-transactions-fell-05-heres-whats-behind-the-gap/?.tsrc=rss",
+      "pub_date": "2026-11-19 13:35",
+      "epoch": 1795066555,
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-set-price-ipo-key-030309911.html?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Peter Schiff Has a New Candidate for the Next Financial Crisis. It’s Not Bitcoin",
+      "title": "Should You Buy Take-Two Interactive After the GTA VI Release?",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 14:10",
-      "epoch": 1794982221,
-      "url": "https://beincrypto.com/peter-schiff-ai-subprime-financial-crisis/?.tsrc=rss",
+      "pub_date": "2026-11-19 13:21",
+      "epoch": 1795065662,
+      "url": "https://www.fool.com/investing/2026/11/19/should-you-buy-take-two-interactive-after-gta-vi-release/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Nvidia Breaks Revenue And Profit Records, And Will Keep Doing It",
-      "source": "The Next Platform",
-      "pub_date": "2026-11-18 14:06",
-      "epoch": 1794981995,
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPR2U4TVMwSmt5M09VTHlQMnFUTXZTTEV4UjBfdWw0dGpQTzBWeldJS1EyQUluQU1Rak1jd0xGbDhzNUxxOUMtcUpzbFl1VVNwWnFKeU1fdms5NVNkS3lwdXM2aERLNTlFbHlTN2NxXzZER3o2WTlHOWI5bEFfV28yNkFNQzkxYXpuMFI1ZFpMV21leENaT3MwbEQ5c29qa3d6ZzFJektoMGQ5YU9WeE1VTThvcDM5UkdkbkRJ?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Bitdeer Technologies (BTDR) Investors Are Running for the Exits",
+      "title": "Nvidia (NVDA) Rules Out Jensen Huang Return As Record Q3 Reshapes Leadership",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-18 13:54",
-      "epoch": 1794981245,
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bitdeer-technologies-btdr-investors-running-055405068.html?.tsrc=rss",
+      "pub_date": "2026-11-19 13:15",
+      "epoch": 1795065305,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-rules-jensen-huang-051505790.html?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Nvidia posts strong earnings amid Jensen Huang exit, reported SEC probe",
-      "source": "Axios",
-      "pub_date": "2026-11-18 13:41",
-      "epoch": 1794980490,
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZ2xBR1ZHQzh2THBkb1pZRVVjV05vQnh2V19IVGtpcTh3c0ZCUUp5R3N5bEtsNENwT0NQUDNMT3p2a1JvUzFtQ1JrUnZPbjdVQmpKMll0SXlDMDlKUWZ1YThuT085dnJoV09YVHp5S1d2Rl9CSk9zdFFXR0xvMXdSWQ?oc=5",
-      "symbols": []
+      "title": "Asia stocks slide as Taiwan drops 4%, AI jitters blunt Anthropic IPO optimism",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 13:05",
+      "epoch": 1795064753,
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/asia-stocks-slide-taiwan-drops-050553675.html?.tsrc=rss",
+      "symbols": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Micron (MU) Stock May Be 16% Undervalued Following Fresh AI Supply News",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 12:34",
+      "epoch": 1795062861,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-stock-may-16-043421943.html?.tsrc=rss",
+      "symbols": [
+        "MU"
+      ]
+    },
+    {
+      "title": "EXCLUSIVE: Tesla Still Rules Leveraged ETFs, but Anthropic IPO and Micron’s Rise Signal What’s Next",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 11:30",
+      "epoch": 1795059004,
+      "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-tesla-still-rules-leveraged-033004009.html?.tsrc=rss",
+      "symbols": [
+        "MU"
+      ]
+    },
+    {
+      "title": "Lisa Su Sells 70,000 Shares for $35.5 Million as AMD Stock Pops 147% in 2026: Her Direct Holdings Fall 2.32%",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 11:18",
+      "epoch": 1795058303,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lisa-su-sells-70-000-031823131.html?.tsrc=rss",
+      "symbols": [
+        "AMD"
+      ]
+    },
+    {
+      "title": "Why Is AMD Stock Rising Overnight?",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 10:05",
+      "epoch": 1795053925,
+      "url": "https://stocktwits.com/news-articles/markets/equity/why-is-amd-stock-rising-overnight/cNbLtmJR9iB?.tsrc=rss",
+      "symbols": [
+        "AMD"
+      ]
+    },
+    {
+      "title": "Stock-Split Watch: Is Micron Next?",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-19 09:03",
+      "epoch": 1795050182,
+      "url": "https://www.fool.com/investing/2026/11/18/stock-split-watch-is-micron-next/?.tsrc=rss",
+      "symbols": [
+        "MU"
+      ]
     }
   ]
 }

@@ -4,20 +4,20 @@
   "can_trade": false,
   "morning_done_date": "2026-11-10",
   "last_run": {
-    "finished_at": "2026-11-18 16:09:30",
+    "finished_at": "2026-11-19 16:13:06",
     "phase": "CLOSE",
-    "elapsed_sec": 125.1,
+    "elapsed_sec": 72.7,
     "host": "github_actions",
     "trades_today": 0,
     "errors": [],
     "log_tail": [
-      "[16:07:23] ☁️ 雲端單次排程（github_actions・cloud_master・gemini）｜目前 🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）",
-      "[16:07:25] 💓 Streamlit 輕量 Ping：HTTP 200",
-      "[16:07:25] 🧾 模擬室收盤結算：更新收盤價、寫入 sim_nav_history、五人準確率對帳",
-      "[16:07:34] ✅ 結算完成：總淨值 1001594（0.16%）",
-      "[16:07:34] 📰 今日財經新聞 TOP 10、收盤重點、明日 20 強建議買進價定錨",
-      "[16:09:30] 🎯 Potential TOP 20：{'0050核心': 18, '高潛力動能': 2}｜保留模擬持倉 無"
+      "[16:11:52] ☁️ 雲端單次排程（github_actions・cloud_master・gemini）｜目前 🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）",
+      "[16:11:53] 💓 Streamlit 輕量 Ping：HTTP 200",
+      "[16:11:53] 🧾 模擬室收盤結算：更新收盤價、寫入 sim_nav_history、五人準確率對帳",
+      "[16:11:57] ✅ 結算完成：總淨值 1001594（0.16%）",
+      "[16:11:57] 📰 今日財經新聞 TOP 10、收盤重點、明日 20 強建議買進價定錨",
+      "[16:13:06] 🎯 Potential TOP 20：{'0050核心': 19, '高潛力動能': 1}｜保留模擬持倉 無"
     ]
   },
-  "close_reports_date": "2026-11-18"
+  "close_reports_date": "2026-11-19"
 }
