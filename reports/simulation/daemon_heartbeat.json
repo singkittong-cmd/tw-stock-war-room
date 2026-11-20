@@ -1,19 +1,68 @@
 {
   "thread_name": "SimRoomDaemon",
-  "pid": 2471,
-  "host": "github_actions",
+  "pid": 303,
+  "host": "streamlit_cloud",
   "autopilot_mode": "cloud_master",
-  "started_at": "2026-11-19 16:11:52",
-  "date": "2026-11-19",
-  "scans_today": 0,
-  "triggers_today": 0,
-  "meetings_today": 0,
-  "trades_today": 0,
-  "cooldowns": {},
-  "patrol_slot_done": null,
+  "started_at": "2026-11-20 09:45:04",
+  "date": "2026-11-20",
+  "scans_today": 1,
+  "triggers_today": 1,
+  "meetings_today": 1,
+  "trades_today": 2,
+  "cooldowns": {
+    "2330": "2026-11-20 09:45:04",
+    "2382": "2026-11-20 09:45:04",
+    "2609": "2026-11-20 09:45:04",
+    "2882": "2026-11-20 09:45:04",
+    "3231": "2026-11-20 09:45:04"
+  },
+  "patrol_slot_done": 1,
   "daily_close_settled_date": "2026-11-19",
-  "last_trigger": null,
-  "last_meeting": null,
+  "last_trigger": {
+    "at": "2026-11-20 09:45:04",
+    "items": [
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2330",
+        "text": "台積電 現價 2050.0 達建議買進價、五檔委買比 4.15",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2382",
+        "text": "廣達 現價 254.0 達建議買進價、五檔委買比 1.18",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2609",
+        "text": "陽明 現價 55.8 達建議買進價、五檔委買比 3.04",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2882",
+        "text": "國泰金 現價 102.0 達建議買進價、五檔委買比 1.12",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "3231",
+        "text": "緯創 現價 150.5 達建議買進價、五檔委買比 1.67",
+        "label": "🎯 達建議買進價"
+      }
+    ]
+  },
+  "last_meeting": {
+    "at": "2026-11-20 09:45:04",
+    "trigger": "🎯 達建議買進價 2330、🎯 達建議買進價 2382、🎯 達建議買進價 2609、🎯 達建議買進價 2882、🎯 達建議買進價 3231",
+    "executed": 2,
+    "rejected": 0,
+    "engine": "gemini",
+    "total_equity": 1001324,
+    "errors": [],
+    "elapsed_sec": 10.9
+  },
   "last_settlement": {
     "date": "2026-11-19",
     "at": "2026-11-19 16:11:52",
@@ -37,10 +86,16 @@
   },
   "last_sync": null,
   "last_error": null,
-  "last_heartbeat": "2026-11-19 16:11:57",
-  "phase": "STANDBY",
-  "status": "STANDBY_AFTER_HOURS (背景守護待命中，將於下個交易日 09:00:00 自動啟動盤中盯盤至 13:30 收盤)",
+  "last_heartbeat": "2026-11-20 09:45:25",
+  "phase": "TRADING",
+  "status": "⚡ TRADING (盤中背景自動盯盤中，每 15 秒更新報價並檢查進出場，一路跑到 13:30 收盤)",
   "auto_trade_enabled": true,
   "provider": "gemini",
-  "next_open": "2026-11-20 09:00:00"
+  "next_open": "2026-11-23 09:00:00",
+  "prefetch_done": "streamlit_cloud|2026-11-20",
+  "last_tick_at": "2026-11-20 09:45:04",
+  "last_tick_elapsed_sec": 2.76,
+  "last_scan_errors": [],
+  "total_equity": 1001594,
+  "holdings_count": 0
 }
