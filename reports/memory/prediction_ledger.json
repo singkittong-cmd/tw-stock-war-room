@@ -17475,7 +17475,58 @@
       "stop_loss": null,
       "chip_view": null,
       "note": "台股下一交易日預期延續空頭趨勢向下補跌，關鍵支撐看前低，壓力落在月線附近。"
+    },
+    {
+      "key": "maga|TAIEX|premarket|2026-11-20 16:07:54",
+      "member": "maga",
+      "member_name": "川大帝MAGA",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-20 16:07:54",
+      "target_date": "2026-11-23",
+      "price_at": 36033.2890625,
+      "direction": "偏空",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "費半 -2.41%、TSM 溢價 16.06%"
+    },
+    {
+      "key": "chairman|TAIEX|premarket|2026-11-20 16:07:54",
+      "member": "chairman",
+      "member_name": "巴董事長",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-20 16:07:54",
+      "target_date": "2026-11-23",
+      "price_at": 36033.2890625,
+      "direction": "中性",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "台股下一交易日預期延續空頭趨勢震盪，關鍵點位關注MA20與前低支撐，建議維持保守防守。"
+    },
+    {
+      "key": "news|TAIEX|news_brief|2026-11-20 16:07:28",
+      "member": "news",
+      "member_name": "新聞達人",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "news_brief",
+      "recorded_at": "2026-11-20 16:07:28",
+      "target_date": "2026-11-23",
+      "price_at": 36033.2890625,
+      "direction": "偏空",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "偏空警戒：AI資本支出效益疑慮引發全球半導體拋售潮，台股爆量重挫需提防賣壓延續。"
     }
   ],
-  "updated_at": "2026-11-20 12:19:28"
+  "updated_at": "2026-11-20 16:07:54"
 }

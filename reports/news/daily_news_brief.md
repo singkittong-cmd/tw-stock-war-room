@@ -1,32 +1,33 @@
-# 📰 今日全市場重大財經新聞快報（2026-11-19 16:12）
+# 📰 今日全市場重大財經新聞快報（2026-11-20 16:07）
 
 ## 【🔄 昨日結論覆盤與思考修正】
-昨日看空後大盤小幅反漲，顯示低檔乖離過大時追空風險高，未來空方訊號必須等待收盤確認且不盲目追空。
+昨日預期盤整但市場出現-6.23%劇烈波動，顯示區間假設失效，後續將順應趨勢方向進行消息面與基本面評估。
 
 ## 一句話結論（新聞情緒：偏空警戒）
-台股狂瀉失守三萬九與年線，金管會祭第二波限空令，防範多殺多與流動性危機。
+AI資本支出效益疑慮引發全球半導體拋售潮，台股爆量重挫需提防賣壓延續。
 
 ## 今日財經新聞 TOP 10
-1. `[2026-11-19 15:47]` **台股重摔失守3萬9大關 金管會祭第二波限空令**（利多）— 大盤崩跌失守年線與整數關卡，金管會緊急出手祭出限空令穩定市場信心。 [🔗 來源：鏡週刊Mirror Media](https://news.google.com/rss/articles/CBMiW0FVX3lxTE93ZkZUQmItNUFyQS1DV1hqZ3B1VFdBMTB6R1NXaUh1LVprQWc1MUpEdjEtZmdJMXV1dGNCdUtaakZzRDQwVmlGVV92ZEZYMmhDSHJfLWtNckp1YlXSAWBBVV95cUxQb093NFJPZ0tEWjRwTEJXVWQzSExPdUZqOGlkTVBzS2xFeVI1OFZVd3pOcVhZa25hLWdjMGZ4ZGtEaDYweTF2bnZYNXNRanVaZUtabE1ndkttTlBWcm40XzM?oc=5)
-2. `[2026-11-19 15:55]` **專家曝市場驚見流動性極差危機 賣壓沉重引發恐慌**（利空）— 市場出現恐慌性多殺多與流動性風險，短期需嚴防散戶融資多頭踩踏。 [🔗 來源：Yahoo新聞](https://news.google.com/rss/articles/CBMilgNBVV95cUxPWUdleF9ZWEJDTUxoNW9EUk5TazdXb0RzelhqMUpKU0R2ODFzVU52UDdWZDBLUEtFd3BMbW1LMWRoMnNjZmtmNldJSnRvY21rTGxBU3k4OHNRUXp0MEdKcEdrcGdWUDVmSlpVX2hwOTlyQjR0ZGtyZXBDalBhTGM4bi1qOERKMjNfQlBEVTZnenJZQjVjVFJPSzZLVHp6VHpEUHE5cF9YNko2UFN1MWtaRnBHUEdGV2FSdGFxc1Z4VzhSVE0wakpJTThPa1RjWlN3VFFQekl2dTRaQk9VVXNMcmdHV3BURmNFNmIwMUI0MEVSTVVaYl9FR0FxT2hneGR5cl9nOElUWVJ4NGJMcUZpdXhBVUFIMmVCNVRCVHVodUpPTlZ5Ujg5YXUwWnA1NlcxN1M4YjI0NG5lSkF0b1FEMU9RdXJSQ1JMZ2xncFZJdkl4czhOMkw1cXQ5a1FuZEdSU0lHNzVnZW9uTFhHeW0xT1hNQ3pKRk45elVKWmN6WDRTeENwODlvUE9qNEF3WGNNREVhTjBR?oc=5)
-3. `[2026-11-19 16:00]` **揭開自營商避險狂潮與賣壓真相 權證與避險盤湧出**（利空）— 外資賣壓雖減，但自營商避險與權證多頭多殺多加劇大盤跌勢。 [🔗 來源：台灣好新聞](https://news.google.com/rss/articles/CBMigARBVV95cUxPbXZhN3hiVzlOOUZWcjlzUGhIS29fWWZqbUQ2T3I1aXRjbER6LUxnRllMRENXRWV4TzF2MlhYTGlwcHZ5bVRFenItRFdram5CUklmcWZ6UXlqZ0Z3anhRbXItem9velN0aHl5VlB4VjEtZmRBWVZBNVhTa1JsMUVtZTdhMFZTS2R3TVpXS1JkcVdOOS1uVGczeTdOMDhtb0FrMWpCeXFSU0FvMFZSMl9ZWWotR196Um9sNzMyVkc5VHRFaVM2QVRQcjI0YWJpMkhjT3hXcW0yZU1EeWFnUVltbWo1VnpWUDFIWTBaU0JDdWVKNmdCTm9mamJkWXlhcFVOSE1CeTNkQ2FYem5yajltcTZfcnBBNmlRd3VTX1FwY19TTURNMDZ4M1JfWjZBaGFaQi12enk3YkdvMzYxVFNpY2xJdGIxQzNJR1dVLWNzOEtrMW1TaFZMV0tmR2hmelNCa19LbFZOLWVVb2RMU3VDRW04bXdtUVN3TTd3Vk9pY3BBb2J3N2tKdXdMcEFLVGhWNjF6V0thc3J3OE9uLTdNbGRWQTY3Nk1QVVE2UUwwY2dwc1RWbjRpeXRBUnp2VHlpTExLVC12NHFNOC16XzFrV29fSzNjNkN1TGhyQWNmekREX0t5TDZQR0ZnTlkzbDBxVmRJRDJJQzI5ZHZTRzdzeA?oc=5)
-4. `[2026-11-19 15:38]` **台股重挫外資僅賣超243億 融資斷頭與散戶踩踏出籠**（中性）— 外資賣超金額收斂至243億，反映主要賣壓來自本土融資多頭斷頭潮。 [🔗 來源：Newtalk新聞](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5vWVZrMjdQNXpnNnNzSXB5VnVLN0czU2RIUU94aFlPcmpzMWVRSGFITUtVVWlqOUhVR2ROcjJSaGY5SGdWWnhZczFkV2pVbEFOZ2tXa21xUXBVYVE?oc=5)
-5. `[2026-11-19 15:46]` **日月光加碼高階半導體測試布局 仁武J坵塊新廠動土**（利多）— 日月光持續擴建高階封測產能，中長期基本面仍具建廠先進封裝支撐。 [🔗 來源：台視全球資訊網](https://news.google.com/rss/articles/CBMikgFBVV95cUxPY0YyTElaSG85Ui1JT2ZVQ2dvZHdJcWVlTkxfWVFqdmVqcmMzTTEzNV9QSFBnc1d3NUFtUFU3RFRlYnU4UlF2RzdiYVhYTXVrV1psTkJmV0ZXOHR3ZEh3NEhGU1h1MU1OY0hLcXI1a1k1TkhtWnpmbEcwaUgwamoySFJobFpwMGozak1BMG5GX2p3QQ?oc=5)
-6. `[2026-11-19 15:43]` **台積電領跌火燒ASIC 聯發科跌勢放大**（利空）— AI高估值股與ASIC族群遭受資金提款，台積電與聯發科短線承受賣壓。 [🔗 來源：Yahoo股市](https://news.google.com/rss/articles/CBMiugRBVV95cUxPX2xUdjhLT1FZcEJZRjhhVnJMWGFDSUxRQVo1MUFLdENHVDAyN0l1RDhZZmxVckVBZDlKQmRCXzU1RXZSQTh2YXRHTU1vZHFCT3h0TlBwS0s3NTZ1YlhMS29yZkNuMmlzUnFiWlgtVl9xNEhieFh2ZkhHcXZhc2FnSWlhNGh0S3VRVFItSVVtZ2ZGYVpIX3ZMS2xkQnpXVXppT2lia3NnRGlZREJiazFOVG9acVdLLW1sSVk5d0ZoZ0xONUZsUDBhcmp2dmZiQ1pjRUZxUXRLQUU2V3FzSUNxQnBlSW5IOUlybGZiRXFDT3dNcUt6Z2g2S0dpYUNTT2Q1SmszMF85Sjc1YW80bEM1TlgtZkNfRUZ1QVpKZk1YckxMVlFHMTJMUUVOM0hneW0zQjgzZlRSMVdoYTBHQkU0MkduaWthbTZmYjhfbzZzX2ZrV3VvT04zYWF2elNvaS1SZkNyVU1LUHEzdGFNb243NF9PQUhLMktwUGMzeHJReXZpaEFCUGFrSi14cGM2UEd5ZUNRc2J4YnZhQUkzQzhRXzR6RnlvQUNwX1VHZ2R5MmRob3VPSkw4dzI3d2diSWV0cUUxUFRmSGFobE5PZFB4Njl5ckpudGpKME5DenVYeE1tS0JXV01WemhFSkx4bkhlNDIzd0xJYkdFUDJfam1lei1lTlU5SFZmNjR3RUl4QkJGMmE0YlV1VFFITVlLcE9CeEt1OFc3MG4zazF4V3R2Zl9ha0hEX1VNdlE?oc=5)
-7. `[2026-11-19 16:00]` **韓出口額首破1兆美元 半導體基建需求強勁**（利多）— 南韓出口數據亮眼驗證全球半導體與AI基建長線需求並未消失。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6667550)
-8. `[2026-11-19 15:40]` **蘋果成AI亂流避風港 估值創新高**（利多）— 資金轉向大型低波動科技巨頭避險，供應鏈相對具具防禦屬性。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6667384)
-9. `[2026-11-19 16:03]` **投信狠砍金融股 拋售元大金等標的**（利空）— 投信內資法人調節高股息與金融權值股換取現金，壓抑金融股走勢。 [🔗 來源：自由時報](https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uR3IzWEMtT0RwNVVYUjh3VU1HMWVuUmd3SjgzMkgtYVNDQWMwZGJ1dUgtdUJheVpxZjZjLUpGaHZpbkI4dlRsd1ZQd1RMM2R6d09qc3h6SnY?oc=5)
-10. `[2026-11-19 15:50]` **輝達前執行長爭議擴大 供應鏈受心理層面衝擊**（利空）— 美媒負面報導影響海外AI高估值族群投資信心，短期干擾伺服器板塊。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6667426)
+1. `[2026-11-20 14:20]` **亞洲晶片股拋售演變為恐慌性踩踏 台韓股市成重災區**（利空）— 市場對AI巨額資本支出效益產生疑慮，導致台韓晶片股遭遇恐慌性抛售，打擊台股半導體供應鏈信心。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6668962)
+2. `[2026-11-20 14:09]` **限空令2.0擋不住賣壓狂瀉2393點創史上第三大跌點**（利空）— 政策護盤效果有限，大盤重挫2393點，市場恐慌情緒蔓延，短期資金傾向避險觀望。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6668992)
+3. `[2026-11-20 15:20]` **輝達股價恐暴跌至100美元？機構提出看空主要理由**（利空）— 機構看空AI龍頭輝達，引發市場對高估值AI供應鏈的修正疑慮，加重台股相關概念股壓力。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6668993)
+4. `[2026-11-20 15:37]` **Anthropic 上市未能扭轉賣壓 美股回檔後該如何投資**（利空）— Anthropic掛牌大漲仍無法扭轉科技股賣壓，顯示美股與台股對AI題材鈍化，資金持續流出高本益比族群。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6669038)
+5. `[2026-11-20 14:10]` **Anthropic史上最大IPO悲喜參半 後市看機構買盤**（中性）— 史上最大IPO未能帶動整體市場回溫，後續需關注機構法人買盤意願與鎖碼解除後的籌碼變化。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6668832)
+6. `[2026-11-20 14:00]` **鈺創：記憶體缺貨漲價壓縮部分需求 新增需求仍較多**（利多）— 記憶體價格上漲雖短期影響部分需求，但整體新增需求仍多，基本面維持相對穩健。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6668969)
+7. `[2026-11-20 14:50]` **全球AI與半導體需求強勁 馬來西亞10月出口暴增61%**（利多）— 東南亞半導體封測與供應鏈出口數據強勁，顯示產業實體需求仍在，長線基本面未完全崩解。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6668953)
+8. `[2026-11-20 15:51]` **SCFI連3跌反映傳統淡季 恐修正至12月中旬**（利空）— 貨櫃航運運價指數持續修正，反映季節性淡季影響，航運族群短期缺乏基本面催化劑。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6669047)
+9. `[2026-11-20 15:51]` **台股急跌後反彈 外資現貨賣壓收斂期貨未平倉下降**（利多）— 外資期貨空單與現貨賣壓稍微收斂，預示指數短線跌深後可能迎來技術性反彈。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6669046)
+10. `[2026-11-20 15:50]` **美債連漲5天創今年最長紀錄 殖利率持續走低**（利多）— 資金流向債券市場避險帶動美債價格上漲，殖利率走低有助於減緩全球資本市場的資金緊縮壓力。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6669006)
 
 ## 熱門題材
-- 晶片與封測 (2330台積電, 3711日月光投控)
-- 消費電子與AI (2454聯發科)
+- AI晶片與半導體拋售 (2330台積電)
+- 記憶體產業 (5351鈺創)
+- 航運運價修正 (2603長榮)
 
 ## 非持股潛力觀察名單
-- 3711 日月光投控：仁武新廠動土擴充高階測試產能，先進封裝長期趨勢明確。
+- 5351 鈺創：記憶體缺貨漲價帶動基本面支撐，新增需求穩健。
 
 ## 風險警示
-- 多殺多融資斷頭潮尚未結束，低檔乖離過大不追空，待收盤確認止跌。
-- 權證避險與自營商多方多殺多導致流動性緊縮，需觀察限空令政策效果。
+- AI巨額資本支出效益受質疑，高估值矽智財與散熱族群持續面臨修正風險。
+- 大盤跌破重要均線且遭遇恐慌性拋售，未出現明確轉折訊號前應嚴控資金水位。
 
 > 由新聞達人（gemini・gemini-3.5-flash）依 Python 濃縮新聞產生，出處連結與時間取自爬蟲原始資料，0 Claude Token。
