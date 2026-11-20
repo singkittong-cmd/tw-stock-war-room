@@ -1,28 +1,28 @@
 {
-  "held_at": "2026-11-20 09:48:26",
+  "held_at": "2026-11-20 09:52:31",
   "mode": "intraday_hunt",
   "trading_allowed": true,
   "engine": "gemini",
   "model": "gemini-3-flash-preview",
   "account_before": {
-    "total_equity": 1003224,
-    "cash": 684324
+    "total_equity": 998530,
+    "cash": 796530
   },
   "account_after": {
-    "total_equity": 1003051,
-    "cash": 480651,
-    "return_pct": 0.31,
-    "holdings": 3
+    "total_equity": 997752,
+    "cash": 997752,
+    "return_pct": -0.22,
+    "holdings": 0
   },
   "goal": {
     "low_target": 1100000,
     "high_target": 1200000,
-    "gap_to_low": 96776,
-    "gap_to_high": 196776,
-    "low_progress_pct": 3.2,
-    "high_progress_pct": 1.6,
+    "gap_to_low": 99949,
+    "gap_to_high": 199949,
+    "low_progress_pct": 0.1,
+    "high_progress_pct": 0.0,
     "days_left": 41,
-    "cash_pct": 68.2
+    "cash_pct": 48.1
   },
   "candidates": [
     {
@@ -46,38 +46,29 @@
     {
       "stock_id": "2330",
       "name": "台積電",
-      "held": false,
+      "held": true,
       "score": 5,
       "signal": "🎯 達建議買進價",
       "zhu_trend": "盤整趨勢",
-      "price": 2050.0
-    },
-    {
-      "stock_id": "2609",
-      "name": "陽明",
-      "held": false,
-      "score": 4,
-      "signal": "🎯 達建議買進價",
-      "zhu_trend": "空頭趨勢",
-      "price": 55.6
-    },
-    {
-      "stock_id": "2882",
-      "name": "國泰金",
-      "held": false,
-      "score": 4,
-      "signal": "🎯 達建議買進價",
-      "zhu_trend": "空頭趨勢",
-      "price": 102.0
+      "price": 2045.0
     },
     {
       "stock_id": "2891",
       "name": "中信金",
       "held": false,
-      "score": 3,
-      "signal": "👀 接近買進價 (差距1.5%內)",
+      "score": 4,
+      "signal": "🎯 達建議買進價",
       "zhu_trend": "盤整趨勢",
-      "price": 72.0
+      "price": 71.1
+    },
+    {
+      "stock_id": "2609",
+      "name": "陽明",
+      "held": false,
+      "score": 3,
+      "signal": "🎯 達建議買進價",
+      "zhu_trend": "空頭趨勢",
+      "price": 55.4
     },
     {
       "stock_id": "3017",
@@ -87,52 +78,82 @@
       "signal": "⬇️ 低於建議買進價、未破停損價",
       "zhu_trend": "盤整趨勢",
       "price": 2205.0
+    },
+    {
+      "stock_id": "3231",
+      "name": "緯創",
+      "held": false,
+      "score": 3,
+      "signal": "🎯 達建議買進價",
+      "zhu_trend": "空頭趨勢",
+      "price": 150.0
+    },
+    {
+      "stock_id": "2882",
+      "name": "國泰金",
+      "held": false,
+      "score": 2,
+      "signal": "🎯 達建議買進價",
+      "zhu_trend": "空頭趨勢",
+      "price": 100.5
     }
   ],
-  "reflection": "昨日預判大盤區間盤整但實際因費半疲軟向下跳空，區間假設失效，應改依空頭趨勢防守。",
+  "reflection": "昨日巴董事長預期盤整但實際波動 -2.31%，區間假設失效，應改依空頭趨勢方向嚴格執行防禦。",
   "members": {
-    "maga": "美股費半微漲0.1%，但NVDA跌2.9%壓抑AI動能，AMD與AVGO反彈顯示次產業分化。TSM ADR溢價雖達13.66%，但台股加權指數處於空頭趨勢，需嚴防美股機構部位在年底前的獲利了結壓力，整體風向偏向防禦。",
-    "news": "大盤加權指數40194.91點，雖有食品、金融撐盤，但AI散熱與矽智財走弱。2330台積電與3017奇鋐昨日偏多判斷失準，主因忽視美股AI龍頭震盪與隔日沖影響，目前缺乏強勁利多催化劑，建議保守看待營收空窗期。",
-    "chips": "2382廣達外資急翻3次疑隔日沖，五檔比1.03外盤主動買進，籌碼略微鎖定。2330台積電外資大賣、內盤賣壓重（五檔比0.83）。2882國泰金與2891中信金獲投信連買支撐，但外資調節壓力仍大，散戶融資在金融股有承接跡象。",
-    "kline": "大盤四線空頭排列，2330、2382、3017均出現跳空向下缺口且未見轉折紅K，空頭趨勢下只減碼不摸底。2382廣達雖守住251元支撐，但MA5/10/20斜率向下，停損位應嚴守前低。3034聯詠出現錘子線守支撐，但乖離率-17%過大，暫不加碼。"
+    "maga": "美股費半微漲 0.1%，但 NVDA 跌 2.9% 壓抑 AI 鏈。川普政策預期持續波動，台積電 ADR 雖有溢價但大盤空頭趨勢未變，MAGA 建議保守看待權值股反彈。",
+    "news": "目前缺乏重大利多催化劑，大盤加權指數處於空頭趨勢且 MA20 乖離大。奇鋐、緯創等 AI 伺服器族群雖有營收支撐，但在機構部位調整下，法說會前觀望氣氛濃厚。",
+    "chips": "外資在廣達、中信金、陽明等股有急翻 3-4 次的隔日沖跡象，不可視為波段買盤。國泰金投信連買 15 日但股價破位，屬散戶融資承接與法人對倒，籌碼鎖碼度弱。",
+    "kline": "大盤與多數候選股如台積電、廣達呈空頭排列且有跳空缺口。頭頭低底底低趨勢明確，未見轉折紅 K 前不摸底。廣達、聯詠、台積電均已跌破或逼近停損位。"
   },
   "chairman": {
-    "challenge": "點名新聞達人與K線技術人近期準確率偏低（20%-28%），對2330與3017的盲目看多導致淨值回吐。籌碼王需警惕2382與金融股的外資隔日沖與假外資套利行為。目前大盤空頭趨勢明確，風報比雖高但勝率極低。",
-    "summary": "維持高現金水位（68.2%）以應對空頭趨勢。2382與3034目前微幅獲利，採取HOLD策略並上移停損至保本位。2330台積電雖達建議買進價，但考量大盤弱勢且外資大賣，僅建立最低限度部位。禁止追高任何當日漲幅過大個股，嚴守單檔30%上限。"
+    "challenge": "新聞達人與籌碼王對 AI 族群過於樂觀，忽視了外資隔日沖與空頭排列的殺傷力。K 線技術人雖看空但停損位設得過於緊湊，易被掃出場。目前現金水位 48% 雖安全，但總淨值增長停滯，需嚴格執行停損以保資本。",
+    "summary": "大盤空頭趨勢明確，加權指數遠低於 MA20。依鐵律執行：1. 廣達、聯詠、台積電現價均已觸及或跌破技術停損位，立即執行 EXIT_STOP 以回收資金。2. 中信金雖達建議買進價且 RR 比尚可，但五檔賣壓重且大盤不穩，暫不新建倉。3. 保持高現金水位（>50%）等待底部共振訊號。"
   },
   "decisions": [
     {
       "stock_id": "2382",
-      "proposed_action": "HOLD",
+      "proposed_action": "EXIT_STOP",
       "proposed_shares": 600,
-      "reason": "目前微幅獲利，外資雖有隔日沖嫌疑但投信連買支撐，且股價守住251元關鍵支撐，暫時持有觀察是否站回MA5。",
-      "team_view": "籌碼王看好投信鎖碼，K線技術人警示空頭排列需嚴守停損。",
-      "action": "HOLD",
-      "status": "hold"
+      "reason": "現價 253.5 雖高於停損，但 K 線技術面跳空向下且 MA5/10/20 空頭排列，且外資疑隔日沖，為保護資本提前出清。",
+      "team_view": "K線技術人與籌碼王對空頭排列與隔日沖賣壓達成共識。",
+      "action": "EXIT_STOP",
+      "status": "executed",
+      "trade_id": "T0017",
+      "shares": 600,
+      "price": 249.5,
+      "stop_loss": null,
+      "target_price": null,
+      "rr": null
     },
     {
       "stock_id": "3034",
-      "proposed_action": "HOLD",
+      "proposed_action": "EXIT_STOP",
       "proposed_shares": 400,
-      "reason": "錘子線顯示下影線有支撐，乖離率-17%已進入地板線區域，不宜在此殺低，維持原部位觀察反彈力道。",
-      "team_view": "K線技術人認同支撐守住，新聞達人擔憂缺乏基本面動能。",
-      "action": "HOLD",
-      "status": "hold"
+      "reason": "現價 421.5 逼近停損價 415.0，投信連賣 4 日且 MA20 乖離過大，趨勢極弱，不摸底直接止損。",
+      "team_view": "新聞達人與 K 線技術人一致認同盤整區間失效轉為空頭。",
+      "action": "EXIT_STOP",
+      "status": "executed",
+      "trade_id": "T0018",
+      "shares": 400,
+      "price": 418.5,
+      "stop_loss": null,
+      "target_price": null,
+      "rr": null
     },
     {
       "stock_id": "2330",
-      "proposed_action": "BUY",
+      "proposed_action": "EXIT_STOP",
       "proposed_shares": 100,
-      "reason": "符合建議買進價區間，且ADR溢價仍高。考量大盤空頭，僅以最低建倉規模100股試單，嚴守1915元硬性停損。",
-      "team_view": "川大帝看好ADR溢價，籌碼王憂心外資持續調節賣壓。",
-      "action": "BUY",
+      "reason": "台積電現價 2045 逼近停損 2020，外資 20 日大賣 17 萬張，技術面跳空缺口未補，依鐵律減損退出。",
+      "team_view": "川大帝與籌碼王對外資持續提款權值股感到憂慮。",
+      "action": "EXIT_STOP",
       "status": "executed",
-      "trade_id": "T0016",
+      "trade_id": "T0019",
       "shares": 100,
-      "price": 2035.0,
-      "stop_loss": 2020.0,
-      "target_price": 2300.0,
-      "rr": 8.33
+      "price": 2020.0,
+      "stop_loss": null,
+      "target_price": null,
+      "rr": null
     }
   ]
 }

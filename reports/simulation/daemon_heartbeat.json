@@ -5,40 +5,42 @@
   "autopilot_mode": "cloud_master",
   "started_at": "2026-11-20 09:45:04",
   "date": "2026-11-20",
-  "scans_today": 12,
-  "triggers_today": 2,
-  "meetings_today": 2,
-  "trades_today": 3,
+  "scans_today": 27,
+  "triggers_today": 4,
+  "meetings_today": 4,
+  "trades_today": 6,
   "cooldowns": {
     "2330": "2026-11-20 09:45:04",
     "2382": "2026-11-20 09:45:04",
     "2609": "2026-11-20 09:45:04",
     "2882": "2026-11-20 09:45:04",
     "3231": "2026-11-20 09:45:04",
-    "1216": "2026-11-20 09:48:14"
+    "1216": "2026-11-20 09:48:14",
+    "2615": "2026-11-20 09:50:28",
+    "2891": "2026-11-20 09:52:16"
   },
   "patrol_slot_done": 1,
   "daily_close_settled_date": "2026-11-19",
   "last_trigger": {
-    "at": "2026-11-20 09:48:14",
+    "at": "2026-11-20 09:52:16",
     "items": [
       {
         "type": "HIT_ENTRY",
-        "stock_id": "1216",
-        "text": "統一 現價 77.3 達建議買進價、五檔委買比 0.99",
+        "stock_id": "2891",
+        "text": "中信金 現價 71.1 達建議買進價、五檔委買比 0.92",
         "label": "🎯 達建議買進價"
       }
     ]
   },
   "last_meeting": {
-    "at": "2026-11-20 09:48:14",
-    "trigger": "🎯 達建議買進價 1216",
-    "executed": 1,
+    "at": "2026-11-20 09:52:16",
+    "trigger": "🎯 達建議買進價 2891",
+    "executed": 3,
     "rejected": 0,
     "engine": "gemini",
-    "total_equity": 1003051,
+    "total_equity": 997752,
     "errors": [],
-    "elapsed_sec": 9.9
+    "elapsed_sec": 11.5
   },
   "last_settlement": {
     "date": "2026-11-19",
@@ -62,22 +64,22 @@
     "latency_sec": 1.18
   },
   "last_sync": {
-    "at": "2026-11-20 09:45:38",
+    "at": "2026-11-20 09:48:38",
     "what": "成交後寫回帳本",
     "ok": true,
-    "detail": "263c3f3"
+    "detail": "7f3ced9"
   },
   "last_error": null,
-  "last_heartbeat": "2026-11-20 09:48:26",
+  "last_heartbeat": "2026-11-20 09:52:31",
   "phase": "TRADING",
   "status": "⚡ TRADING (盤中背景自動盯盤中，每 15 秒更新報價並檢查進出場，一路跑到 13:30 收盤)",
   "auto_trade_enabled": true,
   "provider": "gemini",
   "next_open": "2026-11-23 09:00:00",
   "prefetch_done": "streamlit_cloud|2026-11-20",
-  "last_tick_at": "2026-11-20 09:48:14",
-  "last_tick_elapsed_sec": 2.59,
+  "last_tick_at": "2026-11-20 09:52:16",
+  "last_tick_elapsed_sec": 3.91,
   "last_scan_errors": [],
-  "total_equity": 1003224,
-  "holdings_count": 2
+  "total_equity": 1000051,
+  "holdings_count": 3
 }

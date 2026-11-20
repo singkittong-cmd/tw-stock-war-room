@@ -56208,12 +56208,12 @@
      "預測後最新 77.3（-2.77%）",
      "觸及停損價 78.94"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 78.2,
      "high": 78.8,
-     "low": 76.9,
+     "low": 76.5,
      "last": 77.3,
      "close": null,
      "gap_pct": -0.64,
@@ -56265,20 +56265,20 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -11.18,
+    "return_pct": -11.71,
     "reasons": [
-     "預測後最新 3375（-11.18%）",
+     "預測後最新 3355（-11.71%）",
      "開盤跳空 -3.47%",
      "建議買進價 3485 失守（最低 3285）",
      "觸及停損價 3440"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 3475.0,
      "high": 3475.0,
      "low": 3285.0,
-     "last": 3375.0,
+     "last": 3355.0,
      "close": null,
      "gap_pct": -3.47,
      "open_below_vwap": false,
@@ -56376,7 +56376,7 @@
      "建議買進價 2310 失守（最低 2205）",
      "觸及停損價 2310"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 2240.0,
@@ -56413,19 +56413,19 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -4.65,
+    "return_pct": -4.88,
     "reasons": [
-     "預測後最新 2050（-4.65%）",
+     "預測後最新 2045（-4.88%）",
      "開盤跳空 -3.10%",
      "觸及停損價 2020"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 2035.0,
      "high": 2060.0,
      "low": 2010.0,
-     "last": 2050.0,
+     "last": 2045.0,
      "close": null,
      "gap_pct": -3.1,
      "open_below_vwap": false,
@@ -56456,19 +56456,19 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -9.36,
+    "return_pct": -10.59,
     "reasons": [
-     "預測後最新 1840（-9.36%）",
+     "預測後最新 1815（-10.59%）",
      "開盤跳空 -8.27%",
      "觸及停損價 1825"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 1830.0,
      "high": 1895.0,
      "low": 1800.0,
-     "last": 1840.0,
+     "last": 1815.0,
      "close": null,
      "gap_pct": -8.27,
      "open_below_vwap": false,
@@ -56643,19 +56643,19 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -3.68,
+    "return_pct": -3.86,
     "reasons": [
-     "預測後最新 52.4（-3.68%）",
-     "建議買進價 54.1 失守（最低 51.9）",
+     "預測後最新 52.3（-3.86%）",
+     "建議買進價 54.1 失守（最低 51.8）",
      "觸及停損價 54.16"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 53.8,
      "high": 53.8,
-     "low": 51.9,
-     "last": 52.4,
+     "low": 51.8,
+     "last": 52.3,
      "close": null,
      "gap_pct": 0.75,
      "open_below_vwap": false,
@@ -56732,7 +56732,7 @@
      "開盤跳空 -2.86%",
      "觸及停損價 257.5"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 255.0,
@@ -56789,20 +56789,20 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -6.09,
+    "return_pct": -6.58,
     "reasons": [
-     "預測後最新 771（-6.09%）",
+     "預測後最新 767（-6.58%）",
      "開盤跳空 -2.12%",
      "建議買進價 790 失守（最低 747）",
      "觸及停損價 790"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 783.0,
      "high": 789.0,
      "low": 747.0,
-     "last": 771.0,
+     "last": 767.0,
      "close": null,
      "gap_pct": -2.12,
      "open_below_vwap": false,
@@ -56893,18 +56893,18 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -2.31,
+    "return_pct": -3.53,
     "reasons": [
-     "預測後最新 72（-2.31%）",
+     "預測後最新 71.1（-3.53%）",
      "開盤跳空 -4.10%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 70.1,
      "high": 72.5,
      "low": 69.1,
-     "last": 72.0,
+     "last": 71.1,
      "close": null,
      "gap_pct": -4.1,
      "open_below_vwap": false,
@@ -56935,19 +56935,19 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -5.05,
+    "return_pct": -4.95,
     "reasons": [
-     "預測後最新 99.7（-5.05%）",
+     "預測後最新 99.8（-4.95%）",
      "開盤跳空 -2.42%",
      "觸及停損價 101.5"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 101.0,
      "high": 101.0,
      "low": 98.1,
-     "last": 99.7,
+     "last": 99.8,
      "close": null,
      "gap_pct": -2.42,
      "open_below_vwap": false,
@@ -57018,18 +57018,18 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -1.38,
+    "return_pct": -2.08,
     "reasons": [
-     "預測後最新 142.5（-1.38%）",
+     "預測後最新 141.5（-2.08%）",
      "開盤跳空 -1.69%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 145.5,
      "high": 145.5,
      "low": 141.5,
-     "last": 142.5,
+     "last": 141.5,
      "close": null,
      "gap_pct": -1.69,
      "open_below_vwap": false,
@@ -57067,7 +57067,7 @@
      "建議買進價 436 失守（最低 415）",
      "觸及停損價 436"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 426.5,
@@ -57104,18 +57104,18 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -8.47,
+    "return_pct": -9.65,
     "reasons": [
-     "預測後最新 3510（-8.47%）",
+     "預測後最新 3465（-9.65%）",
      "開盤跳空 -6.45%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 3480.0,
      "high": 3655.0,
      "low": 3390.0,
-     "last": 3510.0,
+     "last": 3465.0,
      "close": null,
      "gap_pct": -6.45,
      "open_below_vwap": false,
@@ -57146,18 +57146,18 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -5.62,
+    "return_pct": -5.89,
     "reasons": [
-     "預測後最新 689（-5.62%）",
+     "預測後最新 687（-5.89%）",
      "開盤跳空 -3.58%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 700.0,
      "high": 703.0,
      "low": 678.0,
-     "last": 689.0,
+     "last": 687.0,
      "close": null,
      "gap_pct": -3.58,
      "open_below_vwap": false,
@@ -57195,7 +57195,7 @@
      "建議買進價 5765 失守（最低 5400）",
      "觸及停損價 5765"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 5400.0,
@@ -57232,19 +57232,19 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -6.23,
+    "return_pct": -6.54,
     "reasons": [
-     "預測後最新 150.5（-6.23%）",
+     "預測後最新 150（-6.54%）",
      "開盤跳空 -2.56%",
      "觸及停損價 155"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 152.0,
      "high": 153.0,
      "low": 146.5,
-     "last": 150.5,
+     "last": 150.0,
      "close": null,
      "gap_pct": -2.56,
      "open_below_vwap": false,
@@ -57295,19 +57295,19 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -4.47,
+    "return_pct": -4.81,
     "reasons": [
-     "預測後最新 55.6（-4.47%）",
+     "預測後最新 55.4（-4.81%）",
      "開盤跳空 -1.57%",
      "觸及停損價 54.9"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 56.4,
      "high": 56.4,
      "low": 54.8,
-     "last": 55.6,
+     "last": 55.4,
      "close": null,
      "gap_pct": -1.57,
      "open_below_vwap": false,
@@ -57338,18 +57338,18 @@
    "status": "PROVISIONAL",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -2.86,
+    "return_pct": -4.29,
     "reasons": [
-     "預測後最新 102（-2.86%）",
+     "預測後最新 100.5（-4.29%）",
      "觸及停損價 101"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 103.0,
      "high": 103.0,
      "low": 100.5,
-     "last": 102.0,
+     "last": 100.5,
      "close": null,
      "gap_pct": -0.48,
      "open_below_vwap": false,
@@ -57405,7 +57405,7 @@
      "預測後最新 36972.4（-8.02%）",
      "開盤跳空 -6.34%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 37646.12890625,
@@ -57447,7 +57447,7 @@
      "預測後最新 36972.4（-8.02%）",
      "開盤跳空 -6.34%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 37646.12890625,
@@ -57489,7 +57489,7 @@
      "預測後最新 36972.4（-8.02%）",
      "開盤跳空 -6.34%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 37646.12890625,
@@ -57531,7 +57531,7 @@
      "預測後最新 253.5（+1.40%）",
      "開盤跳空 -2.86%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 255.0,
@@ -57574,7 +57574,7 @@
      "開盤跳空 -2.29%",
      "觸及停損價 415"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 426.5,
@@ -57616,7 +57616,7 @@
      "預測後最新 253.5（+0.00%）",
      "開盤跳空 -2.86%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 255.0,
@@ -57658,7 +57658,7 @@
      "預測後最新 421.5（+0.00%）",
      "開盤跳空 -2.29%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 426.5,
@@ -57694,20 +57694,313 @@
    "target_date": "2026-11-20",
    "status": "PROVISIONAL",
    "grade": {
-    "result": "WRONG",
-    "return_pct": 0.74,
+    "result": "CORRECT",
+    "return_pct": 0.49,
     "reasons": [
-     "預測後最新 2050（+0.74%）",
-     "開盤跳空 -3.10%",
-     "觸及停損價 2020"
+     "預測後最新 2045（+0.49%）",
+     "開盤跳空 -3.10%"
     ],
-    "graded_at": "2026-11-20 09:48:26",
+    "graded_at": "2026-11-20 09:52:31",
+    "actual": {
+     "date": "2026-11-20",
+     "open": 2035.0,
+     "high": 2050.0,
+     "low": 2045.0,
+     "last": 2045.0,
+     "close": null,
+     "gap_pct": -3.1,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2330|sim_committee|2026-11-20 09:50:39",
+   "timestamp": "2026-11-20 09:50:39",
+   "session": "盤中",
+   "stock_id": "2330",
+   "name": "台積電",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 2050.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "現價 2050 接近停損價 2020，雖 ADR 溢價高但現貨趨勢極弱，守住前低支撐則續抱，跌破即執行硬性停損。",
+   "target_date": "2026-11-20",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.24,
+    "reasons": [
+     "預測後最新 2045（-0.24%）",
+     "開盤跳空 -3.10%"
+    ],
+    "graded_at": "2026-11-20 09:52:31",
+    "actual": {
+     "date": "2026-11-20",
+     "open": 2035.0,
+     "high": 2045.0,
+     "low": 2045.0,
+     "last": 2045.0,
+     "close": null,
+     "gap_pct": -3.1,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-20 09:50:39",
+   "timestamp": "2026-11-20 09:50:39",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 253.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "廣達現價 253 距離停損 251 僅一步之遙，外資隔日沖頻繁，不宜在此處加碼攤平，嚴守 251 關卡。",
+   "target_date": "2026-11-20",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.2,
+    "reasons": [
+     "預測後最新 253.5（+0.20%）",
+     "開盤跳空 -2.86%"
+    ],
+    "graded_at": "2026-11-20 09:52:31",
+    "actual": {
+     "date": "2026-11-20",
+     "open": 255.0,
+     "high": 257.0,
+     "low": 249.0,
+     "last": 253.5,
+     "close": null,
+     "gap_pct": -2.86,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|3034|sim_committee|2026-11-20 09:50:39",
+   "timestamp": "2026-11-20 09:50:39",
+   "session": "盤中",
+   "stock_id": "3034",
+   "name": "聯詠",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 421.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "聯詠出現錘子線守住 415 支撐，乖離率 -17% 已進入地板線區域，暫時持有觀察反彈力道。",
+   "target_date": "2026-11-20",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 421.5（+0.00%）",
+     "開盤跳空 -2.29%"
+    ],
+    "graded_at": "2026-11-20 09:52:31",
+    "actual": {
+     "date": "2026-11-20",
+     "open": 426.5,
+     "high": 427.5,
+     "low": 415.0,
+     "last": 421.5,
+     "close": null,
+     "gap_pct": -2.29,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2891|sim_committee|2026-11-20 09:50:39",
+   "timestamp": "2026-11-20 09:50:39",
+   "session": "盤中",
+   "stock_id": "2891",
+   "name": "中信金",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 72.0,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "符合新建倉下限約 15 萬（72*2100=151,200）。投信連買鎖碼且均線糾結相對大盤抗跌，風報比 1.25 雖略低但作為防禦性配置。",
+   "target_date": "2026-11-20",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -1.25,
+    "reasons": [
+     "預測後最新 71.1（-1.25%）",
+     "開盤跳空 -4.10%"
+    ],
+    "graded_at": "2026-11-20 09:52:31",
+    "actual": {
+     "date": "2026-11-20",
+     "open": 70.1,
+     "high": 71.1,
+     "low": 71.1,
+     "last": 71.1,
+     "close": null,
+     "gap_pct": -4.1,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-20 09:52:31",
+   "timestamp": "2026-11-20 09:52:31",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 249.5,
+   "stance": "看空",
+   "action": "停損",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "現價 253.5 雖高於停損，但 K 線技術面跳空向下且 MA5/10/20 空頭排列，且外資疑隔日沖，為保護資本提前出清。",
+   "target_date": "2026-11-20",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": 1.6,
+    "reasons": [
+     "預測後最新 253.5（+1.60%）",
+     "開盤跳空 -2.86%"
+    ],
+    "graded_at": "2026-11-20 09:52:31",
+    "actual": {
+     "date": "2026-11-20",
+     "open": 255.0,
+     "high": 257.0,
+     "low": 249.0,
+     "last": 253.5,
+     "close": null,
+     "gap_pct": -2.86,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|3034|sim_committee|2026-11-20 09:52:31",
+   "timestamp": "2026-11-20 09:52:31",
+   "session": "盤中",
+   "stock_id": "3034",
+   "name": "聯詠",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 418.5,
+   "stance": "看空",
+   "action": "停損",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "現價 421.5 逼近停損價 415.0，投信連賣 4 日且 MA20 乖離過大，趨勢極弱，不摸底直接止損。",
+   "target_date": "2026-11-20",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 0.72,
+    "reasons": [
+     "預測後最新 421.5（+0.72%）",
+     "開盤跳空 -2.29%"
+    ],
+    "graded_at": "2026-11-20 09:52:31",
+    "actual": {
+     "date": "2026-11-20",
+     "open": 426.5,
+     "high": 427.5,
+     "low": 415.0,
+     "last": 421.5,
+     "close": null,
+     "gap_pct": -2.29,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2330|sim_committee|2026-11-20 09:52:31",
+   "timestamp": "2026-11-20 09:52:31",
+   "session": "盤中",
+   "stock_id": "2330",
+   "name": "台積電",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 2020.0,
+   "stance": "看空",
+   "action": "停損",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "台積電現價 2045 逼近停損 2020，外資 20 日大賣 17 萬張，技術面跳空缺口未補，依鐵律減損退出。",
+   "target_date": "2026-11-20",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 1.24,
+    "reasons": [
+     "預測後最新 2045（+1.24%）",
+     "開盤跳空 -3.10%"
+    ],
+    "graded_at": "2026-11-20 09:52:31",
     "actual": {
      "date": "2026-11-20",
      "open": 2035.0,
      "high": 2060.0,
      "low": 2010.0,
-     "last": 2050.0,
+     "last": 2045.0,
      "close": null,
      "gap_pct": -3.1,
      "open_below_vwap": false,
@@ -57796,5 +58089,5 @@
    }
   }
  },
- "updated_at": "2026-11-20 09:48:26"
+ "updated_at": "2026-11-20 09:52:31"
 }
