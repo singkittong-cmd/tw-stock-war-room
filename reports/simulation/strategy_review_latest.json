@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-11-20 09:54:33",
+  "engine": "gemini",
+  "model": "gemini-3-flash-preview",
+  "elapsed_sec": 19.6,
+  "engine_errors": [
+    "gemini/gemini-3.1-pro-preview：gemini-3.1-pro-preview HTTP 429：{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your"
+  ],
+  "evidence": {
+    "trades": 19,
+    "nav_days": 12,
+    "predictions": 65,
+    "snapshots": 23,
+    "chars": 17085
+  },
+  "period": "2026-11-05 至 2026-11-20",
+  "performance_summary": "總淨值微跌 -0.22%，顯著優於 0050 同期 -12.67% 的表現，Alpha 達 +12.45%。",
+  "members": {
+    "news": "我在 2026-11-20 的 #T0015 聯詠判斷失準，誤以為乖離率 -17% 達地板線即可反彈，忽略了基本面在系統性風險下無法支撐股價，導致當日 #T0018 迅速止損。明天修正：大盤空頭時，不再單憑超跌邏輯進場。",
+    "chips": "我在 #T0012 廣達的判斷過於樂觀，認為投信連 20 日買超能抵抗跌勢，結果 2026-11-16 大盤崩跌 6% 時，投信鎖碼完全失效導致 #T0013 停損。明天修正：外資單日大賣超過 1 萬張時，投信鎖碼股必須減碼。",
+    "kline": "我在 #T0014 廣達與 #T0016 台積電的進場價與停損設定存在嚴重邏輯矛盾，停損空間過窄（#T0014 買 250 停損 251），導致 #T0017 與 #T0019 在極小波動中就被洗出場。明天修正：停損價必須設定在買進價 3% 之外。",
+    "maga": "我在 2026-11-19 預測加權指數會開高震盪，過度看重 TSM ADR 13.66% 的溢價，忽略了台股現貨外資提款壓力（#T0019 提到外資大賣 17 萬張）。明天修正：當美股費半轉弱或台股量比放大時，調低溢價參考權重。"
+  },
+  "chairman_challenge": [
+    {
+      "member": "kline",
+      "challenge": "交易編號 #T0014 買進價 250 卻設停損 251，這種低級邏輯錯誤直接導致 #T0017 無謂損失，技術分析不能只看指標而失去常識。"
+    },
+    {
+      "member": "chips",
+      "challenge": "在 #T0019 提到外資 20 日大賣 17 萬張台積電的情況下，你竟然還讓團隊在 #T0016 嘗試逢跌買進，完全無視籌碼面的系統性崩潰。"
+    }
+  ],
+  "diagnosis": {
+    "stock_selection": "選股多集中於權值股（台積電、廣達），在大盤崩跌 -12% 時受創最深。",
+    "entry_timing": "在空頭排列且未見轉折紅 K 前頻繁摸底（如 #T0014, #T0015）。",
+    "stop_loss": "停損設定過於侷促（如 #T0016 僅差 15 元），導致在正常震盪中被洗出場。",
+    "position_sizing": "目前空手是正確的，但先前在 2026-11-09 滿倉操作風險過高。",
+    "root_cause": "停損空間設定不合理（過窄）與在空頭趨勢中過早嘗試左側交易（摸底）。"
+  },
+  "chairman_summary": "目前靠空手避開大盤 12% 跌幅是唯一亮點。明日起嚴禁左側交易，所有進場必須具備轉折紅 K 與外資賣壓竭盡證據。現金水位必須維持在 50% 以上直至加權指數站回月線。",
+  "rules_before": {
+    "max_single_position_pct": 30.0,
+    "stop_loss_pct": 15.0,
+    "take_profit_pct": 40.0,
+    "cash_reserve_pct": 10.0,
+    "min_cash_reserve_pct": 10.0,
+    "avoid_chase_pct": 10.0,
+    "agent_weights": {
+      "news": 1.0,
+      "chips": 1.0,
+      "kline": 1.0,
+      "maga": 1.0
+    },
+    "custom_disciplines": []
+  },
+  "rules_after": {
+    "max_single_position_pct": 20.0,
+    "stop_loss_pct": 10.0,
+    "take_profit_pct": 30.0,
+    "cash_reserve_pct": 50.0,
+    "min_cash_reserve_pct": 60.0,
+    "avoid_chase_pct": 3.0,
+    "agent_weights": {
+      "news": 0.5,
+      "chips": 0.8,
+      "kline": 0.7,
+      "maga": 1.5
+    },
+    "custom_disciplines": [
+      "停損價位與買進價之空間不得小於 3% 以避免無謂摩擦損。",
+      "大盤位於月線下方時，單一標的建倉金額嚴禁超過 15 萬元。",
+      "若外資當日賣超台積電逾 2 萬張，次日嚴禁建立任何多單部位。",
+      "禁止在四線空頭排列（5/10/20/60MA）時進行左側摸底交易。",
+      "所有買進指令必須附帶轉折紅 K 或下影線支撐之實盤證據。"
+    ]
+  },
+  "rule_changes": [
+    {
+      "key": "max_single_position_pct",
+      "label": "單一持股上限",
+      "unit": "% 總淨值",
+      "before": 30.0,
+      "after": 20.0,
+      "changed": true,
+      "reason": "因應 #T0013 廣達單筆已實現損失達 10,276 元，調降上限以分散風險。"
+    },
+    {
+      "key": "stop_loss_pct",
+      "label": "硬性停損",
+      "unit": "%",
+      "before": 15.0,
+      "after": 10.0,
+      "changed": true,
+      "reason": ""
+    },
+    {
+      "key": "take_profit_pct",
+      "label": "分批停利目標",
+      "unit": "%",
+      "before": 40.0,
+      "after": 30.0,
+      "changed": true,
+      "reason": ""
+    },
+    {
+      "key": "cash_reserve_pct",
+      "label": "平常最低現金水位",
+      "unit": "%",
+      "before": 10.0,
+      "after": 50.0,
+      "changed": true,
+      "reason": ""
+    },
+    {
+      "key": "min_cash_reserve_pct",
+      "label": "大盤偏弱最低現金水位",
+      "unit": "%",
+      "before": 10.0,
+      "after": 60.0,
+      "changed": true,
+      "reason": "參考 2026-11-16 大盤單日跌幅 6.03%，高現金水位是生存唯一條件。"
+    },
+    {
+      "key": "avoid_chase_pct",
+      "label": "禁止追高門檻（當日漲幅）",
+      "unit": "%",
+      "before": 10.0,
+      "after": 3.0,
+      "changed": true,
+      "reason": ""
+    },
+    {
+      "key": "agent_weights.news",
+      "label": "新聞達人 發言權重",
+      "unit": "",
+      "before": 1.0,
+      "after": 0.5,
+      "changed": true,
+      "reason": "川大帝 MAGA 準確率 60% 為全隊最高，新聞達人 28% 最低，依績效重新分配發言權。"
+    },
+    {
+      "key": "agent_weights.chips",
+      "label": "籌碼王 發言權重",
+      "unit": "",
+      "before": 1.0,
+      "after": 0.8,
+      "changed": true,
+      "reason": "川大帝 MAGA 準確率 60% 為全隊最高，新聞達人 28% 最低，依績效重新分配發言權。"
+    },
+    {
+      "key": "agent_weights.kline",
+      "label": "K線技術人 發言權重",
+      "unit": "",
+      "before": 1.0,
+      "after": 0.7,
+      "changed": true,
+      "reason": "川大帝 MAGA 準確率 60% 為全隊最高，新聞達人 28% 最低，依績效重新分配發言權。"
+    },
+    {
+      "key": "agent_weights.maga",
+      "label": "川大帝MAGA 發言權重",
+      "unit": "",
+      "before": 1.0,
+      "after": 1.5,
+      "changed": true,
+      "reason": "川大帝 MAGA 準確率 60% 為全隊最高，新聞達人 28% 最低，依績效重新分配發言權。"
+    },
+    {
+      "key": "custom_disciplines",
+      "label": "巴董事長自訂鐵律",
+      "unit": "",
+      "before": "（無）",
+      "after": "停損價位與買進價之空間不得小於 3% 以避免無謂摩擦損。；大盤位於月線下方時，單一標的建倉金額嚴禁超過 15 萬元。；若外資當日賣超台積電逾 2 萬張，次日嚴禁建立任何多單部位。；禁止在四線空頭排列（5/10/20/60MA）時進行左側摸底交易。；所有買進指令必須附帶轉折紅 K 或下影線支撐之實盤證據。",
+      "changed": true,
+      "reason": "針對 #T0014 與 #T0017 之邏輯錯誤，硬性規定停損空間與進場條件。"
+    }
+  ],
+  "rules_version": 1
+}
