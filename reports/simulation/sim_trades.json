@@ -358,5 +358,29 @@
     "target_price": 520.0,
     "team_discussion": "K線技術人見轉折訊號，新聞達人認同超跌，籌碼王提醒投信連賣需謹慎。",
     "buffett_verdict": "乖離率 -17% 達地板線且出現錘子線轉折訊號，風報比 3.7 極佳。符合超跌反彈邏輯，配置約 17 萬資金。｜停損 415.0｜目標 520.0｜風報比 10.67"
+  },
+  {
+    "trade_id": "T0016",
+    "timestamp": "2026-11-20 09:48:26",
+    "stock_id": "2330",
+    "name": "台積電",
+    "action": "BUY",
+    "price": 2035.0,
+    "shares": 100,
+    "gross_amount": 203500,
+    "board_shares": 0,
+    "board_price": null,
+    "odd_shares": 100,
+    "odd_price": 2035.0,
+    "odd_price_source": "零股成交價",
+    "price_note": "【零股價 $2,035（零股成交價）】×100 股",
+    "fee_and_tax": 173,
+    "net_amount": -203673,
+    "realized_pnl": 0,
+    "cash_after": 480651,
+    "stop_loss": 2020.0,
+    "target_price": 2300.0,
+    "team_discussion": "川大帝看好ADR溢價，籌碼王憂心外資持續調節賣壓。",
+    "buffett_verdict": "符合建議買進價區間，且ADR溢價仍高。考量大盤空頭，僅以最低建倉規模100股試單，嚴守1915元硬性停損。｜停損 2020.0｜目標 2300.0｜風報比 8.33"
   }
 ]
