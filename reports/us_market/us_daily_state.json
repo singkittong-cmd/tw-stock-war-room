@@ -1,7 +1,7 @@
 {
   "tw_trading_date": "2026-11-20",
   "night_updated_at": null,
-  "morning_close_fetched_at": "2026-11-19 16:11:57",
-  "morning_brief_completed": false,
-  "morning_brief_completed_at": null
+  "morning_close_fetched_at": "2026-11-20 12:18:14",
+  "morning_brief_completed": true,
+  "morning_brief_completed_at": "2026-11-20 12:19:28"
 }
