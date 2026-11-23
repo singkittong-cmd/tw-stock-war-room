@@ -4,21 +4,20 @@
   "can_trade": false,
   "morning_done_date": "2026-11-23",
   "last_run": {
-    "finished_at": "2026-11-23 12:00:42",
-    "phase": "TRADING",
-    "elapsed_sec": 33.7,
+    "finished_at": "2026-11-23 16:36:58",
+    "phase": "CLOSE",
+    "elapsed_sec": 34.0,
     "host": "github_actions",
     "trades_today": 0,
     "errors": [],
     "log_tail": [
-      "[12:00:07] ☁️ 雲端單次排程（github_actions・cloud_master・gemini）｜目前 ⚡ 盤中（檢查報價與進出場）",
-      "[12:00:08] 💓 Streamlit 輕量 Ping：HTTP 200",
-      "[12:00:32] ⚡ Tick 完成：總淨值 997752｜持倉 0 檔｜耗時 6.22 秒｜投決會（🎯 達建議買進價 2881、🎯 達建議買進價 2882、🎯 達建議買進價 2884）成交 0 筆、否決 0 筆",
-      "[12:00:32] 🤫 沒有成交：盤中靜默，不 commit",
-      "[12:00:32] 📚 補課：今日 07:35 川大帝MAGA 早報沒有完成（排程延遲或漏掉），現在補跑一次",
-      "[12:00:32] 🦅 川大帝MAGA：抓取美股收盤（費半、TSM ADR 折溢價、NVDA/MU/VRT、美股新聞）",
-      "[12:00:42] ✅ 早報完成：美股 TOP 10（gemini），已鎖定今日早報"
+      "[16:36:22] ☁️ 雲端單次排程（github_actions・cloud_master・gemini）｜目前 🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）",
+      "[16:36:24] 💓 Streamlit 輕量 Ping：HTTP 200",
+      "[16:36:24] 🧾 模擬室收盤結算：更新收盤價、寫入 sim_nav_history、五人準確率對帳",
+      "[16:36:28] ✅ 結算完成：總淨值 997752（-0.22%）",
+      "[16:36:28] 📰 今日財經新聞 TOP 10、收盤重點、明日 20 強建議買進價定錨",
+      "[16:36:58] 🎯 Potential TOP 20：{'0050核心': 17, '高潛力動能': 3}｜保留模擬持倉 無"
     ]
   },
-  "close_reports_date": "2026-11-20"
+  "close_reports_date": "2026-11-23"
 }

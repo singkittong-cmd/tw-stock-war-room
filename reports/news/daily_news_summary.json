@@ -1,104 +1,109 @@
 {
-  "updated_at": "2026-11-20 16:07:28",
+  "updated_at": "2026-11-23 16:36:44",
   "generated_by": "fast_team_runner（gemini）",
-  "market_sentiment": "偏空警戒",
-  "one_line_takeaway": "AI資本支出效益疑慮引發全球半導體拋售潮，台股爆量重挫需提防賣壓延續。",
+  "market_sentiment": "中立偏多",
+  "one_line_takeaway": "融資大減釋放沉重賣壓，政府政策護盤與AI錯殺反彈帶動台股強彈，惟外資期現貨持續偏空需謹慎驗證。",
   "top_themes": [
-    "AI晶片與半導體拋售 (2330台積電)",
-    "記憶體產業 (5351鈺創)",
-    "航運運價修正 (2603長榮)"
+    "AI晶片與軟硬整合 (2357華碩)",
+    "記憶體與核心技術 (2344華邦電)",
+    "護盤與政策宣導 (台股)"
   ],
   "top_news_10": [
     {
-      "title": "亞洲晶片股拋售演變為恐慌性踩踏 台韓股市成重災區",
-      "point": "市場對AI巨額資本支出效益產生疑慮，導致台韓晶片股遭遇恐慌性抛售，打擊台股半導體供應鏈信心。",
-      "tag": "利空",
-      "url": "https://news.cnyes.com/news/id/6668962",
+      "title": "AI股出現錯殺行情，融資單日大減逾600億元",
+      "point": "籌碼洗淨且市場認為AI股過度下修，帶動跌深反彈與技術面修復。",
+      "tag": "利多",
+      "url": "https://news.cnyes.com/news/id/6670152",
       "source": "鉅亨網",
-      "pub_date": "2026-11-20 14:20"
+      "pub_date": "2026-11-23 16:13"
     },
     {
-      "title": "限空令2.0擋不住賣壓狂瀉2393點創史上第三大跌點",
-      "point": "政策護盤效果有限，大盤重挫2393點，市場恐慌情緒蔓延，短期資金傾向避險觀望。",
-      "tag": "利空",
-      "url": "https://news.cnyes.com/news/id/6668992",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-20 14:09"
+      "title": "行政院邀集產業界座談穩定台股市場信心",
+      "point": "政府單位介入宣示護盤信心，有助於減緩市場恐慌情緒。",
+      "tag": "利多",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1tNTZZRkYyRHVpWFc1MTktbm00bTNpSnVZRU9CcjNBVjZoS2RYOVI4SWI4MkUwcVhscXh6T2VMUENYUUVGeXR4X3JIS2hSQUlS0gFWQVVfeXFMUE0wVHRYNWg4b2paVVh0NTBESlJaaEdHbG5OSm9CdldzN0hoSkljR1RTTUh6bWhJREhVT21NMmU0RE9HZjBiZ2ZSRW1uT0RUQ1JhZVBtOFE?oc=5",
+      "source": "UDN",
+      "pub_date": "2026-11-23 16:16"
     },
     {
-      "title": "輝達股價恐暴跌至100美元？機構提出看空主要理由",
-      "point": "機構看空AI龍頭輝達，引發市場對高估值AI供應鏈的修正疑慮，加重台股相關概念股壓力。",
-      "tag": "利空",
-      "url": "https://news.cnyes.com/news/id/6668993",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-20 15:20"
+      "title": "證交所鼓勵上市櫃公司實施庫藏股穩定股價",
+      "point": "官方推動企業買回庫藏股，為市場注入企業護盤資金動力。",
+      "tag": "利多",
+      "url": "https://news.google.com/rss/articles/CBMizwNBVV95cUxNSU5wUTl5d2JZRElPRHN5aFBEWkhma0R6WEJZaW5NT0YyelRWU1YzSUs0Q3hSY0tkak5ELWtiaXJ6NUpVYjl3bU1FQU1pOVphMG9BSUdjQTdWbmFmSVBXZUwzS0w2N3BMUUJuTmJmblM1ZTFKWEZXNk11NWFNZm5VZUY2ak9ERGVCbnVLT3JMT1hueWd0UnpIcjlJVWROTmhwZ25qQk44T1pMN2Fmdmp0Q0RQNHZ5cWU4T195T0FJMnk4OE53bGZIMzJoeXNYajR2ZGVpRzYtcnM3WnNIandCVEdNM0ROYkdHOWxYYW5BQzAzQThUVzZ6TWJ3RGRNVE1IMWVYd0FZb2pJV25fNFdqeTBpOHluMElHcldvR3RwT3FfWFdVcnNjM2g0azlVaHVHTHNHSDVGQnBtdGx0WW1OV0w2U0NqaUkwd0s3ckZvRE1pZnpqWFV5OUpGNVlNRjBfUmtGWGczT08wdzRaaERxM0VoQmZacVV3NkVwajA1TkRyd2tTczNEaTQ3aVlYbEpuZ0Vmb0l4T211anZPaWNBbkp3OTJsYkFSMy1icUxZVXVtM0hoa29JRVk5NFR2S0g0UXZRWHMtZ1NJVkhoN2FZ?oc=5",
+      "source": "Yahoo股市",
+      "pub_date": "2026-11-23 16:22"
     },
     {
-      "title": "Anthropic 上市未能扭轉賣壓 美股回檔後該如何投資",
-      "point": "Anthropic掛牌大漲仍無法扭轉科技股賣壓，顯示美股與台股對AI題材鈍化，資金持續流出高本益比族群。",
-      "tag": "利空",
-      "url": "https://news.cnyes.com/news/id/6669038",
+      "title": "華碩前進泰國拓展AI軟硬整合商機",
+      "point": "華碩積極海外布局AI產業，深化海外基本面訂單轉化。",
+      "tag": "利多",
+      "url": "https://news.cnyes.com/news/id/6670155",
       "source": "鉅亨網",
-      "pub_date": "2026-11-20 15:37"
+      "pub_date": "2026-11-23 16:20"
     },
     {
-      "title": "Anthropic史上最大IPO悲喜參半 後市看機構買盤",
-      "point": "史上最大IPO未能帶動整體市場回溫，後續需關注機構法人買盤意願與鎖碼解除後的籌碼變化。",
+      "title": "華邦電攜手成大成立共同研發中心",
+      "point": "聚焦四大核心技術領域，強化長期半導體與記憶體研發能量。",
+      "tag": "利多",
+      "url": "https://news.cnyes.com/news/id/6670154",
+      "source": "鉅亨網",
+      "pub_date": "2026-11-23 16:16"
+    },
+    {
+      "title": "施羅德2027全球預測首度納入台灣AI供應鏈",
+      "point": "國際機構看好台股AI供應鏈中長期成長力道，提升國際能見度。",
+      "tag": "利多",
+      "url": "https://news.cnyes.com/news/id/6670150",
+      "source": "鉅亨網",
+      "pub_date": "2026-11-23 16:10"
+    },
+    {
+      "title": "永豐金預估台股高點遞延至明年Q1或Q2",
+      "point": "短線跌幅達28%後修正評價，認為中期高點順延，偏向沉澱走勢。",
       "tag": "中性",
-      "url": "https://news.cnyes.com/news/id/6668832",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-20 14:10"
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kMldvLWVKQml6eW1BTV9aWEJNYjJhRmJwcVprWUJWdDkxZEE0RVZWaU04blZOdlNMNVFQZThzd1JhZ3NGcExMc2pxOExuSlBrckpCcWFrMWVpMkh1UFlN0gFkQVVfeXFMUGRVbHVaWjZWQ3R2Mm1nWTF1UXVnN3p1V0tlSDRhVEJlQ3pmSlJRTFF1aWFPekZmNzJTbUp4ZTN1ZUVxZ25WY25CMTFLSUduZTR3T0N0Q01JUzFWVGpNMnlsZTZZSA?oc=5",
+      "source": "自由財經",
+      "pub_date": "2026-11-23 16:21"
     },
     {
-      "title": "鈺創：記憶體缺貨漲價壓縮部分需求 新增需求仍較多",
-      "point": "記憶體價格上漲雖短期影響部分需求，但整體新增需求仍多，基本面維持相對穩健。",
-      "tag": "利多",
-      "url": "https://news.cnyes.com/news/id/6668969",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-20 14:00"
-    },
-    {
-      "title": "全球AI與半導體需求強勁 馬來西亞10月出口暴增61%",
-      "point": "東南亞半導體封測與供應鏈出口數據強勁，顯示產業實體需求仍在，長線基本面未完全崩解。",
-      "tag": "利多",
-      "url": "https://news.cnyes.com/news/id/6668953",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-20 14:50"
-    },
-    {
-      "title": "SCFI連3跌反映傳統淡季 恐修正至12月中旬",
-      "point": "貨櫃航運運價指數持續修正，反映季節性淡季影響，航運族群短期缺乏基本面催化劑。",
+      "title": "外資期貨空單大增5569口並賣超現貨289.4億元",
+      "point": "外資持續現貨賣超與期貨加空，對台股反彈空間構成上方壓制。",
       "tag": "利空",
-      "url": "https://news.cnyes.com/news/id/6669047",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-20 15:51"
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1uVzNyUGNNX0lOUmlSdUJRdHhjdlZEOTJDTWJXV3FaNW1qN0ZYVEhvU3pDMnZ2MzRPYmlrZ3lsNVVRM3lNVjFwUGp0WTQwQmVkZGVxNURhcTY?oc=5",
+      "source": "自由時報",
+      "pub_date": "2026-11-23 16:13"
     },
     {
-      "title": "台股急跌後反彈 外資現貨賣壓收斂期貨未平倉下降",
-      "point": "外資期貨空單與現貨賣壓稍微收斂，預示指數短線跌深後可能迎來技術性反彈。",
-      "tag": "利多",
-      "url": "https://news.cnyes.com/news/id/6669046",
-      "source": "鉅亨網",
-      "pub_date": "2026-11-20 15:51"
+      "title": "三大法人賣超台股511.77億元",
+      "point": "籌碼面法人整體仍呈提款狀態，短期反彈多由內資與融資清洗後帶動。",
+      "tag": "利空",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBRVWRnSjROT0V5MlczdjhTQXluaXVyaGZoNG9KZHlhc1ZWSERWYnl1dmFtRzRvZXVrci1zWFc2Q3FvNy1qMmRoajk3eHJmaVgz?oc=5",
+      "source": "UDN",
+      "pub_date": "2026-11-23 16:18"
     },
     {
-      "title": "美債連漲5天創今年最長紀錄 殖利率持續走低",
-      "point": "資金流向債券市場避險帶動美債價格上漲，殖利率走低有助於減緩全球資本市場的資金緊縮壓力。",
-      "tag": "利多",
-      "url": "https://news.cnyes.com/news/id/6669006",
+      "title": "IEEE示警AI發展面臨電力瓶頸挑戰",
+      "point": "算力擴張引發電力緊張，對AI基礎建設供應鏈長線經營添變數。",
+      "tag": "利空",
+      "url": "https://news.cnyes.com/news/id/6670022",
       "source": "鉅亨網",
-      "pub_date": "2026-11-20 15:50"
+      "pub_date": "2026-11-23 16:10"
     }
   ],
   "non_holding_opportunities": [
     {
-      "stock_id": "5351",
-      "name": "鈺創",
-      "catalyst": "記憶體缺貨漲價帶動基本面支撐，新增需求穩健。"
+      "stock_id": "2357",
+      "name": "華碩",
+      "catalyst": "拓展泰國AI軟硬體整合商機，基本面轉強。"
+    },
+    {
+      "stock_id": "2344",
+      "name": "華邦電",
+      "catalyst": "與成大設立研發中心深化技術，記憶體族群強勢。"
     }
   ],
   "risk_warnings": [
-    "AI巨額資本支出效益受質疑，高估值矽智財與散熱族群持續面臨修正風險。",
-    "大盤跌破重要均線且遭遇恐慌性拋售，未出現明確轉折訊號前應嚴控資金水位。"
+    "外資期貨空單與現貨賣超持續擴大，上方籌碼賣壓仍重。",
+    "反彈強勁但外圍利空與法人提款未止，需留意高檔追高風險。"
   ]
 }

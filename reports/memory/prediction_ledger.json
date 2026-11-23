@@ -19056,7 +19056,58 @@
       "stop_loss": null,
       "chip_view": null,
       "note": "下一交易日台股預計開低打壓，測試前低35442.4點支撐，指數波動區間看35300至36200點。"
+    },
+    {
+      "key": "maga|TAIEX|premarket|2026-11-23 16:36:44",
+      "member": "maga",
+      "member_name": "川大帝MAGA",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-23 16:36:44",
+      "target_date": "2026-11-24",
+      "price_at": 36811.890625,
+      "direction": "偏空",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "費半 -10.73%、TSM 溢價 3.19%"
+    },
+    {
+      "key": "chairman|TAIEX|premarket|2026-11-23 16:36:44",
+      "member": "chairman",
+      "member_name": "巴董事長",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-23 16:36:44",
+      "target_date": "2026-11-24",
+      "price_at": 36811.890625,
+      "direction": "中性",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "受美股費半暴跌影響，下一交易日台股預計低開震盪，測試關鍵支撐位35400點，上方壓力位36800點。"
+    },
+    {
+      "key": "news|TAIEX|news_brief|2026-11-23 16:36:44",
+      "member": "news",
+      "member_name": "新聞達人",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "news_brief",
+      "recorded_at": "2026-11-23 16:36:44",
+      "target_date": "2026-11-24",
+      "price_at": 36811.890625,
+      "direction": "偏多",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "中立偏多：融資大減釋放沉重賣壓，政府政策護盤與AI錯殺反彈帶動台股強彈，惟外資期現貨持續偏空需謹慎驗證。"
     }
   ],
-  "updated_at": "2026-11-23 12:00:42"
+  "updated_at": "2026-11-23 16:36:44"
 }
