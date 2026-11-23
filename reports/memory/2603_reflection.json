@@ -1,26 +1,26 @@
 {
   "stock_id": "2603",
   "name": "長榮",
-  "generated_at": "2026-11-20 16:06:49",
-  "latest_bar_date": "2026-11-20",
+  "generated_at": "2026-11-23 12:00:34",
+  "latest_bar_date": "2026-11-23",
   "hits": 1,
   "gaps": 2,
   "total": 3,
-  "headline": "K線技術人：11-18 14:00 預判守 236.5 元支撐偏空（當時 257.5），今日實際最低 235、收 237.5（-7.77%） -> 觸發【支撐假跌破（盤中跌破收回）、觸發停損】",
+  "headline": "籌碼王：11-20 16:07 預判偏空（當時 233），今日盤中實際最低 230、現價 235.5（+1.07%） -> 觸發【方向落差】",
   "lessons": [
-    "236.5 支撐盤中失守但收回：支撐有效，盤中跌破需等收盤確認",
-    "已觸及停損 236.5：依紀律出場，不攤平",
-    "支撐 238.5 微幅跌破：改以實際低點 235 重新定錨，並降低進場量"
+    "偏空過度：空方訊號需等收盤確認，避免錯殺",
+    "235 支撐盤中失守但收回：支撐有效，盤中跌破需等收盤確認",
+    "已觸及停損 235：依紀律出場，不攤平"
   ],
   "reviews": [
     {
       "member": "chips",
       "member_name": "籌碼王",
       "source": "standby",
-      "recorded_at": "2026-11-20 09:55:23",
-      "target_date": "2026-11-20",
+      "recorded_at": "2026-11-20 16:07:58",
+      "target_date": "2026-11-23",
       "prediction": {
-        "price_at": 240.0,
+        "price_at": 233.0,
         "direction": "偏空",
         "support": null,
         "resistance": null,
@@ -30,102 +30,100 @@
       },
       "actual": {
         "dates": [
-          "2026-11-20"
+          "2026-11-23"
         ],
-        "close": 237.5,
-        "low": 235.0,
-        "high": 244.0,
-        "is_partial": false,
+        "close": 235.5,
+        "low": 230.0,
+        "high": 241.0,
+        "is_partial": true,
         "foreign_net": null,
         "trust_net": null
       },
-      "verdict": "準確",
-      "score": 1,
-      "return_pct": -1.04,
-      "tags": [],
-      "gap_text": "11-20 09:55 預判偏空（當時 240），今日實際最低 235、收 237.5（-1.04%）",
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": 1.07,
+      "tags": [
+        "方向落差"
+      ],
+      "gap_text": "11-20 16:07 預判偏空（當時 233），今日盤中實際最低 230、現價 235.5（+1.07%） -> 觸發【方向落差】",
       "corrections": [
-        "判斷準確，維持原邏輯"
+        "偏空過度：空方訊號需等收盤確認，避免錯殺"
       ]
     },
     {
       "member": "kline",
       "member_name": "K線技術人",
       "source": "zhu_auto",
-      "recorded_at": "2026-11-18 14:00:00",
-      "target_date": "2026-11-19",
+      "recorded_at": "2026-11-20 14:00:00",
+      "target_date": "2026-11-23",
       "prediction": {
-        "price_at": 257.5,
+        "price_at": 237.5,
         "direction": "偏空",
-        "support": 236.5,
+        "support": 235.0,
         "resistance": 274.5,
-        "stop_loss": 236.5,
+        "stop_loss": 235.0,
         "chip_view": null,
-        "note": "空頭趨勢｜四線糾結（排列未定）｜葛蘭碧⑥反彈不過賣點｜近 3 日無關鍵轉折 K"
+        "note": "空頭趨勢｜四線糾結（排列未定）｜位於月線之下（乖離 -7.8%），未觸發八大法則訊號｜近 3 日無關鍵轉折 K"
       },
       "actual": {
         "dates": [
-          "2026-11-19",
-          "2026-11-20"
+          "2026-11-23"
         ],
-        "close": 237.5,
-        "low": 235.0,
-        "high": 259.5,
-        "is_partial": false,
-        "foreign_net": -661.0,
-        "trust_net": -263.0,
-        "chips_dates": [
-          "2026-11-19"
-        ]
+        "close": 235.5,
+        "low": 230.0,
+        "high": 241.0,
+        "is_partial": true,
+        "foreign_net": null,
+        "trust_net": null
       },
       "verdict": "落差",
       "score": 1,
-      "return_pct": -7.77,
+      "return_pct": -0.84,
       "tags": [
         "支撐假跌破（盤中跌破收回）",
         "觸發停損"
       ],
-      "gap_text": "11-18 14:00 預判守 236.5 元支撐偏空（當時 257.5），今日實際最低 235、收 237.5（-7.77%） -> 觸發【支撐假跌破（盤中跌破收回）、觸發停損】",
+      "gap_text": "11-20 14:00 預判守 235 元支撐偏空（當時 237.5），今日盤中實際最低 230、現價 235.5（-0.84%） -> 觸發【支撐假跌破（盤中跌破收回）、觸發停損】",
       "corrections": [
-        "236.5 支撐盤中失守但收回：支撐有效，盤中跌破需等收盤確認",
-        "已觸及停損 236.5：依紀律出場，不攤平"
+        "235 支撐盤中失守但收回：支撐有效，盤中跌破需等收盤確認",
+        "已觸及停損 235：依紀律出場，不攤平"
       ]
     },
     {
       "member": "kline",
       "member_name": "K線技術人",
       "source": "standby",
-      "recorded_at": "2026-11-20 09:55:23",
-      "target_date": "2026-11-20",
+      "recorded_at": "2026-11-20 16:07:58",
+      "target_date": "2026-11-23",
       "prediction": {
-        "price_at": 240.0,
+        "price_at": 233.0,
         "direction": "中性",
-        "support": 238.5,
-        "resistance": 258.0,
-        "stop_loss": 231.0,
+        "support": 228.0,
+        "resistance": 247.5,
+        "stop_loss": 218.5,
         "chip_view": null,
-        "note": "跌破月線回測季線"
+        "note": "觀望等待底部確認"
       },
       "actual": {
         "dates": [
-          "2026-11-20"
+          "2026-11-23"
         ],
-        "close": 237.5,
-        "low": 235.0,
-        "high": 244.0,
-        "is_partial": false,
+        "close": 235.5,
+        "low": 230.0,
+        "high": 241.0,
+        "is_partial": true,
         "foreign_net": null,
         "trust_net": null
       },
-      "verdict": "落差",
-      "score": 0,
-      "return_pct": -1.04,
+      "verdict": "準確",
+      "score": 1,
+      "return_pct": 1.07,
       "tags": [
-        "支撐微幅跌破落差警示"
+        "支撐守住"
       ],
-      "gap_text": "11-20 09:55 預判守 238.5 元支撐中性（當時 240），今日實際最低 235、收 237.5（-1.04%） -> 觸發【支撐微幅跌破落差警示】",
+      "gap_text": "11-20 16:07 預判守 228 元支撐中性（當時 233），今日盤中實際最低 230、現價 235.5（+1.07%） -> 觸發【支撐守住】",
       "corrections": [
-        "支撐 238.5 微幅跌破：改以實際低點 235 重新定錨，並降低進場量"
+        "判斷準確，維持原邏輯"
       ]
     }
   ]

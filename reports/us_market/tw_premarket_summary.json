@@ -1,119 +1,119 @@
 {
   "date": "2026-11-23",
-  "generated_at": "2026-11-20 16:07:54",
-  "sox_chg_pct": -2.41,
-  "tsm_adr_chg_pct": -2.9,
-  "tsm_premium_pct": 16.06,
+  "generated_at": "2026-11-23 12:00:42",
+  "sox_chg_pct": -10.73,
+  "tsm_adr_chg_pct": -9.48,
+  "tsm_premium_pct": 2.91,
   "us_key_drivers": [
-    "美股科技股因AI預期差與評價過高面臨機構資金調節，費半與那斯達克指數同步走弱。",
-    "市場對於大型科技公司的CapEx回報率保持審慎，不對稱風報比惡化導致資金撤出高本益比族群。",
-    "總體市場受到監管調查與大型IPO後資金虹吸效應影響，風險胃納明顯收縮。"
+    "美股AI巨頭估值過高與監管法律調查觸發機構部位強制去槓桿，短期市場風險偏好極度萎縮。",
+    "費半指數急跌10.73%打破原區間支撐，市場進入預期差修正階段，CapEx資本支出效益暫時被重新評估。",
+    "台積電ADR雖大跌但維持2.91%溢價，顯示長線基本面未變，但短線擁擠樂觀部位正在加速出清。"
   ],
-  "tw_index_forecast": "台股下一交易日預期延續空頭趨勢震盪，關鍵點位關注MA20與前低支撐，建議維持保守防守。",
-  "opening_strategy": "開盤應對策略：建議持盈保泰，嚴控部位，未見明確底部轉折K線前暫不進場摸底，持有現金等待落底。",
+  "tw_index_forecast": "下一交易日台股預計開低打壓，測試前低35442.4點支撐，指數波動區間看35300至36200點。",
+  "opening_strategy": "減碼高姿態AI散熱與矽智財部位，保留可用現金至少50%，未見止跌轉折前暫不進行加碼買進。",
   "holdings_alert": [],
   "top_sector_picks": {
     "favor": [
-      "食品：防禦型資金避風港，受大盤系統性風險影響較小",
-      "金融：下檔具殖利率與防禦支撐，相對大盤抗跌"
+      "電信防禦族群：具備高股息與防禦避險屬性，受美股科技崩跌影響較小",
+      "食品內需：籌碼相對穩定，資本支出與美股AI鏈連動度低"
     ],
     "avoid": [
-      "AI散熱：受美股同業大跌與評價下修拖累，短線賣壓沉重",
-      "ASIC設計服務：機構部位調節且資金撤出高估值科技股"
+      "AI散熱族群：受Vertiv重挫10%連動，液冷與高估值修正壓力巨大",
+      "矽智財與ASIC：美方監管調查加劇，供應鏈面臨法規風險與估值下修"
     ]
   },
   "us_top10": [
     {
       "ref": "Q1",
-      "title": "費城半導體指數(^SOX) 收9,419.72 -2.41%",
-      "point": "費半指數收黑下跌2.41%，反映科技股整體評價下修，傳導至台股半導體與晶圓代工族群。",
+      "title": "費城半導體指數大幅下挫",
+      "point": "費半暴跌10.73%，打擊整體半導體產業鏈信心，傳導至台股半導體龍頭與封測族群面臨賣壓。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/%5ESOX",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 06:15"
+      "pub_date": "2026-11-21 06:15"
     },
     {
       "ref": "Q2",
-      "title": "台積電 ADR(TSM) 收352.09 -2.90%",
-      "point": "台積電ADR跌幅2.90%，換算台股約2321.12元、對台股2330溢價收窄至+16.06%，牽動台股權值股開盤表現。",
+      "title": "台積電ADR急跌但維持溢價",
+      "point": "TSM ADR重挫9.48%至318.71美元，換算台股2099.28元且溢價+2.91%，壓抑台積電(2330)開盤表現。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/TSM",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 05:00"
+      "pub_date": "2026-11-21 05:00"
     },
     {
       "ref": "Q3",
-      "title": "輝達(NVDA) 收145.98 -3.30%",
-      "point": "輝達股價下跌3.30%，機構部位持續調節，對台股AI供應鏈與半導體形成壓力。",
+      "title": "輝達股價跳水跌逾14%",
+      "point": "輝達暴跌14.01%至125.53美元，全面拖累台股AI伺服器供應鏈如鴻海(2317)與廣達(2382)。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/NVDA",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 05:00"
+      "pub_date": "2026-11-21 05:00"
     },
     {
       "ref": "Q7",
-      "title": "美光(MU) 收690.44 -2.10%",
-      "point": "美光股價回檔2.10%，記憶體族群面臨短線調節賣壓。",
+      "title": "美光重挫近14%",
+      "point": "美光大跌13.89%至594.51美元，記憶體高估值修修正，傳導至台股南亞科(2408)與威剛(3260)開低壓力。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/MU",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 05:00"
+      "pub_date": "2026-11-21 05:00"
     },
     {
       "ref": "Q11",
-      "title": "Vertiv(VRT) 收184.99 -4.88%",
-      "point": "散熱大廠Vertiv下跌4.88%，直接衝擊台股AI散熱次產業的估值與評價。",
+      "title": "Vertiv重挫逾10%",
+      "point": "Vertiv大跌10.14%至166.24美元，液冷散熱預期降溫，傳導至台股奇鋐(3017)與雙鴻(3324)減碼壓力。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/VRT",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 05:00"
+      "pub_date": "2026-11-21 05:00"
     },
     {
       "ref": "N2",
-      "title": "Taiwan Stock Market Falls 6.2% to Cap Its Worst Week Since 1991",
-      "point": "台股單日重挫6.2%，創下多年來最慘淡的一週，市場情緒轉趨保守。",
+      "title": "台灣不確定性增加美科技股風險",
+      "point": "政經地緣疑慮推升地緣政治風險溢價，傳導至台股整體外資資金持續流出。",
       "tag": "利空",
-      "url": "https://247wallst.com/investing/2026/11/20/taiwan-stock-market-falls-6-2-to-cap-its-worst-week-since-1991-as-kospi-closes-down-5-2-and-nikkei-225-drops-5-1-in-ai-chip-selloff/?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 15:33"
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNTJfaHd4Zm9NQVJDVlFGYVY2YzJYQ1dLa1ltRmNXdE1pT1BSRFFNVkZJNXZTT2IxM2JoUDh0dGZtUlJ5eFR4cGhyaTUzSWI0WU5zdVV2THhKNkk0bENScFRDNl9zNjFsYWRSb2tGQ2s2TnhfT1hyZmtuaHBxTGJCNWN5bE5kTF9CdlBrM3hfYmlfZzkwV19Qc2ZYR2IxWUNQbFAw?oc=5",
+      "source": "CNBC",
+      "pub_date": "2026-11-23 11:47"
     },
     {
-      "ref": "N4",
-      "title": "Tech takes a beating as Anthropic surge fails to ease AI worries",
-      "point": "科技股遭受重挫，Anthropic飆升未能消弭市場對AI泡沫與資本支出的擔憂，拖累AI伺服器與ASIC設計服務。",
+      "ref": "N3",
+      "title": "情報局指晶片流入監管爭議",
+      "point": "美方針對晶片合規進行調查，加深供應鏈合規審查法規風險，利空台股世芯-KY(3661)等矽智財。",
       "tag": "利空",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 15:16"
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQLVNJelV0R3FTaS0tR1F0T3lpZVBvT3RUaXJwZ1Z0Ym9lT2I5Wk50MmFueWdlRmk1VE5qcVBFSkFUNHItWlFULUpmZktEaGIyV3QwTXhoQnd4M282MFJfUDJwSUVmSzhCOVMzTjFJOGtMTWZoOXctUlZwc0ozS2xjSU5sLTZRckh1VjVHOFVkU091dWNZbVdjZC1Ya2F4UWFodFNXdzlHWFV0TDB3dFUtSWRjV3BsQ2xzakZ0SDlWaUFweVQwTU5oM19NdE90MUFmUFJiXzRNSWx4NFotSjVBQzk3bXZKTW1Oc3dNb0JNUQ?oc=5",
+      "source": "WKYC",
+      "pub_date": "2026-11-23 11:42"
     },
     {
-      "ref": "N8",
-      "title": "CRWV, IREN, NBIS Stocks Extend Neocloud Selloff",
-      "point": "算力與雲端概念股延續賣壓，影響台股相關雲端運算與伺服器零組件代號。",
+      "ref": "N9",
+      "title": "加州擴大輝達刑事調查",
+      "point": "輝達面臨監管與法律風險放大，壓抑整體AI族群估值，影響台股ASIC設計服務板塊。",
       "tag": "利空",
-      "url": "https://stocktwits.com/news-articles/markets/equity/crwv-iren-nbis-stocks-extend-neocloud-selloff-as-anthropic-ipo-rally-fades-michael-burry-takes-a-victory-lap/cNbSEj6R9KJ?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 14:21"
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZHR3WnRDUkN2UzlSX0MzVE1iZHZiRm05LTZfc3RacWhINWUzOVluOWNOdXFvQ21na0dCRDFxaVZEVkc0LXNrXzFZRzVpa1FTWDB4NTdNbWZVWWVTNlNFQUs0WXYtR3J2M2dwZWREZzJTYVBEVElSTXgxLUVHdnpuVGxWVVItdm5meGhaS1hsSUg1RGlYUExzR3E2RF8tMjJoZ2J1RzVzY0dFbnRhZE9FQUQ5Z1Rna2ZE?oc=5",
+      "source": "investingLive",
+      "pub_date": "2026-11-23 11:01"
     },
     {
-      "ref": "Q13",
-      "title": "那斯達克(^IXIC) 收23,879.20 -2.25%",
-      "point": "那斯達克指數跌逾2%，美股科技巨頭集體回檔，牽動台股電子類股整體多空方向。",
+      "ref": "N5",
+      "title": "亞洲股市隨AI賣壓加深",
+      "point": "亞股受美股AI拋售潮連帶衝擊，外資提款台股權值股，整體指數反彈乏力。",
       "tag": "利空",
-      "url": "https://finance.yahoo.com/quote/%5EIXIC",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asia-stocks-slide-ai-rout-033321972.html?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 06:15"
+      "pub_date": "2026-11-23 11:33"
     },
     {
-      "ref": "N12",
-      "title": "Nvidia Subpoenaed By California, Attorney General Also Probing",
-      "point": "輝達遭到加州司法調查與傳喚，增添短線監管變數與機構觀望氣氛。",
+      "ref": "N11",
+      "title": "輝達遭遇金融危機級別連跌",
+      "point": "輝達連跌幅度達歷史極限，市場樂觀擁擠度快速去化，短期壓抑台股伺服器組裝廠。",
       "tag": "利空",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bright-red-flags-nvidia-subpoenaed-045550463.html?.tsrc=rss",
+      "url": "https://www.thestreet.com/investing/stocks/nvidia-stock-losing-streak-2008?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-20 12:55"
+      "pub_date": "2026-11-23 10:47"
     }
   ],
   "generated_by": "fast_team_runner（gemini）",
-  "us_top10_updated_at": "2026-11-20 16:07:54"
+  "us_top10_updated_at": "2026-11-23 12:00:42"
 }
