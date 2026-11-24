@@ -1,26 +1,26 @@
 {
-  "version": 1,
-  "updated_at": "2026-11-20 09:54:33",
+  "version": 2,
+  "updated_at": "2026-11-24 21:49:07",
   "updated_by": "gemini/gemini-3-flash-preview",
   "rules": {
-    "max_single_position_pct": 20.0,
-    "stop_loss_pct": 10.0,
-    "take_profit_pct": 30.0,
+    "max_single_position_pct": 15.0,
+    "stop_loss_pct": 8.0,
+    "take_profit_pct": 15.0,
     "cash_reserve_pct": 50.0,
-    "min_cash_reserve_pct": 60.0,
+    "min_cash_reserve_pct": 80.0,
     "avoid_chase_pct": 3.0,
     "agent_weights": {
-      "news": 0.5,
-      "chips": 0.8,
-      "kline": 0.7,
-      "maga": 1.5
+      "news": 0.4,
+      "chips": 0.7,
+      "kline": 0.9,
+      "maga": 1.1
     },
     "custom_disciplines": [
-      "停損價位與買進價之空間不得小於 3% 以避免無謂摩擦損。",
-      "大盤位於月線下方時，單一標的建倉金額嚴禁超過 15 萬元。",
-      "若外資當日賣超台積電逾 2 萬張，次日嚴禁建立任何多單部位。",
-      "禁止在四線空頭排列（5/10/20/60MA）時進行左側摸底交易。",
-      "所有買進指令必須附帶轉折紅 K 或下影線支撐之實盤證據。"
+      "停損價與買進價空間嚴禁小於 3% 以減少摩擦損。",
+      "單一標的建倉金額嚴禁超過 15 萬元（大盤位於月線下）。",
+      "嚴禁在四線空頭排列（5/10/20/60MA）時進行任何買進。",
+      "若外資當日賣超台積電逾 2 萬張，次日嚴禁建立多單。",
+      "所有買進指令必須附帶當日轉折紅 K 或長下影線證據。"
     ]
   },
   "history": [
@@ -83,6 +83,58 @@
           "key": "custom_disciplines",
           "before": "（無）",
           "after": "停損價位與買進價之空間不得小於 3% 以避免無謂摩擦損。；大盤位於月線下方時，單一標的建倉金額嚴禁超過 15 萬元。；若外資當日賣超台積電逾 2 萬張，次日嚴禁建立任何多單部位。；禁止在四線空頭排列（5/10/20/60MA）時進行左側摸底交易。；所有買進指令必須附帶轉折紅 K 或下影線支撐之實盤證據。"
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "at": "2026-11-24 21:49:07",
+      "by": "gemini/gemini-3-flash-preview",
+      "changes": [
+        {
+          "key": "max_single_position_pct",
+          "before": 20.0,
+          "after": 15.0
+        },
+        {
+          "key": "stop_loss_pct",
+          "before": 10.0,
+          "after": 8.0
+        },
+        {
+          "key": "take_profit_pct",
+          "before": 30.0,
+          "after": 15.0
+        },
+        {
+          "key": "min_cash_reserve_pct",
+          "before": 60.0,
+          "after": 80.0
+        },
+        {
+          "key": "agent_weights.news",
+          "before": 0.5,
+          "after": 0.4
+        },
+        {
+          "key": "agent_weights.chips",
+          "before": 0.8,
+          "after": 0.7
+        },
+        {
+          "key": "agent_weights.kline",
+          "before": 0.7,
+          "after": 0.9
+        },
+        {
+          "key": "agent_weights.maga",
+          "before": 1.5,
+          "after": 1.1
+        },
+        {
+          "key": "custom_disciplines",
+          "before": "停損價位與買進價之空間不得小於 3% 以避免無謂摩擦損。；大盤位於月線下方時，單一標的建倉金額嚴禁超過 15 萬元。；若外資當日賣超台積電逾 2 萬張，次日嚴禁建立任何多單部位。；禁止在四線空頭排列（5/10/20/60MA）時進行左側摸底交易。；所有買進指令必須附帶轉折紅 K 或下影線支撐之實盤證據。",
+          "after": "停損價與買進價空間嚴禁小於 3% 以減少摩擦損。；單一標的建倉金額嚴禁超過 15 萬元（大盤位於月線下）。；嚴禁在四線空頭排列（5/10/20/60MA）時進行任何買進。；若外資當日賣超台積電逾 2 萬張，次日嚴禁建立多單。；所有買進指令必須附帶當日轉折紅 K 或長下影線證據。"
         }
       ]
     }
