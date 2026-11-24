@@ -8,8 +8,10 @@
     GEMINI_API_KEY=...             Google AI Studio 免費金鑰（https://aistudio.google.com/apikey）
     GROQ_API_KEY=...               Groq 免費金鑰（選填，https://console.groq.com/keys）
     DEFAULT_LLM_PROVIDER=gemini    gemini / groq / claude_lite
-    GEMINI_MODEL=gemini-3.5-flash  主模型（gemini-2.5-flash 已不開放給新申請的金鑰）
-    GEMINI_FALLBACK_MODELS=gemini-3.5-flash-lite,gemini-flash-lite-latest  主模型塞車／逾時／下架時依序備援
+    GEMINI_MODEL=gemini-3.5-flash  主模型（1.5／2.0／2.5-flash 系列實測 404，填了也會自動略過）
+    GEMINI_FALLBACK_MODELS=gemini-flash-latest  主模型塞車／逾時／下架時依序備援
+    GEMINI_TIMEOUT_SEC=150         單次請求讀取逾時（五人投決會 Prompt 大，常超過 60 秒）
+    程式另外一定會接上內建的穩定備援鏈與輕量精簡版備援（GEMINI_LITE_MODELS），投決會不會因單一模型下架而當掉。
     GROQ_MODEL=llama-3.3-70b-versatile
 
 provider：
@@ -51,9 +53,17 @@ FREE_PROVIDERS = ("gemini", "groq")
 TIMEOUT_SEC = 90
 RETRY_STATUS = (429, 500, 503)
 RETRY_WAITS = (2, 5)
-GEMINI_TIMEOUT_SEC = 60
+GEMINI_TIMEOUT_SEC = 150  # 五人投決會（20 檔報價＋籌碼）常超過 60 秒；可用 .env GEMINI_TIMEOUT_SEC 覆寫
 MAX_OUTPUT_CAP = 16384
-GEMINI_FALLBACKS = "gemini-3.5-flash-lite,gemini-flash-lite-latest"
+GEMINI_FALLBACKS = "gemini-flash-latest"
+# 內建穩定鏈（2026-11-24 以本金鑰實測）：1.5-flash／1.5-flash-8b／1.5-pro 與 2.5-flash 皆 404（已下架或不開放新使用者）
+GEMINI_STABLE_CHAIN = ("gemini-3.5-flash", "gemini-flash-latest", "gemini-3-flash-preview")
+GEMINI_LITE_CHAIN = ("gemini-3.5-flash-lite", "gemini-flash-lite-latest", "gemini-3.1-flash-lite")  # 輕量極速：精簡版決策
+GEMINI_RETIRED_PREFIXES = ("gemini-1.0", "gemini-1.5", "gemini-2.0", "gemini-2.5-flash-preview")
+GEMINI_RETIRED_EXACT = ("gemini-2.5-flash", "gemini-2.5-pro", "gemini-pro")  # 本金鑰回 404「不再開放給新使用者」
+LITE_SIMPLIFY_NOTE = ("\n\n【精簡版】主力模型暫時無法回應，請在同樣的輸出格式下精簡作答："
+                      "每位成員發言 1–2 句、只保留最有把握的決策，格式欄位一律保留。")
+_DEAD_MODELS = set()  # 本次執行期間回 404 的模型，之後直接略過不再浪費請求
 CLAUDE_TIMEOUT_SEC = 300
 ENV_DEFAULTS = {
     "GEMINI_API_KEY": "你的_Google_AI_Studio_免費_Key",
@@ -61,6 +71,7 @@ ENV_DEFAULTS = {
     "DEFAULT_LLM_PROVIDER": "gemini",
     "GEMINI_MODEL": "gemini-3.5-flash",
     "GEMINI_FALLBACK_MODELS": GEMINI_FALLBACKS,
+    "GEMINI_TIMEOUT_SEC": str(GEMINI_TIMEOUT_SEC),
     "GROQ_MODEL": "llama-3.3-70b-versatile",
 }
 
@@ -91,11 +102,36 @@ def _scrub(text):
 
 # ---------------------------------------------------------------- 各引擎
 
+def gemini_retired(model):
+    m = (model or "").strip().lower()
+    return (not m or m in _DEAD_MODELS or m in GEMINI_RETIRED_EXACT
+            or m.startswith(GEMINI_RETIRED_PREFIXES))
+
+
+def _split_models(text):
+    return [m.strip() for m in (text or "").split(",") if m.strip()]
+
+
+def gemini_lite_models():
+    return [m for m in dict.fromkeys(_split_models(os.getenv("GEMINI_LITE_MODELS", "")) + list(GEMINI_LITE_CHAIN))
+            if not gemini_retired(m)]
+
+
 def gemini_models():
-    """主模型＋備援模型鏈（.env GEMINI_MODEL、GEMINI_FALLBACK_MODELS，逗號分隔）。"""
-    fallback = os.getenv("GEMINI_FALLBACK_MODELS", GEMINI_FALLBACKS)
-    return list(dict.fromkeys([os.getenv("GEMINI_MODEL", "gemini-3.5-flash").strip()]
-                              + [m.strip() for m in fallback.split(",") if m.strip()]))
+    """主模型鏈：.env／Secrets 的 GEMINI_MODEL、GEMINI_FALLBACK_MODELS，再接內建穩定鏈，最後接輕量精簡版備援。
+    已下架（1.5／2.0／2.5-flash 等）或本次執行已回 404 的模型自動略過，舊 Secrets 設定不會再讓投決會當掉。"""
+    main = ([os.getenv("GEMINI_MODEL", GEMINI_STABLE_CHAIN[0])] + _split_models(os.getenv("GEMINI_FALLBACK_MODELS", GEMINI_FALLBACKS))
+            + list(GEMINI_STABLE_CHAIN))
+    lite = gemini_lite_models()
+    chain = [m for m in dict.fromkeys(m.strip() for m in main) if not gemini_retired(m) and m not in lite]
+    return chain + lite
+
+
+def gemini_timeout():
+    try:
+        return max(30, int(float(os.getenv("GEMINI_TIMEOUT_SEC") or GEMINI_TIMEOUT_SEC)))
+    except ValueError:
+        return GEMINI_TIMEOUT_SEC
 
 
 def _thinking_config(model, level_ok=True):
@@ -110,7 +146,7 @@ def _gemini_post(model, body):
     # AIza… 與 AQ.… 金鑰都放在 x-goog-api-key 標頭（不拼在網址、不用 Bearer）
     headers = {"Content-Type": "application/json", "x-goog-api-key": _key("GEMINI_API_KEY")}
     for wait in RETRY_WAITS + (None,):
-        resp = requests.post(GEMINI_URL.format(model=model), json=body, timeout=GEMINI_TIMEOUT_SEC, headers=headers)
+        resp = requests.post(GEMINI_URL.format(model=model), json=body, timeout=gemini_timeout(), headers=headers)
         if resp.status_code not in RETRY_STATUS or wait is None:
             return resp
         time.sleep(wait)  # 503 高負載／429 限流多為暫時性，退避後重試
@@ -149,11 +185,20 @@ def _gemini_once(model, system_prompt, user_prompt, temperature, json_mode, max_
 def _gemini(system_prompt, user_prompt, temperature, json_mode, max_tokens):
     """依模型鏈嘗試：主模型塞車、逾時、下架（404）時自動改用下一個備援模型。"""
     errors = []
+    lite = set(gemini_lite_models())
     for model in gemini_models():
+        if gemini_retired(model):
+            continue
+        system = system_prompt + (LITE_SIMPLIFY_NOTE if model in lite and errors else "")
         try:
-            return _gemini_once(model, system_prompt, user_prompt, temperature, json_mode, max_tokens)
+            return _gemini_once(model, system, user_prompt, temperature, json_mode, max_tokens)
         except (LLMError, requests.RequestException) as exc:
-            errors.append(_scrub(exc)[:160])
+            if isinstance(exc, requests.Timeout):
+                errors.append(f"{model} 逾時（>{gemini_timeout()} 秒）")
+            else:
+                errors.append(_scrub(exc)[:160])
+            if "HTTP 404" in str(exc):
+                _DEAD_MODELS.add(model.lower())  # 已下架：本次執行期間不再呼叫
             if "HTTP 401" in str(exc) or "HTTP 403" in str(exc):
                 break  # 金鑰問題換模型也沒用
     raise LLMError("Gemini 全部模型失敗｜" + "｜".join(errors))
@@ -207,7 +252,7 @@ HIGH_TIER_DEFAULT_MODEL = {"gemini": "gemini-3.1-pro-preview", "anthropic": "cla
 # 3.1-pro 免費金鑰常 429 → 等 3 秒改用 Flash 深度思考。實測（2026-11-19）gemini-2.5-flash 與 2.5-pro 一樣回 404
 # 「不再開放給新使用者」，故不列入預設鏈；gemini-3-flash-preview 實測 22 秒完成五人覆盤，gemini-3.5-flash 為最後備援。
 # 舊帳號仍可用 2.5 系列時，可在 HIGH_TIER_MODEL 指定（2.5-flash 會自動帶 thinkingBudget 8192）。
-HIGH_TIER_GEMINI_FALLBACKS = ("gemini-3-flash-preview", "gemini-3.5-flash")
+HIGH_TIER_GEMINI_FALLBACKS = ("gemini-3-flash-preview", "gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite")
 HIGH_TIER_429_WAIT_SEC = 3
 HIGH_TIER_TIMEOUT_SEC = 420          # 單一引擎上限（claude -p、Anthropic、Gemini Pro）
 HIGH_TIER_FLASH_TIMEOUT_SEC = 180    # Flash 備援：深度思考偶爾卡住，不空等
@@ -319,6 +364,9 @@ def call_high_tier_reasoning(prompt, system_prompt="你是嚴謹的機構操盤�
         plan += [("gemini", HIGH_TIER_DEFAULT_MODEL["gemini"])] + [("gemini", m) for m in HIGH_TIER_GEMINI_FALLBACKS]
     errors = []
     for provider, model in plan:
+        if provider == "gemini" and gemini_retired(model):
+            errors.append(f"gemini/{model}：已下架，略過")
+            continue
         if provider == "gemini" and not has_key("gemini"):
             errors.append("gemini：未設定金鑰")
             continue
