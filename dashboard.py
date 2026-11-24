@@ -292,6 +292,17 @@ def to_float(v):
         return None
 
 
+def safe_score_fmt(val):
+    """成員評分（chip_score／news_score／tech_score／maga_score…）安全格式化為 +3／-2。
+    模型或快取可能給 None、""、"N/A"、2.0、"3" 等格式，不可讓 :+d 讓整頁當機。"""
+    if val is None or (isinstance(val, str) and not val.strip()):
+        return "+0"
+    try:
+        return f"{int(float(val)):+d}"
+    except (TypeError, ValueError, OverflowError):
+        return f"{val}"
+
+
 def _cell(fn):
     return lambda v: "—" if v is None or (isinstance(v, float) and pd.isna(v)) else fn(v)
 
@@ -1239,7 +1250,7 @@ def panel_chips(sid):
     radar = radar_mod.load_radar().get("results") or []
     if radar:
         with st.expander("🏦 20 大龍頭法人籌碼排行"):
-            board = sorted(radar, key=lambda r: -(r.get("chip_score") or 0))
+            board = sorted(radar, key=lambda r: -(to_float(r.get("chip_score")) or 0))
             show_table(pd.DataFrame([{"代號": r["stock_id"], "名稱": r.get("name"), "次產業": r.get("sector"),
                                         "籌碼分數": r.get("chip_score"), "法人籌碼": r.get("chip_trend"),
                                         "五檔比": r.get("bid_ask_ratio")} for r in board]),
@@ -1942,7 +1953,7 @@ def sim_live_board():
                 "買進評分": p.get("score"), "燈號": radar_mod.SIGNAL_LABELS.get(p.get("signal"), p.get("signal_label")),
                 "現價": to_float(p.get("price")), "漲跌%": to_float(p.get("change_pct")), "距買進價%": to_float(p.get("dist_to_entry_pct")),
                 "100股需": (to_float(p.get("price")) or 0) * 100,
-                "籌碼王": f"{p.get('chip_score', 0):+d}｜{(p.get('chip_trend') or '')[:14]}",
+                "籌碼王": f"{safe_score_fmt(p.get('chip_score'))}｜{(p.get('chip_trend') or '')[:14]}",
                 "K線技術人": f"{p.get('zhu_trend') or 'N/A'}" + (f"｜{p['zhu_reversal']}" if p.get("zhu_reversal") else ""),
                 "五檔比": to_float(p.get("bid_ask_ratio")), "風報比": to_float(p.get("risk_reward")),
                 "持有": "✅" if p.get("held") else ""} for p in prey])
