@@ -1,118 +1,119 @@
 {
-  "date": "2026-11-24",
-  "generated_at": "2026-11-23 16:36:44",
-  "sox_chg_pct": -10.73,
-  "tsm_adr_chg_pct": -9.48,
-  "tsm_premium_pct": 3.19,
+  "date": "2026-11-25",
+  "generated_at": "2026-11-24 15:08:50",
+  "sox_chg_pct": 14.03,
+  "tsm_adr_chg_pct": 14.08,
+  "tsm_premium_pct": 7.21,
   "us_key_drivers": [
-    "美股科技股與半導體板塊出現機構集中獲利結算，費半與費半成分股全面重挫，短期極度擁擠的樂觀情緒破裂。",
-    "輝達融資疑慮與籌碼鬆動衝擊整體AI資本支出（CapEx）預期，風報比惡化引發程式賣壓沉重覆蓋。",
-    "低檔乖離與市場情緒發生嚴重預期差，機構傾向在美聯儲政策及總體債務問題未解前降低不對稱風險曝險。"
+    "美股科技巨頭與半導體因黃仁勳回歸消息出現十年來最佳單日表現，機構短線回補空頭部位。",
+    "費半指數暴漲逾14%，記憶體與AI硬體需求預期差擴大，帶動整體風險胃納上升。",
+    "總體流動性與政策監管雜音暫時被強勁的企業基本面與AI需求蓋過，形成短線底部共振。"
   ],
-  "tw_index_forecast": "受美股費半暴跌影響，下一交易日台股預計低開震盪，測試關鍵支撐位35400點，上方壓力位36800點。",
-  "opening_strategy": "開盤不追空，執行【覆盤修正原則】，空方訊號需待收盤確認；現金比率維持高位，暫不盲目摸底加碼，待低檔轉折紅K出現再行佈局。",
+  "tw_index_forecast": "台股下一交易日預期開高走高，挑戰月線反壓，關鍵點位為收復41959.4點。",
+  "opening_strategy": "開盤應對策略：因美股全面大漲且台積電ADR大幅溢價，開盤建議順勢偏多操作，首筆買進量維持正常，若開高過多追價需留意短線乖離，跌破開盤轉折紅K低點則確實停損。",
   "holdings_alert": [],
   "top_sector_picks": {
     "favor": [
-      "無：美股重挫致整體風報比低於1.5，建議全數保留可用現金觀望"
+      "記憶體與模組：受美光暴漲帶動，報價與庫存去化預期改善。",
+      "AI伺服器與散熱：受輝達與VRT大漲激勵，機構資金重新駐守供應鏈。"
     ],
     "avoid": [
-      "AI散熱與伺服器組裝：VRT與NVDA大跌衝擊估值，短線承壓",
-      "記憶體與晶圓代工：MU與TSM ADR重挫，極易觸發法人停損賣壓"
+      "食品：資金明顯集中於科技權值與強勢半導體，傳產族群資金遭排擠。",
+      "航運：法人籌碼持續流出，量能與趨勢相對疲弱。"
     ]
   },
   "us_top10": [
     {
       "ref": "Q1",
-      "title": "費城半導體指數大幅修正",
-      "point": "費半暴跌10.73%，嚴重衝擊台股半導體供應鏈整體估值壓力。",
-      "tag": "利空",
+      "title": "費城半導體指數強彈",
+      "point": "費半指數大漲14.03%，帶動台股半導體與設備次產業反彈。",
+      "tag": "利多",
       "url": "https://finance.yahoo.com/quote/%5ESOX",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-21 06:15"
+      "pub_date": "2026-11-24 06:15"
     },
     {
       "ref": "Q2",
-      "title": "台積電 ADR跌幅顯著但維持溢價",
-      "point": "TSM ADR大跌9.48%，對台股2330溢價縮小至+3.19%，開盤加權指數壓力巨大。",
-      "tag": "利空",
+      "title": "台積電ADR強勢溢價",
+      "point": "台積電ADR大漲14.08%，換算溢價+7.21%，傳导至台積電(2330)開盤補漲。",
+      "tag": "利多",
       "url": "https://finance.yahoo.com/quote/TSM",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-21 05:00"
+      "pub_date": "2026-11-24 05:00"
     },
     {
       "ref": "Q3",
-      "title": "輝達暴跌重挫AI供應鏈預期",
-      "point": "NVDA狂跌14.01%，直接利空台股伺服器組裝與AI概念股如2317、6669。",
-      "tag": "利空",
+      "title": "輝達股價飆漲",
+      "point": "輝達大漲31.48%，帶動台股AI伺服器與AI晶片次產業。",
+      "tag": "利多",
       "url": "https://finance.yahoo.com/quote/NVDA",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-21 05:00"
+      "pub_date": "2026-11-24 05:00"
     },
     {
       "ref": "Q7",
-      "title": "美光崩跌引發記憶體族群觀望",
-      "point": "MU大跌13.89%，預期將終止台股記憶體模組與控制晶片股（如3260）的短期強勢。",
-      "tag": "利空",
+      "title": "美光股價大漲",
+      "point": "美光大漲19.04%，利好台股記憶體與記憶體控制次產業。",
+      "tag": "利多",
       "url": "https://finance.yahoo.com/quote/MU",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-21 05:00"
+      "pub_date": "2026-11-24 05:00"
     },
     {
       "ref": "Q11",
-      "title": "Vertiv拉回修正AI散熱評價",
-      "point": "VRT大跌10.14%，冷卻設備估值修正將傳導至台股散熱族群如3017、3324。",
-      "tag": "利空",
+      "title": "Vertiv股價走高",
+      "point": "VRT大漲12.10%，帶動台股散熱與機殼次產業。",
+      "tag": "利多",
       "url": "https://finance.yahoo.com/quote/VRT",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-21 05:00"
+      "pub_date": "2026-11-24 05:00"
     },
     {
-      "ref": "N5",
-      "title": "輝達融資計畫卡關融資成本上升",
-      "point": "借款人要求更高擔憂影響資本支出，利空台股AI供應鏈拉貨進度。",
-      "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWjF0aUZxS1BGVE5qT2pRbzVSWFdwZTd4bmFlQUx5OE9hWE51OUFIYzVKME9hTzFndmhDdW5QR2VoTjg3VnJjbW9ZVU8zQUVyT1BydDlsZkxURnhaYnp1TmExSU9jX1h6bEZkQnhhWmJCS294S1VsSHQ2STgzTk1QdklR?oc=5",
-      "source": "www.tmgm.com",
-      "pub_date": "2026-11-23 15:50"
+      "ref": "N4",
+      "title": "華盛頓展開調查與黃仁勳回歸",
+      "point": "機構關注政策風險與領導層動態，對台股ASIC設計服務與IP次產業帶來變數。",
+      "tag": "中性",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRkZDczJvQ3Jka3NLdjY2a2VNekxxbm5lN0JQNnplQVp1bVNDLUdtbDh1T3Nlc1RVSU95eXU5TnRXcFR3Zk9JTGh5Q1JuTWxwY1JYNS16NFcxSVM3UUlLSGdZRWJESnZNQ1RYeFBaeTA3aWxxRXlBMnJ4REhuZ2E5b2RBTi1aTE16WFJQYUZKcmVUajNXdTVMWVIxbEV0UzVEa2Z5NnpPWldzZ084RWJmYk15NjZ0Unp5eTJickJB?oc=5",
+      "source": "The Washington Post",
+      "pub_date": "2026-11-24 14:15"
     },
     {
       "ref": "N8",
-      "title": "博通急跌影響客製化晶片預期",
-      "point": "AVGO大跌打擊ASIC市場樂觀情緒，利空台股矽智財與世芯-KY(3661)。",
-      "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWllGMkdwMWFtZUJLWjdQX1FnbHByQnlBdzZ2R0dTN3I5TS1qR2VHWU9UQ2hvcXpVS0NrMGROOTlodzJKY19BdHZLSERZV0R3SE1KM0lGeUhxd2JfMGY4MjAwM2duV1p5b0ZQZEpMNDhWeGlGREdTTzc0NzNxY09EeDBabS1qN19iSGVCdS16S0FGYjIxRXEwQWFEUnhwZW8?oc=5",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 15:41"
+      "title": "輝達創佳績分析",
+      "point": "機構資金強烈回補AI龍頭，增強台股相關供應鏈之機構部位信心。",
+      "tag": "利多",
+      "url": "https://www.fool.com/investing/2026/11/24/nvidia-stock-just-had-its-best-day-in-over-a-decade-i-d-still-buy-it-now/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-24 14:03"
     },
     {
       "ref": "N9",
-      "title": "美光下挫背後的市場賣壓分析",
-      "point": "晶片股整體評價面臨機構部位獲利結算，利空記憶體族群2408與3260。",
-      "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTDBMd2dtOUtlRTEtS0xHTjNZYnhuMHNWT1A4MHc2YjZpU29tbzM2bU00eHNZeDVJTG02MzB0MFZPZ0FMQXBQNmpRQWJYN2ltOEliNUFQdWwzMFpOUTQwc0xrclhjME1FSkxxbVFUQnVDcDNXYld2ZEoyd09kYVBxZHVIaWphQTN4end4SHVUQ3N2VC01SklvNks3enU1UQ?oc=5",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 15:39"
+      "title": "歐洲AI股受黃仁勳回歸影響",
+      "point": "全球AI情緒同步轉強，傳導至台股AI應用概念股。",
+      "tag": "利多",
+      "url": "https://www.euronews.com/2026/11/24/jensen-huang-is-back-at-nvidia-what-does-it-mean-for-europes-ai-stocks?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-24 13:52"
     },
     {
-      "ref": "Q5",
-      "title": "博通同步下挫修正估值",
-      "point": "AVGO狂跌12.19%，連帶拖累台股高速傳輸與網通晶片供應鏈。",
-      "tag": "利空",
-      "url": "https://finance.yahoo.com/quote/AVGO",
+      "ref": "N11",
+      "title": "黃仁勳回歸推動股市攀升",
+      "point": "市場樂觀情緒回溫，有助於台股成交量能放大。",
+      "tag": "利多",
+      "url": "https://www.euronews.com/2026/11/24/stocks-climb-as-huangs-return-to-nvidia-lifts-investor-optimism?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-21 05:00"
+      "pub_date": "2026-11-24 13:46"
     },
     {
-      "ref": "Q4",
-      "title": "超微重挫打擊晶片替代方案預期",
-      "point": "AMD大跌13.25%，加劇市場對非輝達陣營AI伺服器拉貨動能的疑慮。",
-      "tag": "利空",
-      "url": "https://finance.yahoo.com/quote/AMD",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-21 05:00"
+      "ref": "N12",
+      "title": "市場因黃仁勳回歸飆升",
+      "point": "機構預期差扭轉，推動整體科技股評價修復。",
+      "tag": "利多",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQakE1eld6Ynlnd3ExWkk3QndCd0RUM0E0M3I2eTFHREVyUG5ESEJoUmdJZFhYNG4xRi1VTGlHX0gwOXFMVm9zZl82MlRnZ1QzbU42Z3Fka2VIX0JTakE2b0FSOHBzU2xLaHpwVWMtS0Z5YjhtRnR5MHJLczJrdkh0aGpQT2hXanVWSWZuRkx4RGRwOUE?oc=5",
+      "source": "The Washington Post",
+      "pub_date": "2026-11-24 13:43"
     }
   ],
   "generated_by": "fast_team_runner（gemini）",
-  "us_top10_updated_at": "2026-11-23 16:36:44"
+  "us_top10_updated_at": "2026-11-24 15:08:50"
 }

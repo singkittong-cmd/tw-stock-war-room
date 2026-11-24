@@ -1,224 +1,228 @@
 {
-  "updated_at": "2026-11-23 16:36:30",
+  "updated_at": "2026-11-24 15:07:45",
   "errors": [],
   "count": 25,
   "news": [
     {
-      "title": "Nokia tie-up with Nvidia on AI-RAN gets warning from Orange CTO",
-      "source": "Light Reading",
-      "pub_date": "2026-11-23 16:32",
-      "epoch": 1795422761,
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNLUM0ZUw1RGdFcU1sVmplbV8zR0x1YWl5dkhYa0wwUXowZGhMT1k5VXZDTkQ5TXlxMTRZNGhLUGRmcGpoX2FWNFJ4dXRyZXV0RllFSjZOVWJPZC1Zb2RUOFVaV3lHM0ZCcEF6R0lYVzBYODVLOWVXQ1NYOHZJc2o4Vk9zeU1IQ3RIUFpZcjltRWs2RENYQTRrMm0xcw?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Nvidia vs. SpaceX: Here's Which Stock I'd Put $1,000 Towards Right Now",
-      "source": "The Motley Fool",
-      "pub_date": "2026-11-23 16:18",
-      "epoch": 1795421882,
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQN05GaFptM2hyZThaYkRFZW9JNkNDakFqdFZOeDhNdV90cHZla0tKNk1hVjlINXk5Tkd4VTlfZVlQSUVZM2ZOUnlOSE0xemFHOUZmdzlkN2I5QnBoYk9UYkd1czZGRXZOTVZ0RGFDRTlrbjJZQVR2RWdOcXlTclRUU3B3czNQRG1ZWV9pWlY1YlIzaWhMdE1IN2hES29BZmVmRG55RHVYWDZiR3ExM1ZnN1AtMA?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Korean Semiconductor Stocks After The Selloff With Samsung Electronics In Focus",
+      "title": "Bitcoin And Stocks Are Moving In Different Directions: Arthur Hayes Says Nvidia's Rally Is The 'Worst Thing' For Crypto",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 16:07",
-      "epoch": 1795421261,
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMzg5RElLN1Uyci04TWxJY0NwT2NSZkRlb0p3S1k0NnRDdTBvblF1VFVlM0J4MWJLdkFMVVIzdmJjLTI5Si1FNmF5aGpMT0FTMk1feXNHOUJfendxYTRLcm1NUnhaa1ZVRFR4aUVZM0drMDRjX2NkVm45cERtOWk1RVg3NEhjQko4cC1uZkcxanc1eklQT2RPSkpSTGJYU1hxS2JNX1ZZSHF5LXpO?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Stock Market Sell-Off: 4 ETFs I'd Buy Now and Hold Through 2030",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 16:05",
-      "epoch": 1795421102,
-      "url": "https://www.fool.com/investing/2026/11/23/stock-market-sell-off-4-etfs-i-d-buy-now-and-hold-through-2030/?.tsrc=rss",
+      "pub_date": "2026-11-24 14:45",
+      "epoch": 1795502725,
+      "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/arthur-hayes-nvidia-rally-bitcoin-november-selloff/cNbrzA2R9k3?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Nvidia’s $500 Billion Financing Plan Stalls as Lenders Seek Higher Guarantees!",
-      "source": "www.tmgm.com",
-      "pub_date": "2026-11-23 15:50",
-      "epoch": 1795420221,
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWjF0aUZxS1BGVE5qT2pRbzVSWFdwZTd4bmFlQUx5OE9hWE51OUFIYzVKME9hTzFndmhDdW5QR2VoTjg3VnJjbW9ZVU8zQUVyT1BydDlsZkxURnhaYnp1TmExSU9jX1h6bEZkQnhhWmJCS294S1VsSHQ2STgzTk1QdklR?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "The National Debt Rose $2.4 Trillion in a Year to $40.6 Trillion. The S&P 500 Gained 9% Anyway.",
+      "title": "Bitcoin hovers around $60k amid little relief from rate, regulatory jitters",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 15:50",
-      "epoch": 1795420201,
-      "url": "https://www.fool.com/investing/2026/11/23/national-debt-rose-usd2-4-trillion-in-a-year-to-usd40-6-trillion-the-s-and-p-500-gained-9-anyway/?.tsrc=rss",
+      "pub_date": "2026-11-24 14:44",
+      "epoch": 1795502663,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-hovers-around-60k-amid-064423052.html?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Trump doubles down on call for Nvidia to rehire Jensen Huang amid alleged Chinese spy scandal",
-      "source": "Fox Business",
-      "pub_date": "2026-11-23 15:48",
-      "epoch": 1795420080,
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONFJrVGN5d3FSZlNoRDBkX29hc0tMNG5EaHAzenpHMnJ0QnVpemQwY3ZHRkJTU2NoU0Vzd2tpR0ZndU9QcWw3cDd1aV9GZ3R3djQ4c0hYbkduSWNDdG1ZTklzRlJHUTh4RkR2Y1hicUZHUXVCcGJZbURSLW9BVUVCTXVocEFxWUdxWWNZUmUxV3p0eWlGTlNlZlpJcW1iOXNDTXRFaEZhaUtWblJjS0t3NXhkMGJaeWJqZ1hFeNIBwgFBVV95cUxNYlZiaHhyS1Vqbnk5YlZVZWNxUm1UaFNCc0FYTXE4dTJqMktQZVN0UjBHYnlabXFRd0ZTSWwwenV1YmdVU1BGYzVvLTJpd2lWQ3Y1MmtKMDNtQWl3VEUxb2F3T24wY2tfYmVHZjNXQlF4N0JrQmJWTXVFMnlZRVJFQTBDcnJlZjI0ZVg3V2t3NnNaSEJGdzVPN1NxdnhFXzY2b3VVbWlxOHJDTXNVa1JWQks5LWFoWW5zZ2ozbVFEWl93QQ?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Why Did Broadcom Stock Drop On Friday?",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 15:41",
-      "epoch": 1795419680,
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWllGMkdwMWFtZUJLWjdQX1FnbHByQnlBdzZ2R0dTN3I5TS1qR2VHWU9UQ2hvcXpVS0NrMGROOTlodzJKY19BdHZLSERZV0R3SE1KM0lGeUhxd2JfMGY4MjAwM2duV1p5b0ZQZEpMNDhWeGlGREdTTzc0NzNxY09EeDBabS1qN19iSGVCdS16S0FGYjIxRXEwQWFEUnhwZW8?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Why Is Micron Technology Stock Falling?",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 15:39",
-      "epoch": 1795419591,
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTDBMd2dtOUtlRTEtS0xHTjNZYnhuMHNWT1A4MHc2YjZpU29tbzM2bU00eHNZeDVJTG02MzB0MFZPZ0FMQXBQNmpRQWJYN2ltOEliNUFQdWwzMFpOUTQwc0xrclhjME1FSkxxbVFUQnVDcDNXYld2ZEoyd09kYVBxZHVIaWphQTN4end4SHVUQ3N2VC01SklvNks3enU1UQ?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "US investigating Alice Huang, Singapore’s Megaspeed in Nvidia chip case",
-      "source": "Anadolu Ajansı",
-      "pub_date": "2026-11-23 15:37",
-      "epoch": 1795419426,
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQzZVeF9oM0VpN1Y0VXNFVGI4SlEtcF90aGJxMUsyRnFuT3JZV0tNSW1YbkdXanJoMVhwcmxXZDJmNnZGYnJuZHlRMFBxa2ZIbVp6Nmg0ZURkMzlTb2VVZjRmSzhqNTE2b0ttV0xSTnFSRFFrXzhMbEVFRUx4TDctQXBqR3NXTFQyYlVmY1Mwa1IyX3ItYVlhM3hFRTc0NFFQTloza1o0MEc2VkRI?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "If You’d Bought Oklo at Its SPAC Debut, Here’s What You’d Have Today",
+      "title": "Prediction: 1 \"Magnificent Seven\" Stock That Will Lag the Market in 2027",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 15:35",
-      "epoch": 1795419302,
-      "url": "https://www.fool.com/investing/2026/11/23/if-youd-bought-oklo-at-its-spac-debut-heres-what-youd-have-today/?.tsrc=rss",
+      "pub_date": "2026-11-24 14:20",
+      "epoch": 1795501202,
+      "url": "https://www.fool.com/investing/2026/11/24/prediction-1-magnificent-seven-stock-that-will-lag-the-market-in-2027/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Elon Musk Says Nvidia Is Wrong to Keep Jensen Huang Out, Likening Him to Michael Jordan",
-      "source": "AI Insider",
-      "pub_date": "2026-11-23 15:26",
-      "epoch": 1795418766,
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQM3BPU0ZxN0Q4UDltMFBkOG9GZFJDX2FwbXkyRGpBWTl5ZUdMNGl5TkJISDktUlo1b0ZTbm9HaUljVGZETFdqX2x1dXVIcERQRU1fYjdBcm94LWh5NmV6SFpvY2F2QmpweFJuX2g5aG9oYkhFQlFzaUJqN3hUUGdnUjFmYVFwYklYRElfYjRKQ3VOSzBxc04wbXJTbGhqajR1ZlNUdHZ4SVBYdlc0b3NOdUxSRWRsa01mUjE3S1d1aEhpQQ?oc=5",
+      "title": "A shocked Washington preps expanded investigations as Huang returns to Nvidia",
+      "source": "The Washington Post",
+      "pub_date": "2026-11-24 14:15",
+      "epoch": 1795500932,
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRkZDczJvQ3Jka3NLdjY2a2VNekxxbm5lN0JQNnplQVp1bVNDLUdtbDh1T3Nlc1RVSU95eXU5TnRXcFR3Zk9JTGh5Q1JuTWxwY1JYNS16NFcxSVM3UUlLSGdZRWJESnZNQ1RYeFBaeTA3aWxxRXlBMnJ4REhuZ2E5b2RBTi1aTE16WFJQYUZKcmVUajNXdTVMWVIxbEV0UzVEa2Z5NnpPWldzZ084RWJmYk15NjZ0Unp5eTJickJB?oc=5",
       "symbols": []
     },
     {
-      "title": "What Sent NVIDIA Stock Lower On Friday?",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 15:25",
-      "epoch": 1795418749,
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUDRYQU91eE9Rak5HdkN0S2dnQzM2TXpUTS1EZklyYUNDcFczZjRBdkFjRFk4LW4zZG9zQ3JyQ3ZnR0RVR0xPVzhCUUYta0pZVF9QUWc4bEN2OEZFNndlVW1uYW1fNTJtTktfeEYwT0ppZzhNc0hSNW5GcXhRcnZ3Z3VhdVN1MDFoUHRMMW1IU1c0XzVXb0hDc1NEb3JKSWFE?oc=5",
+      "title": "Copper Resumes Decline as Investors Look Beyond Drama at Nvidia",
+      "source": "Bloomberg.com",
+      "pub_date": "2026-11-24 14:13",
+      "epoch": 1795500780,
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORmkwMElFUWtfQlhMcVNNY010SXlpbm12cW1IT3BEWExiOTkyMWU5Ulk2T0tva1lkMnd5R2d5LXFJbW9jNDFMOS0tOVZmdG9rYnFrWGhybmNfaHVOaGRIYzRuMEJ3S2lQa0R1YWl1R2JvRTI4b2k4YkdFWjV2QnF4bnl3VlUzSkdySHZJVmtMU2x0bk9vNmUxS2JPb3RPZjl5OHNEa1BkOHNaM3JDdklPVDU0MWI?oc=5",
       "symbols": []
     },
     {
-      "title": "Asian tech back in the firing line as traders track Wall St rout",
+      "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 15:24",
-      "epoch": 1795418653,
-      "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-tech-back-firing-line-024445930.html?.tsrc=rss",
+      "pub_date": "2026-11-24 14:10",
+      "epoch": 1795500637,
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63568369/stock-market-will-sp-500-open-up-or-down-today-84?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Anthropic Just Went Public. Here’s the 1 Thing I’m Watching.",
+      "title": "Too big to fail? Investor says Nvidia more important than bailouts of 2008",
+      "source": "CNBC",
+      "pub_date": "2026-11-24 14:05",
+      "epoch": 1795500333,
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTUlqLVJUN285YlotdWszazYxRjVrald3YVBuMG5JSW4tYm90aXVBalltNFd6eDhpb0FzYXhLM1kzdGdrZkhicjc0aEpILVhjWlA0UmNvejVWRllKMWhEZDZoRXUtNGM3N0psTzJrQ1ZZUDRlRXhKVHRxdy1WQWpEZGdsZUtheUVGZ0pxYXh4dUhWRFhha0ZOaVg1QzVPb0lHY1E?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Nvidia Stock Just Had Its Best Day in Over a Decade. I'd Still Buy It Now.",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 15:20",
-      "epoch": 1795418402,
-      "url": "https://www.fool.com/investing/2026/11/23/anthropic-just-went-public-heres-the-1-thing-im-watching/?.tsrc=rss",
+      "pub_date": "2026-11-24 14:03",
+      "epoch": 1795500182,
+      "url": "https://www.fool.com/investing/2026/11/24/nvidia-stock-just-had-its-best-day-in-over-a-decade-i-d-still-buy-it-now/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Trump calls on Nvidia board to rehire Jensen Huang after scandal",
-      "source": "The National",
-      "pub_date": "2026-11-23 15:18",
-      "epoch": 1795418325,
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVVNBRl9NYnRWUTk4bGZaY1FWa1hidWpKTnJrOUJfSklzc3dIYWxKckpBQkotTG1GNEVZQk5venZzTFpaWW9PMDdNZXhOVF9kazBfeGRQUHhESzV5QnM4OG5uWWd1ZkxUU1VjaUxPc1JSeHhTSThWcmZnUmZSRkRXeHNWM0RNejVud0JzYmJuZndKMW13bEk4RW1ELUJPSTZ3NldZc0xRNlFIaVBMb2t3ZHU5QkM3Wm8?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "What Is Behind The Fall In Vertiv Stock?",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 15:16",
-      "epoch": 1795418177,
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbk5vZkkyWmR1YWtlSE9NLWJnNmtoeVFzOTdueUd3S3VLSVJrNnpXSHNVRzBUc2t1enFyUWs4UW9maVljZ0I4MjFwaWdGbWlPdEVDZ244Mm9vdnJ1TEdFZF9KWjVuVzk4V0I5eXNPYm83Nk1OV1R5aVpSbWtCR01Bb1JaaGdfUGZuRFdHLTFZbzEwYkJRaHR6cnFZX1RqTDZV?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "Nvidia (NVDA) Stock Looks Below Fair Value After Recent Turmoil",
+      "title": "Jensen Huang is back at Nvidia. What does it mean for Europe's AI stocks?",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 15:07",
-      "epoch": 1795417672,
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-stock-looks-below-070752587.html?.tsrc=rss",
+      "pub_date": "2026-11-24 13:52",
+      "epoch": 1795499570,
+      "url": "https://www.euronews.com/2026/11/24/jensen-huang-is-back-at-nvidia-what-does-it-mean-for-europes-ai-stocks?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Nvidia News Has Investors Rethinking These U.S. AI Chip Stocks",
+      "title": "Not Starlink. Not Starship. This SpaceX Business Could Be Worth $80 Billion on Its Own.",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 15:07",
-      "epoch": 1795417671,
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-news-investors-rethinking-u-070751605.html?.tsrc=rss",
+      "pub_date": "2026-11-24 13:50",
+      "epoch": 1795499402,
+      "url": "https://www.fool.com/investing/2026/11/24/not-starlink-not-starship-this-spacex-business-could-be-worth-usd80-billion-on-its-own/?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Circular Financing Doesn’t End with Nvidia: Amazon and Google Edition",
-      "source": "Counterpunch",
-      "pub_date": "2026-11-23 14:56",
-      "epoch": 1795416975,
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcUZNcUJ4TldIYlQ0WVhDWGhxX1ZsaG45cnpidmJidlV3Tl9iZEVYODNsdS0zWDh4dW8xMXB3SFM2UmplemttelV3SVJXY0pQNnNaYW94VmxLYkRJWklmbHpzOWJqM0pOUnFGV3NoU3c4UmdQVWJ0VDRXWkJGODljUC12Ump6TEZ1TXdEY3Bvd3pFZS1Kdl9NS1pCZjhOQ2p2M0RDV0c2U3poVFR3?oc=5",
-      "symbols": []
-    },
-    {
-      "title": "2 Semiconductor Stocks to Buy No Matter Who Wins the AI Chip Race",
+      "title": "Stocks climb as Huang's return to Nvidia lifts investor optimism",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 14:50",
-      "epoch": 1795416602,
-      "url": "https://www.fool.com/investing/2026/11/23/2-semiconductor-stocks-to-buy-no-matter-who-wins-the-ai-chip-race/?.tsrc=rss",
+      "pub_date": "2026-11-24 13:46",
+      "epoch": 1795499164,
+      "url": "https://www.euronews.com/2026/11/24/stocks-climb-as-huangs-return-to-nvidia-lifts-investor-optimism?.tsrc=rss",
       "symbols": [
         "NVDA"
       ]
     },
     {
-      "title": "Alice Huang associate linked to Nvidia chip smuggling network",
-      "source": "The Jerusalem Post",
-      "pub_date": "2026-11-23 14:49",
-      "epoch": 1795416562,
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5KMS1qdC1sWk1VakptRW8zOG9tNVkzeFZWZFNfdU1TQUVRUERuRWpvOGlkX0ppTjM0R0JoY1pUay1ZV0F2M2twRF9PWXAyWVdTRDZaNzVQR3RfV294YXB3ajh4ZDhUT3hvOC1FMTRyczJQdTB4cXotag?oc=5",
+      "title": "Markets soar as Huang returns as Nvidia CEO",
+      "source": "The Washington Post",
+      "pub_date": "2026-11-24 13:43",
+      "epoch": 1795499035,
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQakE1eld6Ynlnd3ExWkk3QndCd0RUM0E0M3I2eTFHREVyUG5ESEJoUmdJZFhYNG4xRi1VTGlHX0gwOXFMVm9zZl82MlRnZ1QzbU42Z3Fka2VIX0JTakE2b0FSOHBzU2xLaHpwVWMtS0Z5YjhtRnR5MHJLczJrdkh0aGpQT2hXanVWSWZuRkx4RGRwOUE?oc=5",
       "symbols": []
     },
     {
-      "title": "Verizon Cut Its Buying In 2002. Can Nvidia’s Buyers Stop Now?",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 14:45",
-      "epoch": 1795416347,
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRXBPeTZZSWFERTg0cmxxa25rMGllZHZSVDQ3SHMyU2VaUGpDaTctMTV4cHVDdkhzTm0xeGhsdzl3RHgtYnJTOXBWVHdmbjRMRmswMUhlYkh0NUpvRnNzWTgwdXpXVHJEcUJyYWwwOXJkc2xVNlJpcVNoVHIxS3hkNVhwNjdablNpNkZDMmpwR3BBT01JRVUyRXZISmYyNi15emFySEpBZXZlS3dFM1lmX3RYY2xWakp6QTlsVA?oc=5",
+      "title": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+      "source": "The New York Times",
+      "pub_date": "2026-11-24 13:39",
+      "epoch": 1795498740,
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNXE4aUdTVGFvS0Nqd0tXS2E2Y2IyU0dQSEhGRVM2WlVwdXRRczRRUlNuZ09QWjY0OUJrLVZYeEdTaE9hTW83VG9mMV9aVFNVZWQzT3QwMXZaNGd0WmV5LXE2QURZQ1lUSlI5VWdSLWlOYkp0OFZZVFlvMDVYbmhERk91cUZkcGd1dm1UTkMtTEJvU2pmRHk4WW95RUc0SmNQdllqbw?oc=5",
       "symbols": []
     },
     {
-      "title": "Google Can Spend $48 Billion More On AI From Its Own Cash. Is That Enough For Nvidia?",
-      "source": "Trefis",
-      "pub_date": "2026-11-23 14:45",
-      "epoch": 1795416331,
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUi1tWUw2RkswRXhRUkExdnVESEhHTFRtMjVwVy1nLVRnTkM4TnZGME9IV09XeHUybGx0bmh0TkV4aDVhSlRkVmNka0RCTG9rRDg1YWNfOVNRc1dTcG5QamUwZnFoNWFtUHA0NnJxbmRXcGx3SFFhRmtPdWNRdmd3TkxhZklySVJHa1AzbFVTMVg3S19EblpfZ1RHYlFFMWZKUkZlU2hiWURMZWNvcGx0djc5V3pxVUVMLWNvdWQ3WnB4czV6a29fX3dLZFJ5M0ZlMndwUjRnNk5vVjUz?oc=5",
+      "title": "Nvidia CEO Jensen Huang Reportedly Admitted To Additional Extramarital Affairs Before His Return",
+      "source": "Forbes",
+      "pub_date": "2026-11-24 13:30",
+      "epoch": 1795498205,
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeHRKdG0yN3BJZVdaZWpBb3R5YzZPOTdidGt5ZXZZX0VRNjFxRWZJWFRna0FTZ1VHUkt4eWhlMmNBWlkwRmExOFF2cXRZczVoOWdtLW9QU0g5aS1vSTRScEhqNjhERXp0RXhidjdOeExBaEdmYXdsYWNUYnpNNzVmb2FGcVFLRWlxMGUtZmFtOFU2R29ZWmRXX1dsVHdsbWtKUkRyTHl2dks2SmJQb3ZWR25FTnd3a3Vmdmd0Sm5MRTRHYVkwZXdZbGFLaHJRSFpBNnV5RUw5TFBjZw?oc=5",
       "symbols": []
     },
     {
-      "title": "It's Thanksgiving week after an ugly stock market slump: now what?",
+      "title": "3 AI Infrastructure Stocks Retail Investors Are Watching After Nvidia Shares Jump",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-23 14:45",
-      "epoch": 1795416328,
-      "url": "https://www.thestreet.com/investing/its-thanksgiving-week-after-an-ugly-stock-market-slump-now-what?.tsrc=rss",
+      "pub_date": "2026-11-24 13:26",
+      "epoch": 1795497994,
+      "url": "https://finance.yahoo.com/technology/ai/articles/3-ai-infrastructure-stocks-retail-052634911.html?.tsrc=rss",
       "symbols": [
         "NVDA"
+      ]
+    },
+    {
+      "title": "Luceco And 2 Other British Penny Stocks To Own",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-24 13:26",
+      "epoch": 1795497973,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/luceco-2-other-british-penny-052613190.html?.tsrc=rss",
+      "symbols": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Nvidia reinstates Jensen Huang after Trump speaks ‘directly’ to board",
+      "source": "The Washington Post",
+      "pub_date": "2026-11-24 13:24",
+      "epoch": 1795497863,
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQmNHaTN2YnhWcEZ0QVVkbkdNamZzRU5VWFRYd0JhaDVpaEpveDRzc2F6X21RS1lqZjIxbVZUaXhsYllvelpqQjdfYWtuYm0yVUV4eEdoT00xNV9aalVLSm9SNFVReTZQVXpqU2Z5WXBwNHo0RDBfY2FuaENWUy16UHNPU1E0eV9pUGN5VlByS0RzM09BS1NVQ3FlbENIMjB6WkcyQ2lOb3BRUldJZHJBdW1Ebm8yZVk?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
+      "source": "CNBC",
+      "pub_date": "2026-11-24 13:09",
+      "epoch": 1795496974,
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5GbmZPRjRPRmxVWHJfcEFIckprbzBvaUY4YXpUSy1xRE9fc2ZqbXctQmppc1NXeDd5MEZVUEJFc2w3d2g3ZW5XZUNWQ192UDB3eDdtTzJSWjhZdW81bC1HWVlNekltZWplcG9mRnpneWwtYUQyWUHSAXtBVV95cUxQaHpua3dCd25aelk5dXVGQkR0QnlZemliWmtqemt5emFHaEpKNF9KU1NUMFJZWWFmZndFbmZJMWotOXRLb2FMLUVpVjJ6WDQtMHhYU29LY0ZHaTF4SGlGTEhENUt2R3VQbk9KMjBiY28wQWxCRTZKa0M4X28?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Trump’s intervention on behalf of Jensen Huang gives Democrats another 2028 target",
+      "source": "AP News",
+      "pub_date": "2026-11-24 13:01",
+      "epoch": 1795496460,
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMU85QnkyODhXZWxwenBBNWVKaElURnNWbDVVd2FtRlQ3N0F1d3A2YXYyLW5zUnJCQzdXZHRreXhDeWpZNTcyT2hVcHlrMHJqVUt2bUUwR2JEdUxUMFk4LWFQenp5TGY0RTJFUXFUN1hPSGtfcTZvZmRGc0MyWkhUTmtzQnh3My04UTJaVVN4dVNSVWtRc0tpaEoxeGd3QnA3UTZ1Wl91SGhfTmxpQVNIVDE2WjRuM2tES284?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Stocks Surge After Jensen Huang Is Reinstated as Nvidia CEO",
+      "source": "The New York Times",
+      "pub_date": "2026-11-24 12:58",
+      "epoch": 1795496280,
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNXRXMlFUQkJfcnJPMGVlaWZRejZzSnVuRWJiV1E3TUM3c3pkWkxSSGZJaGtCcEc0Uzdja0xzbFFNcWRIZEtZNlFHMHNDclAzVzJqUHU2Z2lFRE51V3AwSWV1cnRoamFsbDVleTdVUFVhSElYMEhXTlhiNkhQNWtSZlRGT1FYQURPeE9RTA?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Trump had 4 reasons to ‘convince’ Nvidia to rehire Jensen Huang. Here’s why it matters globally",
+      "source": "The Conversation",
+      "pub_date": "2026-11-24 12:57",
+      "epoch": 1795496220,
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSExKQlhycmtSUmdvNWYtNUhGVlZWTzBscjNNTGZ6Z2lBN1BtUWdQREhCdFZLSHE3MXlZcUt6V3Y2cFZOX1VwcVRWY1lkMHZ6b0FrYVlNZ19lOEMwejM5aGVRWFd1aDQtTTlWUVdfREUwenZRbUQyYUZ5V1BjaXZLdklVcFktdVBaeUV6NXBzRFZObDlpMzNVV1kzeHZ0YTJJYUc5djJ0X0dPSXN0VGt2RFZwVS1JQ0hIR3FldVRSM3BtckJ0?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Trump owned at least $12 million in Nvidia stock at the end of last year",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "pub_date": "2026-11-24 12:51",
+      "epoch": 1795495893,
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcm16eGltaFhHdnNpMi1kZi1vVERncG1Qc0pGa2Voa3B5WV82YnhTSTh1WXc3b3Q5VjFudjBpd2lFZExCT2Y4TkZZN0xIXzhlZ2d4dE9wbWpNRXNpcHhoRXRCaUJnWG9mdjJTa242VU9zQThKZVlGZEdUZUJPbi1lVVY4Q1psOXNxaW1jQkxhMNIBlAFBVV95cUxQOXhoLWhSci1qSU5XTHpYclFNTUd5V1NENzRzRksyS185Vmd3VDU4VmxtLUl1MFVtSktfRnpCUzE2RTFnMnd5TFIweHpKSjNITzVMMm9IUWlGMG9FMjl5enFYblFyb25wWHFFVjdCd1h6SFByVjlYQVphMDI4MlA3dE9jamR3N2ZBWlRDUURLOTFCMHRs?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Trump ties his administration’s future to Jensen Huang",
+      "source": "The Washington Post",
+      "pub_date": "2026-11-24 12:21",
+      "epoch": 1795494105,
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcnpaZWVTanBodnliNU1xSVlQdHN3S3hNOVh1eU9TVlBBMEFvZE9wcHVvbkZ6Z3JMTU5RWUxGVXBzMG9GQ1JJWVhWeVpaYURVUnI3cjVoaHpYRmRsajNmbHAxWjhpT21qRkJGaF9uM3o1V1RqcVdtZUxfdkVZcEVEbG9GVER4NndlZVlNaEZoU1JCTHloR1MwRDExSzd3NzlKVkFvX3FVaDFDSXItRFN0dnl3?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Nvidia employee hugs Jensen Huang after comeback speech",
+      "source": "CNN",
+      "pub_date": "2026-11-24 12:14",
+      "epoch": 1795493644,
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaGZUejdJaXZIZWxQN3MxeUU3bjdXZy1yUHZtNGZhbENPZTRsaXFyV2ZnUFltSTVHYk5nckt6VXVqUkRUeUtmSms4TmxLRmZaZnZ5TzVMNDhWRENpUkFaUjNraXEtQ3JDdXNXUnJnZEtEOTk2b1ltV1hNcEJOS21VcW1QTWpvM2ZsMWFWcVFiVF9KSjUwdWJLSTFwODVGX2JLTG1ZdE4tcE9vZkEzbG9SZjV3?oc=5",
+      "symbols": []
+    },
+    {
+      "title": "Watch these chip stocks for bargain buys after Nvidia’s post-reinstatement rally",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-24 12:02",
+      "epoch": 1795492938,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/watch-chip-stocks-bargain-buys-040218865.html?.tsrc=rss",
+      "symbols": [
+        "MU"
       ]
     }
   ]

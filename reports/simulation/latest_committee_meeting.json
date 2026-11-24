@@ -1,12 +1,12 @@
 {
-  "held_at": "2026-11-20 09:52:31",
-  "mode": "intraday_hunt",
-  "trading_allowed": true,
+  "held_at": "2026-11-24 15:10:00",
+  "mode": "watchlist_plan",
+  "trading_allowed": false,
   "engine": "gemini",
-  "model": "gemini-3-flash-preview",
+  "model": "gemini-3.5-flash-lite",
   "account_before": {
-    "total_equity": 998530,
-    "cash": 796530
+    "total_equity": 997752,
+    "cash": 997752
   },
   "account_after": {
     "total_equity": 997752,
@@ -17,143 +17,95 @@
   "goal": {
     "low_target": 1100000,
     "high_target": 1200000,
-    "gap_to_low": 99949,
-    "gap_to_high": 199949,
-    "low_progress_pct": 0.1,
+    "gap_to_low": 102248,
+    "gap_to_high": 202248,
+    "low_progress_pct": 0.0,
     "high_progress_pct": 0.0,
-    "days_left": 41,
-    "cash_pct": 48.1
+    "days_left": 37,
+    "cash_pct": 100.0
   },
   "candidates": [
     {
-      "stock_id": "2382",
-      "name": "廣達",
-      "held": true,
-      "score": 5,
-      "signal": "🎯 達建議買進價",
-      "zhu_trend": "盤整趨勢",
-      "price": 253.5
-    },
-    {
-      "stock_id": "3034",
-      "name": "聯詠",
-      "held": true,
-      "score": 4,
-      "signal": "⬇️ 低於建議買進價、未破停損價",
-      "zhu_trend": "盤整趨勢",
-      "price": 421.5
-    },
-    {
-      "stock_id": "2330",
-      "name": "台積電",
-      "held": true,
-      "score": 5,
-      "signal": "🎯 達建議買進價",
-      "zhu_trend": "盤整趨勢",
-      "price": 2045.0
-    },
-    {
-      "stock_id": "2891",
-      "name": "中信金",
-      "held": false,
-      "score": 4,
-      "signal": "🎯 達建議買進價",
-      "zhu_trend": "盤整趨勢",
-      "price": 71.1
-    },
-    {
-      "stock_id": "2609",
-      "name": "陽明",
-      "held": false,
-      "score": 3,
-      "signal": "🎯 達建議買進價",
-      "zhu_trend": "空頭趨勢",
-      "price": 55.4
-    },
-    {
-      "stock_id": "3017",
-      "name": "奇鋐",
-      "held": false,
-      "score": 3,
-      "signal": "⬇️ 低於建議買進價、未破停損價",
-      "zhu_trend": "盤整趨勢",
-      "price": 2205.0
-    },
-    {
-      "stock_id": "3231",
-      "name": "緯創",
-      "held": false,
-      "score": 3,
-      "signal": "🎯 達建議買進價",
-      "zhu_trend": "空頭趨勢",
-      "price": 150.0
-    },
-    {
-      "stock_id": "2882",
-      "name": "國泰金",
+      "stock_id": "1216",
+      "name": "統一",
       "held": false,
       "score": 2,
       "signal": "🎯 達建議買進價",
       "zhu_trend": "空頭趨勢",
-      "price": 100.5
-    }
-  ],
-  "reflection": "昨日巴董事長預期盤整但實際波動 -2.31%，區間假設失效，應改依空頭趨勢方向嚴格執行防禦。",
-  "members": {
-    "maga": "美股費半微漲 0.1%，但 NVDA 跌 2.9% 壓抑 AI 鏈。川普政策預期持續波動，台積電 ADR 雖有溢價但大盤空頭趨勢未變，MAGA 建議保守看待權值股反彈。",
-    "news": "目前缺乏重大利多催化劑，大盤加權指數處於空頭趨勢且 MA20 乖離大。奇鋐、緯創等 AI 伺服器族群雖有營收支撐，但在機構部位調整下，法說會前觀望氣氛濃厚。",
-    "chips": "外資在廣達、中信金、陽明等股有急翻 3-4 次的隔日沖跡象，不可視為波段買盤。國泰金投信連買 15 日但股價破位，屬散戶融資承接與法人對倒，籌碼鎖碼度弱。",
-    "kline": "大盤與多數候選股如台積電、廣達呈空頭排列且有跳空缺口。頭頭低底底低趨勢明確，未見轉折紅 K 前不摸底。廣達、聯詠、台積電均已跌破或逼近停損位。"
-  },
-  "chairman": {
-    "challenge": "新聞達人與籌碼王對 AI 族群過於樂觀，忽視了外資隔日沖與空頭排列的殺傷力。K 線技術人雖看空但停損位設得過於緊湊，易被掃出場。目前現金水位 48% 雖安全，但總淨值增長停滯，需嚴格執行停損以保資本。",
-    "summary": "大盤空頭趨勢明確，加權指數遠低於 MA20。依鐵律執行：1. 廣達、聯詠、台積電現價均已觸及或跌破技術停損位，立即執行 EXIT_STOP 以回收資金。2. 中信金雖達建議買進價且 RR 比尚可，但五檔賣壓重且大盤不穩，暫不新建倉。3. 保持高現金水位（>50%）等待底部共振訊號。"
-  },
-  "decisions": [
-    {
-      "stock_id": "2382",
-      "proposed_action": "EXIT_STOP",
-      "proposed_shares": 600,
-      "reason": "現價 253.5 雖高於停損，但 K 線技術面跳空向下且 MA5/10/20 空頭排列，且外資疑隔日沖，為保護資本提前出清。",
-      "team_view": "K線技術人與籌碼王對空頭排列與隔日沖賣壓達成共識。",
-      "action": "EXIT_STOP",
-      "status": "executed",
-      "trade_id": "T0017",
-      "shares": 600,
-      "price": 249.5,
-      "stop_loss": null,
-      "target_price": null,
-      "rr": null
+      "price": 77.4
     },
     {
       "stock_id": "3034",
-      "proposed_action": "EXIT_STOP",
-      "proposed_shares": 400,
-      "reason": "現價 421.5 逼近停損價 415.0，投信連賣 4 日且 MA20 乖離過大，趨勢極弱，不摸底直接止損。",
-      "team_view": "新聞達人與 K 線技術人一致認同盤整區間失效轉為空頭。",
-      "action": "EXIT_STOP",
-      "status": "executed",
-      "trade_id": "T0018",
-      "shares": 400,
-      "price": 418.5,
-      "stop_loss": null,
-      "target_price": null,
-      "rr": null
+      "name": "聯詠",
+      "held": false,
+      "score": 1,
+      "signal": "⏳ 高於買進價・等待回檔",
+      "zhu_trend": "盤整趨勢",
+      "price": 435.5
     },
     {
-      "stock_id": "2330",
-      "proposed_action": "EXIT_STOP",
-      "proposed_shares": 100,
-      "reason": "台積電現價 2045 逼近停損 2020，外資 20 日大賣 17 萬張，技術面跳空缺口未補，依鐵律減損退出。",
-      "team_view": "川大帝與籌碼王對外資持續提款權值股感到憂慮。",
-      "action": "EXIT_STOP",
-      "status": "executed",
-      "trade_id": "T0019",
-      "shares": 100,
-      "price": 2020.0,
-      "stop_loss": null,
-      "target_price": null,
-      "rr": null
+      "stock_id": "2615",
+      "name": "萬海",
+      "held": false,
+      "score": 1,
+      "signal": "⏳ 高於買進價・等待回檔",
+      "zhu_trend": "空頭趨勢",
+      "price": 97.1
+    }
+  ],
+  "reflection": "昨日預判大盤中性但加權大漲+8.99%，區間假設失效，改依趨勢方向與美股強勢跟進。",
+  "members": {
+    "maga": "美股費半大漲SOX+14.0%，TSM ADR換算2390.89元溢價+7.21%，半導體與科技股強勢，川大帝MAGA修正此前過度看空觀點，建議積極關注電子權值與半導體供應鏈。",
+    "news": "新聞達人指出，目前盤面焦點集中在記憶體控制與ASIC設計服務，雖無單一公司重大利多預抓，但整體科技股受美股激勵，基本面與題材催化劑偏向多方。",
+    "chips": "籌碼王指出，候選標的中3034聯詠外資與融資減碼，五檔比0.33外盤主動買進；1216統一外資急翻2次但處空頭趨勢；2615萬海疑有隔日沖疑慮。整體籌碼顯示資金在特定權值與防禦股間拉鋸，非全面性鎖碼。",
+    "kline": "K線技術人指出，大盤與候選標的大多處於四線空頭排列或盤整，且未見明確轉折紅K支撐。聯詠乖離-12.0%但仍在空頭排列，暫不進行左側摸底，需等待回檔與轉折訊號。"
+  },
+  "chairman": {
+    "challenge": "川大帝MAGA先前看空遭打臉，本次雖受美股大漲激勵但大盤仍在月線下方且屬空頭趨勢，前四位成員對於買進標的均未提出明確的轉折紅K支撐與風報比達標證據，不符合嚴格鐵律。",
+    "summary": "目前大盤雖大漲但加權仍在月線下方且整體架構為空頭趨勢，加上現金水位須維持100%（大盤偏弱），各候選標的皆未同時滿足轉折紅K、風報比>=1.5與不追高原則。今日全面執行WATCHLIST_PLAN，維持100%現金觀望。"
+  },
+  "decisions": [
+    {
+      "stock_id": "1216",
+      "proposed_action": "WATCHLIST_PLAN",
+      "proposed_shares": 0,
+      "reason": "大盤處於空頭趨勢且未見明確轉折紅K，暫不建立多單，等待回檔至76.7-78.1區間並觀察五檔與VWAP觸發條件。",
+      "team_view": "外資急翻但技術面空頭，籌碼與技術分歧，暫時列入觀望名單。",
+      "status": "plan",
+      "shares": null,
+      "price": null,
+      "stop_loss": 73.6,
+      "target_price": 82.7,
+      "rr": null,
+      "note": "風控預審未通過：空頭趨勢且未見轉折紅 K（安全矩陣：暫不買進）"
+    },
+    {
+      "stock_id": "3034",
+      "proposed_action": "WATCHLIST_PLAN",
+      "proposed_shares": 0,
+      "reason": "股價高於買進價，等待回檔至406.0-418.5區間，且需見轉折紅K與成交量支撐方可考慮進場。",
+      "team_view": "乖離雖大但四線空排，嚴禁左側摸底，等待止穩轉折。",
+      "status": "plan",
+      "shares": 300,
+      "price": 435.5,
+      "stop_loss": 410.5,
+      "target_price": 495.0,
+      "rr": 2.38,
+      "note": "風控預審通過，明日盤中可執行"
+    },
+    {
+      "stock_id": "2615",
+      "proposed_action": "WATCHLIST_PLAN",
+      "proposed_shares": 0,
+      "reason": "具隔日沖疑慮且高於建議買進價，等待回檔至90.4-93.2區間再行評估。",
+      "team_view": "外資急翻但疑有隔日沖，短線波動大，不符合安全進場條件。",
+      "status": "plan",
+      "shares": null,
+      "price": null,
+      "stop_loss": 86.8,
+      "target_price": 109.5,
+      "rr": null,
+      "note": "風控預審未通過：風報比 1.28 < 1.5（停利目標 +30%、硬性停損 −10%）"
     }
   ]
 }

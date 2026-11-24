@@ -1,34 +1,32 @@
-# 📰 今日全市場重大財經新聞快報（2026-11-23 16:36）
+# 📰 今日全市場重大財經新聞快報（2026-11-24 15:07）
 
 ## 【🔄 昨日結論覆盤與思考修正】
-昨日預判偏空但大盤強彈2.16%觸發修正原則。新聞達人先前看空後遇低檔大幅反彈，顯示低檔乖離過大時空方訊號需經收盤進一步確認，不可盲目追空。
+昨日新聞達人看空後遭遇歷史級反彈，修正原則為空方訊號需收盤確認，且低檔乖離過大時不追空。
 
 ## 一句話結論（新聞情緒：中立偏多）
-融資大減釋放沉重賣壓，政府政策護盤與AI錯殺反彈帶動台股強彈，惟外資期現貨持續偏空需謹慎驗證。
+黃仁勳回任輝達執行長激勵台股創史上最大漲點，收復4萬點大關，短線聚焦半導體與AI供應鏈籌碼流向。
 
 ## 今日財經新聞 TOP 10
-1. `[2026-11-23 16:13]` **AI股出現錯殺行情，融資單日大減逾600億元**（利多）— 籌碼洗淨且市場認為AI股過度下修，帶動跌深反彈與技術面修復。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670152)
-2. `[2026-11-23 16:16]` **行政院邀集產業界座談穩定台股市場信心**（利多）— 政府單位介入宣示護盤信心，有助於減緩市場恐慌情緒。 [🔗 來源：UDN](https://news.google.com/rss/articles/CBMiUEFVX3lxTE1tNTZZRkYyRHVpWFc1MTktbm00bTNpSnVZRU9CcjNBVjZoS2RYOVI4SWI4MkUwcVhscXh6T2VMUENYUUVGeXR4X3JIS2hSQUlS0gFWQVVfeXFMUE0wVHRYNWg4b2paVVh0NTBESlJaaEdHbG5OSm9CdldzN0hoSkljR1RTTUh6bWhJREhVT21NMmU0RE9HZjBiZ2ZSRW1uT0RUQ1JhZVBtOFE?oc=5)
-3. `[2026-11-23 16:22]` **證交所鼓勵上市櫃公司實施庫藏股穩定股價**（利多）— 官方推動企業買回庫藏股，為市場注入企業護盤資金動力。 [🔗 來源：Yahoo股市](https://news.google.com/rss/articles/CBMizwNBVV95cUxNSU5wUTl5d2JZRElPRHN5aFBEWkhma0R6WEJZaW5NT0YyelRWU1YzSUs0Q3hSY0tkak5ELWtiaXJ6NUpVYjl3bU1FQU1pOVphMG9BSUdjQTdWbmFmSVBXZUwzS0w2N3BMUUJuTmJmblM1ZTFKWEZXNk11NWFNZm5VZUY2ak9ERGVCbnVLT3JMT1hueWd0UnpIcjlJVWROTmhwZ25qQk44T1pMN2Fmdmp0Q0RQNHZ5cWU4T195T0FJMnk4OE53bGZIMzJoeXNYajR2ZGVpRzYtcnM3WnNIandCVEdNM0ROYkdHOWxYYW5BQzAzQThUVzZ6TWJ3RGRNVE1IMWVYd0FZb2pJV25fNFdqeTBpOHluMElHcldvR3RwT3FfWFdVcnNjM2g0azlVaHVHTHNHSDVGQnBtdGx0WW1OV0w2U0NqaUkwd0s3ckZvRE1pZnpqWFV5OUpGNVlNRjBfUmtGWGczT08wdzRaaERxM0VoQmZacVV3NkVwajA1TkRyd2tTczNEaTQ3aVlYbEpuZ0Vmb0l4T211anZPaWNBbkp3OTJsYkFSMy1icUxZVXVtM0hoa29JRVk5NFR2S0g0UXZRWHMtZ1NJVkhoN2FZ?oc=5)
-4. `[2026-11-23 16:20]` **華碩前進泰國拓展AI軟硬整合商機**（利多）— 華碩積極海外布局AI產業，深化海外基本面訂單轉化。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670155)
-5. `[2026-11-23 16:16]` **華邦電攜手成大成立共同研發中心**（利多）— 聚焦四大核心技術領域，強化長期半導體與記憶體研發能量。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670154)
-6. `[2026-11-23 16:10]` **施羅德2027全球預測首度納入台灣AI供應鏈**（利多）— 國際機構看好台股AI供應鏈中長期成長力道，提升國際能見度。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670150)
-7. `[2026-11-23 16:21]` **永豐金預估台股高點遞延至明年Q1或Q2**（中性）— 短線跌幅達28%後修正評價，認為中期高點順延，偏向沉澱走勢。 [🔗 來源：自由財經](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kMldvLWVKQml6eW1BTV9aWEJNYjJhRmJwcVprWUJWdDkxZEE0RVZWaU04blZOdlNMNVFQZThzd1JhZ3NGcExMc2pxOExuSlBrckpCcWFrMWVpMkh1UFlN0gFkQVVfeXFMUGRVbHVaWjZWQ3R2Mm1nWTF1UXVnN3p1V0tlSDRhVEJlQ3pmSlJRTFF1aWFPekZmNzJTbUp4ZTN1ZUVxZ25WY25CMTFLSUduZTR3T0N0Q01JUzFWVGpNMnlsZTZZSA?oc=5)
-8. `[2026-11-23 16:13]` **外資期貨空單大增5569口並賣超現貨289.4億元**（利空）— 外資持續現貨賣超與期貨加空，對台股反彈空間構成上方壓制。 [🔗 來源：自由時報](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1uVzNyUGNNX0lOUmlSdUJRdHhjdlZEOTJDTWJXV3FaNW1qN0ZYVEhvU3pDMnZ2MzRPYmlrZ3lsNVVRM3lNVjFwUGp0WTQwQmVkZGVxNURhcTY?oc=5)
-9. `[2026-11-23 16:18]` **三大法人賣超台股511.77億元**（利空）— 籌碼面法人整體仍呈提款狀態，短期反彈多由內資與融資清洗後帶動。 [🔗 來源：UDN](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBRVWRnSjROT0V5MlczdjhTQXluaXVyaGZoNG9KZHlhc1ZWSERWYnl1dmFtRzRvZXVrci1zWFc2Q3FvNy1qMmRoajk3eHJmaVgz?oc=5)
-10. `[2026-11-23 16:10]` **IEEE示警AI發展面臨電力瓶頸挑戰**（利空）— 算力擴張引發電力緊張，對AI基礎建設供應鏈長線經營添變數。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670022)
+1. `[2026-11-24 15:02]` **黃仁勳回任引爆台股 大盤狂飆3310點重返4萬點**（利多）— 黃仁勳回鍋輝達帶動市場信心回溫，台股大漲3310點重返4萬點大關。 [🔗 來源：經濟日報](https://news.google.com/rss/articles/CBMie0FVX3lxTE5NOGVwMDFBRV9jN3RSWl9oVmJELXVhNndyeXhEbFVJWXhnQlZWTnBlazdaT2NWd05ZLWxDUklOUEdWTElKcF9ySmtXOVNZYU00dmlOdDI3WUxnUkI1NlBYTkEwdy1UdlBMYWhyT2pTajhJMHVmZFQ0X1BYdw?oc=5)
+2. `[2026-11-24 15:01]` **不管台股狂飆！外資續賣503億、自營商暴砍810億**（利空）— 三大法人現貨籌碼仍呈大幅賣超，顯示內外資心態分歧，需留意短線追高風險。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670956)
+3. `[2026-11-24 15:00]` **東擎發表整合式機器人開發平台RBK**（利多）— 機器人應用題材持續擴展，增添相關概念股基本面動能。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670954)
+4. `[2026-11-24 14:58]` **黃仁勳回歸，投資人如何卡位新一波漲勢？ 四檔台股ETF**（利多）— 資金透過ETF管道回流科技成長股，有助支撐相關權值股流動性。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670952)
+5. `[2026-11-24 14:54]` **AI浪潮點燃記憶體超級循環！威剛獲聯貸300億**（利多）— 記憶體族群獲得資金與銀行聯貸支持，產業基本面正向發展。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670955)
+6. `[2026-11-24 14:50]` **華碩深入大語言模型技術 推醫用超音波AI Agent平台**（利多）— 華碩深化AI醫療應用，擴大智慧醫療領域基本面布局。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670950)
+7. `[2026-11-24 14:50]` **台股攻回4萬點破底危機解除 法人建議卡位半導體3族群**（利多）— 破底危機暫除，法人資金聚焦半導體相關供應鏈。 [🔗 來源：ETtoday財經雲](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QLWZ0cm9La3VHdC1QcUE5NGozaGJwZnB2dmJjN0NvYVNjcUNTclNudDBSQ3BncGFEZ1VvTmYxN2lLNGJhT2puc3BrWWdFMnN3MWfSAVBBVV95cUxQczJjeDBaYUFLcGs5N3R1M09Dcm84bU5JWXZ1bFoyc0p6Y3l2WmJyYkJNNFlzbzZFek91SGNIR0k1Y282a1QzbV9CbEVOVTRMdw?oc=5)
+8. `[2026-11-24 14:33]` **台股創 1991 年以來最大週跌幅！黃仁勳回歸輝達本周上演大反彈**（中性）— 先前跌幅劇烈後迎來強彈，行情波動度顯著放大。 [🔗 來源：永豐金證券](https://news.google.com/rss/articles/CBMinwVBVV95cUxPd2QyOVk2T0hac3g5UkM2bHRjdXB3N2RzSjlsVXNNckNoWkJFRER6TUktUlFsMTNfRmNMRV9pYjZyaEthbFFvcmRrazk0RDdaRVZUcTZpSXh2Qnh4YWI1ektCN0ZOWHNhcmU0UlQ3UXVERFNfcFl0VTd1WW1MdndRQU91cmczaVI1VVJjSEJlQ3BRWVl1SE04Q1NBcU5OTHJIYW5FYWFJOGRCNWFuc21ocXFuamN5dmdielRqaTJzdkQyYXBjcndJb1NYRVhQYktkUDU5VldUTVcyUkVIZ2lnZ2ZaYk8yMVVaS2lIX0xKWTlIazNybVZPZlN4cFV2S0o1NEhjMWZhWElDQUk2anNCTjE3M3RCRGdabXZxa2pvSWs1R0EwTEVQWkpfd21ZczVVb0RSOGtkTzNOUlBxNlgwd0l0RkMzakZhRVpLdWoxS1o2N042Q2Mxb3RSMzB3SGhmRHYwTTBpV1F1OFpIWXAweTB1aDkxQnBpMERJRGd3Nll5Z25BbXVQVFdvaE1KTmRsUHFmM09uQzJ6bWtHb2xla2xudkUzZnBZYTZTczVmeWhKaUJ3NFR5RUc5Vm9xek9Ba1VfMmxscm1ZQ21VVUVQaDRVY3U0MU9lTFVRTkwzdjRmWlFWVmlicUVCUUtBTk1CUkVLVFdvUjVrdjRNeGFLTllhb2xxdnctQ1k2THN5TUVMSXZpTXowSndRVVBWMlpYZVoxOTEtNFZJZjlDMHdqVk8wdUJDeE5lajBjZEkzT0hGeWFKclE1YThZZ0duSjl6NUpFT2dOMUVQVUFnM2FEWGNtRUlxTzRPcUlWZ2pySF8xa0djdVl2S0RPQlRvY0xYZ2M3RWNtcFZnMHNaWTA0Y3NJa2RRMHo0WWd0OThZVQ?oc=5)
+9. `[2026-11-24 14:33]` **黃仁勳回歸創史上最大漲點但月線反壓重**（中性）— 指數雖大漲但面臨月線反壓，操作上須留意技術面調節壓力。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670944)
+10. `[2026-11-24 14:31]` **全球AI支出連三年創高！瑞銀反降評台股至中性**（中性）— 機構點出台股高度曝險AI，基本面雖強但評價面需保持審慎。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670946)
 
 ## 熱門題材
-- AI晶片與軟硬整合 (2357華碩)
-- 記憶體與核心技術 (2344華邦電)
-- 護盤與政策宣導 (台股)
+- 半導體 (2330 台積電)
+- AI供應鏈 (2317 鴻海)
 
 ## 非持股潛力觀察名單
-- 2357 華碩：拓展泰國AI軟硬體整合商機，基本面轉強。
-- 2344 華邦電：與成大設立研發中心深化技術，記憶體族群強勢。
+- 2408 南亞科：記憶體超級循環題材與聯貸資金挹注基本面
 
 ## 風險警示
-- 外資期貨空單與現貨賣超持續擴大，上方籌碼賣壓仍重。
-- 反彈強勁但外圍利空與法人提款未止，需留意高檔追高風險。
+- 外資與自營商在盤勢大漲之際仍大幅賣超現貨，須防範籌碼鬆動與月線反壓。
+- 低檔乖離過大後不宜盲目追高，空方訊號需以收盤價確認。
 
-> 由新聞達人（gemini・gemini-3.5-flash）依 Python 濃縮新聞產生，出處連結與時間取自爬蟲原始資料，0 Claude Token。
+> 由新聞達人（gemini・gemini-3.5-flash-lite）依 Python 濃縮新聞產生，出處連結與時間取自爬蟲原始資料，0 Claude Token。

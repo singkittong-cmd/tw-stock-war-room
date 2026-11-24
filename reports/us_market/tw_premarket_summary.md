@@ -1,29 +1,29 @@
-# 🌅 今日台股盤前總結與當日走勢預判（2026-11-24）
+# 🌅 今日台股盤前總結與當日走勢預判（2026-11-25）
 
 ## 【🔄 昨日結論覆盤與思考修正】
-昨日看空後大盤反漲+2.16%，主因低檔乖離過大引發反彈，今日需嚴格恪守空方訊號需收盤確認且不追空的原則。
+昨日預判過度偏空忽略低檔乖離過大與消息面反轉風險，未來空方訊號必須等待收盤確認，且低檔乖離過大時絕對不盲目追空。
 
 ## 🦅 美股收盤後 TOP 10
-1. `[2026-11-21 06:15]` **費城半導體指數大幅修正**（利空）— 費半暴跌10.73%，嚴重衝擊台股半導體供應鏈整體估值壓力。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/%5ESOX)
-2. `[2026-11-21 05:00]` **台積電 ADR跌幅顯著但維持溢價**（利空）— TSM ADR大跌9.48%，對台股2330溢價縮小至+3.19%，開盤加權指數壓力巨大。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/TSM)
-3. `[2026-11-21 05:00]` **輝達暴跌重挫AI供應鏈預期**（利空）— NVDA狂跌14.01%，直接利空台股伺服器組裝與AI概念股如2317、6669。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/NVDA)
-4. `[2026-11-21 05:00]` **美光崩跌引發記憶體族群觀望**（利空）— MU大跌13.89%，預期將終止台股記憶體模組與控制晶片股（如3260）的短期強勢。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/MU)
-5. `[2026-11-21 05:00]` **Vertiv拉回修正AI散熱評價**（利空）— VRT大跌10.14%，冷卻設備估值修正將傳導至台股散熱族群如3017、3324。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/VRT)
-6. `[2026-11-23 15:50]` **輝達融資計畫卡關融資成本上升**（利空）— 借款人要求更高擔憂影響資本支出，利空台股AI供應鏈拉貨進度。 [🔗 來源：www.tmgm.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxPWjF0aUZxS1BGVE5qT2pRbzVSWFdwZTd4bmFlQUx5OE9hWE51OUFIYzVKME9hTzFndmhDdW5QR2VoTjg3VnJjbW9ZVU8zQUVyT1BydDlsZkxURnhaYnp1TmExSU9jX1h6bEZkQnhhWmJCS294S1VsSHQ2STgzTk1QdklR?oc=5)
-7. `[2026-11-23 15:41]` **博通急跌影響客製化晶片預期**（利空）— AVGO大跌打擊ASIC市場樂觀情緒，利空台股矽智財與世芯-KY(3661)。 [🔗 來源：Trefis](https://news.google.com/rss/articles/CBMinwFBVV95cUxNWllGMkdwMWFtZUJLWjdQX1FnbHByQnlBdzZ2R0dTN3I5TS1qR2VHWU9UQ2hvcXpVS0NrMGROOTlodzJKY19BdHZLSERZV0R3SE1KM0lGeUhxd2JfMGY4MjAwM2duV1p5b0ZQZEpMNDhWeGlGREdTTzc0NzNxY09EeDBabS1qN19iSGVCdS16S0FGYjIxRXEwQWFEUnhwZW8?oc=5)
-8. `[2026-11-23 15:39]` **美光下挫背後的市場賣壓分析**（利空）— 晶片股整體評價面臨機構部位獲利結算，利空記憶體族群2408與3260。 [🔗 來源：Trefis](https://news.google.com/rss/articles/CBMingFBVV95cUxQTDBMd2dtOUtlRTEtS0xHTjNZYnhuMHNWT1A4MHc2YjZpU29tbzM2bU00eHNZeDVJTG02MzB0MFZPZ0FMQXBQNmpRQWJYN2ltOEliNUFQdWwzMFpOUTQwc0xrclhjME1FSkxxbVFUQnVDcDNXYld2ZEoyd09kYVBxZHVIaWphQTN4end4SHVUQ3N2VC01SklvNks3enU1UQ?oc=5)
-9. `[2026-11-21 05:00]` **博通同步下挫修正估值**（利空）— AVGO狂跌12.19%，連帶拖累台股高速傳輸與網通晶片供應鏈。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/AVGO)
-10. `[2026-11-21 05:00]` **超微重挫打擊晶片替代方案預期**（利空）— AMD大跌13.25%，加劇市場對非輝達陣營AI伺服器拉貨動能的疑慮。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/AMD)
+1. `[2026-11-24 06:15]` **費城半導體指數強彈**（利多）— 費半指數大漲14.03%，帶動台股半導體與設備次產業反彈。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/%5ESOX)
+2. `[2026-11-24 05:00]` **台積電ADR強勢溢價**（利多）— 台積電ADR大漲14.08%，換算溢價+7.21%，傳导至台積電(2330)開盤補漲。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/TSM)
+3. `[2026-11-24 05:00]` **輝達股價飆漲**（利多）— 輝達大漲31.48%，帶動台股AI伺服器與AI晶片次產業。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/NVDA)
+4. `[2026-11-24 05:00]` **美光股價大漲**（利多）— 美光大漲19.04%，利好台股記憶體與記憶體控制次產業。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/MU)
+5. `[2026-11-24 05:00]` **Vertiv股價走高**（利多）— VRT大漲12.10%，帶動台股散熱與機殼次產業。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/VRT)
+6. `[2026-11-24 14:15]` **華盛頓展開調查與黃仁勳回歸**（中性）— 機構關注政策風險與領導層動態，對台股ASIC設計服務與IP次產業帶來變數。 [🔗 來源：The Washington Post](https://news.google.com/rss/articles/CBMivgFBVV95cUxNRkZDczJvQ3Jka3NLdjY2a2VNekxxbm5lN0JQNnplQVp1bVNDLUdtbDh1T3Nlc1RVSU95eXU5TnRXcFR3Zk9JTGh5Q1JuTWxwY1JYNS16NFcxSVM3UUlLSGdZRWJESnZNQ1RYeFBaeTA3aWxxRXlBMnJ4REhuZ2E5b2RBTi1aTE16WFJQYUZKcmVUajNXdTVMWVIxbEV0UzVEa2Z5NnpPWldzZ084RWJmYk15NjZ0Unp5eTJickJB?oc=5)
+7. `[2026-11-24 14:03]` **輝達創佳績分析**（利多）— 機構資金強烈回補AI龍頭，增強台股相關供應鏈之機構部位信心。 [🔗 來源：Yahoo Finance](https://www.fool.com/investing/2026/11/24/nvidia-stock-just-had-its-best-day-in-over-a-decade-i-d-still-buy-it-now/?.tsrc=rss)
+8. `[2026-11-24 13:52]` **歐洲AI股受黃仁勳回歸影響**（利多）— 全球AI情緒同步轉強，傳導至台股AI應用概念股。 [🔗 來源：Yahoo Finance](https://www.euronews.com/2026/11/24/jensen-huang-is-back-at-nvidia-what-does-it-mean-for-europes-ai-stocks?.tsrc=rss)
+9. `[2026-11-24 13:46]` **黃仁勳回歸推動股市攀升**（利多）— 市場樂觀情緒回溫，有助於台股成交量能放大。 [🔗 來源：Yahoo Finance](https://www.euronews.com/2026/11/24/stocks-climb-as-huangs-return-to-nvidia-lifts-investor-optimism?.tsrc=rss)
+10. `[2026-11-24 13:43]` **市場因黃仁勳回歸飆升**（利多）— 機構預期差扭轉，推動整體科技股評價修復。 [🔗 來源：The Washington Post](https://news.google.com/rss/articles/CBMikwFBVV95cUxQakE1eld6Ynlnd3ExWkk3QndCd0RUM0E0M3I2eTFHREVyUG5ESEJoUmdJZFhYNG4xRi1VTGlHX0gwOXFMVm9zZl82MlRnZ1QzbU42Z3Fka2VIX0JTakE2b0FSOHBzU2xLaHpwVWMtS0Z5YjhtRnR5MHJLczJrdkh0aGpQT2hXanVWSWZuRkx4RGRwOUE?oc=5)
 
 ## 美股驅動因素
-- 美股科技股與半導體板塊出現機構集中獲利結算，費半與費半成分股全面重挫，短期極度擁擠的樂觀情緒破裂。
-- 輝達融資疑慮與籌碼鬆動衝擊整體AI資本支出（CapEx）預期，風報比惡化引發程式賣壓沉重覆蓋。
-- 低檔乖離與市場情緒發生嚴重預期差，機構傾向在美聯儲政策及總體債務問題未解前降低不對稱風險曝險。
+- 美股科技巨頭與半導體因黃仁勳回歸消息出現十年來最佳單日表現，機構短線回補空頭部位。
+- 費半指數暴漲逾14%，記憶體與AI硬體需求預期差擴大，帶動整體風險胃納上升。
+- 總體流動性與政策監管雜音暫時被強勁的企業基本面與AI需求蓋過，形成短線底部共振。
 
 ## 台股大盤預判
-受美股費半暴跌影響，下一交易日台股預計低開震盪，測試關鍵支撐位35400點，上方壓力位36800點。
+台股下一交易日預期開高走高，挑戰月線反壓，關鍵點位為收復41959.4點。
 
 ## 開盤策略
-開盤不追空，執行【覆盤修正原則】，空方訊號需待收盤確認；現金比率維持高位，暫不盲目摸底加碼，待低檔轉折紅K出現再行佈局。
+開盤應對策略：因美股全面大漲且台積電ADR大幅溢價，開盤建議順勢偏多操作，首筆買進量維持正常，若開高過多追價需留意短線乖離，跌破開盤轉折紅K低點則確實停損。
 
-> 由川大帝MAGA（gemini・gemini-3.5-flash）依 Python 濃縮美股數據產生，出處連結與時間取自 Yahoo Finance／新聞原始資料，0 Claude Token。
+> 由川大帝MAGA（gemini・gemini-3.5-flash-lite）依 Python 濃縮美股數據產生，出處連結與時間取自 Yahoo Finance／新聞原始資料，0 Claude Token。

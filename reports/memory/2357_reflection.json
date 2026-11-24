@@ -1,121 +1,128 @@
 {
   "stock_id": "2357",
   "name": "華碩",
-  "generated_at": "2026-11-23 16:36:32",
-  "latest_bar_date": "2026-11-23",
-  "hits": 3,
-  "gaps": 0,
+  "generated_at": "2026-11-24 15:07:46",
+  "latest_bar_date": "2026-11-24",
+  "hits": 0,
+  "gaps": 3,
   "total": 3,
-  "headline": "3 項結論全數無重大落差",
-  "lessons": [],
+  "headline": "籌碼王：11-23 16:36 預判中性（當時 758），今日實際最低 800、收 821（+8.31%） -> 觸發【方向落差】",
+  "lessons": [
+    "預期盤整但實際波動 +8.31%：區間假設失效，改用趨勢方向判斷",
+    "預期盤整但實際波動 +5.12%：區間假設失效，改用趨勢方向判斷"
+  ],
   "reviews": [
     {
       "member": "chips",
       "member_name": "籌碼王",
       "source": "standby",
-      "recorded_at": "2026-11-20 16:07:58",
-      "target_date": "2026-11-23",
+      "recorded_at": "2026-11-23 16:36:54",
+      "target_date": "2026-11-24",
       "prediction": {
-        "price_at": 756.0,
+        "price_at": 758.0,
         "direction": "中性",
         "support": null,
         "resistance": null,
         "stop_loss": null,
-        "chip_view": "法人多空分歧｜外資 5 日 +602 張、投信 5 日 -1,915 張",
-        "note": "法人多空分歧｜外資 5 日 +602 張、投信 5 日 -1,915 張"
+        "chip_view": "法人多空分歧｜外資 5 日 +1,104 張、投信 5 日 -2,633 張",
+        "note": "法人多空分歧｜外資 5 日 +1,104 張、投信 5 日 -2,633 張"
       },
       "actual": {
         "dates": [
-          "2026-11-23"
+          "2026-11-24"
         ],
-        "close": 758.0,
-        "low": 748.0,
-        "high": 798.0,
+        "close": 821.0,
+        "low": 800.0,
+        "high": 833.0,
         "is_partial": false,
         "foreign_net": null,
         "trust_net": null
       },
-      "verdict": "準確",
-      "score": 1,
-      "return_pct": 0.26,
-      "tags": [],
-      "gap_text": "11-20 16:07 預判中性（當時 756），今日實際最低 748、收 758（+0.26%）",
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": 8.31,
+      "tags": [
+        "方向落差"
+      ],
+      "gap_text": "11-23 16:36 預判中性（當時 758），今日實際最低 800、收 821（+8.31%） -> 觸發【方向落差】",
       "corrections": [
-        "判斷準確，維持原邏輯"
+        "預期盤整但實際波動 +8.31%：區間假設失效，改用趨勢方向判斷"
       ]
     },
     {
       "member": "kline",
       "member_name": "K線技術人",
       "source": "zhu_auto",
-      "recorded_at": "2026-11-20 14:00:00",
-      "target_date": "2026-11-23",
+      "recorded_at": "2026-11-23 14:00:00",
+      "target_date": "2026-11-24",
       "prediction": {
-        "price_at": 772.0,
+        "price_at": 781.0,
         "direction": "中性",
         "support": 746.0,
         "resistance": 989.0,
         "stop_loss": 746.0,
         "chip_view": null,
-        "note": "盤整趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧④負乖離過大（-12.5%）｜錘子線（下影線守支撐）、跳空向下缺口"
+        "note": "盤整趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧④負乖離過大（-10.6%）｜跳空向下缺口"
       },
       "actual": {
         "dates": [
-          "2026-11-23"
+          "2026-11-24"
         ],
-        "close": 758.0,
-        "low": 748.0,
-        "high": 798.0,
+        "close": 821.0,
+        "low": 800.0,
+        "high": 833.0,
         "is_partial": false,
         "foreign_net": null,
         "trust_net": null
       },
-      "verdict": "準確",
-      "score": 1,
-      "return_pct": -1.81,
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": 5.12,
       "tags": [
+        "方向落差",
         "支撐守住"
       ],
-      "gap_text": "11-20 14:00 預判守 746 元支撐中性（當時 772），今日實際最低 748、收 758（-1.81%） -> 觸發【支撐守住】",
+      "gap_text": "11-23 14:00 預判守 746 元支撐中性（當時 781），今日實際最低 800、收 821（+5.12%） -> 觸發【方向落差、支撐守住】",
       "corrections": [
-        "判斷準確，維持原邏輯"
+        "預期盤整但實際波動 +5.12%：區間假設失效，改用趨勢方向判斷"
       ]
     },
     {
       "member": "kline",
       "member_name": "K線技術人",
       "source": "standby",
-      "recorded_at": "2026-11-20 16:07:58",
-      "target_date": "2026-11-23",
+      "recorded_at": "2026-11-23 16:36:54",
+      "target_date": "2026-11-24",
       "prediction": {
-        "price_at": 756.0,
+        "price_at": 758.0,
         "direction": "中性",
         "support": 738.0,
-        "resistance": 882.0,
+        "resistance": 873.0,
         "stop_loss": 708.0,
         "chip_view": null,
         "note": "觀望等待底部確認"
       },
       "actual": {
         "dates": [
-          "2026-11-23"
+          "2026-11-24"
         ],
-        "close": 758.0,
-        "low": 748.0,
-        "high": 798.0,
+        "close": 821.0,
+        "low": 800.0,
+        "high": 833.0,
         "is_partial": false,
         "foreign_net": null,
         "trust_net": null
       },
-      "verdict": "準確",
-      "score": 1,
-      "return_pct": 0.26,
+      "verdict": "落差",
+      "score": -1,
+      "return_pct": 8.31,
       "tags": [
+        "方向落差",
         "支撐守住"
       ],
-      "gap_text": "11-20 16:07 預判守 738 元支撐中性（當時 756），今日實際最低 748、收 758（+0.26%） -> 觸發【支撐守住】",
+      "gap_text": "11-23 16:36 預判守 738 元支撐中性（當時 758），今日實際最低 800、收 821（+8.31%） -> 觸發【方向落差、支撐守住】",
       "corrections": [
-        "判斷準確，維持原邏輯"
+        "預期盤整但實際波動 +8.31%：區間假設失效，改用趨勢方向判斷"
       ]
     }
   ]
