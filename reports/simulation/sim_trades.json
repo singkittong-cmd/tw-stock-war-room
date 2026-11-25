@@ -502,5 +502,29 @@
     "target_price": 18.5,
     "team_discussion": "籌碼王看好外盤承接力道，K線技術人提醒仍處空頭排列。",
     "buffett_verdict": "股價達建議買進價，五檔比 3.72 顯示外盤主動買進強勁。負乖離 7.4% 具備反彈空間，建倉金額約 9 萬元符合下限規定。｜停損 16.0｜目標 18.5｜風報比 1.63"
+  },
+  {
+    "trade_id": "T0022",
+    "timestamp": "2026-11-25 12:17:58",
+    "stock_id": "2002",
+    "name": "中鋼",
+    "action": "EXIT_STOP",
+    "price": 17.0028,
+    "shares": 5300,
+    "gross_amount": 90115,
+    "board_shares": 5000,
+    "board_price": 17.0,
+    "odd_shares": 300,
+    "odd_price": 17.05,
+    "odd_price_source": "零股成交價",
+    "price_note": "【整張價 $17】×5,000 股＋【零股價 $17.05（零股成交價）】×300 股",
+    "fee_and_tax": 362,
+    "net_amount": 89753,
+    "realized_pnl": -204,
+    "cash_after": 871441,
+    "stop_loss": 16.0,
+    "target_price": 18.5,
+    "team_discussion": "K線技術人與籌碼王一致看空，巴董事長拍板止損。",
+    "buffett_verdict": "股價跌破 K 線技術人設定之 17.5 元停損位，且外資持續大賣，空頭排列無扭轉跡象，依鐵律 2 執行止損以回收現金。｜停損 None｜目標 None"
   }
 ]
