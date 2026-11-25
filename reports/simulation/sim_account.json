@@ -4,12 +4,12 @@
   "initial_capital": 1000000,
   "target_return_low_pct": 10.0,
   "target_return_high_pct": 20.0,
-  "cash_balance": 871645,
+  "cash_balance": 781688,
   "realized_pnl": -2248,
-  "unrealized_pnl": -592,
-  "market_value": 126000,
-  "total_equity": 997645,
-  "total_return_pct": -0.24,
+  "unrealized_pnl": -547,
+  "market_value": 216365,
+  "total_equity": 998053,
+  "total_return_pct": -0.19,
   "holdings": [
     {
       "stock_id": "2603",
@@ -18,18 +18,37 @@
       "avg_cost": 252.214,
       "cost_total": 126107,
       "entry_date": "2026-11-25",
-      "current_price": 250.0,
-      "odd_price": 252.0,
+      "current_price": 252.0,
+      "odd_price": 253.0,
       "stop_loss": 240.0,
       "target_price": 274.5,
       "buffett_thesis": "出現晨星轉折K線，外資連買且融資減。買進價250元，停損239元(-4.4%，符合>3%及>-8%鐵律)，目標274.5元(+9.8%)，風報比2.23，金額12.5萬合規。",
-      "market_value": 126000,
-      "unrealized_pnl": -592,
-      "unrealized_pct": -0.47
+      "market_value": 126500,
+      "unrealized_pnl": -94,
+      "unrealized_pct": -0.07,
+      "change_pct": -1.95,
+      "vwap": 249.94,
+      "odd_price_source": "零股成交價"
+    },
+    {
+      "stock_id": "2002",
+      "name": "中鋼",
+      "shares": 5300,
+      "avg_cost": 16.973,
+      "cost_total": 89957,
+      "entry_date": "2026-11-25",
+      "current_price": 16.95,
+      "odd_price": 17.05,
+      "stop_loss": 16.0,
+      "target_price": 18.5,
+      "buffett_thesis": "股價達建議買進價，五檔比 3.72 顯示外盤主動買進強勁。負乖離 7.4% 具備反彈空間，建倉金額約 9 萬元符合下限規定。",
+      "market_value": 89865,
+      "unrealized_pnl": -453,
+      "unrealized_pct": -0.5
     }
   ],
   "status_note": "🟢 模擬室盤中交易運作中",
-  "updated_at": "2026-11-25 11:33:43",
-  "last_trade_timestamp": "2026-11-25 11:33:43",
-  "last_trade_id": "T0020"
+  "updated_at": "2026-11-25 11:56:37",
+  "last_trade_timestamp": "2026-11-25 11:56:37",
+  "last_trade_id": "T0021"
 }
