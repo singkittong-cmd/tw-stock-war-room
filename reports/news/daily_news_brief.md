@@ -1,32 +1,33 @@
-# 📰 今日全市場重大財經新聞快報（2026-11-24 15:07）
+# 📰 今日全市場重大財經新聞快報（2026-11-25 13:40）
 
 ## 【🔄 昨日結論覆盤與思考修正】
-昨日新聞達人看空後遭遇歷史級反彈，修正原則為空方訊號需收盤確認，且低檔乖離過大時不追空。
+昨日預判偏多卻逢大盤重挫4.78%，主因忽略關稅利空爆發與國際AI龍頭破發衝擊；未來給出多方判斷前，必先嚴格檢查全球市場Priced-in情況與成交量能變化。
 
-## 一句話結論（新聞情緒：中立偏多）
-黃仁勳回任輝達執行長激勵台股創史上最大漲點，收復4萬點大關，短線聚焦半導體與AI供應鏈籌碼流向。
+## 一句話結論（新聞情緒：偏空警戒）
+關稅變數與記憶體利空拖累市場，台股重挫失守萬八，資金湧向低價與防禦型標的。
 
 ## 今日財經新聞 TOP 10
-1. `[2026-11-24 15:02]` **黃仁勳回任引爆台股 大盤狂飆3310點重返4萬點**（利多）— 黃仁勳回鍋輝達帶動市場信心回溫，台股大漲3310點重返4萬點大關。 [🔗 來源：經濟日報](https://news.google.com/rss/articles/CBMie0FVX3lxTE5NOGVwMDFBRV9jN3RSWl9oVmJELXVhNndyeXhEbFVJWXhnQlZWTnBlazdaT2NWd05ZLWxDUklOUEdWTElKcF9ySmtXOVNZYU00dmlOdDI3WUxnUkI1NlBYTkEwdy1UdlBMYWhyT2pTajhJMHVmZFQ0X1BYdw?oc=5)
-2. `[2026-11-24 15:01]` **不管台股狂飆！外資續賣503億、自營商暴砍810億**（利空）— 三大法人現貨籌碼仍呈大幅賣超，顯示內外資心態分歧，需留意短線追高風險。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670956)
-3. `[2026-11-24 15:00]` **東擎發表整合式機器人開發平台RBK**（利多）— 機器人應用題材持續擴展，增添相關概念股基本面動能。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670954)
-4. `[2026-11-24 14:58]` **黃仁勳回歸，投資人如何卡位新一波漲勢？ 四檔台股ETF**（利多）— 資金透過ETF管道回流科技成長股，有助支撐相關權值股流動性。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670952)
-5. `[2026-11-24 14:54]` **AI浪潮點燃記憶體超級循環！威剛獲聯貸300億**（利多）— 記憶體族群獲得資金與銀行聯貸支持，產業基本面正向發展。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670955)
-6. `[2026-11-24 14:50]` **華碩深入大語言模型技術 推醫用超音波AI Agent平台**（利多）— 華碩深化AI醫療應用，擴大智慧醫療領域基本面布局。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670950)
-7. `[2026-11-24 14:50]` **台股攻回4萬點破底危機解除 法人建議卡位半導體3族群**（利多）— 破底危機暫除，法人資金聚焦半導體相關供應鏈。 [🔗 來源：ETtoday財經雲](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QLWZ0cm9La3VHdC1QcUE5NGozaGJwZnB2dmJjN0NvYVNjcUNTclNudDBSQ3BncGFEZ1VvTmYxN2lLNGJhT2puc3BrWWdFMnN3MWfSAVBBVV95cUxQczJjeDBaYUFLcGs5N3R1M09Dcm84bU5JWXZ1bFoyc0p6Y3l2WmJyYkJNNFlzbzZFek91SGNIR0k1Y282a1QzbV9CbEVOVTRMdw?oc=5)
-8. `[2026-11-24 14:33]` **台股創 1991 年以來最大週跌幅！黃仁勳回歸輝達本周上演大反彈**（中性）— 先前跌幅劇烈後迎來強彈，行情波動度顯著放大。 [🔗 來源：永豐金證券](https://news.google.com/rss/articles/CBMinwVBVV95cUxPd2QyOVk2T0hac3g5UkM2bHRjdXB3N2RzSjlsVXNNckNoWkJFRER6TUktUlFsMTNfRmNMRV9pYjZyaEthbFFvcmRrazk0RDdaRVZUcTZpSXh2Qnh4YWI1ektCN0ZOWHNhcmU0UlQ3UXVERFNfcFl0VTd1WW1MdndRQU91cmczaVI1VVJjSEJlQ3BRWVl1SE04Q1NBcU5OTHJIYW5FYWFJOGRCNWFuc21ocXFuamN5dmdielRqaTJzdkQyYXBjcndJb1NYRVhQYktkUDU5VldUTVcyUkVIZ2lnZ2ZaYk8yMVVaS2lIX0xKWTlIazNybVZPZlN4cFV2S0o1NEhjMWZhWElDQUk2anNCTjE3M3RCRGdabXZxa2pvSWs1R0EwTEVQWkpfd21ZczVVb0RSOGtkTzNOUlBxNlgwd0l0RkMzakZhRVpLdWoxS1o2N042Q2Mxb3RSMzB3SGhmRHYwTTBpV1F1OFpIWXAweTB1aDkxQnBpMERJRGd3Nll5Z25BbXVQVFdvaE1KTmRsUHFmM09uQzJ6bWtHb2xla2xudkUzZnBZYTZTczVmeWhKaUJ3NFR5RUc5Vm9xek9Ba1VfMmxscm1ZQ21VVUVQaDRVY3U0MU9lTFVRTkwzdjRmWlFWVmlicUVCUUtBTk1CUkVLVFdvUjVrdjRNeGFLTllhb2xxdnctQ1k2THN5TUVMSXZpTXowSndRVVBWMlpYZVoxOTEtNFZJZjlDMHdqVk8wdUJDeE5lajBjZEkzT0hGeWFKclE1YThZZ0duSjl6NUpFT2dOMUVQVUFnM2FEWGNtRUlxTzRPcUlWZ2pySF8xa0djdVl2S0RPQlRvY0xYZ2M3RWNtcFZnMHNaWTA0Y3NJa2RRMHo0WWd0OThZVQ?oc=5)
-9. `[2026-11-24 14:33]` **黃仁勳回歸創史上最大漲點但月線反壓重**（中性）— 指數雖大漲但面臨月線反壓，操作上須留意技術面調節壓力。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670944)
-10. `[2026-11-24 14:31]` **全球AI支出連三年創高！瑞銀反降評台股至中性**（中性）— 機構點出台股高度曝險AI，基本面雖強但評價面需保持審慎。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6670946)
+1. `[2026-11-25 13:33]` **台美ART將拍板 半導體免關稅免衝擊**（利多）— 專家指出關稅影響低於15%且不含半導體，緩解市場對供應鏈核心關稅之焦慮。 [🔗 來源：Yahoo股市](https://news.google.com/rss/articles/CBMi1gJBVV95cUxPblJsSkI4UVUxMFhOTXdoYU5UU0N6bDJfUmlSamhvUE1xLWRKaTYyRDBLMVU4cXY3di1Cb040Y1hEM1lidlBRXy1fZzJRakFBZXVBTlJvM0dVN2hBYVpPMWJENVRubGJ3empnd2lNZnNHazhnMVpsd0k3c1VPelhmZnI4MFJsYkliM0ZyaDRLQ3IxOGtBSTFxUjMxTU96SFdQdlI3a2ZzTFFLaTg1bzh1ZHVjeTdwU1ppQzF1UkpaYk5tUlpMZjBZcVZpVjZtcHVETzhzdkZJUXc1SGdmZm9RSGk1NEEtZHR6TzlhUHJ6eFQ2MHZ6SlFUa25Nbm00OE92TVRQS1NnaWZIeGVMblhDbl9FNFg4X0p4YXBKcjZjWENHR0hDbDdoR3dnUXd2VjJVNGd0Rk14RnN3c3oxdHBYTGE0d016ZlNtOFBvY3JYRGktT3piNlE?oc=5)
+2. `[2026-11-25 13:29]` **新關稅變數重啟 台股反彈降溫**（利空）— 市場擔憂關稅不確定性，大盤一度急跌，短線反彈動能面臨壓制。 [🔗 來源：udn](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzQm5udDUtY2lCcUFZcnpSR3VPejFxOUc3czdLNUZ3RXgyVXRuYktHakM5UGRKaU9MRnNiYXc0UDZYTUdHWnlObHJhcEtORm5J0gFWQVVfeXFMUC1reUhGaWQ5bWQ2NjVjUV92aEZDS1FFQkx2di13TzA5NlN5SlJDTDU1ZGRaR09mYjV6WWVMQlk4T3pIQ1lZYmNFWDUzTXZLaDNTQjJtb0E?oc=5)
+3. `[2026-11-25 13:35]` **台股大跌1926點 台積電承壓跌破2200元**（利空）— 權值股重挫拖累大盤失守39K，短線市場避險情緒極高。 [🔗 來源：ETtoday財經雲](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHdkpwckQyUENPT1NoZE11SmVBUndsUVFMNDZiWURqVm5GanRtc3dQalZDcFduX2RpNmJvLWRlNlhBZDg1cW9CZVV4eXZiRDNvd0HSAVBBVV95cUxNMWVZREpLeW1yVHZyd1hEY0dCYXMta09aeEt0SFZjNUpvaWZPSW1uRDFnM2gwMEVWbVQ1bzdkb0FNLThXcnVibG9vdXZwTzFGYw?oc=5)
+4. `[2026-11-25 13:40]` **小米Q3淨利暴跌56.8% 記憶體價格飆升打擊利潤**（利空）— 記憶體成本上升顯著削弱下游獲利，顯示供應鏈成本壓力蔓延。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6671629)
+5. `[2026-11-25 13:20]` **Anthropic破發 標誌AI股定價邏輯轉變**（利空）— 美股大咖AI公司破發，市場對高估值AI個股轉趨審慎。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6671619)
+6. `[2026-11-25 13:10]` **光焱擴建路竹新廠 聚焦矽光子檢測產能**（利多）— 光焱投資10億元擴產矽光子檢測，強烈支撐矽光子長線成長動能。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6671631)
+7. `[2026-11-25 13:28]` **外資波段賣超逾1.8兆 台幣陷入弱勢背離**（利空）— 外資持續提款賣超，台幣匯率承壓，資金流出不利大盤反彈。 [🔗 來源：udn](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwbTdjWTdIeGJJWDZJMXFheEYycktJTFdjUmt5YXN4eGZiS0w1SUphRXVXWDA2ZVVmUTFlcFBnNDh6TjlTNE1PVU9UYUJ4bGFG0gFWQVVfeXFMTldVdWZWTzF2YVZ2MW1iRmRrNGtxVXNnTlRncklCMnJiODNYTnU1Y0NNM1FrRjM2dWxTZThjYmN3X3ppdVRpSnhkTThsYlpNX2ZZM1F5RWc?oc=5)
+8. `[2026-11-25 13:24]` **八大行庫買超支撐 國家隊進場護盤**（利多）— 國家隊官股行庫逢低接買，為市場提供下檔政策支撐。 [🔗 來源：Newtalk新聞](https://news.google.com/rss/articles/CBMiW0FVX3lxTE95dkN4aXVDb3EzYmhwOXIxb3ZDeV9GYlNjTGtOT3RmZnJwTWNzUlVZVU5GMkVuUXRINjR4eVVzYy0xYi1UdVhGZ0hQSDBGWkdVSjhrb0duaTJqX3c?oc=5)
+9. `[2026-11-25 13:15]` **綠岩能源打入電子五哥 跨國綠電交易大增**（利多）— 綠電需求持續擴大，綠能業者營運展現堅實基本面。 [🔗 來源：鉅亨網](https://news.cnyes.com/news/id/6671635)
+10. `[2026-11-25 13:00]` **台股暴殺 貨櫃三雄逆勢展現韌性**（中性）— 資金轉向非科技防禦型避風港，航運族群相對抗跌。 [🔗 來源：經濟日報](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBTXlNUldxaWlZRmVxbkdQdkpzRXluMDdNbDRDRjVzTEpPU0FZTnYxTXQ4V0t1ekhFeG1BZDhZU3lPVlQ5WDJkUE1JMW1mWldyc0NUcjUwbmhzUdIBX0FVX3lxTE94SjNYdTBjYXhQaE5FQXNUeDVJak8wZUl2UE8zV3k2d2lfVi1lR3MyOFZIQnBJX05OekxxTWhwTU9uUG5kQjhGWk1MNWlBQVhCbk1FTk1YeG9WbURNSVdR?oc=5)
 
 ## 熱門題材
-- 半導體 (2330 台積電)
-- AI供應鏈 (2317 鴻海)
+- 矽光子 (3675光焱)
+- 綠能供應鏈 (綠岩能源)
+- 高股息ETF (0050/00918)
 
 ## 非持股潛力觀察名單
-- 2408 南亞科：記憶體超級循環題材與聯貸資金挹注基本面
+- 3675 光焱：砸10億建路竹新廠擴充矽光子檢測產能，基本面長線題材明確。
 
 ## 風險警示
-- 外資與自營商在盤勢大漲之際仍大幅賣超現貨，須防範籌碼鬆動與月線反壓。
-- 低檔乖離過大後不宜盲目追高，空方訊號需以收盤價確認。
+- 外資波段大賣逾1.8兆元且台幣走弱，留意資金持續外流風險。
+- AI定價邏輯轉變與高昂成本擠壓下游獲利，避免盲目追高高估值個股。
 
-> 由新聞達人（gemini・gemini-3.5-flash-lite）依 Python 濃縮新聞產生，出處連結與時間取自爬蟲原始資料，0 Claude Token。
+> 由新聞達人（gemini・gemini-3.5-flash）依 Python 濃縮新聞產生，出處連結與時間取自爬蟲原始資料，0 Claude Token。

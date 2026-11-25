@@ -25,8 +25,8 @@
   "us_top10": [
     {
       "ref": "Q1",
-      "title": "費城半導體指數強彈",
-      "point": "費半指數大漲14.03%，帶動台股半導體與設備次產業反彈。",
+      "title": "費城半導體指數強彈14.03%",
+      "point": "SOX大漲9,588點，帶動台股電子權值股與半導體供應鏈補漲強彈。",
       "tag": "利多",
       "url": "https://finance.yahoo.com/quote/%5ESOX",
       "source": "Yahoo Finance",
@@ -34,8 +34,8 @@
     },
     {
       "ref": "Q2",
-      "title": "台積電ADR強勢溢價",
-      "point": "台積電ADR大漲14.08%，換算溢價+7.21%，傳导至台積電(2330)開盤補漲。",
+      "title": "台積電 ADR 狂飆14.08%",
+      "point": "TSM ADR收363.60美元、溢價高達+7.21%，全面推升2330台積電開盤表現。",
       "tag": "利多",
       "url": "https://finance.yahoo.com/quote/TSM",
       "source": "Yahoo Finance",
@@ -43,8 +43,8 @@
     },
     {
       "ref": "Q3",
-      "title": "輝達股價飆漲",
-      "point": "輝達大漲31.48%，帶動台股AI伺服器與AI晶片次產業。",
+      "title": "輝達爆發性暴漲31.48%",
+      "point": "NVDA大幅反彈推升全球AI供應鏈，直接利好台股AI伺服器與組裝大廠。",
       "tag": "利多",
       "url": "https://finance.yahoo.com/quote/NVDA",
       "source": "Yahoo Finance",
@@ -52,8 +52,8 @@
     },
     {
       "ref": "Q7",
-      "title": "美光股價大漲",
-      "point": "美光大漲19.04%，利好台股記憶體與記憶體控制次產業。",
+      "title": "美光大暴漲19.04%",
+      "point": "MU記憶體強勁漲勢將激勵台股DRAM與Flash相關記憶體族群跟漲。",
       "tag": "利多",
       "url": "https://finance.yahoo.com/quote/MU",
       "source": "Yahoo Finance",
@@ -61,59 +61,59 @@
     },
     {
       "ref": "Q11",
-      "title": "Vertiv股價走高",
-      "point": "VRT大漲12.10%，帶動台股散熱與機殼次產業。",
+      "title": "Vertiv大漲12.10%",
+      "point": "VRT資料中心散熱需求旺盛，傳導利好台股AI散熱族群。",
       "tag": "利多",
       "url": "https://finance.yahoo.com/quote/VRT",
       "source": "Yahoo Finance",
       "pub_date": "2026-11-24 05:00"
     },
     {
-      "ref": "N4",
-      "title": "華盛頓展開調查與黃仁勳回歸",
-      "point": "機構關注政策風險與領導層動態，對台股ASIC設計服務與IP次產業帶來變數。",
+      "ref": "Q6",
+      "title": "邁威爾暴漲18.37%",
+      "point": "MRVL強勢強彈帶動晶片設計氣氛，激勵台股ASIC設計服務族群。",
+      "tag": "利多",
+      "url": "https://finance.yahoo.com/quote/MRVL",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-24 05:00"
+    },
+    {
+      "ref": "N2",
+      "title": "川普提及輝達執行長話題",
+      "point": "政治與監管相關消息引發機構情緒波動，對NVDA短期籌碼造成干擾。",
       "tag": "中性",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRkZDczJvQ3Jka3NLdjY2a2VNekxxbm5lN0JQNnplQVp1bVNDLUdtbDh1T3Nlc1RVSU95eXU5TnRXcFR3Zk9JTGh5Q1JuTWxwY1JYNS16NFcxSVM3UUlLSGdZRWJESnZNQ1RYeFBaeTA3aWxxRXlBMnJ4REhuZ2E5b2RBTi1aTE16WFJQYUZKcmVUajNXdTVMWVIxbEV0UzVEa2Z5NnpPWldzZ084RWJmYk15NjZ0Unp5eTJickJB?oc=5",
-      "source": "The Washington Post",
-      "pub_date": "2026-11-24 14:15"
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOTUtJeEpfeE9fd0ZaREJhazAyZkQ1dDNxWTZxWE1sQ2dVUnV5NjhnbTh3NGFUTG1oZm1fVXZZQnotRzBCTkdWSEVoZWFNN3pqeGlla29GS0hCZEQ5UWlJeG9QaHE5TkRnbHZ6MGU4Ym9mWkc2bE9uU3pCZF96LWo0STdrQlNtNE1YRkliWEhnTUZDVUVqUUxoZ2RHYTJzOElWQXRRWXBzamtvZGlVeHNGeDFEemNaRHk2THFYdk0xQWtqb04wVV9YZGtaRDdEY3NiRjJqSk5RT0tsVnRiY25fWUUzODVvQTZsN2M5ZA?oc=5",
+      "source": "Forbes",
+      "pub_date": "2026-11-25 13:29"
     },
     {
-      "ref": "N8",
-      "title": "輝達創佳績分析",
-      "point": "機構資金強烈回補AI龍頭，增強台股相關供應鏈之機構部位信心。",
-      "tag": "利多",
-      "url": "https://www.fool.com/investing/2026/11/24/nvidia-stock-just-had-its-best-day-in-over-a-decade-i-d-still-buy-it-now/?.tsrc=rss",
+      "ref": "N5",
+      "title": "輝達高點出現動能趨緩疑慮",
+      "point": "NVDA獲利了結壓力示警，暗示台股AI鏈高檔追高風險需留意。",
+      "tag": "利空",
+      "url": "https://stocktwits.com/news-articles/markets/equity/donald-trump-floats-jensen-huang-pardon-us-stake-in-nvidia-but-nvda-loses-momentum/cNbHPnyR9lL?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-24 14:03"
+      "pub_date": "2026-11-25 13:20"
     },
     {
-      "ref": "N9",
-      "title": "歐洲AI股受黃仁勳回歸影響",
-      "point": "全球AI情緒同步轉強，傳導至台股AI應用概念股。",
-      "tag": "利多",
-      "url": "https://www.euronews.com/2026/11/24/jensen-huang-is-back-at-nvidia-what-does-it-mean-for-europes-ai-stocks?.tsrc=rss",
+      "ref": "N10",
+      "title": "半導體ETF在財測後出現震盪",
+      "point": "市場對利多出現 Priced-in 消化反應，提醒半導體設備族群勿高點爆量追價。",
+      "tag": "中性",
+      "url": "https://www.fool.com/investing/2026/11/24/the-semiconductor-etf-kept-falling-after-nvidia-raised-its-forecast-time-to-buy/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-24 13:52"
+      "pub_date": "2026-11-25 12:57"
     },
     {
-      "ref": "N11",
-      "title": "黃仁勳回歸推動股市攀升",
-      "point": "市場樂觀情緒回溫，有助於台股成交量能放大。",
+      "ref": "Q10",
+      "title": "應材強彈14.62%",
+      "point": "AMAT大漲拉升半導體設備氣氛，直接利好台股半導體設備與廠務鏈。",
       "tag": "利多",
-      "url": "https://www.euronews.com/2026/11/24/stocks-climb-as-huangs-return-to-nvidia-lifts-investor-optimism?.tsrc=rss",
+      "url": "https://finance.yahoo.com/quote/AMAT",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-24 13:46"
-    },
-    {
-      "ref": "N12",
-      "title": "市場因黃仁勳回歸飆升",
-      "point": "機構預期差扭轉，推動整體科技股評價修復。",
-      "tag": "利多",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQakE1eld6Ynlnd3ExWkk3QndCd0RUM0E0M3I2eTFHREVyUG5ESEJoUmdJZFhYNG4xRi1VTGlHX0gwOXFMVm9zZl82MlRnZ1QzbU42Z3Fka2VIX0JTakE2b0FSOHBzU2xLaHpwVWMtS0Z5YjhtRnR5MHJLczJrdkh0aGpQT2hXanVWSWZuRkx4RGRwOUE?oc=5",
-      "source": "The Washington Post",
-      "pub_date": "2026-11-24 13:43"
+      "pub_date": "2026-11-24 05:00"
     }
   ],
   "generated_by": "fast_team_runner（gemini）",
-  "us_top10_updated_at": "2026-11-24 15:08:50"
+  "us_top10_updated_at": "2026-11-25 13:40:48"
 }
