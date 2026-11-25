@@ -1,19 +1,63 @@
 {
   "thread_name": "SimRoomDaemon",
-  "pid": 2289,
-  "host": "github_actions",
+  "pid": 305,
+  "host": "streamlit_cloud",
   "autopilot_mode": "cloud_master",
-  "started_at": "2026-11-24 15:06:11",
-  "date": "2026-11-24",
-  "scans_today": 0,
-  "triggers_today": 0,
-  "meetings_today": 0,
-  "trades_today": 0,
-  "cooldowns": {},
-  "patrol_slot_done": null,
+  "started_at": "2026-11-24 22:37:46",
+  "date": "2026-11-25",
+  "scans_today": 82,
+  "triggers_today": 5,
+  "meetings_today": 5,
+  "trades_today": 1,
+  "cooldowns": {
+    "2891": "2026-11-25 09:00:31",
+    "2603": "2026-11-25 09:01:02",
+    "1216": "2026-11-25 11:33:24",
+    "2002": "2026-11-25 11:33:24",
+    "2357": "2026-11-25 11:33:24",
+    "3034": "2026-11-25 11:33:24"
+  },
+  "patrol_slot_done": 6,
   "daily_close_settled_date": "2026-11-24",
-  "last_trigger": null,
-  "last_meeting": null,
+  "last_trigger": {
+    "at": "2026-11-25 11:33:24",
+    "items": [
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2002",
+        "text": "中鋼 現價 17.0 達建議買進價、五檔委買比 3.57",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "2357",
+        "text": "華碩 現價 760.0 達建議買進價、五檔委買比 1.24",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "1216",
+        "text": "統一 現價 78.0 達建議買進價、五檔委買比 1.36",
+        "label": "🎯 達建議買進價"
+      },
+      {
+        "type": "HIT_ENTRY",
+        "stock_id": "3034",
+        "text": "聯詠 現價 417.5 達建議買進價、五檔委買比 1.05",
+        "label": "🎯 達建議買進價"
+      }
+    ]
+  },
+  "last_meeting": {
+    "at": "2026-11-25 11:33:24",
+    "trigger": "🎯 達建議買進價 2002、🎯 達建議買進價 2357、🎯 達建議買進價 1216、🎯 達建議買進價 3034",
+    "executed": 1,
+    "rejected": 0,
+    "engine": "gemini",
+    "total_equity": 997645,
+    "errors": [],
+    "elapsed_sec": 17.5
+  },
   "last_settlement": {
     "date": "2026-11-24",
     "at": "2026-11-24 15:06:11",
@@ -42,10 +86,16 @@
     "detail": "7f3ced9"
   },
   "last_error": null,
-  "last_heartbeat": "2026-11-24 15:06:15",
-  "phase": "STANDBY",
-  "status": "STANDBY_AFTER_HOURS (背景守護待命中，將於下個交易日 09:00:00 自動啟動盤中盯盤至 13:30 收盤)",
+  "last_heartbeat": "2026-11-25 11:33:44",
+  "phase": "TRADING",
+  "status": "⚡ TRADING (盤中背景自動盯盤中，每 15 秒更新報價並檢查進出場，一路跑到 13:30 收盤)",
   "auto_trade_enabled": true,
   "provider": "gemini",
-  "next_open": "2026-11-25 09:00:00"
+  "next_open": "2026-11-26 09:00:00",
+  "prefetch_done": "streamlit_cloud|2026-11-25",
+  "last_tick_at": "2026-11-25 11:33:24",
+  "last_tick_elapsed_sec": 2.76,
+  "last_scan_errors": [],
+  "total_equity": 997752,
+  "holdings_count": 0
 }

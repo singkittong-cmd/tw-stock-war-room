@@ -110,5 +110,13 @@
     "cash": 997752,
     "market_value": 0,
     "return_pct": -0.22
+  },
+  {
+    "date": "2026-11-25",
+    "timestamp": "2026-11-25 11:33:43",
+    "total_equity": 997645,
+    "cash": 871645,
+    "market_value": 126000,
+    "return_pct": -0.24
   }
 ]

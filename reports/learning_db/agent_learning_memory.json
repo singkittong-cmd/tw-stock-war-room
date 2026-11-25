@@ -1,1302 +1,6 @@
 {
  "lessons": [
   {
-   "prediction_id": "kline|8358|zhu_auto|2026-11-09 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "8358",
-   "name": null,
-   "target_date": "2026-11-10",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-09 14:00收盤後K線技術人對 8358 看空（當時 333），看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "K線技術人(11-09看空)看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "chairman|2330|intraday_decision|2026-11-09 21:54:01",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後巴董事長對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-09觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2330|intraday_decision|2026-11-09 21:54:01",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後籌碼王對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-09觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2330|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-09觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2327|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2327",
-   "name": "國巨*",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 2327 看空（當時 411），看空後反漲 +0.85% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "K線技術人(11-09看空)看空後反漲 +0.85% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "chairman|3264|intraday_decision|2026-11-09 21:54:01",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "3264",
-   "name": "欣銓",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後巴董事長對 3264 觀望（當時 180.5），預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-09觀望)預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|3264|intraday_decision|2026-11-09 21:54:01",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3264",
-   "name": "欣銓",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後籌碼王對 3264 觀望（當時 180.5），預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-09觀望)預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3264|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3264",
-   "name": "欣銓",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 3264 觀望（當時 180.5），預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-09觀望)預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2408|intraday_decision|2026-11-09 21:54:01",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2408",
-   "name": "南亞科",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後巴董事長對 2408 觀望（當時 370），預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-09觀望)預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2408|intraday_decision|2026-11-09 21:54:01",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2408",
-   "name": "南亞科",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後籌碼王對 2408 觀望（當時 370），預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-09觀望)預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2408|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2408",
-   "name": "南亞科",
-   "target_date": "2026-11-10",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 2408 看空（當時 370），看空後反漲 +3.51% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "K線技術人(11-09看空)看空後反漲 +3.51% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "chairman|5483|intraday_decision|2026-11-09 21:54:01",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "5483",
-   "name": "中美晶",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後巴董事長對 5483 觀望（當時 152.5），預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-09觀望)預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|5483|intraday_decision|2026-11-09 21:54:01",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "5483",
-   "name": "中美晶",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後籌碼王對 5483 觀望（當時 152.5），預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-09觀望)預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|5483|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "5483",
-   "name": "中美晶",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 5483 觀望（當時 152.5），預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-09觀望)預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|6173|intraday_decision|2026-11-09 21:54:01",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "6173",
-   "name": "信昌電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後巴董事長對 6173 觀望（當時 200），預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-09觀望)預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|6173|intraday_decision|2026-11-09 21:54:01",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "6173",
-   "name": "信昌電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後籌碼王對 6173 觀望（當時 200），預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-09觀望)預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|6173|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "6173",
-   "name": "信昌電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 6173 觀望（當時 200），預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-09觀望)預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|6257|intraday_decision|2026-11-09 21:54:01",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "6257",
-   "name": "矽格",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後巴董事長對 6257 觀望（當時 167），預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-09觀望)預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|6257|intraday_decision|2026-11-09 21:54:01",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "6257",
-   "name": "矽格",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後籌碼王對 6257 觀望（當時 167），預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-09觀望)預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|6257|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "6257",
-   "name": "矽格",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 6257 觀望（當時 167），預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-09觀望)預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|8358|intraday_decision|2026-11-09 21:54:01",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "8358",
-   "name": "金居",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後巴董事長對 8358 觀望（當時 333），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-09觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|8358|intraday_decision|2026-11-09 21:54:01",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "8358",
-   "name": "金居",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後籌碼王對 8358 觀望（當時 333），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-09觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|8358|intraday_decision|2026-11-09 21:54:01",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "8358",
-   "name": "金居",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-09 21:54收盤後K線技術人對 8358 觀望（當時 333），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-09觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|TAIEX|premarket|2026-11-09 22:19:08",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "TAIEX",
-   "name": "加權指數",
-   "target_date": "2026-11-10",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-09 22:19收盤後巴董事長對 TAIEX 看空（當時 39701.6），看空後反漲 +7.58% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "巴董事長(11-09看空)看空後反漲 +7.58% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "news|TAIEX|news_brief|2026-11-10 08:25:00",
-   "member": "news",
-   "member_name": "新聞達人",
-   "stock_id": "TAIEX",
-   "name": "加權指數",
-   "target_date": "2026-11-10",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-10 08:25開盤前新聞達人對 TAIEX 看空（當時 39701.6），看空後反漲 +7.58% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "新聞達人(11-10看空)看空後反漲 +7.58% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "chairman|2330|sim_committee|2026-11-10 09:15:22",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 09:15盤中巴董事長對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2344|sim_committee|2026-11-10 09:15:22",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2344",
-   "name": "華邦電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 09:15盤中巴董事長對 2344 觀望（當時 132.5），預期盤整但實際波動 +1.51% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +1.51% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2344|sim_committee|2026-11-10 09:35:45",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2344",
-   "name": "華邦電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 09:35盤中巴董事長對 2344 觀望（當時 139），預期盤整但實際波動 -3.24% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -3.24% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2379|sim_committee|2026-11-10 09:55:30",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2379",
-   "name": "瑞昱",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 09:55盤中巴董事長對 2379 觀望（當時 767），預期盤整但實際波動 -2.87% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -2.87% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2344|sim_committee|2026-11-10 09:55:30",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2344",
-   "name": "華邦電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 09:55盤中巴董事長對 2344 觀望（當時 140.5），預期盤整但實際波動 -4.27% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -4.27% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|3037|sim_committee|2026-11-10 09:55:30",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "3037",
-   "name": "欣興",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "看多落空",
-   "principle": "【歷史落差檢討與修正原則】11-10 09:55盤中巴董事長對 3037 看多（當時 832），看多後收 830（-0.24%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
-   "short": "巴董事長(11-10看多)看多後收 830（-0.24%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
-  },
-  {
-   "prediction_id": "chairman|2344|sim_committee|2026-11-10 10:15:25",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2344",
-   "name": "華邦電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:15盤中巴董事長對 2344 觀望（當時 140），預期盤整但實際波動 -3.93% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -3.93% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2379|sim_committee|2026-11-10 10:15:25",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2379",
-   "name": "瑞昱",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:15盤中巴董事長對 2379 觀望（當時 774），預期盤整但實際波動 -3.75% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -3.75% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2330|intraday_decision|2026-11-10 10:34:57",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中巴董事長對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2330|intraday_decision|2026-11-10 10:34:57",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中籌碼王對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2330|intraday_decision|2026-11-10 10:34:57",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中K線技術人對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|3264|intraday_decision|2026-11-10 10:34:57",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "3264",
-   "name": "欣銓",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中巴董事長對 3264 觀望（當時 180.5），預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|3264|intraday_decision|2026-11-10 10:34:57",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3264",
-   "name": "欣銓",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中籌碼王對 3264 觀望（當時 180.5），預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3264|intraday_decision|2026-11-10 10:34:57",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3264",
-   "name": "欣銓",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中K線技術人對 3264 觀望（當時 180.5），預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +6.37% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2408|intraday_decision|2026-11-10 10:34:57",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2408",
-   "name": "南亞科",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中巴董事長對 2408 觀望（當時 370），預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2408|intraday_decision|2026-11-10 10:34:57",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2408",
-   "name": "南亞科",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中籌碼王對 2408 觀望（當時 370），預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2408|intraday_decision|2026-11-10 10:34:57",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2408",
-   "name": "南亞科",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中K線技術人對 2408 觀望（當時 370），預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|5483|intraday_decision|2026-11-10 10:34:57",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "5483",
-   "name": "中美晶",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中巴董事長對 5483 觀望（當時 152.5），預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|5483|intraday_decision|2026-11-10 10:34:57",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "5483",
-   "name": "中美晶",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中籌碼王對 5483 觀望（當時 152.5），預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|5483|intraday_decision|2026-11-10 10:34:57",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "5483",
-   "name": "中美晶",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中K線技術人對 5483 觀望（當時 152.5），預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +5.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|6173|intraday_decision|2026-11-10 10:34:57",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "6173",
-   "name": "信昌電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中巴董事長對 6173 觀望（當時 200），預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|6173|intraday_decision|2026-11-10 10:34:57",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "6173",
-   "name": "信昌電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中籌碼王對 6173 觀望（當時 200），預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|6173|intraday_decision|2026-11-10 10:34:57",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "6173",
-   "name": "信昌電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中K線技術人對 6173 觀望（當時 200），預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +3.25% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|6257|intraday_decision|2026-11-10 10:34:57",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "6257",
-   "name": "矽格",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中巴董事長對 6257 觀望（當時 167），預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|6257|intraday_decision|2026-11-10 10:34:57",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "6257",
-   "name": "矽格",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中籌碼王對 6257 觀望（當時 167），預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|6257|intraday_decision|2026-11-10 10:34:57",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "6257",
-   "name": "矽格",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中K線技術人對 6257 觀望（當時 167），預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +7.19% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|8358|intraday_decision|2026-11-10 10:34:57",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "8358",
-   "name": "金居",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中巴董事長對 8358 觀望（當時 333），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|8358|intraday_decision|2026-11-10 10:34:57",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "8358",
-   "name": "金居",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中籌碼王對 8358 觀望（當時 333），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|8358|intraday_decision|2026-11-10 10:34:57",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "8358",
-   "name": "金居",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:34盤中K線技術人對 8358 觀望（當時 333），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2379|sim_committee|2026-11-10 10:35:24",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2379",
-   "name": "瑞昱",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:35盤中巴董事長對 2379 觀望（當時 761），預期盤整但實際波動 -2.10% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -2.10% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2344|sim_committee|2026-11-10 10:35:24",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2344",
-   "name": "華邦電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:35盤中巴董事長對 2344 觀望（當時 139），預期盤整但實際波動 -3.24% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -3.24% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2379|sim_committee|2026-11-10 10:43:35",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2379",
-   "name": "瑞昱",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:43盤中巴董事長對 2379 觀望（當時 757），預期盤整但實際波動 -1.59% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -1.59% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2344|sim_committee|2026-11-10 10:43:35",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2344",
-   "name": "華邦電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:43盤中巴董事長對 2344 觀望（當時 139），預期盤整但實際波動 -3.24% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -3.24% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2344|sim_committee|2026-11-10 10:55:19",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2344",
-   "name": "華邦電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 10:55盤中巴董事長對 2344 觀望（當時 138），預期盤整但實際波動 -2.54% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 -2.54% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2330|sim_committee|2026-11-10 11:15:29",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 11:15盤中巴董事長對 2330 觀望（當時 2250），預期盤整但實際波動 +1.78% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +1.78% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|3037|sim_committee|2026-11-10 11:15:29",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "3037",
-   "name": "欣興",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "看多落空",
-   "principle": "【歷史落差檢討與修正原則】11-10 11:15盤中巴董事長對 3037 看多（當時 832），看多後收 830（-0.24%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
-   "short": "巴董事長(11-10看多)看多後收 830（-0.24%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
-  },
-  {
-   "prediction_id": "chairman|2330|sim_committee|2026-11-10 11:35:37",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 11:35盤中巴董事長對 2330 觀望（當時 2245），預期盤整但實際波動 +2.00% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +2.00% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|2330|sim_committee|2026-11-10 11:55:23",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 11:55盤中巴董事長對 2330 觀望（當時 2235），預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "巴董事長(11-10觀望)預期盤整但實際波動 +2.46% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chairman|3711|sim_committee|2026-11-10 12:15:23",
-   "member": "chairman",
-   "member_name": "巴董事長",
-   "stock_id": "3711",
-   "name": "日月光投控",
-   "target_date": "2026-11-10",
-   "result": "DEVIATED",
-   "pattern": "看多落空",
-   "principle": "【歷史落差檢討與修正原則】11-10 12:15盤中巴董事長對 3711 看多（當時 607），看多後收 606（-0.16%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
-   "short": "巴董事長(11-10看多)看多後收 606（-0.16%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
-  },
-  {
-   "prediction_id": "kline|1560|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "1560",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "觸及停損",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 1560 觀望（當時 797），觸及停損價 766 → 依紀律停損，不攤平。",
-   "short": "K線技術人(11-10觀望)觸及停損價 766 → 依紀律停損，不攤平"
-  },
-  {
-   "prediction_id": "kline|1560|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "1560",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 1560 觀望（當時 797），預期盤整但實際波動 -7.53% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 -7.53% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2327|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2327",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "觸及停損",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2327 觀望（當時 433.5），觸及停損價 429 → 依紀律停損，不攤平。",
-   "short": "K線技術人(11-10觀望)觸及停損價 429 → 依紀律停損，不攤平"
-  },
-  {
-   "prediction_id": "kline|2327|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2327",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2327 觀望（當時 433.5），預期盤整但實際波動 -2.54% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 -2.54% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2330|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2330",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2330 觀望（當時 2270），預期盤整但實際波動 +5.51% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +5.51% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2344|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2344",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "觸及停損",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2344 觀望（當時 140.5），觸及停損價 137 → 依紀律停損，不攤平。",
-   "short": "K線技術人(11-10觀望)觸及停損價 137 → 依紀律停損，不攤平"
-  },
-  {
-   "prediction_id": "kline|2344|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2344",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2344 觀望（當時 140.5），預期盤整但實際波動 -2.85% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 -2.85% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2368|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2368",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2368 觀望（當時 983），預期盤整但實際波動 +7.32% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +7.32% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2379|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2379",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "看多落空",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2379 看多（當時 767），看多後收 764（-0.39%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
-   "short": "K線技術人(11-10看多)看多後收 764（-0.39%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
-  },
-  {
-   "prediction_id": "kline|2449|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2449",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 2449 看空（當時 229），看空後反漲 +0.87% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "K線技術人(11-10看空)看空後反漲 +0.87% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "kline|3017|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3017",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 3017 看空（當時 2790），看空後反漲 +9.32% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "K線技術人(11-10看空)看空後反漲 +9.32% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "kline|3037|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3037",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 3037 觀望（當時 832），預期盤整但實際波動 +3.85% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +3.85% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3131|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3131",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 3131 觀望（當時 1730），預期盤整但實際波動 +1.73% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +1.73% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3324|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3324",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 3324 觀望（當時 1240），預期盤整但實際波動 +4.44% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +4.44% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3443|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3443",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 3443 觀望（當時 7345），預期盤整但實際波動 +7.35% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +7.35% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3661|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3661",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 3661 看空（當時 3420），看空後反漲 +5.99% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "K線技術人(11-10看空)看空後反漲 +5.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "kline|5483|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "5483",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "觸及停損",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 5483 觀望（當時 165），觸及停損價 159.5 → 依紀律停損，不攤平。",
-   "short": "K線技術人(11-10觀望)觸及停損價 159.5 → 依紀律停損，不攤平"
-  },
-  {
-   "prediction_id": "kline|5483|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "5483",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 5483 觀望（當時 165），預期盤整但實際波動 -2.42% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 -2.42% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|6187|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "6187",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "觸及停損",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 6187 觀望（當時 1045），觸及停損價 1010 → 依紀律停損，不攤平。",
-   "short": "K線技術人(11-10觀望)觸及停損價 1010 → 依紀律停損，不攤平"
-  },
-  {
-   "prediction_id": "kline|6187|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "6187",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 6187 觀望（當時 1045），預期盤整但實際波動 -2.87% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 -2.87% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|6488|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "6488",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 6488 觀望（當時 613），預期盤整但實際波動 +3.59% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +3.59% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|8358|zhu_auto|2026-11-10 14:00:00",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "8358",
-   "name": null,
-   "target_date": "2026-11-11",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:00收盤後K線技術人對 8358 看空（當時 366），看空後反漲 +6.15% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "K線技術人(11-10看空)看空後反漲 +6.15% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "kline|2330|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 2330 觀望（當時 2285），預期盤整但實際波動 +4.81% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +4.81% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2330|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2330",
-   "name": "台積電",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 2330 觀望（當時 2285），預期盤整但實際波動 +4.81% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +4.81% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2303|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2303",
-   "name": "聯電",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 2303 觀望（當時 100.5），預期盤整但實際波動 +2.99% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +2.99% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2303|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2303",
-   "name": "聯電",
-   "target_date": "2026-11-11",
-   "result": "WRONG",
-   "pattern": "看空反漲",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 2303 看空（當時 100.5），看空後反漲 +2.99% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
-   "short": "籌碼王(11-10看空)看空後反漲 +2.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
-  },
-  {
-   "prediction_id": "kline|3711|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3711",
-   "name": "日月光投控",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 3711 觀望（當時 605），預期盤整但實際波動 +1.98% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +1.98% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|3711|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3711",
-   "name": "日月光投控",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 3711 觀望（當時 605），預期盤整但實際波動 +1.98% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +1.98% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2449|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2449",
-   "name": "京元電子",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 2449 觀望（當時 227.5），預期盤整但實際波動 +1.54% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +1.54% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2449|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2449",
-   "name": "京元電子",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 2449 觀望（當時 227.5），預期盤整但實際波動 +1.54% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +1.54% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3017|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3017",
-   "name": "奇鋐",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 3017 觀望（當時 2790），預期盤整但實際波動 +9.32% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +9.32% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|3017|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3017",
-   "name": "奇鋐",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 3017 觀望（當時 2790），預期盤整但實際波動 +9.32% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +9.32% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3324|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3324",
-   "name": "雙鴻",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 3324 觀望（當時 1235），預期盤整但實際波動 +4.86% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +4.86% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3037|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3037",
-   "name": "欣興",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 3037 觀望（當時 828），預期盤整但實際波動 +4.35% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +4.35% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|3037|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3037",
-   "name": "欣興",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 3037 觀望（當時 828），預期盤整但實際波動 +4.35% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +4.35% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2368|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2368",
-   "name": "金像電",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 2368 觀望（當時 983），預期盤整但實際波動 +7.32% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +7.32% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2368|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2368",
-   "name": "金像電",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 2368 觀望（當時 983），預期盤整但實際波動 +7.32% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +7.32% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2454|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2454",
-   "name": "聯發科",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 2454 觀望（當時 3830），預期盤整但實際波動 +4.18% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +4.18% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|2454|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "2454",
-   "name": "聯發科",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 2454 觀望（當時 3830），預期盤整但實際波動 +4.18% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +4.18% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|2379|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "2379",
-   "name": "瑞昱",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 2379 觀望（當時 745），預期盤整但實際波動 +2.55% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +2.55% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3661|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3661",
-   "name": "世芯-KY",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 3661 觀望（當時 3420），預期盤整但實際波動 +5.99% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +5.99% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|3661|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3661",
-   "name": "世芯-KY",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 3661 觀望（當時 3420），預期盤整但實際波動 +5.99% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +5.99% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "kline|3443|standby|2026-11-10 14:11:49",
-   "member": "kline",
-   "member_name": "K線技術人",
-   "stock_id": "3443",
-   "name": "創意",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後K線技術人對 3443 觀望（當時 7170），預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "K線技術人(11-10觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
-   "prediction_id": "chips|3443|standby|2026-11-10 14:11:49",
-   "member": "chips",
-   "member_name": "籌碼王",
-   "stock_id": "3443",
-   "name": "創意",
-   "target_date": "2026-11-11",
-   "result": "DEVIATED",
-   "pattern": "盤整失效",
-   "principle": "【歷史落差檢討與修正原則】11-10 14:11收盤後籌碼王對 3443 觀望（當時 7170），預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷。",
-   "short": "籌碼王(11-10觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
-  },
-  {
    "prediction_id": "kline|3131|standby|2026-11-10 14:11:49",
    "member": "kline",
    "member_name": "K線技術人",
@@ -5437,6 +4141,18 @@
    "short": "K線技術人(11-20觀望)預期盤整但實際波動 +7.26% → 區間假設失效，改依趨勢方向判斷"
   },
   {
+   "prediction_id": "kline|3529|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3529",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 3529 看空（當時 1800），看空後反漲 +5.28% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +5.28% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
    "prediction_id": "kline|2886|zhu_auto|2026-11-20 14:00:00",
    "member": "kline",
    "member_name": "K線技術人",
@@ -5569,6 +4285,18 @@
    "short": "K線技術人(11-20觀望)預期盤整但實際波動 -5.19% → 區間假設失效，改依趨勢方向判斷"
   },
   {
+   "prediction_id": "kline|6669|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6669",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 6669 看空（當時 1325），看空後反漲 +3.77% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +3.77% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
    "prediction_id": "kline|6488|zhu_auto|2026-11-20 14:00:00",
    "member": "kline",
    "member_name": "K線技術人",
@@ -5581,6 +4309,90 @@
    "short": "K線技術人(11-20看空)看空後反漲 +4.30% → 空方訊號需收盤確認，低檔乖離過大時不追空"
   },
   {
+   "prediction_id": "kline|8046|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "8046",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 8046 看空（當時 629），看空後反漲 +6.52% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +6.52% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2368|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2368",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 2368 看空（當時 711），看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|1560|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1560",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 1560 看空（當時 523），看空後反漲 +5.74% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +5.74% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2395|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2395",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 2395 看空（當時 520），看空後反漲 +3.08% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +3.08% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2345|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2345",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 2345 看空（當時 1230），看空後反漲 +9.76% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +9.76% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|1503|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1503",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 1503 看空（當時 144），看空後反漲 +2.08% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +2.08% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2327|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2327",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 2327 看空（當時 296），看空後反漲 +4.73% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +4.73% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
    "prediction_id": "kline|6223|zhu_auto|2026-11-20 14:00:00",
    "member": "kline",
    "member_name": "K線技術人",
@@ -5591,6 +4403,150 @@
    "pattern": "看空反漲",
    "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 6223 看空（當時 3560），看空後反漲 +6.88% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
    "short": "K線技術人(11-20看空)看空後反漲 +6.88% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3583|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3583",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 3583 看空（當時 355.5），看空後反漲 +4.36% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +4.36% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3037|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3037",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 3037 看空（當時 537），看空後反漲 +3.91% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +3.91% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|6442|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6442",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 6442 看空（當時 864），看空後反漲 +3.01% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +3.01% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|6187|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6187",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 6187 看空（當時 625），看空後反漲 +7.68% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +7.68% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3131|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3131",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 3131 看空（當時 1315），看空後反漲 +1.52% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +1.52% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2408|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2408",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 2408 看空（當時 264.5），看空後反漲 +6.24% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +6.24% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|5274|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "5274",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 5274 看空（當時 7860），看空後反漲 +5.73% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +5.73% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2344|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2344",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 2344 看空（當時 89.2），看空後反漲 +7.06% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +7.06% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3450|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3450",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "DEVIATED",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 3450 看空（當時 257），看空後反漲 +0.58% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +0.58% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2308|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2308",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 2308 看空（當時 900），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3711|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3711",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 3711 看空（當時 457），看空後反漲 +5.47% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +5.47% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|1519|zhu_auto|2026-11-20 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1519",
+   "name": null,
+   "target_date": "2026-11-23",
+   "result": "DEVIATED",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-20 14:00收盤後K線技術人對 1519 看空（當時 421.5），看空後反漲 +0.83% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-20看空)看空後反漲 +0.83% → 空方訊號需收盤確認，低檔乖離過大時不追空"
   },
   {
    "prediction_id": "news|TAIEX|news_brief|2026-11-20 16:07:28",
@@ -5999,6 +4955,1050 @@
    "pattern": "看空反漲",
    "principle": "【歷史落差檢討與修正原則】11-23 12:00盤中巴董事長對 TAIEX 看空（當時 36033.3），看空後反漲 +2.16% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
    "short": "巴董事長(11-23看空)看空後反漲 +2.16% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|1216|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1216",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 1216 看空（當時 76.7），看空後反漲 +0.91% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +0.91% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|8299|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "8299",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 8299 看空（當時 1450），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2615|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2615",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2615 看空（當時 96.6），看空後反漲 +0.52% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +0.52% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3231|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3231",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3231 看空（當時 153），看空後反漲 +6.54% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +6.54% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3443|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3443",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3443 觀望（當時 5195），預期盤整但實際波動 +8.37% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +8.37% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2881|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2881",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2881 看空（當時 132），看空後反漲 +8.71% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +8.71% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3017|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3017",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3017 觀望（當時 2380），預期盤整但實際波動 +9.24% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.24% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2886|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2886",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2886 觀望（當時 50.7），預期盤整但實際波動 +8.48% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +8.48% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2303|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2303",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2303 看空（當時 88），看空後反漲 +10.34% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.34% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3661|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3661",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3661 觀望（當時 3560），預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2330|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2330",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2330 觀望（當時 2040），預期盤整但實際波動 +9.31% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.31% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2882|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2882",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2882 看空（當時 95.5），看空後反漲 +9.42% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.42% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2382|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2382",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2382 觀望（當時 258），預期盤整但實際波動 +9.50% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.50% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2609|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2609",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2609 看空（當時 54.6），看空後反漲 +3.11% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +3.11% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2891|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2891",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2891 觀望（當時 64.9），預期盤整但實際波動 +7.70% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +7.70% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2603|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2603",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2603 看空（當時 236），看空後反漲 +8.90% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +8.90% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2379|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2379",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2379 看空（當時 678），看空後反漲 +2.36% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +2.36% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2884|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2884",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2884 看空（當時 38.75），看空後反漲 +6.32% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +6.32% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2357|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2357",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2357 觀望（當時 781），預期盤整但實際波動 +5.12% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +5.12% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|6669|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6669",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 6669 看空（當時 1375），看空後反漲 +9.82% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.82% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|6488|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6488",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 6488 看空（當時 460.5），看空後反漲 +9.88% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.88% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|8046|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "8046",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 8046 看空（當時 670），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3008|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3008",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3008 看空（當時 3620），看空後反漲 +9.94% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.94% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2368|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2368",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2368 看空（當時 782），看空後反漲 +9.97% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.97% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|1560|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1560",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 1560 看空（當時 553），看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2395|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2395",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2395 看空（當時 536），看空後反漲 +9.89% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.89% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2345|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2345",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2345 看空（當時 1350），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|1503|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1503",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 1503 看空（當時 147），看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2327|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2327",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2327 看空（當時 310），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|4979|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "4979",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 4979 看空（當時 255），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2449|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2449",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2449 看空（當時 157），看空後反漲 +9.87% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.87% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|6223|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6223",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 6223 看空（當時 3805），看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3583|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3583",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3583 看空（當時 371），看空後反漲 +9.97% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.97% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3037|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3037",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3037 看空（當時 558），看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|6442|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6442",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 6442 看空（當時 890），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|6187|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6187",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 6187 看空（當時 673），看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3131|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3131",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3131 看空（當時 1335），看空後反漲 +9.74% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.74% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2408|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2408",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2408 看空（當時 281），看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2002|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2002",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2002 看空（當時 16.85），看空後反漲 +4.15% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +4.15% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2454|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2454",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2454 看空（當時 3685），看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3324|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3324",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3324 看空（當時 777），看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|5274|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "5274",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 5274 看空（當時 8310），看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2344|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2344",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2344 看空（當時 95.5），看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3450|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3450",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3450 看空（當時 258.5），看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2308|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2308",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2308 看空（當時 990），看空後反漲 +9.60% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.60% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3711|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3711",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3711 看空（當時 482），看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2317|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2317",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 2317 看空（當時 206），看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|1519|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1519",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 1519 看空（當時 425），看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|3529|zhu_auto|2026-11-23 14:00:00",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3529",
+   "name": null,
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 14:00收盤後K線技術人對 3529 看空（當時 1895），看空後反漲 +6.86% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "K線技術人(11-23看空)看空後反漲 +6.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "maga|TAIEX|premarket|2026-11-23 16:36:44",
+   "member": "maga",
+   "member_name": "川大帝MAGA",
+   "stock_id": "TAIEX",
+   "name": "加權指數",
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後川大帝MAGA對 TAIEX 看空（當時 36811.9），看空後反漲 +8.99% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "川大帝MAGA(11-23看空)看空後反漲 +8.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "chairman|TAIEX|premarket|2026-11-23 16:36:44",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "stock_id": "TAIEX",
+   "name": "加權指數",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後巴董事長對 TAIEX 觀望（當時 36811.9），預期盤整但實際波動 +8.99% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "巴董事長(11-23觀望)預期盤整但實際波動 +8.99% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2886|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2886",
+   "name": "兆豐金",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2886 觀望（當時 50），預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2886|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2886",
+   "name": "兆豐金",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2886 觀望（當時 50），預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|3661|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3661",
+   "name": "世芯-KY",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 3661 觀望（當時 3560），預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|3661|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "3661",
+   "name": "世芯-KY",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 3661 觀望（當時 3560），預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2357|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2357",
+   "name": "華碩",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2357 觀望（當時 758），預期盤整但實際波動 +8.31% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +8.31% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2357|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2357",
+   "name": "華碩",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2357 觀望（當時 758），預期盤整但實際波動 +8.31% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +8.31% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2382|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2382",
+   "name": "廣達",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2382 觀望（當時 257），預期盤整但實際波動 +9.92% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.92% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2330|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2330",
+   "name": "台積電",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2330 觀望（當時 2030），預期盤整但實際波動 +9.85% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.85% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2330|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2330",
+   "name": "台積電",
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2330 看空（當時 2030），看空後反漲 +9.85% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "籌碼王(11-23看空)看空後反漲 +9.85% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2603|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2603",
+   "name": "長榮",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2603 觀望（當時 234.5），預期盤整但實際波動 +9.59% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.59% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2603|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2603",
+   "name": "長榮",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2603 觀望（當時 234.5），預期盤整但實際波動 +9.59% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.59% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2891|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2891",
+   "name": "中信金",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2891 觀望（當時 63.8），預期盤整但實際波動 +9.56% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.56% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2891|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2891",
+   "name": "中信金",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2891 觀望（當時 63.8），預期盤整但實際波動 +9.56% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.56% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|3017|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3017",
+   "name": "奇鋐",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 3017 觀望（當時 2365），預期盤整但實際波動 +9.94% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.94% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|3017|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "3017",
+   "name": "奇鋐",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 3017 觀望（當時 2365），預期盤整但實際波動 +9.94% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.94% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|3443|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "3443",
+   "name": "創意",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 3443 觀望（當時 5120），預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|3443|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "3443",
+   "name": "創意",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 3443 觀望（當時 5120），預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|1216|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "1216",
+   "name": "統一",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 1216 觀望（當時 75.5），預期盤整但實際波動 +2.52% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +2.52% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|1216|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "1216",
+   "name": "統一",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 1216 觀望（當時 75.5），預期盤整但實際波動 +2.52% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +2.52% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2379|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2379",
+   "name": "瑞昱",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2379 觀望（當時 666），預期盤整但實際波動 +4.20% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +4.20% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2379|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2379",
+   "name": "瑞昱",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2379 觀望（當時 666），預期盤整但實際波動 +4.20% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +4.20% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2454|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2454",
+   "name": "聯發科",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2454 觀望（當時 3685），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2454|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2454",
+   "name": "聯發科",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2454 觀望（當時 3685），預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2881|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2881",
+   "name": "富邦金",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2881 觀望（當時 130.5），預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2881|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2881",
+   "name": "富邦金",
+   "target_date": "2026-11-24",
+   "result": "WRONG",
+   "pattern": "看空反漲",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2881 看空（當時 130.5），看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+   "short": "籌碼王(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+  },
+  {
+   "prediction_id": "kline|2884|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2884",
+   "name": "玉山金",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2884 觀望（當時 38.7），預期盤整但實際波動 +6.46% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +6.46% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2884|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2884",
+   "name": "玉山金",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2884 觀望（當時 38.7），預期盤整但實際波動 +6.46% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +6.46% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|6488|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6488",
+   "name": "環球晶",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 6488 觀望（當時 460.5），預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|6488|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "6488",
+   "name": "環球晶",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 6488 觀望（當時 460.5），預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|8299|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "8299",
+   "name": "群聯",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 8299 觀望（當時 1450），預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2609|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2609",
+   "name": "陽明",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2609 觀望（當時 54.5），預期盤整但實際波動 +3.30% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +3.30% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2609|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2609",
+   "name": "陽明",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2609 觀望（當時 54.5），預期盤整但實際波動 +3.30% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +3.30% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|6223|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "6223",
+   "name": "旺矽",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 6223 觀望（當時 3805），預期盤整但實際波動 +9.99% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.99% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|6223|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "6223",
+   "name": "旺矽",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 6223 觀望（當時 3805），預期盤整但實際波動 +9.99% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.99% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "kline|2303|standby|2026-11-23 16:36:54",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "stock_id": "2303",
+   "name": "聯電",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後K線技術人對 2303 觀望（當時 88.3），預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "K線技術人(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
+  },
+  {
+   "prediction_id": "chips|2303|standby|2026-11-23 16:36:54",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "stock_id": "2303",
+   "name": "聯電",
+   "target_date": "2026-11-24",
+   "result": "DEVIATED",
+   "pattern": "盤整失效",
+   "principle": "【歷史落差檢討與修正原則】11-23 16:36收盤後籌碼王對 2303 觀望（當時 88.3），預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷。",
+   "short": "籌碼王(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
   }
  ],
  "by_stock": {
@@ -6010,14 +6010,14 @@
     "新聞達人(10-29觀望)預期盤整但實際波動 -4.49% → 區間假設失效，改依趨勢方向判斷"
    ],
    "kline": [
-    "K線技術人(11-18觀望)預期盤整但實際波動 -5.58% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -5.50% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20看空)看空後反漲 +7.12% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-20看空)看空後反漲 +7.12% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
     "籌碼王(11-18看多)看多後收 3720（-5.58%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
-    "籌碼王(11-18看多)看多後收 3720（-5.58%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
-    "籌碼王(11-20觀望)預期盤整但實際波動 -5.50% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -5.50% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.91% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "2327": {
@@ -6035,9 +6035,9 @@
     "籌碼王(11-10看空)看空後反漲 +1.44% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "kline": [
-    "K線技術人(11-09看空)看空後反漲 +0.85% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-10觀望)觸及停損價 429 → 依紀律停損，不攤平",
-    "K線技術人(11-10看空)看空後反漲 +1.44% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-10看空)看空後反漲 +1.44% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-20看空)看空後反漲 +4.73% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ]
   },
   "3264": {
@@ -6155,9 +6155,9 @@
     "籌碼王(11-10看空)看空後反漲 +2.87% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "kline": [
-    "K線技術人(11-09看空)看空後反漲 +3.51% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-10觀望)預期盤整但實際波動 +3.51% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-10看空)看空後反漲 +2.87% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-10看空)看空後反漲 +2.87% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-20看空)看空後反漲 +6.24% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ]
   },
   "2330": {
@@ -6170,21 +6170,21 @@
     "新聞達人(10-30看多)看多後收 2370（-1.86%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
    ],
    "kline": [
-    "K線技術人(11-18觀望)預期盤整但實際波動 -3.45% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-19觀望)觸及停損價 2020 → 依紀律停損，不攤平",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -2.44% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -2.44% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.31% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.85% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
     "籌碼王(11-18觀望)預期盤整但實際波動 -3.45% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-18觀望)預期盤整但實際波動 -3.45% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-20觀望)預期盤整但實際波動 -2.44% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -2.44% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23看空)看空後反漲 +9.85% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ]
   },
   "2317": {
    "kline": [
-    "K線技術人(11-09看空)看空後反漲 +1.90% → 空方訊號需收盤確認，低檔乖離過大時不追空",
     "K線技術人(11-17看空)看空後反漲 +0.46% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-18看空)看空後反漲 +0.23% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-18看空)看空後反漲 +0.23% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-04看多)看多後收 235（-2.08%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
@@ -6199,9 +6199,9 @@
   },
   "2449": {
    "kline": [
-    "K線技術人(11-10觀望)預期盤整但實際波動 +1.54% → 區間假設失效，改依趨勢方向判斷",
     "K線技術人(11-16觀望)建議買進價 190.5 失守（最低 173.5）→ 下次建議買進價下移至 173.5 附近，買進量減半",
-    "K線技術人(11-17看空)看空後反漲 +9.60% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-17看空)看空後反漲 +9.60% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.87% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-04觀望)預期盤整但實際波動 -1.97% → 區間假設失效，改依趨勢方向判斷",
@@ -6211,9 +6211,9 @@
   },
   "3324": {
    "kline": [
-    "K線技術人(11-10觀望)預期盤整但實際波動 +4.86% → 區間假設失效，改依趨勢方向判斷",
     "K線技術人(11-16觀望)建議買進價 1015 失守（最低 927）→ 下次建議買進價下移至 927 附近，買進量減半",
-    "K線技術人(11-17看空)看空後反漲 +6.80% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-17看空)看空後反漲 +6.80% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.91% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-04看多)隔日外資反手賣超 -465 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方",
@@ -6223,9 +6223,9 @@
   },
   "2368": {
    "kline": [
-    "K線技術人(11-16觀望)預期盤整但實際波動 -9.92% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-17看空)看空後反漲 +5.03% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-18觀望)預期盤整但實際波動 -9.92% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-18觀望)預期盤整但實際波動 -9.92% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-20看空)看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.97% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-10觀望)預期盤整但實際波動 +7.32% → 區間假設失效，改依趨勢方向判斷",
@@ -6235,14 +6235,14 @@
   },
   "2379": {
    "kline": [
-    "K線技術人(11-10觀望)預期盤整但實際波動 +2.55% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-17看空)看空後反漲 +1.24% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -3.33% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -3.33% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +2.36% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +4.20% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
     "籌碼王(11-18看多)看多後收 726（-1.09%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
-    "籌碼王(11-18看多)看多後收 726（-1.09%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
-    "籌碼王(11-20觀望)預期盤整但實際波動 -3.33% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -3.33% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +4.20% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chairman": [
     "巴董事長(11-13觀望)預期盤整但實際波動 -1.96% → 區間假設失效，改依趨勢方向判斷",
@@ -6253,44 +6253,44 @@
   "3661": {
    "chips": [
     "籌碼王(11-18看多)看多後收 3600（-8.86%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
-    "籌碼王(11-18看多)看多後收 3600（-8.86%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
-    "籌碼王(11-20看多)隔日外資反手賣超 -47 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方"
+    "籌碼王(11-20看多)隔日外資反手賣超 -47 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
    ],
    "kline": [
-    "K線技術人(11-20觀望)預期盤整但實際波動 -4.42% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20觀望)觸及停損價 3440 → 依紀律停損，不攤平",
-    "K線技術人(11-20觀望)預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "3443": {
    "kline": [
-    "K線技術人(11-19觀望)建議買進價 5765 失守（最低 5400）→ 下次建議買進價下移至 5400 附近，買進量減半",
-    "K線技術人(11-20觀望)建議買進價 5400 失守（最低 4860）→ 下次建議買進價下移至 4860 附近，買進量減半",
-    "K線技術人(11-20觀望)建議買進價 5345 失守（最低 4860）→ 下次建議買進價下移至 4860 附近，買進量減半"
+    "K線技術人(11-20觀望)建議買進價 5345 失守（最低 4860）→ 下次建議買進價下移至 4860 附近，買進量減半",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +8.37% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
-    "籌碼王(11-18觀望)預期盤整但實際波動 -9.98% → 區間假設失效，改依趨勢方向判斷",
     "籌碼王(11-20看多)隔日外資反手賣超 -5 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方",
-    "籌碼王(11-20看多)11-23 開盤跳空 -8.43% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+    "籌碼王(11-20看多)11-23 開盤跳空 -8.43% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "6488": {
    "chips": [
-    "籌碼王(10-30看空)看空後反漲 +0.53% → 空方訊號需收盤確認，低檔乖離過大時不追空",
     "籌碼王(11-10看空)看空後反漲 +3.76% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "籌碼王(11-16觀望)預期盤整但實際波動 -5.37% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-16觀望)預期盤整但實際波動 -5.37% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷"
    ],
    "kline": [
-    "K線技術人(11-16觀望)預期盤整但實際波動 -5.37% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-17看空)看空後反漲 +0.91% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-20看空)看空後反漲 +4.30% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-20看空)看空後反漲 +4.30% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.88% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.88% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "2344": {
    "kline": [
-    "K線技術人(11-10觀望)觸及停損價 137 → 依紀律停損，不攤平",
-    "K線技術人(11-16觀望)觸及停損價 106.5 → 依紀律停損，不攤平",
-    "K線技術人(11-17看空)實際 +0.00% 與預期不符 → 降低此類訊號權重"
+    "K線技術人(11-17看空)實際 +0.00% 與預期不符 → 降低此類訊號權重",
+    "K線技術人(11-20看空)看空後反漲 +7.06% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(10-30看多)隔日外資反手賣超 -4,187 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方",
@@ -6305,9 +6305,9 @@
   },
   "8299": {
    "kline": [
-    "K線技術人(11-10觀望)預期盤整但實際波動 +3.88% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-17看空)看空後反漲 +1.30% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-20觀望)預期盤整但實際波動 +9.85% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 +9.85% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
     "籌碼王(10-30看多)隔日外資反手賣超 -213 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方",
@@ -6325,9 +6325,9 @@
     "籌碼王(11-20看多)看多後收 252（-0.79%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
    ],
    "kline": [
-    "K線技術人(11-16觀望)建議買進價 268.5 失守（最低 255）→ 下次建議買進價下移至 255 附近，買進量減半",
-    "K線技術人(11-19觀望)觸及停損價 257.5 → 依紀律停損，不攤平",
-    "K線技術人(11-20觀望)預期盤整但實際波動 +1.98% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 +1.98% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.50% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.92% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chairman": [
     "巴董事長(11-13看多)盤中認為有撐，尾盤卻收最低 276.5 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認",
@@ -6337,9 +6337,9 @@
   },
   "1560": {
    "kline": [
-    "K線技術人(11-10觀望)預期盤整但實際波動 -2.38% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-16觀望)建議買進價 632 失守（最低 606）→ 下次建議買進價下移至 606 附近，買進量減半",
-    "K線技術人(11-17看空)看空後反漲 +5.20% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-17看空)看空後反漲 +5.20% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-20看空)看空後反漲 +5.74% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.95% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-04觀望)預期盤整但實際波動 -9.90% → 區間假設失效，改依趨勢方向判斷",
@@ -6349,21 +6349,21 @@
   },
   "2303": {
    "kline": [
-    "K線技術人(11-16觀望)預期盤整但實際波動 -2.94% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-17看空)看空後反漲 +1.19% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "K線技術人(11-20觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +10.34% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
-    "籌碼王(11-04看空)看空後反漲 +2.43% → 空方訊號需收盤確認，低檔乖離過大時不追空",
     "籌碼王(11-10看空)看空後反漲 +2.99% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "籌碼王(11-20觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.97% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "3037": {
    "kline": [
-    "K線技術人(11-10觀望)預期盤整但實際波動 +4.35% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-16觀望)建議買進價 699 失守（最低 637）→ 下次建議買進價下移至 637 附近，買進量減半",
-    "K線技術人(11-17看空)看空後反漲 +5.18% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-17看空)看空後反漲 +5.18% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-20看空)看空後反漲 +3.91% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-04觀望)預期盤整但實際波動 -9.91% → 區間假設失效，改依趨勢方向判斷",
@@ -6376,9 +6376,9 @@
   },
   "3131": {
    "kline": [
-    "K線技術人(11-16觀望)預期盤整但實際波動 -7.52% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-16觀望)預期盤整但實際波動 -5.75% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-17看空)看空後反漲 +9.46% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-17看空)看空後反漲 +9.46% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-20看空)看空後反漲 +1.52% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.74% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-04看多)看多後收 1700（-2.86%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
@@ -6391,21 +6391,21 @@
   },
   "6187": {
    "kline": [
-    "K線技術人(11-10觀望)觸及停損價 1010 → 依紀律停損，不攤平",
-    "K線技術人(11-16觀望)建議買進價 849 失守（最低 773）→ 下次建議買進價下移至 773 附近，買進量減半",
-    "K線技術人(11-17看空)看空後反漲 +1.29% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-17看空)看空後反漲 +1.29% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-20看空)看空後反漲 +7.68% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ]
   },
   "TAIEX": {
    "maga": [
-    "川大帝MAGA(11-19觀望)預期盤整但實際波動 -10.35% → 區間假設失效，改依趨勢方向判斷",
     "川大帝MAGA(11-20看空)看空後反漲 +2.16% → 空方訊號需收盤確認，低檔乖離過大時不追空",
-    "川大帝MAGA(11-23看空)看空後反漲 +2.16% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "川大帝MAGA(11-23看空)看空後反漲 +2.16% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "川大帝MAGA(11-23看空)看空後反漲 +8.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chairman": [
-    "巴董事長(11-20觀望)預期盤整但實際波動 -6.23% → 區間假設失效，改依趨勢方向判斷",
     "巴董事長(11-20觀望)預期盤整但實際波動 +2.16% → 區間假設失效，改依趨勢方向判斷",
-    "巴董事長(11-23看空)看空後反漲 +2.16% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "巴董事長(11-23看空)看空後反漲 +2.16% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "巴董事長(11-23觀望)預期盤整但實際波動 +8.99% → 區間假設失效，改依趨勢方向判斷"
    ],
    "news": [
     "新聞達人(11-17看空)看空後反漲 +0.26% → 空方訊號需收盤確認，低檔乖離過大時不追空",
@@ -6423,21 +6423,21 @@
     "新聞達人(11-03看多)看多後收 2935（-5.17%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
    ],
    "chips": [
-    "籌碼王(11-10觀望)預期盤整但實際波動 +9.32% → 區間假設失效，改依趨勢方向判斷",
     "籌碼王(11-16看多)11-17 開盤跳空 -8.39% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進",
-    "籌碼王(11-20看多)隔日外資反手賣超 -64 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方"
+    "籌碼王(11-20看多)隔日外資反手賣超 -64 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.94% → 區間假設失效，改依趨勢方向判斷"
    ],
    "kline": [
-    "K線技術人(11-19觀望)建議買進價 2310 失守（最低 2205）→ 下次建議買進價下移至 2205 附近，買進量減半",
-    "K線技術人(11-20觀望)觸及停損價 2205 → 依紀律停損，不攤平",
-    "K線技術人(11-20觀望)觸及停損價 2090 → 依紀律停損，不攤平"
+    "K線技術人(11-20觀望)觸及停損價 2090 → 依紀律停損，不攤平",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.24% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.94% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "3711": {
    "kline": [
-    "K線技術人(11-16觀望)觸及停損價 515 → 依紀律停損，不攤平",
-    "K線技術人(11-16觀望)預期盤整但實際波動 -5.45% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-17看空)看空後反漲 +6.33% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-17看空)看空後反漲 +6.33% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-20看空)看空後反漲 +5.47% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-04觀望)預期盤整但實際波動 -8.77% → 區間假設失效，改依趨勢方向判斷",
@@ -6458,21 +6458,21 @@
   },
   "2886": {
    "kline": [
-    "K線技術人(11-19觀望)建議買進價 54.1 失守（最低 51）→ 下次建議買進價下移至 51 附近，買進量減半",
-    "K線技術人(11-20觀望)觸及停損價 51 → 依紀律停損，不攤平",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -3.47% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -3.47% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +8.48% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
     "籌碼王(11-18觀望)預期盤整但實際波動 +1.52% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-18觀望)預期盤整但實際波動 +1.52% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-20觀望)預期盤整但實際波動 -3.47% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -3.47% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +10.00% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "2882": {
    "kline": [
-    "K線技術人(11-18觀望)建議買進價 109 失守（最低 102.5）→ 下次建議買進價下移至 102.5 附近，買進量減半",
     "K線技術人(11-20觀望)建議買進價 99.4 失守（最低 95.5）→ 下次建議買進價下移至 95.5 附近，買進量減半",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -1.96% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -1.96% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +9.42% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-18觀望)預期盤整但實際波動 -5.91% → 區間假設失效，改依趨勢方向判斷",
@@ -6482,12 +6482,13 @@
   },
   "2357": {
    "kline": [
-    "K線技術人(11-19觀望)建議買進價 790 失守（最低 746）→ 下次建議買進價下移至 746 附近，買進量減半",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -2.20% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -1.81% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -1.81% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +5.12% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +8.31% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
-    "籌碼王(11-20觀望)預期盤整但實際波動 -2.20% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -2.20% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +8.31% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "3034": {
@@ -6506,20 +6507,21 @@
   },
   "2609": {
    "kline": [
-    "K線技術人(11-18看多)建議買進價 59.6 失守（最低 56.8）→ 下次建議買進價下移至 56.8 附近，買進量減半",
-    "K線技術人(11-20觀望)建議買進價 54.2 失守（最低 52.7）→ 下次建議買進價下移至 52.7 附近，買進量減半",
-    "K線技術人(11-20觀望)預期盤整但實際波動 +2.83% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 +2.83% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +3.11% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +3.30% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
-    "籌碼王(11-18觀望)預期盤整但實際波動 -5.29% → 區間假設失效，改依趨勢方向判斷",
     "籌碼王(11-20觀望)預期盤整但實際波動 -4.50% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-20觀望)預期盤整但實際波動 +2.83% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 +2.83% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +3.30% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "2395": {
    "kline": [
     "K線技術人(11-18觀望)預期盤整但實際波動 -5.94% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-18觀望)預期盤整但實際波動 -5.94% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20看空)看空後反漲 +3.08% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.89% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-18觀望)預期盤整但實際波動 -5.94% → 區間假設失效，改依趨勢方向判斷",
@@ -6529,8 +6531,8 @@
   "2615": {
    "kline": [
     "K線技術人(11-18觀望)預期盤整但實際波動 -6.76% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-18觀望)預期盤整但實際波動 -6.76% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20觀望)建議買進價 97.5 失守（最低 93.6）→ 下次建議買進價下移至 93.6 附近，買進量減半"
+    "K線技術人(11-20觀望)建議買進價 97.5 失守（最低 93.6）→ 下次建議買進價下移至 93.6 附近，買進量減半",
+    "K線技術人(11-23看空)看空後反漲 +0.52% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-20觀望)預期盤整但實際波動 -4.43% → 區間假設失效，改依趨勢方向判斷"
@@ -6539,8 +6541,8 @@
   "3231": {
    "kline": [
     "K線技術人(11-18觀望)預期盤整但實際波動 -3.70% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-18觀望)預期盤整但實際波動 -3.70% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -2.33% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -2.33% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +6.54% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-20看空)看空後反漲 +1.02% → 空方訊號需收盤確認，低檔乖離過大時不追空"
@@ -6548,9 +6550,9 @@
   },
   "3529": {
    "kline": [
-    "K線技術人(11-18觀望)預期盤整但實際波動 -9.93% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-18觀望)預期盤整但實際波動 -9.93% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -1.91% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -1.91% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-20看空)看空後反漲 +5.28% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +6.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ],
    "chips": [
     "籌碼王(11-18觀望)預期盤整但實際波動 -9.93% → 區間假設失效，改依趨勢方向判斷"
@@ -6558,68 +6560,157 @@
   },
   "6223": {
    "kline": [
-    "K線技術人(11-18觀望)預期盤整但實際波動 -9.91% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-18觀望)預期盤整但實際波動 -9.91% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20看空)看空後反漲 +6.88% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "K線技術人(11-20看空)看空後反漲 +6.88% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.99% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
     "籌碼王(11-18觀望)預期盤整但實際波動 -9.91% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-18觀望)預期盤整但實際波動 -9.91% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-18觀望)預期盤整但實際波動 -9.91% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.99% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "1216": {
    "kline": [
-    "K線技術人(11-18看多)看多後收 78.7（-0.13%）→ 給多方前先檢查 Priced-in、隔日沖與量能",
-    "K線技術人(11-20觀望)預期盤整但實際波動 -2.60% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -2.60% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +0.91% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +2.52% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
-    "籌碼王(11-20觀望)預期盤整但實際波動 -2.60% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -2.60% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +2.52% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "2891": {
    "kline": [
-    "K線技術人(11-20觀望)建議買進價 69.7 失守（最低 66.3）→ 下次建議買進價下移至 66.3 附近，買進量減半",
-    "K線技術人(11-20觀望)建議買進價 67.5 失守（最低 61.5）→ 下次建議買進價下移至 61.5 附近，買進量減半",
-    "K線技術人(11-20觀望)建議買進價 65.6 失守（最低 61.5）→ 下次建議買進價下移至 61.5 附近，買進量減半"
+    "K線技術人(11-20觀望)建議買進價 65.6 失守（最低 61.5）→ 下次建議買進價下移至 61.5 附近，買進量減半",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +7.70% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.56% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chairman": [
     "巴董事長(11-20看多)盤中認為有撐，尾盤卻收最低 68 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認"
    ],
    "chips": [
     "籌碼王(11-20觀望)預期盤整但實際波動 -5.95% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-20觀望)預期盤整但實際波動 -6.18% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -6.18% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.56% → 區間假設失效，改依趨勢方向判斷"
    ]
   },
   "2881": {
    "kline": [
-    "K線技術人(11-20觀望)預期盤整但實際波動 -4.55% → 區間假設失效，改依趨勢方向判斷",
-    "K線技術人(11-20觀望)觸及停損價 127 → 依紀律停損，不攤平"
+    "K線技術人(11-20觀望)觸及停損價 127 → 依紀律停損，不攤平",
+    "K線技術人(11-23看空)看空後反漲 +8.71% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.96% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
     "籌碼王(11-20觀望)預期盤整但實際波動 -4.55% → 區間假設失效，改依趨勢方向判斷",
-    "籌碼王(11-20觀望)預期盤整但實際波動 -4.40% → 區間假設失效，改依趨勢方向判斷"
+    "籌碼王(11-20觀望)預期盤整但實際波動 -4.40% → 區間假設失效，改依趨勢方向判斷",
+    "籌碼王(11-23看空)看空後反漲 +9.96% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ]
   },
   "2603": {
    "kline": [
-    "K線技術人(11-20觀望)建議買進價 238.5 失守（最低 230.5）→ 下次建議買進價下移至 230.5 附近，買進量減半"
+    "K線技術人(11-20觀望)建議買進價 238.5 失守（最低 230.5）→ 下次建議買進價下移至 230.5 附近，買進量減半",
+    "K線技術人(11-23看空)看空後反漲 +8.90% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +9.59% → 區間假設失效，改依趨勢方向判斷"
    ],
    "chips": [
-    "籌碼王(11-20看空)看空後反漲 +0.64% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+    "籌碼王(11-20看空)看空後反漲 +0.64% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "籌碼王(11-23觀望)預期盤整但實際波動 +9.59% → 區間假設失效，改依趨勢方向判斷"
+   ]
+  },
+  "6669": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +3.77% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.82% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "8046": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +6.52% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "2345": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +9.76% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "1503": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +2.08% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "3583": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +4.36% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.97% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "6442": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +3.01% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "5274": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +5.73% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.99% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "3450": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +0.58% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.86% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "2308": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +9.60% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "1519": {
+   "kline": [
+    "K線技術人(11-20看空)看空後反漲 +0.83% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ]
   },
   "2884": {
    "kline": [
-    "K線技術人(11-20觀望)預期盤整但實際波動 -2.27% → 區間假設失效，改依趨勢方向判斷"
+    "K線技術人(11-20觀望)預期盤整但實際波動 -2.27% → 區間假設失效，改依趨勢方向判斷",
+    "K線技術人(11-23看空)看空後反漲 +6.32% → 空方訊號需收盤確認，低檔乖離過大時不追空",
+    "K線技術人(11-23觀望)預期盤整但實際波動 +6.46% → 區間假設失效，改依趨勢方向判斷"
+   ],
+   "chips": [
+    "籌碼王(11-23觀望)預期盤整但實際波動 +6.46% → 區間假設失效，改依趨勢方向判斷"
+   ]
+  },
+  "3008": {
+   "kline": [
+    "K線技術人(11-23看空)看空後反漲 +9.94% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "4979": {
+   "kline": [
+    "K線技術人(11-23看空)看空後反漲 +10.00% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+   ]
+  },
+  "2002": {
+   "kline": [
+    "K線技術人(11-23看空)看空後反漲 +4.15% → 空方訊號需收盤確認，低檔乖離過大時不追空"
    ]
   }
  },
  "stock_patterns": {
   "2454": {
-   "盤整失效": 10,
+   "盤整失效": 11,
    "建議買進價失守": 1,
    "觸及停損": 4,
-   "看空反漲": 2,
+   "看空反漲": 3,
    "看多落空": 1
   },
   "2327": {
@@ -6627,7 +6718,7 @@
    "觸及停損": 5,
    "盤整失效": 7,
    "跳空低開": 1,
-   "看空反漲": 2
+   "看空反漲": 4
   },
   "3264": {
    "建議買進價失守": 4,
@@ -6667,28 +6758,29 @@
    "看多落空": 1,
    "觸及停損": 1,
    "建議買進價失守": 1,
-   "看空反漲": 3
+   "看空反漲": 5
   },
   "2330": {
-   "盤整失效": 12,
+   "盤整失效": 13,
    "看多落空": 1,
    "觸及停損": 4,
    "建議買進價失守": 2,
    "尾盤收最低": 2,
-   "方向落差": 1
+   "方向落差": 1,
+   "看空反漲": 1
   },
   "2317": {
    "盤整失效": 4,
    "觸及停損": 1,
    "外資一日行情": 1,
    "看多落空": 6,
-   "看空反漲": 4
+   "看空反漲": 5
   },
   "2449": {
    "盤整失效": 5,
    "建議買進價失守": 2,
    "觸及停損": 2,
-   "看空反漲": 4
+   "看空反漲": 5
   },
   "3324": {
    "盤整失效": 8,
@@ -6696,45 +6788,45 @@
    "外資一日行情": 1,
    "建議買進價失守": 3,
    "跳空低開": 1,
-   "看空反漲": 1
+   "看空反漲": 2
   },
   "2368": {
    "盤整失效": 9,
    "觸及停損": 3,
    "建議買進價失守": 2,
-   "看空反漲": 1
+   "看空反漲": 3
   },
   "2379": {
    "看多落空": 4,
-   "盤整失效": 9,
+   "盤整失效": 10,
    "跳空低開": 2,
    "觸及停損": 4,
    "外資一日行情": 1,
    "尾盤收最低": 2,
-   "看空反漲": 1
+   "看空反漲": 2
   },
   "3661": {
    "外資一日行情": 2,
    "跳空低開": 2,
    "看空反漲": 5,
-   "盤整失效": 6,
+   "盤整失效": 7,
    "觸及停損": 3,
    "看多落空": 1,
    "建議買進價失守": 1,
    "尾盤收最低": 1
   },
   "3443": {
-   "盤整失效": 11,
+   "盤整失效": 12,
    "跳空低開": 3,
    "建議買進價失守": 6,
    "觸及停損": 7,
    "外資一日行情": 1
   },
   "6488": {
-   "看空反漲": 4,
+   "看空反漲": 5,
    "建議買進價失守": 4,
    "觸及停損": 4,
-   "盤整失效": 8
+   "盤整失效": 9
   },
   "2344": {
    "盤整失效": 10,
@@ -6743,21 +6835,21 @@
    "建議買進價失守": 4,
    "觸及停損": 6,
    "看多落空": 1,
-   "看空反漲": 1,
+   "看空反漲": 3,
    "方向落差": 1
   },
   "8299": {
-   "盤整失效": 7,
+   "盤整失效": 8,
    "外資一日行情": 1,
    "跳空低開": 3,
    "建議買進價失守": 2,
    "觸及停損": 4,
    "看多落空": 1,
-   "看空反漲": 1
+   "看空反漲": 2
   },
   "2382": {
    "看多落空": 3,
-   "盤整失效": 7,
+   "盤整失效": 8,
    "觸及停損": 4,
    "建議買進價失守": 2,
    "尾盤收最低": 1,
@@ -6767,44 +6859,44 @@
    "建議買進價失守": 4,
    "觸及停損": 5,
    "盤整失效": 7,
-   "看空反漲": 1
+   "看空反漲": 3
   },
   "2303": {
    "建議買進價失守": 2,
    "觸及停損": 4,
-   "盤整失效": 9,
-   "看空反漲": 3
+   "盤整失效": 10,
+   "看空反漲": 4
   },
   "3037": {
    "建議買進價失守": 4,
    "觸及停損": 5,
    "盤整失效": 8,
    "看多落空": 1,
-   "看空反漲": 1
+   "看空反漲": 3
   },
   "3131": {
    "建議買進價失守": 3,
    "觸及停損": 4,
    "盤整失效": 8,
    "看多落空": 3,
-   "看空反漲": 1
+   "看空反漲": 3
   },
   "6187": {
    "建議買進價失守": 4,
    "觸及停損": 6,
    "盤整失效": 7,
-   "看空反漲": 1
+   "看空反漲": 3
   },
   "TAIEX": {
    "建議買進價失守": 1,
-   "盤整失效": 9,
+   "盤整失效": 10,
    "看多落空": 4,
-   "看空反漲": 4
+   "看空反漲": 5
   },
   "3017": {
    "跳空低開": 2,
    "外資一日行情": 2,
-   "盤整失效": 9,
+   "盤整失效": 10,
    "看多落空": 1,
    "觸及停損": 3,
    "建議買進價失守": 2,
@@ -6816,23 +6908,24 @@
    "盤整失效": 7,
    "建議買進價失守": 2,
    "看多落空": 1,
-   "看空反漲": 1
+   "看空反漲": 3
   },
   "1709": {
    "盤整失效": 1
   },
   "2886": {
-   "盤整失效": 3,
+   "盤整失效": 4,
    "建議買進價失守": 1,
    "觸及停損": 2
   },
   "2882": {
    "建議買進價失守": 2,
    "觸及停損": 1,
-   "盤整失效": 3
+   "盤整失效": 3,
+   "看空反漲": 1
   },
   "2357": {
-   "盤整失效": 3,
+   "盤整失效": 4,
    "建議買進價失守": 1,
    "觸及停損": 1
   },
@@ -6844,48 +6937,94 @@
   "2609": {
    "建議買進價失守": 2,
    "觸及停損": 1,
-   "盤整失效": 3
+   "盤整失效": 4,
+   "看空反漲": 1
   },
   "2395": {
-   "盤整失效": 1
+   "盤整失效": 1,
+   "看空反漲": 2
   },
   "2615": {
    "盤整失效": 2,
-   "建議買進價失守": 1
+   "建議買進價失守": 1,
+   "看空反漲": 1
   },
   "3231": {
    "盤整失效": 2,
-   "看空反漲": 1
+   "看空反漲": 2
   },
   "3529": {
-   "盤整失效": 2
+   "盤整失效": 2,
+   "看空反漲": 2
   },
   "6223": {
-   "盤整失效": 1,
-   "看空反漲": 1
+   "盤整失效": 2,
+   "看空反漲": 2
   },
   "1216": {
    "看多落空": 1,
-   "盤整失效": 1
+   "盤整失效": 2,
+   "看空反漲": 1
   },
   "2891": {
    "觸及停損": 2,
-   "盤整失效": 2,
+   "盤整失效": 3,
    "尾盤收最低": 1,
    "建議買進價失守": 2
   },
   "2881": {
-   "盤整失效": 2,
-   "觸及停損": 1
+   "盤整失效": 3,
+   "觸及停損": 1,
+   "看空反漲": 1
   },
   "2603": {
    "建議買進價失守": 1,
    "觸及停損": 1,
-   "盤整失效": 1,
-   "看空反漲": 1
+   "盤整失效": 2,
+   "看空反漲": 2
+  },
+  "6669": {
+   "看空反漲": 2
+  },
+  "8046": {
+   "看空反漲": 2
+  },
+  "2345": {
+   "看空反漲": 2
+  },
+  "1503": {
+   "看空反漲": 2
+  },
+  "3583": {
+   "看空反漲": 2
+  },
+  "6442": {
+   "看空反漲": 2
+  },
+  "5274": {
+   "看空反漲": 2
+  },
+  "3450": {
+   "看空反漲": 2
+  },
+  "2308": {
+   "看空反漲": 2
+  },
+  "1519": {
+   "看空反漲": 2
   },
   "2884": {
-   "盤整失效": 1
+   "盤整失效": 2,
+   "看空反漲": 1
+  },
+  "3008": {
+   "看空反漲": 1
+  },
+  "4979": {
+   "看空反漲": 1
+  },
+  "2002": {
+   "看空反漲": 1
   }
  },
  "stock_rules": {
@@ -6982,13 +7121,13 @@
  "member_stats": {
   "news": {
    "name": "新聞達人",
-   "total": 32,
-   "correct": 9,
+   "total": 33,
+   "correct": 10,
    "deviated": 11,
    "wrong": 12,
-   "accuracy_pct": 28.1,
-   "recent10_pct": 50.0,
-   "last_result": "WRONG",
+   "accuracy_pct": 30.3,
+   "recent10_pct": 60.0,
+   "last_result": "CORRECT",
    "last_wrong": {
     "stock_id": "TAIEX",
     "date": "2026-11-23",
@@ -6997,43 +7136,43 @@
   },
   "chips": {
    "name": "籌碼王",
-   "total": 280,
-   "correct": 105,
-   "deviated": 146,
-   "wrong": 29,
-   "accuracy_pct": 37.5,
-   "recent10_pct": 50.0,
-   "last_result": "CORRECT",
+   "total": 300,
+   "correct": 108,
+   "deviated": 161,
+   "wrong": 31,
+   "accuracy_pct": 36.0,
+   "recent10_pct": 10.0,
+   "last_result": "DEVIATED",
    "last_wrong": {
-    "stock_id": "3443",
-    "date": "2026-11-23",
-    "stance": "看多"
+    "stock_id": "2881",
+    "date": "2026-11-24",
+    "stance": "看空"
    }
   },
   "kline": {
    "name": "K線技術人",
-   "total": 612,
-   "correct": 239,
-   "deviated": 334,
-   "wrong": 39,
-   "accuracy_pct": 39.1,
-   "recent10_pct": 40.0,
+   "total": 709,
+   "correct": 247,
+   "deviated": 365,
+   "wrong": 97,
+   "accuracy_pct": 34.8,
+   "recent10_pct": 0.0,
    "last_result": "DEVIATED",
    "last_wrong": {
-    "stock_id": "6223",
-    "date": "2026-11-23",
+    "stock_id": "3529",
+    "date": "2026-11-24",
     "stance": "看空"
    }
   },
   "chairman": {
    "name": "巴董事長",
-   "total": 436,
+   "total": 437,
    "correct": 212,
-   "deviated": 210,
+   "deviated": 211,
    "wrong": 14,
-   "accuracy_pct": 48.6,
+   "accuracy_pct": 48.5,
    "recent10_pct": 40.0,
-   "last_result": "WRONG",
+   "last_result": "DEVIATED",
    "last_wrong": {
     "stock_id": "TAIEX",
     "date": "2026-11-23",
@@ -7042,19 +7181,19 @@
   },
   "maga": {
    "name": "川大帝MAGA",
-   "total": 25,
+   "total": 26,
    "correct": 13,
    "deviated": 8,
-   "wrong": 4,
-   "accuracy_pct": 52.0,
-   "recent10_pct": 40.0,
+   "wrong": 5,
+   "accuracy_pct": 50.0,
+   "recent10_pct": 30.0,
    "last_result": "WRONG",
    "last_wrong": {
     "stock_id": "TAIEX",
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "stance": "看空"
    }
   }
  },
- "updated_at": "2026-11-23 16:36:58"
+ "updated_at": "2026-11-25 11:33:44"
 }

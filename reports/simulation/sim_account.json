@@ -4,15 +4,32 @@
   "initial_capital": 1000000,
   "target_return_low_pct": 10.0,
   "target_return_high_pct": 20.0,
-  "cash_balance": 997752,
+  "cash_balance": 871645,
   "realized_pnl": -2248,
-  "unrealized_pnl": 0,
-  "market_value": 0,
-  "total_equity": 997752,
-  "total_return_pct": -0.22,
-  "holdings": [],
+  "unrealized_pnl": -592,
+  "market_value": 126000,
+  "total_equity": 997645,
+  "total_return_pct": -0.24,
+  "holdings": [
+    {
+      "stock_id": "2603",
+      "name": "長榮",
+      "shares": 500,
+      "avg_cost": 252.214,
+      "cost_total": 126107,
+      "entry_date": "2026-11-25",
+      "current_price": 250.0,
+      "odd_price": 252.0,
+      "stop_loss": 240.0,
+      "target_price": 274.5,
+      "buffett_thesis": "出現晨星轉折K線，外資連買且融資減。買進價250元，停損239元(-4.4%，符合>3%及>-8%鐵律)，目標274.5元(+9.8%)，風報比2.23，金額12.5萬合規。",
+      "market_value": 126000,
+      "unrealized_pnl": -592,
+      "unrealized_pct": -0.47
+    }
+  ],
   "status_note": "🟢 模擬室盤中交易運作中",
-  "updated_at": "2026-11-24 15:08:50",
-  "last_trade_timestamp": "2026-11-20 09:52:31",
-  "last_trade_id": "T0019"
+  "updated_at": "2026-11-25 11:33:43",
+  "last_trade_timestamp": "2026-11-25 11:33:43",
+  "last_trade_id": "T0020"
 }
