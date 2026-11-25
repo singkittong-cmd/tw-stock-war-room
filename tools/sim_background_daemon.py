@@ -260,7 +260,7 @@ class SimRoomDaemon(threading.Thread):
         now = _now()
         phase = phase_of(now)
         if phase == "TRADING" and time.monotonic() >= self._next_tick and not cal.check_today_open(now):
-            phase = "STANDBY"  # 09:10 實測台積電與加權指數零成交量：今天休市
+            phase = "STANDBY"  # 表定休市日，或 09:30 後 MIS 連續兩次回報台積電零成交量
         if self.cloud_sync:
             self.cloud_housekeeping(phase)
         if phase == "TRADING":
@@ -322,7 +322,11 @@ class SimRoomDaemon(threading.Thread):
         tick_info = {"last_tick_at": _ts(now), "last_tick_elapsed_sec": round(time.perf_counter() - started, 2),
                      "last_scan_errors": (scan.get("errors") or [])[:3], "total_equity": acct["total_equity"],
                      "holdings_count": len(acct["holdings"])}
+        delay = cal.quote_delay_note(now)
+        tick_info["quote_delay"] = delay
         self.beat("TRADING", **tick_info)
+        if delay:
+            return  # 報價還停在昨天：照常每 15 秒抓價，取得今日報價前不召開投決會（避免用舊價下單）
         cfg = load_config()
         if not cfg["auto_trade_enabled"] or not sim.is_tw_market_trading_hours(now):
             return  # 13:30:00 後只更新報價，不再下單
@@ -544,6 +548,9 @@ def heartbeat_view(hb=None, now=None, cloud=False):
     if phase == "TRADING":
         phase_text = ("☁️ 雲端盤中自動盯盤至 13:30 收盤" if cloud else "⚡ 盤中自動監控至 13:30 收盤") \
             if hb.get("auto_trade_enabled", True) else "⏸️ 盤中只更新報價（自動進出場已關閉）"
+        delay = cal.quote_delay_note(now)
+        if delay:
+            phase_text += f"｜{delay}"
     elif holiday and holiday != "週末":
         phase_text = f"🌙 今日休市（{holiday}），下個開盤日 09:00 自動啟動"
     else:

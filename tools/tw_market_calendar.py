@@ -8,8 +8,10 @@
 1. 週六、週日一律休市。
 2. CLOSED_DAYS：證交所「115 年市場開休市日期」公告的休市日（含 2/12–2/13 僅辦理結算交割、市場無交易）。
    新年度請把證交所公告加進 CLOSED_DAYS；未列入的年份只看週末，並靠第 3 點自動偵測。
-3. 盤中自動偵測：09:10 後若台積電（2330）與加權指數當日成交量都是 0（或 Yahoo 最後成交日不是今天），
-   判定今天為休市日，寫入 reports/simulation/market_calendar_state.json，當天其餘時段直接休眠。
+3. 週一至週五且不在 CLOSED_DAYS → 預設有開盤。盤中動態偵測只認「證交所 MIS 明確回報台積電零成交量」，
+   且 09:30 後、間隔 ≥ 5 分鐘連續兩次都是零才判定休市（寫入 reports/simulation/market_calendar_state.json）。
+4. MIS 失敗、Yahoo 最後成交日還停在昨天 → 只是「報價延遲／抓價失敗」，維持開盤，狀態列顯示
+   「報價延遲中，等待重試」，背景引擎每 15 秒照常抓價，抓到今天的報價就自動恢復投決會。
 """
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
@@ -28,7 +30,9 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 STATE_PATH = ROOT / "reports" / "simulation" / "market_calendar_state.json"
-PROBE_AFTER = dtime(9, 10)             # 開盤 10 分鐘後才判斷，避免剛開盤尚未成交的誤判
+PROBE_AFTER = dtime(9, 10)             # 開盤 10 分鐘後才實測報價
+CLOSE_CONFIRM_AFTER = dtime(9, 30)     # 判定休市至少要等到 09:30（MIS 零成交量連續兩次）
+DETECT_METHOD = "mis_zero_volume_x2"   # 只有這種偵測結果才算休市；舊版（含 Yahoo 延遲誤判）的紀錄一律忽略
 
 # 證交所「115 年市場開休市日期」（https://www.twse.com.tw/holidaySchedule/holidaySchedule）
 CLOSED_DAYS = {
@@ -53,6 +57,7 @@ CLOSED_DAYS = {
 }
 
 PROBE_RETRY_SEC = 300
+DELAY_RETRY_SEC = 60                   # 報價延遲時每 60 秒重新實測一次是否已取得今日報價
 
 _lock = threading.Lock()
 _state_cache = {"mtime": None, "data": {}}
@@ -91,7 +96,9 @@ def holiday_name(day):
     if key in CLOSED_DAYS:
         return CLOSED_DAYS[key]
     detected = (_state().get("detected_closed") or {}).get(key)
-    return f"盤中偵測零成交量（{detected}）" if detected else None
+    if isinstance(detected, dict) and detected.get("method") == DETECT_METHOD:
+        return f"盤中偵測零成交量（{detected.get('evidence')}）"
+    return None  # 舊版紀錄（例如 MIS 失敗＋Yahoo 延遲的誤判）不算休市
 
 
 def is_trading_day(day):
@@ -117,7 +124,9 @@ def _save_state(state):
 
 
 def probe_volume(now=None):
-    """實測台積電與加權指數今日成交量。回傳 {"closed": True/False/None, "evidence": "..."}；None 表示查不到、不下結論。"""
+    """實測台積電今日成交量。回傳 {"closed": True/False/None, "evidence": "..."}。
+    closed=True 只來自 MIS 明確回報台積電零成交量（加權指數 MIS 量常為 0，不採用）；
+    Yahoo 最後成交日是今天 → False；Yahoo 還停在昨天或全部失敗 → None（報價延遲，不下結論）。"""
     now = now or datetime.now()
     today = now.strftime("%Y-%m-%d")
     evidence = []
@@ -128,7 +137,7 @@ def probe_volume(now=None):
         if tsmc is not None and idx is not None:
             vol_tsmc, vol_idx = tsmc.get("acc_vol") or 0, idx.get("acc_vol") or 0
             evidence.append(f"MIS 2330 量 {vol_tsmc}、加權指數量 {vol_idx}")
-            return {"closed": vol_tsmc == 0 and vol_idx == 0, "evidence": "；".join(evidence)}
+            return {"closed": vol_tsmc == 0, "evidence": "；".join(evidence), "source": "mis"}
     except Exception as exc:  # 海外主機連不到證交所：改用 Yahoo
         evidence.append(f"MIS 失敗：{type(exc).__name__}")
     try:
@@ -138,15 +147,17 @@ def probe_volume(now=None):
         ts = meta.get("regularMarketTime")
         last_day = datetime.fromtimestamp(ts, yq.TPE).strftime("%Y-%m-%d") if ts else None
         evidence.append(f"Yahoo 2330 最後成交日 {last_day}")
-        if last_day:
-            return {"closed": last_day != today, "evidence": "；".join(evidence)}
+        if last_day == today:
+            return {"closed": False, "evidence": "；".join(evidence), "source": "yahoo"}
+        # Yahoo 停在昨天：可能只是報價延遲，不能當成休市證據
     except Exception as exc:
         evidence.append(f"Yahoo 失敗：{type(exc).__name__}")
     return {"closed": None, "evidence": "；".join(evidence)}
 
 
 def check_today_open(now=None):
-    """盤中呼叫：今天是否真的有開盤。表定休市日直接回 False；09:10 後每天實測一次成交量並記錄結果。"""
+    """盤中呼叫：今天是否開盤。週末與表定休市日回 False；其餘預設開盤。
+    報價抓不到或停在昨天只記為「報價延遲」（仍回 True）；MIS 零成交量要 09:30 後連續兩次才判定休市。"""
     now = now or datetime.now()
     if not is_trading_day(now):
         return False
@@ -156,19 +167,45 @@ def check_today_open(now=None):
     state = dict(_state())
     if state.get("verified_open") == today:
         return True
-    if time.monotonic() - _probe_at["t"] < PROBE_RETRY_SEC:
-        return True  # 上次查不到報價：5 分鐘後再實測
+    delayed = (state.get("quote_delay") or {}).get("date") == today
+    wait = DELAY_RETRY_SEC if delayed else PROBE_RETRY_SEC
+    if time.monotonic() - _probe_at["t"] < wait:
+        return True
     _probe_at["t"] = time.monotonic()
     r = probe_volume(now)
-    if r["closed"] is None:
-        return True  # 查不到報價時不誤判為休市
+    stamp = now.strftime("%Y-%m-%d %H:%M:%S")
+    state["last_probe"] = {"at": stamp, **r}
+    if r["closed"] is None:  # 報價延遲／抓價失敗：維持開盤，等待重試
+        state["quote_delay"] = {"date": today, "at": stamp, "evidence": r["evidence"]}
+        _save_state(state)
+        return True
+    state.pop("quote_delay", None)
     if r["closed"]:
-        state.setdefault("detected_closed", {})[today] = r["evidence"]
-    else:
-        state["verified_open"] = today
-    state["last_probe"] = {"at": now.strftime("%Y-%m-%d %H:%M:%S"), **r}
+        zero = state.get("zero_volume_seen") or {}
+        prev = zero.get("at") if zero.get("date") == today else None
+        if now.time() >= CLOSE_CONFIRM_AFTER and prev and (now - datetime.strptime(prev, "%Y-%m-%d %H:%M:%S")).total_seconds() >= 300:
+            state.setdefault("detected_closed", {})[today] = {"method": DETECT_METHOD, "evidence": r["evidence"], "at": stamp}
+            _save_state(state)
+            return False
+        if not prev:
+            state["zero_volume_seen"] = {"date": today, "at": stamp}
+        _save_state(state)
+        return True  # 第一次看到零成交量：先不下結論，5 分鐘後再確認
+    state["verified_open"] = today
+    state.pop("zero_volume_seen", None)
     _save_state(state)
-    return not r["closed"]
+    return True
+
+
+def quote_delay_note(now=None):
+    """今天報價延遲中（MIS 失敗且 Yahoo 還停在昨天）時回傳狀態列文字，否則回傳 None。"""
+    now = now or datetime.now()
+    state = _state()
+    today = now.strftime("%Y-%m-%d")
+    d = state.get("quote_delay") or {}
+    if d.get("date") != today or state.get("verified_open") == today or not is_trading_day(now):
+        return None
+    return f"⏳ 報價延遲中，等待重試（{d.get('at', '')[11:16]} 實測：{d.get('evidence', '')}）"
 
 
 def main():

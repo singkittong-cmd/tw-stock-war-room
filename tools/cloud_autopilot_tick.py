@@ -149,8 +149,11 @@ class Autopilot:
     # ---- 盤中：主力檢查一次報價與進出場
     def trading(self, now):
         if not cal.check_today_open(now):
-            self.say("🌙 09:10 實測台積電與加權指數零成交量：判定今日休市，直接休眠")
+            self.say("🌙 09:30 後 MIS 連續兩次回報台積電零成交量：判定今日休市，直接休眠")
             return
+        delay = cal.quote_delay_note(now)
+        if delay:
+            self.say(delay + "（本輪照常抓價，取得今日報價前不召開投決會）")
         if not self.may_trade("下單"):
             return
         before = self.d.hb.get("trades_today", 0)
