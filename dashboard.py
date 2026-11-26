@@ -53,6 +53,10 @@ from tools import us_semi_tracker as us_mod  # noqa: E402
 from tools import watchlist_intraday_radar as radar_mod  # noqa: E402
 from tools import universe_pool as up  # noqa: E402
 from tools import strategy_optimizer as so  # noqa: E402
+try:  # Streamlit Cloud 更新程式後同一行程會沿用舊模組（缺新常數／新參數），每次重新整理強制載入最新版（無狀態模組，可安全重載）
+    importlib.reload(so)
+except Exception:  # noqa: BLE001
+    pass
 from tools.claude_runner import run_prefetch  # noqa: E402
 from tools.privacy_mask import mask_sensitive_text, set_private_terms  # noqa: E402
 
@@ -2046,7 +2050,7 @@ def owner_brain_section(where):
                    f"（.env 或 Streamlit Secrets 的 HIGH_TIER_PROVIDER、HIGH_TIER_MODEL 可切換）｜目前操盤規則 v{rules['_version']}"
                    f"（{rules['_updated_at'] or '預設值'}）｜上次覆盤 {rv.get('generated_at') or '尚未執行'}")
         user_challenge = st.text_area(
-            "✍️ 董事長特別指示 / 覆盤挑戰重點 (選填)", key=f"brain_challenge_{where}", max_chars=so.MAX_CHALLENGE_CHARS, height=90,
+            "✍️ 董事長特別指示 / 覆盤挑戰重點 (選填)", key=f"brain_challenge_{where}", max_chars=getattr(so, "MAX_CHALLENGE_CHARS", 1000), height=90,
             placeholder="例如：你們最近常在30分鐘內頻繁停損，請檢討是否停損設太緊？要求放寬停損並減少當沖頻率...",
             help="會以最高權重放在高階模型 Prompt 的最上方與最下方；五位成員必須正面回應，巴董事長須修改對應的風控參數")
         c1, c2 = st.columns([3.2, 1.8], vertical_alignment="center")
@@ -2058,7 +2062,12 @@ def owner_brain_section(where):
                 try:
                     if user_challenge.strip():
                         st.write(f"🚨 已注入董事長特別指示（最高權重）：{user_challenge.strip()[:80]}…")
-                    out = so.run_review(publish=True, user_challenge=user_challenge)
+                    import inspect
+                    if "user_challenge" in inspect.signature(so.run_review).parameters:
+                        out = so.run_review(publish=True, user_challenge=user_challenge)
+                    else:  # 舊版模組仍在記憶體：不帶指示也能完成覆盤
+                        st.warning("⚠️ 伺服器仍是舊版覆盤引擎，本次未帶入特別指示；請在 Streamlit Cloud 按 Reboot app 後再試")
+                        out = so.run_review(publish=True)
                     pub = out.get("publish") or {}
                     st.write(f"⚙️ 已套用操盤規則 v{out.get('rules_version')}；"
                              f"GitHub 備份：{'✅ ' + str(pub.get('commit')) if pub.get('pushed') else pub.get('reason') or '未推送'}")
