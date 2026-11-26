@@ -45,7 +45,10 @@ RULE_LABELS = {
     "max_single_position_pct": ("單一持股上限", "% 總淨值"), "stop_loss_pct": ("硬性停損", "%"),
     "take_profit_pct": ("分批停利目標", "%"), "cash_reserve_pct": ("平常最低現金水位", "%"),
     "min_cash_reserve_pct": ("大盤偏弱最低現金水位", "%"), "avoid_chase_pct": ("禁止追高門檻（當日漲幅）", "%"),
+    "min_hold_minutes": ("買進後最短持有時間", " 分鐘"), "disable_day_trading": ("禁止當沖（同檔當日買賣）", ""),
+    "cooldown_minutes_after_stop_loss": ("停損後同檔冷卻時間", " 分鐘"),
 }
+MAX_CHALLENGE_CHARS = 1000
 MAX_EVIDENCE_CHARS = 32000
 HISTORY_KEEP = 20
 
@@ -61,6 +64,10 @@ REVIEW_SYSTEM = (
     "停損太鬆或太緊、部位配置、現金水位，哪一項是主因。\n"
     "3. 依診斷輸出可執行的規則修正 updated_rules（數值範圍：max_single_position_pct 5–40、stop_loss_pct 2–15、"
     "take_profit_pct 3–40、cash_reserve_pct 0–50、min_cash_reserve_pct 0–80 且不得低於 cash_reserve_pct、avoid_chase_pct 1–10、"
+    "防過度交易三項：min_hold_minutes 0–1440（買進後最短持有分鐘數，未滿只允許虧損達硬性停損 % 出清）、"
+    "disable_day_trading true/false（禁止同一檔當日買進又賣出、當日賣出又買回）、"
+    "cooldown_minutes_after_stop_loss 0–4320（停損出清後同一檔幾分鐘內不得再買進）；"
+    "若證據顯示買進後短時間內就因小幅震盪停損（見【持有時間統計】），應放寬 stop_loss_pct 並調高 min_hold_minutes 或啟用 disable_day_trading、"
     "agent_weights 每位 0.2–2.0（依近期準確率調整，準確率高者調升）、custom_disciplines 最多 5 條、每條 ≤ 60 字、"
     "必須是盤中投決會可以直接檢查的具體規則）。沒有充分證據的參數維持原值，不要為改而改。\n"
     "用語直白：建議買進價、停損價、停利目標價、加碼、減碼、可用現金；不使用比喻詞，嚴禁出現「擊球區、獵殺、巡弋、接刀、子彈」。\n"
@@ -70,8 +77,10 @@ REVIEW_SYSTEM = (
     "\"diagnosis\":{\"stock_selection\":\"\",\"entry_timing\":\"\",\"stop_loss\":\"\",\"position_sizing\":\"\",\"root_cause\":\"最主要原因\"},"
     "\"chairman_summary\":\"總結診斷與明日作戰原則\","
     "\"updated_rules\":{\"max_single_position_pct\":數字,\"stop_loss_pct\":數字,\"take_profit_pct\":數字,\"cash_reserve_pct\":數字,"
-    "\"min_cash_reserve_pct\":數字,\"avoid_chase_pct\":數字,\"agent_weights\":{\"news\":數字,\"chips\":數字,\"kline\":數字,\"maga\":數字},"
-    "\"custom_disciplines\":[\"\"]},\"rule_rationale\":{\"參數名稱\":\"為什麼這樣改（引用證據）\"}}"
+    "\"min_cash_reserve_pct\":數字,\"avoid_chase_pct\":數字,\"min_hold_minutes\":整數,\"disable_day_trading\":true或false,"
+    "\"cooldown_minutes_after_stop_loss\":整數,\"agent_weights\":{\"news\":數字,\"chips\":數字,\"kline\":數字,\"maga\":數字},"
+    "\"custom_disciplines\":[\"\"]},\"rule_rationale\":{\"參數名稱\":\"為什麼這樣改（引用證據）\"},"
+    "\"boss_response\":\"若有老闆特別指示：巴董事長逐點正面回應老闆的質疑，並說明改了哪些參數來解決；沒有指示時留空字串\"}"
 )
 
 
@@ -113,6 +122,45 @@ def _fmt(v, f="{:,.2f}"):
 
 # ---------------------------------------------------------------- 1) 證據打包
 
+def _ts(v):
+    try:
+        return datetime.strptime(str(v)[:19], "%Y-%m-%d %H:%M:%S")
+    except (TypeError, ValueError):
+        return None
+
+
+def holding_time_stats(trades):
+    """買進到賣出的持有時間統計（找出「30 分鐘內就停損」這類過度交易）。"""
+    last_buy, rows = {}, []
+    for t in trades:
+        sid, act, ts = str(t.get("stock_id")), str(t.get("action") or ""), _ts(t.get("timestamp"))
+        if ts is None:
+            continue
+        if act in sim.BUY_ACTIONS:
+            last_buy[sid] = ts
+        elif act in sim.SELL_ACTIONS and sid in last_buy:
+            mins = (ts - last_buy[sid]).total_seconds() / 60
+            rows.append((sid, act, mins, _num(t.get("realized_pnl")) or 0, t.get("trade_id")))
+    if not rows:
+        return "【持有時間統計】尚無買進後賣出的紀錄"
+    quick = [r for r in rows if r[2] <= 30]
+    quick_stop = [r for r in quick if r[1] == "EXIT_STOP" or r[3] < 0]
+    same_day = [r for r in rows if r[2] < 300]
+    lines = [f"【持有時間統計】共 {len(rows)} 次賣出；買進後 30 分鐘內賣出 {len(quick)} 次（其中停損或虧損 {len(quick_stop)} 次，"
+             f"合計 {sum(r[3] for r in quick_stop):+,.0f} 元）；當日內（5 小時內）賣出 {len(same_day)} 次。"]
+    lines += [f"#{r[4]} {r[0]} {r[1]} 持有 {r[2]:.0f} 分鐘 已實現 {r[3]:+,.0f}" for r in rows[-15:]]
+    return "\n".join(lines)
+
+
+def challenge_block(user_challenge):
+    text = clean(user_challenge).strip()[:MAX_CHALLENGE_CHARS]
+    if not text:
+        return ""
+    return (f"【🚨 來自真實人類老闆的最高級別指令與挑戰】：{text}。在本次五人會議檢討中，你們必須優先且正面回應老闆的質疑！"
+            "如果老闆點出頻繁停損或過度交易的問題，巴董事長必須在最後的 JSON 規則中，具體修改對應的風控參數來解決此痛點！"
+            "（可修改 stop_loss_pct、min_hold_minutes、disable_day_trading、cooldown_minutes_after_stop_loss；"
+            "回應寫在 boss_response，每個改動的理由寫在 rule_rationale）")
+
 def build_evidence(max_chars=MAX_EVIDENCE_CHARS):
     """回傳 (證據全文, 統計)。全文已遮罩真實持股股數與成本。"""
     acct = _dict(sim.load_account())
@@ -149,6 +197,7 @@ def build_evidence(max_chars=MAX_EVIDENCE_CHARS):
                            f"停損{_fmt(t.get('stop_loss'))} 目標{_fmt(t.get('target_price'))}｜拍板：{str(t.get('buffett_verdict') or '')[:90]}"
                            f"｜共識：{str(t.get('team_discussion') or '')[:70]}")
     parts.append(f"【全部模擬交易】（{len(trades)} 筆）\n" + ("\n".join(trade_lines) or "尚無交易"))
+    parts.append(holding_time_stats(trades))
 
     ledger = _dict(_read(LEDGER_PATH, {}))
     stats = _dict(ledger.get("member_stats"))
@@ -262,11 +311,20 @@ def _as_dict(obj):
     raise llm_router.LLMError(f"高階模型回覆的 JSON 是 {type(obj).__name__}，不是物件")
 
 
-def run_review(publish=True):
-    """執行一次高階模型深度覆盤並套用規則；回傳診斷書 dict（同時寫入 strategy_review_latest.json）。"""
+def build_prompt(evidence, user_challenge=None):
+    """老闆特別指示同時放在 Prompt 最上方與最下方（最高權重）。"""
+    boss = challenge_block(user_challenge)
+    body = f"以下是 100 萬模擬基金的完整實盤證據：\n\n{evidence}"
+    return f"{boss}\n\n{body}\n\n{boss}" if boss else body
+
+
+def run_review(publish=True, user_challenge=None):
+    """執行一次高階模型深度覆盤並套用規則；回傳診斷書 dict（同時寫入 strategy_review_latest.json）。
+    user_challenge：管理者手動輸入的「董事長特別指示／覆盤挑戰重點」，以最高權重注入 Prompt 頭尾。"""
     started = datetime.now()
     evidence, stats = build_evidence()
-    r = llm_router.call_high_tier_reasoning(f"以下是 100 萬模擬基金的完整實盤證據：\n\n{evidence}", REVIEW_SYSTEM,
+    challenge = clean(user_challenge).strip()[:MAX_CHALLENGE_CHARS]
+    r = llm_router.call_high_tier_reasoning(build_prompt(evidence, challenge), REVIEW_SYSTEM,
                                             json_mode=True, max_tokens=24000)
     data = _as_dict(llm_router.parse_json(r["text"]))
     engine_label = f"{r['provider']}/{r['model']}"
@@ -282,6 +340,7 @@ def run_review(publish=True):
         "diagnosis": {k: clean(str(_dict(data.get("diagnosis")).get(k) or ""))
                       for k in ("stock_selection", "entry_timing", "stop_loss", "position_sizing", "root_cause")},
         "chairman_summary": clean(str(data.get("chairman_summary") or "")),
+        "user_challenge": challenge, "boss_response": clean(str(data.get("boss_response") or "")) if challenge else "",
         "rules_before": before, "rules_after": after, "rule_changes": rows,
         "rules_version": _dict(_rules_doc()).get("version"),
     }
@@ -310,6 +369,7 @@ def main():
     ap = argparse.ArgumentParser(description="管理者高階推理：每日實盤檢討 × 操盤規則自動修正")
     ap.add_argument("--evidence", action="store_true", help="只印證據摘要，不呼叫模型")
     ap.add_argument("--no-push", action="store_true", help="套用規則但不推回 GitHub")
+    ap.add_argument("--challenge", default="", help="董事長特別指示／覆盤挑戰重點（最高權重注入 Prompt）")
     args = ap.parse_args()
     if args.evidence:
         text, stats = build_evidence()
@@ -317,9 +377,11 @@ def main():
         print(text[:3000])
         return
     print(f"🧠 高階推理引擎：{llm_router.high_tier_provider()}／{llm_router.high_tier_model() or '預設'}")
-    rv = run_review(publish=not args.no_push)
+    rv = run_review(publish=not args.no_push, user_challenge=args.challenge)
     print(f"✅ 完成（{rv['engine']}／{rv['model']}，{rv['total_sec']} 秒）｜{rv['performance_summary']}")
     print(f"根因：{rv['diagnosis']['root_cause']}")
+    if rv.get("boss_response"):
+        print(f"回應老闆：{rv['boss_response']}")
     for row in rv["rule_changes"]:
         if row["changed"]:
             print(f"  ⚙️ {row['label']}：{row['before']} → {row['after']}｜{row['reason'][:60]}")

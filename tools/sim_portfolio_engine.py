@@ -69,11 +69,16 @@ DEFAULT_RULES = {  # 預設值＝導入規則引擎前的行為（寬鬆上限�
     "cash_reserve_pct": 10.0,          # 平常最低現金水位 %
     "min_cash_reserve_pct": 10.0,      # 大盤偏弱（加權跌破月線或空頭趨勢）時強制保留的最低現金水位 %
     "avoid_chase_pct": 10.0,           # 禁止追高：當日已上漲 ≥ X% 不買進、不加碼（10% 即漲停附近）
+    "min_hold_minutes": 0,             # 防過度交易：買進後至少持有 X 分鐘才可減碼／出清（虧損達硬性停損 % 除外）
+    "disable_day_trading": False,      # 防過度交易：同一檔當日買進後不得當日賣出、當日賣出後不得當日再買（硬性停損除外）
+    "cooldown_minutes_after_stop_loss": 0,  # 停損出清後，同一檔 X 分鐘內不得再買進（避免剛停損又追高）
     "agent_weights": {"news": 1.0, "chips": 1.0, "kline": 1.0, "maga": 1.0},
     "custom_disciplines": [],          # 巴董事長自訂鐵律（每場投決會強制注入 Prompt）
 }
 RULE_BOUNDS = {"max_single_position_pct": (5.0, 40.0), "stop_loss_pct": (2.0, 15.0), "take_profit_pct": (3.0, 40.0),
-               "cash_reserve_pct": (0.0, 50.0), "min_cash_reserve_pct": (0.0, 80.0), "avoid_chase_pct": (1.0, 10.0)}
+               "cash_reserve_pct": (0.0, 50.0), "min_cash_reserve_pct": (0.0, 80.0), "avoid_chase_pct": (1.0, 10.0),
+               "min_hold_minutes": (0.0, 1440.0), "cooldown_minutes_after_stop_loss": (0.0, 4320.0)}
+INT_RULES = ("min_hold_minutes", "cooldown_minutes_after_stop_loss")
 WEIGHT_BOUNDS = (0.2, 2.0)
 AGENT_KEYS = ("news", "chips", "kline", "maga")
 
@@ -88,6 +93,10 @@ def clamp_rules(raw):
         except (TypeError, ValueError):
             out[key] = DEFAULT_RULES[key]
     out["min_cash_reserve_pct"] = max(out["min_cash_reserve_pct"], out["cash_reserve_pct"])  # 弱勢水位不得低於平常水位
+    for key in INT_RULES:
+        out[key] = int(round(out[key]))
+    dt = raw.get("disable_day_trading", DEFAULT_RULES["disable_day_trading"])
+    out["disable_day_trading"] = dt.strip().lower() in ("true", "1", "yes", "是", "啟用") if isinstance(dt, str) else bool(dt)
     weights = raw.get("agent_weights") if isinstance(raw.get("agent_weights"), dict) else {}
     out["agent_weights"] = {}
     for k in AGENT_KEYS:
@@ -164,10 +173,63 @@ def rules_prompt(acct, rules=None):
              f"3. 分批停利目標 +{rules['take_profit_pct']:g}%：目標價不得高於買價 +{rules['take_profit_pct']:g}%。",
              f"4. 最低現金水位 {reserve:g}%（{'大盤偏弱' if weak else '大盤正常'}：{why}）。",
              f"5. 禁止追高：當日已上漲 ≥ {rules['avoid_chase_pct']:g}% 的個股不買進、不加碼。",
-             "6. 成員發言權重（依近期實盤準確率）：" + "、".join(f"{names[k]} {w[k]:g}" for k in AGENT_KEYS)
+             "6. 防過度交易：" + "；".join(x for x in (
+                 f"買進後至少持有 {rules['min_hold_minutes']} 分鐘才可減碼或出清" if rules["min_hold_minutes"] else "最短持有時間未限制",
+                 "禁止當沖（同一檔當日買進不得當日賣出、當日賣出不得當日再買）" if rules["disable_day_trading"] else "",
+                 f"停損出清後同一檔 {rules['cooldown_minutes_after_stop_loss']} 分鐘內不得再買進"
+                 if rules["cooldown_minutes_after_stop_loss"] else "停損後冷卻未限制") if x)
+             + f"（虧損達硬性停損 −{rules['stop_loss_pct']:g}% 一律可立即出清）。",
+             "7. 成員發言權重（依近期實盤準確率）：" + "、".join(f"{names[k]} {w[k]:g}" for k in AGENT_KEYS)
              + "；巴董事長拍板時權重高者意見優先，權重 < 1 者的多方論點需要其他成員佐證。"]
-    lines += [f"{i}. {d}" for i, d in enumerate(rules["custom_disciplines"], 7)]
+    lines += [f"{i}. {d}" for i, d in enumerate(rules["custom_disciplines"], 8)]
     return "\n".join(lines)
+
+
+def _parse_ts(ts):
+    try:
+        return datetime.strptime(str(ts)[:19], "%Y-%m-%d %H:%M:%S")
+    except (TypeError, ValueError):
+        return None
+
+
+def trade_block_reason(stock_id, action, rules=None, now=None, hard_stop=False, trades=None):
+    """防過度交易鐵律（strategy_rules.json）：回傳否決理由字串，可交易時回傳 None。
+    - 賣出（TRIM／EXIT_PROFIT／EXIT_STOP）：未滿 min_hold_minutes、或 disable_day_trading 且今日才買進 → 否決；hard_stop=True（虧損達硬性停損 %）一律放行。
+    - 買進（BUY／ADD）：停損出清後 cooldown_minutes_after_stop_loss 內、或 disable_day_trading 且今日已賣出 → 否決。"""
+    rules = rules or load_strategy_rules()
+    now = now or datetime.now()
+    action = str(action or "").upper()
+    hist = [t for t in (trades if trades is not None else load_trades()) if isinstance(t, dict) and str(t.get("stock_id")) == str(stock_id)]
+    today = now.strftime("%Y-%m-%d")
+    if action in SELL_ACTIONS:
+        if hard_stop:
+            return None
+        buys = [t for t in hist if t.get("action") in BUY_ACTIONS]
+        last_buy = _parse_ts(buys[-1].get("timestamp")) if buys else None
+        if last_buy is None:
+            return None
+        held_min = (now - last_buy).total_seconds() / 60
+        if rules["disable_day_trading"] and last_buy.strftime("%Y-%m-%d") == today:
+            return (f"【防過度交易】禁止當沖：{stock_id} 今日 {last_buy:%H:%M} 才買進，當日不得賣出"
+                    f"（虧損達硬性停損 −{rules['stop_loss_pct']:g}% 除外）")
+        if held_min < rules["min_hold_minutes"]:
+            return (f"【防過度交易】{stock_id} 買進後才持有 {held_min:.0f} 分鐘，未滿最短持有 {rules['min_hold_minutes']} 分鐘"
+                    f"（虧損達硬性停損 −{rules['stop_loss_pct']:g}% 除外）")
+        return None
+    if action in BUY_ACTIONS:
+        sells = [t for t in hist if t.get("action") in SELL_ACTIONS]
+        last = sells[-1] if sells else None
+        when = _parse_ts(last.get("timestamp")) if last else None
+        if when is None:
+            return None
+        if rules["disable_day_trading"] and when.strftime("%Y-%m-%d") == today:
+            return f"【防過度交易】禁止當沖：{stock_id} 今日 {when:%H:%M} 已賣出，當日不得再買進"
+        stopped = last.get("action") == "EXIT_STOP" or (_f(last.get("realized_pnl")) or 0) < 0
+        wait = rules["cooldown_minutes_after_stop_loss"]
+        gone = (now - when).total_seconds() / 60
+        if stopped and gone < wait:
+            return f"【防過度交易】{stock_id} {when:%m-%d %H:%M} 停損出清，冷卻 {wait} 分鐘內不得再買進（還剩 {wait - gone:.0f} 分鐘）"
+    return None
 READY_NOTE = "⏳ 模擬室已就緒（現金 $1,000,000），等待明日台股開盤 (09:00) 正式啟動盤中交易"
 RUNNING_NOTE = "🟢 模擬室盤中交易運作中"
 
@@ -410,17 +472,22 @@ def _money(v):
 
 
 def execute_trade(stock_id, action, shares, price=None, name=None, stop_loss=None, target_price=None,
-                  thesis=None, team_discussion=None, buffett_verdict=None, odd_price=None, enforce_hours=True):
+                  thesis=None, team_discussion=None, buffett_verdict=None, odd_price=None, enforce_hours=True,
+                  hard_stop=False):
     """以最新真實市場價執行模擬交割，回傳交易紀錄；不合規時丟出 SimError。
 
     - 只在台股盤中（週一至週五 09:00–13:30）允許交割（enforce_hours=False 僅供測試）。
-    - 整張部分（1,000 股倍數）用整張價；零股部分（shares % 1000）強制用盤中零股真實報價，手續費依兩筆委託分別計算。"""
+    - 整張部分（1,000 股倍數）用整張價；零股部分（shares % 1000）強制用盤中零股真實報價，手續費依兩筆委託分別計算。
+    - 防過度交易鐵律（最短持有、禁止當沖、停損冷卻）由 trade_block_reason 檢查；hard_stop=True 表示虧損已達硬性停損 %，一律放行。"""
     assert_trader()
     if enforce_hours and not is_tw_market_trading_hours():
         raise SimError("🔒 非台股盤中時段（週一至週五 09:00–13:30）禁止模擬下單交割")
     action = action.upper()
     if action not in BUY_ACTIONS + SELL_ACTIONS:
         raise SimError(f"不支援的動作：{action}")
+    blocked = trade_block_reason(stock_id, action, hard_stop=hard_stop)
+    if blocked:
+        raise SimError(blocked)
     shares = int(shares or 0)
     if shares <= 0 or shares % LOT_UNIT:
         raise SimError(f"股數必須為 {LOT_UNIT} 股的倍數（收到 {shares}）")

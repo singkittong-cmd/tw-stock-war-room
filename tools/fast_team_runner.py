@@ -740,6 +740,12 @@ def _sim_guard(sim, d, quotes, acct, candidates):
     stop, target = _num(d.get("stop_loss")), _num(d.get("target_price"))
     if action == "HOLD":
         return {"sid": sid, "action": "HOLD", "price": price, "stop": stop, "target": target}, None
+    rules = sim.load_strategy_rules()
+    loss = _num((h or {}).get("unrealized_pct"))
+    blocked = sim.trade_block_reason(sid, action, rules,
+                                     hard_stop=loss is not None and loss <= -rules["stop_loss_pct"])
+    if blocked:
+        return None, blocked  # 防過度交易：最短持有、禁止當沖、停損冷卻
     if action in ("TRIM", "EXIT_PROFIT", "EXIT_STOP"):
         if not h:
             return None, "沒有此模擬持倉"
@@ -748,7 +754,6 @@ def _sim_guard(sim, d, quotes, acct, candidates):
             return None, "減碼股數不足 100 股"
         return {"sid": sid, "action": action, "price": price, "shares": min(shares, h["shares"])}, None
     # ---- BUY / ADD（所有門檻來自 strategy_rules.json）
-    rules = sim.load_strategy_rules()
     chg = _num((q or {}).get("change_pct"))
     if chg is not None and chg >= rules["avoid_chase_pct"]:
         return None, f"【操盤鐵律】當日已上漲 {chg:+.2f}% ≥ 禁止追高門檻 {rules['avoid_chase_pct']:g}%"
@@ -817,24 +822,33 @@ def sim_trade_session(mode="intraday_hunt", provider="gemini"):
         mode = "watchlist_plan"  # 非盤中：只產出盤後觀察與明日開盤預備劇本，嚴禁下單交割
     out["mode"], out["trading_allowed"] = mode, trading
     # ---- 強制風控：模擬持倉跌破停損先出清（不等模型；僅盤中）
+    rules = sim.load_strategy_rules()
     for a in scan.get("alerts") or [] if trading else []:
         if a["type"] == "STOP":
+            held = sim.holding_of(sim.load_account(), a["stock_id"])
+            if not held:
+                continue
+            loss = _num(held.get("unrealized_pct"))
+            hard = loss is not None and loss <= -rules["stop_loss_pct"]
+            blocked = sim.trade_block_reason(a["stock_id"], "EXIT_STOP", rules, hard_stop=hard)
+            if blocked:  # 剛買進的小幅震盪：依防過度交易鐵律續抱，虧損達硬性停損 % 時下方仍會出清
+                out.setdefault("guard_notes", []).append(f"{a['text']}：{blocked}")
+                continue
             try:
-                t = sim.execute_trade(a["stock_id"], "EXIT_STOP", sim.holding_of(sim.load_account(), a["stock_id"])["shares"],
+                t = sim.execute_trade(a["stock_id"], "EXIT_STOP", held["shares"], hard_stop=hard,
                                       buffett_verdict=f"【系統風控】{a['text']}，依紀律停損出清")
                 executed.append({"stock_id": a["stock_id"], "action": "EXIT_STOP", "status": "executed", "trade_id": t["trade_id"],
                                  "shares": t["shares"], "price": t["price"], "reason": f"系統風控：{a['text']}"})
             except sim.SimError as exc:
                 out["errors"].append(f"停損出清 {a['stock_id']}：{exc}")
-    # ---- 硬性停損 %（strategy_rules.json）：虧損達門檻直接出清，不等模型
-    rules = sim.load_strategy_rules()
+    # ---- 硬性停損 %（strategy_rules.json）：虧損達門檻直接出清，不等模型（不受最短持有／禁止當沖限制）
     done = {e["stock_id"] for e in executed}
     for h in list(sim.load_account()["holdings"]) if trading else []:
         pct = _num(h.get("unrealized_pct"))
         if h["stock_id"] in done or pct is None or pct > -rules["stop_loss_pct"]:
             continue
         try:
-            t = sim.execute_trade(h["stock_id"], "EXIT_STOP", h["shares"],
+            t = sim.execute_trade(h["stock_id"], "EXIT_STOP", h["shares"], hard_stop=True,
                                   buffett_verdict=f"【操盤鐵律】虧損 {pct:.2f}% 達硬性停損 −{rules['stop_loss_pct']:g}%，系統出清")
             executed.append({"stock_id": h["stock_id"], "action": "EXIT_STOP", "status": "executed", "trade_id": t["trade_id"],
                              "shares": t["shares"], "price": t["price"],

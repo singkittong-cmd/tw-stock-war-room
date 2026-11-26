@@ -167,6 +167,8 @@ def can_buy(acct, p):
     reserve = acct["total_equity"] * sim.cash_reserve_pct(rules) / 100
     free = acct["cash_balance"] - reserve
     h = sim.holding_of(acct, p["stock_id"])
+    if sim.trade_block_reason(p["stock_id"], "ADD" if h else "BUY", rules):
+        return False  # 停損冷卻中或禁止當沖：不為它召開投決會
     held_value = h["shares"] * price if h else 0
     if cap - held_value < price * sim.LOT_UNIT:
         return False
@@ -177,7 +179,16 @@ def find_triggers(scan, acct, cooldowns, now):
     """回傳觸發清單：STOP／TARGET（持倉）與 HIT_ENTRY（20 強且五檔委買比 ≥ 0.75），已排除冷卻中的代號。"""
     out = []
     cool = {sid for sid, ts in cooldowns.items() if (now - datetime.strptime(ts, TIME_FMT)).total_seconds() < COOLDOWN_SEC}
+    rules = sim.load_strategy_rules()
     for a in scan.get("alerts") or []:
+        if a["type"] == "STOP":
+            h = sim.holding_of(acct, a["stock_id"]) or {}
+            try:
+                hard = float(h.get("unrealized_pct")) <= -rules["stop_loss_pct"]
+            except (TypeError, ValueError):
+                hard = False
+            if sim.trade_block_reason(a["stock_id"], "EXIT_STOP", rules, now=now, hard_stop=hard):
+                continue  # 未滿最短持有／禁止當沖：小幅震盪不召開停損投決會
         if a["stock_id"] not in cool:
             out.append({"type": a["type"], "stock_id": a["stock_id"], "text": a["text"]})
     for p in scan.get("prey") or []:

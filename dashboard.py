@@ -2042,16 +2042,23 @@ def owner_brain_section(where):
     rules = sim.load_strategy_rules()
     rv = so.load_review()
     with st.container(border=True):
-        c1, c2 = st.columns([3.2, 1.8], vertical_alignment="center")
-        c1.caption(f"高階推理引擎：{llm_router.high_tier_provider()}／{llm_router.high_tier_model() or '預設模型'}"
+        st.caption(f"高階推理引擎：{llm_router.high_tier_provider()}／{llm_router.high_tier_model() or '預設模型'}"
                    f"（.env 或 Streamlit Secrets 的 HIGH_TIER_PROVIDER、HIGH_TIER_MODEL 可切換）｜目前操盤規則 v{rules['_version']}"
                    f"（{rules['_updated_at'] or '預設值'}）｜上次覆盤 {rv.get('generated_at') or '尚未執行'}")
+        user_challenge = st.text_area(
+            "✍️ 董事長特別指示 / 覆盤挑戰重點 (選填)", key=f"brain_challenge_{where}", max_chars=so.MAX_CHALLENGE_CHARS, height=90,
+            placeholder="例如：你們最近常在30分鐘內頻繁停損，請檢討是否停損設太緊？要求放寬停損並減少當沖頻率...",
+            help="會以最高權重放在高階模型 Prompt 的最上方與最下方；五位成員必須正面回應，巴董事長須修改對應的風控參數")
+        c1, c2 = st.columns([3.2, 1.8], vertical_alignment="center")
+        c1.caption("可調整的防過度交易參數：硬性停損 %、買進後最短持有分鐘、禁止當沖、停損後同檔冷卻分鐘")
         if c2.button("🧠 啟動高階模型・深度覆盤與修正今日策略", type="primary", width="stretch", key=f"btn_brain_{where}",
                      help="打包模擬帳本、交易明細、每日淨值、五位成員預測對帳與收盤快照 → 高階模型五人深度檢討 → 自動修正 strategy_rules.json 並推回 GitHub"):
             with st.status("🧠 高階模型五人深度檢討會進行中（深度思考約 1–5 分鐘）…", expanded=True) as box:
                 st.write("📦 打包實盤證據（模擬帳本、交易明細、淨值、預測對帳、收盤快照；真實持股資料不送出）…")
                 try:
-                    out = so.run_review(publish=True)
+                    if user_challenge.strip():
+                        st.write(f"🚨 已注入董事長特別指示（最高權重）：{user_challenge.strip()[:80]}…")
+                    out = so.run_review(publish=True, user_challenge=user_challenge)
                     pub = out.get("publish") or {}
                     st.write(f"⚙️ 已套用操盤規則 v{out.get('rules_version')}；"
                              f"GitHub 備份：{'✅ ' + str(pub.get('commit')) if pub.get('pushed') else pub.get('reason') or '未推送'}")
@@ -2079,6 +2086,9 @@ def owner_brain_section(where):
                                           ("stop_loss", "🛑 停損設定"), ("position_sizing", "⚖️ 部位與現金配置")))
              + '</div>')
         st.error(f"🩺 巴董事長診斷根因：{d.get('root_cause') or '—'}")
+        if rv.get("user_challenge"):
+            st.warning(f"✍️ 董事長特別指示：{rv['user_challenge']}")
+            st.success(f"🫡 巴董事長回應：{rv.get('boss_response') or '（模型未回應，請再執行一次）'}")
         challenges = "\n".join(f"・{so.MEMBER_NAMES.get(c.get('member'), c.get('member'))}：{c.get('challenge')}"
                                for c in rv.get("chairman_challenge") or [])
         html(ui.render_qa_board({**{k: ui.name_roles((rv.get("members") or {}).get(k) or "") for k in ("news", "chips", "kline", "maga")},
