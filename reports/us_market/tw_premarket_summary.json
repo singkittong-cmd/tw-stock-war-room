@@ -1,32 +1,32 @@
 {
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26 13:31:13",
+  "date": "2026-11-27",
+  "generated_at": "2026-11-26 17:15:05",
   "sox_chg_pct": -0.65,
   "tsm_adr_chg_pct": -1.96,
-  "tsm_premium_pct": 4.5,
+  "tsm_premium_pct": 5.17,
   "us_key_drivers": [
-    "美股AI巨頭高檔震盪且晶片管制利空頻傳，機構部位於高檔進行風險控制與籌碼換手。",
-    "關稅恐慌暫時緩解但NVDA短期利空未解，市場預期差轉向關注極端賣壓後的跌深反彈動能。",
-    "記憶體與半導體設備表現疲弱（MU -4.53%、AMAT -3.89%），拖累台股權重股反彈延續性。"
+    "機構部位調整：S&P 對 NVDA 的信用評級預警觸發被動基金與機構投資者減碼，造成 AI 權值股擁擠度下降。",
+    "預期差修正：MU 與 AMAT 的重挫顯示市場對 2025 年半導體資本支出與記憶體復甦強度產生質疑。",
+    "技術面乖離：Nasdaq 跌入修正區間，雖有 N3 亞洲市場穩定訊號，但美股科技股尚未見到底部共振轉折。"
   ],
-  "tw_index_forecast": "台股下個交易日預計呈「先低後高」開低震盪打底走勢，關鍵支撐位看38,400點，壓力位看39,500點。",
-  "opening_strategy": "開盤若跳空開低不恐慌殺低，前次看錯需控管風險，首筆買進量減半；現價若低於月線且未見明確轉折，嚴格執行資金管理與風險控管，可用現金保留在50%以上。",
+  "tw_index_forecast": "預計下一交易日台股將受 ADR 拖累低開，關鍵點位看 38,800 支撐，走勢預判為低開後震盪尋找支撐。",
+  "opening_strategy": "建議買進價：不摸底，待 38,800 守穩；停損價：跌破 38,400；停利目標價：39,500；可用現金：保留 60% 以上，僅針對強勢散熱族群小量操作。",
   "holdings_alert": [],
   "top_sector_picks": {
     "favor": [
-      "AI散熱：VRT跌幅輕微，基本面需求明確且具跌深共振反彈機率",
-      "ASIC設計服務：個股表現相對強勢，受晶片出貨政策調整之直接衝擊較小"
+      "AI 散熱：VRT 相對抗跌且台股今日表現強勁，具備抗跌屬性。",
+      "ASIC 設計服務：今日盤面強勢，受美股半導體跌勢傳導較輕。"
     ],
     "avoid": [
-      "記憶體：MU重挫4.53%，報價與籌碼面承受強烈修正壓力",
-      "航運：大盤反彈過程缺乏法人資金挹注，籌碼相對零亂"
+      "記憶體：MU 重挫顯示產業基本面預期下修，避開 2408、3260。",
+      "半導體設備：AMAT 跌勢過重，相關供應鏈 3131 恐有補跌風險。"
     ]
   },
   "us_top10": [
     {
       "ref": "Q1",
-      "title": "費城半導體指數修正",
-      "point": "SOX下跌0.65%收8,774.86點，壓抑台股半導體供應鏈短期評價。",
+      "title": "費半指數收跌 0.65% 延續弱勢",
+      "point": "費半指數持續承壓，將壓制台股半導體權值股反彈力道。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/%5ESOX",
       "source": "Yahoo Finance",
@@ -34,8 +34,8 @@
     },
     {
       "ref": "Q2",
-      "title": "台積電 ADR 跌幅與溢價收斂",
-      "point": "TSM跌1.96%折合台股2,257.12元，對2330溢價縮至+4.50%，限制2330開盤向上空間。",
+      "title": "台積電 ADR 跌 1.96% 溢價收斂",
+      "point": "ADR 換算台股約 2255.88 元，溢價縮至 5.17%，2330 面臨補跌壓力。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/TSM",
       "source": "Yahoo Finance",
@@ -43,8 +43,8 @@
     },
     {
       "ref": "Q3",
-      "title": "輝達股價拉回",
-      "point": "NVDA回檔3.91%收149.30美元，對台股AI伺服器與組裝廠（如2317、3231）形成震盪壓力。",
+      "title": "輝達收跌 3.91% 領跌 AI 族群",
+      "point": "NVDA 跌破關鍵支撐，對台股 AI 伺服器與供應鏈 2382、2317 形成估值修正壓力。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/NVDA",
       "source": "Yahoo Finance",
@@ -52,8 +52,8 @@
     },
     {
       "ref": "Q7",
-      "title": "美光重挫",
-      "point": "MU大跌4.53%收601.25美元，對記憶體族群（如2408、3260）產生賣壓傳導。",
+      "title": "美光重挫 4.53% 記憶體展望轉弱",
+      "point": "MU 股價自六月以來腰斬，直接衝擊台股記憶體族群 2408、3260 信心。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/MU",
       "source": "Yahoo Finance",
@@ -61,59 +61,59 @@
     },
     {
       "ref": "Q11",
-      "title": "Vertiv 高檔震盪",
-      "point": "VRT微跌0.26%收173.37美元，散熱需求仍高，有利台股AI散熱（如3017、3324）逢低支撐。",
-      "tag": "中性",
+      "title": "Vertiv 微跌 0.26% 相對抗跌",
+      "point": "液冷散熱指標 VRT 表現優於大盤，有利台股散熱族群 3324、3017 維持強勢。",
+      "tag": "利多",
       "url": "https://finance.yahoo.com/quote/VRT",
       "source": "Yahoo Finance",
       "pub_date": "2026-11-26 05:00"
     },
     {
-      "ref": "N1",
-      "title": "亞股受AI股帶動反彈",
-      "point": "美股尾盤拉回後亞股出現反彈，有助台股AI關鍵供應鏈提振投資信心。",
-      "tag": "利多",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/asian-shares-rebound-led-ai-052153058.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-26 13:21"
-    },
-    {
-      "ref": "N3",
-      "title": "Nvidia暫停東南亞晶片出貨",
-      "point": "出貨受阻疑慮引發情緒干擾，衝擊伺服器供應鏈短線籌碼。",
+      "ref": "N6",
+      "title": "輝達傳暫停東南亞 AI 伺服器出貨",
+      "point": "出貨節奏調整可能影響台股下游組裝廠短線營收認列預期。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbDFtRGxaSmJxdndYb1VMbTBjLWJGOExCdUdULWNlRXF6RG90SDQzQkdYb29GbmI3Q1J5UHp2Yk80N3R1Wkl4UXlfWFdFd0VmQ2FEYUZXdnFpbnR3SndRWkh6dVJYQlY1cHhQMWVkTEpJaV9lbHJteGc1ai0tS0ppYWxuWVI?oc=5",
-      "source": "Financial Times",
-      "pub_date": "2026-11-26 13:00"
-    },
-    {
-      "ref": "N5",
-      "title": "關稅疑慮緩解全球市場回升",
-      "point": "科技股復甦與關稅擔憂降溫，降低台股大盤二次探底風險。",
-      "tag": "利多",
-      "url": "https://www.euronews.com/2026/11/26/anxiety-over-the-ai-boom-and-inflation-drags-wall-street-lower?.tsrc=rss",
+      "url": "https://stocktwits.com/news-articles/markets/equity/nvidia-reportedly-halts-ai-server-shipments-to-southeast-asia-ahead-of-jensen-huang-s-congress-testimony/cNbxLXJR9ZN?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-26 12:25"
-    },
-    {
-      "ref": "N7",
-      "title": "Kioxia與NVIDIA合作技術",
-      "point": "記憶體與SSD新合作案技術進展，有利相關台廠儲存介面次產業。",
-      "tag": "利多",
-      "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html?.tsrc=rss",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-26 12:19"
+      "pub_date": "2026-11-26 16:11"
     },
     {
       "ref": "N11",
-      "title": "台股AI晶片股崩跌後尋求支撐",
-      "point": "經歷暴跌4.8%後進入洗盤，利空 Priced-in 後有利具利基的伺服器與散熱逢低打底。",
-      "tag": "中性",
-      "url": "http://www.intellinews.com/taiwan-shares-tumble-4-8-as-ai-chip-stocks-slump-488520/?.tsrc=rss",
+      "title": "標普考慮下調輝達評級預警",
+      "point": "信用評級預警引發機構部位調整，對台股高價電子股產生比價下修壓力。",
+      "tag": "利空",
+      "url": "https://beincrypto.com/sp-nvidia-credit-rating-downgrade-watch/?.tsrc=rss",
       "source": "Yahoo Finance",
-      "pub_date": "2026-11-26 11:51"
+      "pub_date": "2026-11-26 16:00"
+    },
+    {
+      "ref": "N5",
+      "title": "美光市值自六月以來減半",
+      "point": "反映終端需求預期差，台股記憶體模組與代工廠需防範庫存跌價損失。",
+      "tag": "利空",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZXJiRURhSmZSMW1OMzhzWE41YkttenVxSTJMOGROdVgwSk1vNkJfNEFfQnB2SmMyNkd5OFE5bnZOMm9HX2FJUksyQ2ZqN3k5M2RvdUlGMFRWWHNPeG94YUxDN1ZaVmw0YjJkWFY4X0tjanhEVU1iRnk0VUsyOEprdHZuVkRSVzNKQnRhTFBZOFZMN0EwNVppWXZvaUNrcW9uLWoyWU9USlJpUQ?oc=5",
+      "source": "Trefis",
+      "pub_date": "2026-11-26 16:12"
+    },
+    {
+      "ref": "Q12",
+      "title": "美超微逆勢上漲 3.05%",
+      "point": "SMCI 止跌回穩，緩解市場對 AI 伺服器合規性風險的極端恐慌。",
+      "tag": "利多",
+      "url": "https://finance.yahoo.com/quote/SMCI",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-26 05:00"
+    },
+    {
+      "ref": "Q10",
+      "title": "應材重挫 3.89% 半導體設備疲軟",
+      "point": "CapEx 支出疑慮升溫，台股半導體設備與耗材 3131、3680 恐受拖累。",
+      "tag": "利空",
+      "url": "https://finance.yahoo.com/quote/AMAT",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-26 05:00"
     }
   ],
   "generated_by": "fast_team_runner（gemini）",
-  "us_top10_updated_at": "2026-11-26 13:31:13"
+  "us_top10_updated_at": "2026-11-26 17:15:05"
 }

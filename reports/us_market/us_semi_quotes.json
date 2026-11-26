@@ -1,15 +1,15 @@
 {
   "mode": "morning_close",
-  "fetched_at": "2026-11-26 13:31:04",
-  "tw_trading_date": "2026-11-26",
+  "fetched_at": "2026-11-26 17:11:09",
+  "tw_trading_date": "2026-11-27",
   "tsm_adr": {
     "tsm_price_usd": 342.34,
-    "usd_twd": 32.966,
-    "tsm_converted_twd": 2257.12,
-    "tw_2330_close": 2160.0,
+    "usd_twd": 32.948,
+    "tsm_converted_twd": 2255.88,
+    "tw_2330_close": 2145.0,
     "tw_2330_close_date": "2026-11-26",
-    "premium_pct": 4.5,
-    "premium_pct_post_market": 5.98
+    "premium_pct": 5.17,
+    "premium_pct_post_market": 6.66
   },
   "errors": [],
   "quotes": {
@@ -164,9 +164,9 @@
       "symbol": "TWD=X",
       "name": "美元兌台幣",
       "group": "台股ADR與匯率",
-      "price": 32.966,
+      "price": 32.948,
       "prev_close": 32.92100143432617,
-      "change_pct": 0.14,
+      "change_pct": 0.08,
       "day_high": 33.216,
       "day_low": 32.92,
       "volume": 0,
@@ -174,11 +174,11 @@
       "post_market_price": null,
       "post_market_time_tpe": null,
       "post_market_chg_pct": null,
-      "market_time_tpe": "2026-11-26 13:31",
+      "market_time_tpe": "2026-11-26 17:11",
       "market_day": "2026-11-26",
       "currency": "TWD",
       "url": "https://finance.yahoo.com/quote/TWD%3DX",
-      "pub_date": "2026-11-26 13:31",
+      "pub_date": "2026-11-26 17:11",
       "source": "Yahoo Finance"
     },
     "NVDA": {

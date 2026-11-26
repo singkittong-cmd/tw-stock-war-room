@@ -24173,7 +24173,58 @@
       "stop_loss": null,
       "chip_view": null,
       "note": "台股下個交易日預計呈「先低後高」開低震盪打底走勢，關鍵支撐位看38,400點，壓力位看39,500點。"
+    },
+    {
+      "key": "maga|TAIEX|premarket|2026-11-26 17:15:05",
+      "member": "maga",
+      "member_name": "川大帝MAGA",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-26 17:15:05",
+      "target_date": "2026-11-27",
+      "price_at": 39151.80859375,
+      "direction": "中性",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "費半 -0.65%、TSM 溢價 5.17%"
+    },
+    {
+      "key": "chairman|TAIEX|premarket|2026-11-26 17:15:05",
+      "member": "chairman",
+      "member_name": "巴董事長",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-26 17:15:05",
+      "target_date": "2026-11-27",
+      "price_at": 39151.80859375,
+      "direction": "中性",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "預計下一交易日台股將受 ADR 拖累低開，關鍵點位看 38,800 支撐，走勢預判為低開後震盪尋找支撐。"
+    },
+    {
+      "key": "news|TAIEX|news_brief|2026-11-26 17:13:00",
+      "member": "news",
+      "member_name": "新聞達人",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "news_brief",
+      "recorded_at": "2026-11-26 17:13:00",
+      "target_date": "2026-11-27",
+      "price_at": 39151.80859375,
+      "direction": "中性",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "分歧震盪：內資官股強力護盤抵銷外資491億賣壓，台股收復39K但外資連10砍台積電顯示基本面信心尚未回穩。"
     }
   ],
-  "updated_at": "2026-11-26 13:31:13"
+  "updated_at": "2026-11-26 17:15:05"
 }
