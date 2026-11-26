@@ -598,5 +598,29 @@
     "target_price": 18.5,
     "team_discussion": "K線技術人與籌碼王一致看空，認為趨勢未反轉且支撐跌破。",
     "buffett_verdict": "股價 17.0 元已跌破 K 線技術人設定之 17.5 元轉折低點，且處於空頭排列，依鐵律執行硬性停損以回收資金。｜停損 None｜目標 None"
+  },
+  {
+    "trade_id": "T0026",
+    "timestamp": "2026-11-26 11:43:11",
+    "stock_id": "2603",
+    "name": "長榮",
+    "action": "EXIT_STOP",
+    "price": 252.0,
+    "shares": 500,
+    "gross_amount": 126000,
+    "board_shares": 0,
+    "board_price": null,
+    "odd_shares": 500,
+    "odd_price": 252.0,
+    "odd_price_source": "零股成交價",
+    "price_note": "【零股價 $252（零股成交價）】×500 股",
+    "fee_and_tax": 485,
+    "net_amount": 125515,
+    "realized_pnl": -592,
+    "cash_after": 864853,
+    "stop_loss": 245.0,
+    "target_price": 274.5,
+    "team_discussion": "籌碼王與新聞達人一致認同投信大賣為撤退訊號，K線技術人確認趨勢轉弱。",
+    "buffett_verdict": "違反鐵律第 8 條：投信連賣標的嚴禁建立多單。雖未觸及硬性停損，但籌碼面轉惡且跌破月線，依 K 線邏輯與鐵律強制出清。｜停損 None｜目標 None"
   }
 ]

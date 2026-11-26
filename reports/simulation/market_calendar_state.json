@@ -1,8 +1,9 @@
 {
-  "verified_open": "2026-11-25",
+  "verified_open": "2026-11-26",
   "last_probe": {
-    "at": "2026-11-25 11:22:25",
+    "at": "2026-11-26 09:11:15",
     "closed": false,
-    "evidence": "MIS 2330 量 44395、加權指數量 0"
+    "evidence": "MIS 2330 量 7799、加權指數量 0",
+    "source": "mis"
   }
 }

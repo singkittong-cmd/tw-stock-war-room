@@ -71220,28 +71220,35 @@
    "target_price": null,
    "rationale": "費半 +14.03%、TSM 溢價 7.22%",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -7.17,
+    "return_pct": -4.78,
     "reasons": [
-     "預測後最新 37245.3（-7.17%）"
+     "預測後收 38202.8（-4.78%）"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
-     "open": 39983.91015625,
-     "high": 39983.91015625,
-     "low": 36681.8984375,
-     "last": 37245.3203125,
-     "close": null,
-     "gap_pct": -0.35,
+     "open": null,
+     "high": 39983.91,
+     "low": 36681.9,
+     "last": 38202.84,
+     "close": 38202.84,
+     "gap_pct": null,
      "open_below_vwap": false,
      "close_at_low": false,
      "foreign_net": null,
      "trust_net": null,
      "inst_unit": null
-    }
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-24 15:06收盤後川大帝MAGA對 TAIEX 看多（當時 40122.3），看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "川大帝MAGA(11-24看多)看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -71261,28 +71268,35 @@
    "target_price": null,
    "rationale": "預判台股下一交易日開高走高，關鍵支撐點位39,800點，壓力點位40,800點。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -7.17,
+    "return_pct": -4.78,
     "reasons": [
-     "預測後最新 37245.3（-7.17%）"
+     "預測後收 38202.8（-4.78%）"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
-     "open": 39983.91015625,
-     "high": 39983.91015625,
-     "low": 36681.8984375,
-     "last": 37245.3203125,
-     "close": null,
-     "gap_pct": -0.35,
+     "open": null,
+     "high": 39983.91,
+     "low": 36681.9,
+     "last": 38202.84,
+     "close": 38202.84,
+     "gap_pct": null,
      "open_below_vwap": false,
      "close_at_low": false,
      "foreign_net": null,
      "trust_net": null,
      "inst_unit": null
-    }
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-24 15:06收盤後巴董事長對 TAIEX 看多（當時 40122.3），看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "巴董事長(11-24看多)看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -71302,28 +71316,35 @@
    "target_price": null,
    "rationale": "中立偏多：黃仁勳回任輝達執行長激勵台股創史上最大漲點，收復4萬點大關，短線聚焦半導體與AI供應鏈籌碼流向。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -7.17,
+    "return_pct": -4.78,
     "reasons": [
-     "預測後最新 37245.3（-7.17%）"
+     "預測後收 38202.8（-4.78%）"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
-     "open": 39983.91015625,
-     "high": 39983.91015625,
-     "low": 36681.8984375,
-     "last": 37245.3203125,
-     "close": null,
-     "gap_pct": -0.35,
+     "open": null,
+     "high": 39983.91,
+     "low": 36681.9,
+     "last": 38202.84,
+     "close": 38202.84,
+     "gap_pct": null,
      "open_below_vwap": false,
      "close_at_low": false,
      "foreign_net": null,
      "trust_net": null,
      "inst_unit": null
-    }
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後新聞達人對 TAIEX 看多（當時 40122.3），看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "新聞達人(11-24看多)看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -71343,31 +71364,48 @@
    "target_price": 56.5,
    "rationale": "多頭拉回守月線低接",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -9.27,
+    "return_pct": -9.64,
     "reasons": [
-     "預測後最新 49.9（-9.27%）",
+     "預測後收 49.7（-9.64%）",
      "開盤跳空 -4.00%",
      "建議買進價 52.6 失守（最低 49.5）",
      "觸及停損價 50.5"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 52.8,
      "high": 53.7,
      "low": 49.5,
-     "last": 49.9,
-     "close": null,
+     "last": 49.7,
+     "close": 49.7,
      "gap_pct": -4.0,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -44167.0,
+     "trust_net": 33660.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2886 看多（當時 55），11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     },
+     {
+      "pattern": "建議買進價失守",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2886 看多（當時 55），建議買進價 52.6 失守（最低 49.5）→ 下次建議買進價下移至 49.5 附近，買進量減半。",
+      "short": "K線技術人(11-24看多)建議買進價 52.6 失守（最低 49.5）→ 下次建議買進價下移至 49.5 附近，買進量減半"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2886 看多（當時 55），觸及停損價 50.5 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24看多)觸及停損價 50.5 → 依紀律停損，不攤平"
+     }
+    ]
    }
   },
   {
@@ -71387,29 +71425,41 @@
    "target_price": null,
    "rationale": "土洋合買｜外資 5 日 +11,511 張、投信 5 日 +13,609 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -9.27,
+    "return_pct": -9.64,
     "reasons": [
-     "預測後最新 49.9（-9.27%）",
+     "預測後收 49.7（-9.64%）",
      "開盤跳空 -4.00%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 52.8,
      "high": 53.7,
      "low": 49.5,
-     "last": 49.9,
-     "close": null,
+     "last": 49.7,
+     "close": 49.7,
      "gap_pct": -4.0,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -44167.0,
+     "trust_net": 33660.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "外資一日行情",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2886 看多（當時 55），隔日外資反手賣超 -44,167 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方。",
+      "short": "籌碼王(11-24看多)隔日外資反手賣超 -44,167 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方"
+     },
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2886 看多（當時 55），11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "籌碼王(11-24看多)11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
    }
   },
   {
@@ -71429,29 +71479,36 @@
    "target_price": 289.5,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -6.55,
+    "return_pct": -7.61,
     "reasons": [
-     "預測後最新 264（-6.55%）",
+     "預測後收 261（-7.61%）",
      "開盤跳空 -4.42%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 270.0,
      "high": 273.5,
      "low": 254.5,
-     "last": 264.0,
-     "close": null,
+     "last": 261.0,
+     "close": 261.0,
      "gap_pct": -4.42,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2382 觀望（當時 282.5），預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71471,29 +71528,36 @@
    "target_price": null,
    "rationale": "投信連買鎖碼（5 日）｜外資 5 日 -5,658 張、投信 5 日 +8,756 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -6.55,
+    "return_pct": -7.61,
     "reasons": [
-     "預測後最新 264（-6.55%）",
+     "預測後收 261（-7.61%）",
      "開盤跳空 -4.42%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 270.0,
      "high": 273.5,
      "low": 254.5,
-     "last": 264.0,
-     "close": null,
+     "last": 261.0,
+     "close": 261.0,
      "gap_pct": -4.42,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2382 觀望（當時 282.5），預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71513,29 +71577,36 @@
    "target_price": 866.0,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -5.36,
+    "return_pct": -6.33,
     "reasons": [
-     "預測後最新 777（-5.36%）",
+     "預測後收 769（-6.33%）",
      "開盤跳空 -3.78%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 790.0,
      "high": 797.0,
      "low": 742.0,
-     "last": 777.0,
-     "close": null,
+     "last": 769.0,
+     "close": 769.0,
      "gap_pct": -3.78,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -43.0,
+     "trust_net": -485.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2357 觀望（當時 821），預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71555,29 +71626,36 @@
    "target_price": null,
    "rationale": "外資連買（3 日）｜外資 5 日 +1,784 張、投信 5 日 -2,887 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -5.36,
+    "return_pct": -6.33,
     "reasons": [
-     "預測後最新 777（-5.36%）",
+     "預測後收 769（-6.33%）",
      "開盤跳空 -3.78%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 790.0,
      "high": 797.0,
      "low": 742.0,
-     "last": 777.0,
-     "close": null,
+     "last": 769.0,
+     "close": 769.0,
      "gap_pct": -3.78,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -43.0,
+     "trust_net": -485.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2357 觀望（當時 821），預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71597,29 +71675,36 @@
    "target_price": 274.5,
    "rationale": "多頭拉回守月線低接",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "DEVIATED",
-    "return_pct": -0.78,
+    "result": "WRONG",
+    "return_pct": -1.75,
     "reasons": [
-     "預測後最新 255（-0.78%）",
+     "預測後收 252.5（-1.75%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 256.5,
      "low": 244.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2603 看多（當時 257），11-25 開盤跳空 -2.72% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -2.72% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
    }
   },
   {
@@ -71639,29 +71724,36 @@
    "target_price": null,
    "rationale": "法人多空分歧｜外資 5 日 +11,889 張、投信 5 日 -13,283 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "CORRECT",
-    "return_pct": -0.78,
+    "result": "DEVIATED",
+    "return_pct": -1.75,
     "reasons": [
-     "預測後最新 255（-0.78%）",
+     "預測後收 252.5（-1.75%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 256.5,
      "low": 244.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2603 觀望（當時 257），預期盤整但實際波動 -1.75% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -1.75% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71681,31 +71773,48 @@
    "target_price": 73.9,
    "rationale": "跌破月線回測季線",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -6.58,
+    "return_pct": -5.72,
     "reasons": [
-     "預測後最新 65.3（-6.58%）",
+     "預測後收 65.9（-5.72%）",
      "開盤跳空 -3.29%",
      "建議買進價 69.5 失守（最低 63.5）",
      "觸及停損價 66.9"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 67.6,
      "high": 68.4,
      "low": 63.5,
-     "last": 65.3,
-     "close": null,
+     "last": 65.9,
+     "close": 65.9,
      "gap_pct": -3.29,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -4259.0,
+     "trust_net": -512.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "建議買進價失守",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2891 觀望（當時 69.9），建議買進價 69.5 失守（最低 63.5）→ 下次建議買進價下移至 63.5 附近，買進量減半。",
+      "short": "K線技術人(11-24觀望)建議買進價 69.5 失守（最低 63.5）→ 下次建議買進價下移至 63.5 附近，買進量減半"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2891 觀望（當時 69.9），觸及停損價 66.9 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 66.9 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2891 觀望（當時 69.9），預期盤整但實際波動 -5.72% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -5.72% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71725,28 +71834,28 @@
    "target_price": null,
    "rationale": "法人多空分歧｜外資 5 日 -16,264 張、投信 5 日 +6,053 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -6.58,
+    "return_pct": -5.72,
     "reasons": [
-     "預測後最新 65.3（-6.58%）",
+     "預測後收 65.9（-5.72%）",
      "開盤跳空 -3.29%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 67.6,
      "high": 68.4,
      "low": 63.5,
-     "last": 65.3,
-     "close": null,
+     "last": 65.9,
+     "close": 65.9,
      "gap_pct": -3.29,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -4259.0,
+     "trust_net": -512.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -71767,28 +71876,28 @@
    "target_price": 82.7,
    "rationale": "多頭拉回守月線低接",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 1.29,
+    "return_pct": 1.68,
     "reasons": [
-     "預測後最新 78.4（+1.29%）",
+     "預測後收 78.7（+1.68%）",
      "開盤跳空 -1.94%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 75.9,
      "high": 80.0,
      "low": 75.7,
-     "last": 78.4,
-     "close": null,
+     "last": 78.7,
+     "close": 78.7,
      "gap_pct": -1.94,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -1666.0,
+     "trust_net": 6494.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -71809,29 +71918,36 @@
    "target_price": null,
    "rationale": "法人多空分歧｜外資 5 日 -1,090 張、投信 5 日 +7,649 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "CORRECT",
-    "return_pct": 1.29,
+    "result": "DEVIATED",
+    "return_pct": 1.68,
     "reasons": [
-     "預測後最新 78.4（+1.29%）",
+     "預測後收 78.7（+1.68%）",
      "開盤跳空 -1.94%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 75.9,
      "high": 80.0,
      "low": 75.7,
-     "last": 78.4,
-     "close": null,
+     "last": 78.7,
+     "close": 78.7,
      "gap_pct": -1.94,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1666.0,
+     "trust_net": 6494.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 1216 觀望（當時 77.4），預期盤整但實際波動 +1.68% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 +1.68% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71851,29 +71967,36 @@
    "target_price": 495.0,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -2.41,
+    "return_pct": -1.84,
     "reasons": [
-     "預測後最新 425（-2.41%）",
+     "預測後收 427.5（-1.84%）",
      "開盤跳空 -2.07%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 426.5,
      "high": 434.0,
      "low": 406.0,
-     "last": 425.0,
-     "close": null,
+     "last": 427.5,
+     "close": 427.5,
      "gap_pct": -2.07,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 673.0,
+     "trust_net": -324.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 3034 觀望（當時 435.5），預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71893,29 +72016,36 @@
    "target_price": null,
    "rationale": "外資連買（7 日）｜外資 5 日 +2,102 張、投信 5 日 -1,614 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -2.41,
+    "return_pct": -1.84,
     "reasons": [
-     "預測後最新 425（-2.41%）",
+     "預測後收 427.5（-1.84%）",
      "開盤跳空 -2.07%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 426.5,
      "high": 434.0,
      "low": 406.0,
-     "last": 425.0,
-     "close": null,
+     "last": 427.5,
+     "close": 427.5,
      "gap_pct": -2.07,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 673.0,
+     "trust_net": -324.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 3034 觀望（當時 435.5），預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -71935,29 +72065,36 @@
    "target_price": 4085.0,
    "rationale": "強勢整理回測10日線",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -5.49,
+    "return_pct": -7.92,
     "reasons": [
-     "預測後最新 3700（-5.49%）",
+     "預測後收 3605（-7.92%）",
      "開盤跳空 -1.53%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 3855.0,
      "high": 3970.0,
      "low": 3530.0,
-     "last": 3700.0,
-     "close": null,
+     "last": 3605.0,
+     "close": 3605.0,
      "gap_pct": -1.53,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -279.0,
+     "trust_net": 404.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 3661 看多（當時 3915），11-25 開盤跳空 -1.53% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -1.53% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
    }
   },
   {
@@ -71977,29 +72114,41 @@
    "target_price": null,
    "rationale": "投信連買鎖碼（10 日）｜外資 5 日 -418 張、投信 5 日 +1,141 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -5.49,
+    "return_pct": -7.92,
     "reasons": [
-     "預測後最新 3700（-5.49%）",
+     "預測後收 3605（-7.92%）",
      "開盤跳空 -1.53%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 3855.0,
      "high": 3970.0,
      "low": 3530.0,
-     "last": 3700.0,
-     "close": null,
+     "last": 3605.0,
+     "close": 3605.0,
      "gap_pct": -1.53,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -279.0,
+     "trust_net": 404.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "外資一日行情",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 3661 看多（當時 3915），隔日外資反手賣超 -279 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方。",
+      "short": "籌碼王(11-24看多)隔日外資反手賣超 -279 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方"
+     },
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 3661 看多（當時 3915），11-25 開盤跳空 -1.53% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "籌碼王(11-24看多)11-25 開盤跳空 -1.53% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
    }
   },
   {
@@ -72027,7 +72176,7 @@
      "預測後最新 56.1（-0.36%）",
      "開盤跳空 -3.02%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 54.6,
@@ -72069,7 +72218,7 @@
      "預測後最新 56.1（-0.36%）",
      "開盤跳空 -3.02%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 54.6,
@@ -72103,31 +72252,49 @@
    "target_price": 4245.0,
    "rationale": "強勢整理回測10日線",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
     "return_pct": -10.0,
     "reasons": [
-     "預測後最新 3645（-10.00%）",
+     "預測後收 3645（-10.00%）",
      "開盤跳空 -4.81%",
      "建議買進價 3775 失守（最低 3645）",
-     "觸及停損價 3660"
+     "觸及停損價 3660",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 3855.0,
      "high": 3955.0,
      "low": 3645.0,
      "last": 3645.0,
-     "close": null,
+     "close": 3645.0,
      "gap_pct": -4.81,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": -3753.0,
+     "trust_net": 690.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2454 看多（當時 4050），11-25 開盤跳空 -4.81% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -4.81% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     },
+     {
+      "pattern": "建議買進價失守",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2454 看多（當時 4050），建議買進價 3775 失守（最低 3645）→ 下次建議買進價下移至 3645 附近，買進量減半。",
+      "short": "K線技術人(11-24看多)建議買進價 3775 失守（最低 3645）→ 下次建議買進價下移至 3645 附近，買進量減半"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2454 看多（當時 4050），觸及停損價 3660 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24看多)觸及停損價 3660 → 依紀律停損，不攤平"
+     }
+    ]
    }
   },
   {
@@ -72147,29 +72314,37 @@
    "target_price": null,
    "rationale": "投信連買鎖碼（29 日）｜外資 5 日 -8,260 張、投信 5 日 +1,810 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
     "return_pct": -10.0,
     "reasons": [
-     "預測後最新 3645（-10.00%）",
-     "開盤跳空 -4.81%"
+     "預測後收 3645（-10.00%）",
+     "開盤跳空 -4.81%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 3855.0,
      "high": 3955.0,
      "low": 3645.0,
      "last": 3645.0,
-     "close": null,
+     "close": 3645.0,
      "gap_pct": -4.81,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": -3753.0,
+     "trust_net": 690.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2454 觀望（當時 4050），預期盤整但實際波動 -10.00% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -10.00% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72189,29 +72364,36 @@
    "target_price": 109.5,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
     "return_pct": 3.5,
     "reasons": [
-     "預測後最新 100.5（+3.50%）",
+     "預測後收 100.5（+3.50%）",
      "開盤跳空 -1.34%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 95.8,
      "high": 103.5,
      "low": 95.5,
      "last": 100.5,
-     "close": null,
+     "close": 100.5,
      "gap_pct": -1.34,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 9268.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2615 觀望（當時 97.1），預期盤整但實際波動 +3.50% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 +3.50% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72231,29 +72413,36 @@
    "target_price": null,
    "rationale": "外資連買（4 日）｜外資 5 日 +10,786 張、投信 5 日 -7,221 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
     "return_pct": 3.5,
     "reasons": [
-     "預測後最新 100.5（+3.50%）",
+     "預測後收 100.5（+3.50%）",
      "開盤跳空 -1.34%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 95.8,
      "high": 103.5,
      "low": 95.5,
      "last": 100.5,
-     "close": null,
+     "close": 100.5,
      "gap_pct": -1.34,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 9268.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2615 觀望（當時 97.1），預期盤整但實際波動 +3.50% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 +3.50% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72281,7 +72470,7 @@
      "預測後最新 133.5（-6.97%）",
      "開盤跳空 -2.44%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 140.0,
@@ -72323,7 +72512,7 @@
      "預測後最新 133.5（-6.97%）",
      "開盤跳空 -2.44%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 140.0,
@@ -72357,29 +72546,36 @@
    "target_price": 2745.0,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": 2.12,
+    "return_pct": -2.12,
     "reasons": [
-     "預測後最新 2655（+2.12%）",
+     "預測後收 2545（-2.12%）",
      "開盤跳空 -4.81%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 2475.0,
      "high": 2705.0,
      "low": 2360.0,
-     "last": 2655.0,
-     "close": null,
+     "last": 2545.0,
+     "close": 2545.0,
      "gap_pct": -4.81,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1287.0,
+     "trust_net": 1511.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 3017 觀望（當時 2600），預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72399,28 +72595,28 @@
    "target_price": null,
    "rationale": "法人多空分歧｜外資 5 日 -249 張、投信 5 日 +364 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "WRONG",
-    "return_pct": 2.12,
+    "result": "CORRECT",
+    "return_pct": -2.12,
     "reasons": [
-     "預測後最新 2655（+2.12%）",
+     "預測後收 2545（-2.12%）",
      "開盤跳空 -4.81%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 2475.0,
      "high": 2705.0,
      "low": 2360.0,
-     "last": 2655.0,
-     "close": null,
+     "last": 2545.0,
+     "close": 2545.0,
      "gap_pct": -4.81,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -1287.0,
+     "trust_net": 1511.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -72441,29 +72637,37 @@
    "target_price": 6955.0,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
     "return_pct": -9.95,
     "reasons": [
-     "預測後最新 5070（-9.95%）",
-     "開盤跳空 -8.17%"
+     "預測後收 5070（-9.95%）",
+     "開盤跳空 -8.17%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 5170.0,
      "high": 5300.0,
      "low": 5070.0,
      "last": 5070.0,
-     "close": null,
+     "close": 5070.0,
      "gap_pct": -8.17,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": 18.0,
+     "trust_net": 12.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 3443 觀望（當時 5630），預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72483,29 +72687,37 @@
    "target_price": null,
    "rationale": "法人多空分歧｜外資 5 日 +633 張、投信 5 日 -523 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
     "return_pct": -9.95,
     "reasons": [
-     "預測後最新 5070（-9.95%）",
-     "開盤跳空 -8.17%"
+     "預測後收 5070（-9.95%）",
+     "開盤跳空 -8.17%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 5170.0,
      "high": 5300.0,
      "low": 5070.0,
      "last": 5070.0,
-     "close": null,
+     "close": 5070.0,
      "gap_pct": -8.17,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": 18.0,
+     "trust_net": 12.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 3443 觀望（當時 5630），預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72525,29 +72737,36 @@
    "target_price": 18.5,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -3.13,
+    "return_pct": -2.56,
     "reasons": [
-     "預測後最新 17（-3.13%）",
+     "預測後收 17.1（-2.56%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
      "high": 17.3,
      "low": 16.85,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2002 觀望（當時 17.55），預期盤整但實際波動 -2.56% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -2.56% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72567,28 +72786,28 @@
    "target_price": null,
    "rationale": "投信連買鎖碼（3 日）｜外資 5 日 -63,009 張、投信 5 日 -143 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -3.13,
+    "return_pct": -2.56,
     "reasons": [
-     "預測後最新 17（-3.13%）",
+     "預測後收 17.1（-2.56%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
      "high": 17.3,
      "low": 16.85,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -72609,28 +72828,28 @@
    "target_price": 739.0,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 0.58,
+    "return_pct": 0.72,
     "reasons": [
-     "預測後最新 698（+0.58%）",
+     "預測後收 699（+0.72%）",
      "開盤跳空 -1.15%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 686.0,
      "high": 705.0,
      "low": 661.0,
-     "last": 698.0,
-     "close": null,
+     "last": 699.0,
+     "close": 699.0,
      "gap_pct": -1.15,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": 1521.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -72651,28 +72870,28 @@
    "target_price": null,
    "rationale": "外資連買（11 日）｜外資 5 日 +1,996 張、投信 5 日 -851 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 0.58,
+    "return_pct": 0.72,
     "reasons": [
-     "預測後最新 698（+0.58%）",
+     "預測後收 699（+0.72%）",
      "開盤跳空 -1.15%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 686.0,
      "high": 705.0,
      "low": 661.0,
-     "last": 698.0,
-     "close": null,
+     "last": 699.0,
+     "close": 699.0,
      "gap_pct": -1.15,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": 1521.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -72701,7 +72920,7 @@
      "預測後最新 38.75（-5.95%）",
      "開盤跳空 -4.85%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 39.2,
@@ -72743,7 +72962,7 @@
      "預測後最新 38.75（-5.95%）",
      "開盤跳空 -4.85%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 39.2,
@@ -72777,8 +72996,37 @@
    "target_price": 1655.0,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -6.9,
+    "reasons": [
+     "預測後收 1485（-6.90%）",
+     "開盤跳空 -5.33%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 1510.0,
+     "high": 1575.0,
+     "low": 1470.0,
+     "last": 1485.0,
+     "close": 1485.0,
+     "gap_pct": -5.33,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1959.0,
+     "trust_net": 2451.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 8299 觀望（當時 1595），預期盤整但實際波動 -6.90% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -6.90% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
   },
   {
    "id": "chips|8299|standby|2026-11-24 15:07:43",
@@ -72797,8 +73045,37 @@
    "target_price": null,
    "rationale": "土洋合買｜外資 5 日 +2,578 張、投信 5 日 +123 張",
    "target_date": "2026-11-25",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -6.9,
+    "reasons": [
+     "預測後收 1485（-6.90%）",
+     "開盤跳空 -5.33%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 1510.0,
+     "high": 1575.0,
+     "low": 1470.0,
+     "last": 1485.0,
+     "close": 1485.0,
+     "gap_pct": -5.33,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1959.0,
+     "trust_net": 2451.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 8299 觀望（當時 1595），預期盤整但實際波動 -6.90% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -6.90% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
   },
   {
    "id": "kline|2330|standby|2026-11-24 15:07:43",
@@ -72817,29 +73094,36 @@
    "target_price": 2250.0,
    "rationale": "觀望等待底部確認",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -3.36,
+    "return_pct": -3.59,
     "reasons": [
-     "預測後最新 2155（-3.36%）",
+     "預測後收 2150（-3.59%）",
      "開盤跳空 -3.59%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 2150.0,
      "high": 2170.0,
      "low": 2020.0,
-     "last": 2155.0,
-     "close": null,
+     "last": 2150.0,
+     "close": 2150.0,
      "gap_pct": -3.59,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -26972.0,
+     "trust_net": 4791.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後K線技術人對 2330 觀望（當時 2230），預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72859,29 +73143,36 @@
    "target_price": null,
    "rationale": "外資連賣（8 日）｜外資 5 日 -61,596 張、投信 5 日 +4,683 張",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -3.36,
+    "return_pct": -3.59,
     "reasons": [
-     "預測後最新 2155（-3.36%）",
+     "預測後收 2150（-3.59%）",
      "開盤跳空 -3.59%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 2150.0,
      "high": 2170.0,
      "low": 2020.0,
-     "last": 2155.0,
-     "close": null,
+     "last": 2150.0,
+     "close": 2150.0,
      "gap_pct": -3.59,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -26972.0,
+     "trust_net": 4791.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 15:07收盤後籌碼王對 2330 觀望（當時 2230），預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -72908,7 +73199,7 @@
     "reasons": [
      "預測後最新 100.5（-3.83%）"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 104.0,
@@ -72949,7 +73240,7 @@
     "reasons": [
      "預測後最新 100.5（-3.83%）"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 104.0,
@@ -73023,29 +73314,36 @@
    "target_price": 82.7,
    "rationale": "空頭趨勢｜四線糾結（排列未定）｜葛蘭碧⑥反彈不過賣點｜近 3 日無關鍵轉折 K",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "DEVIATED",
-    "return_pct": 1.29,
+    "result": "WRONG",
+    "return_pct": 1.68,
     "reasons": [
-     "預測後最新 78.4（+1.29%）",
+     "預測後收 78.7（+1.68%）",
      "開盤跳空 -1.94%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 75.9,
      "high": 80.0,
      "low": 75.7,
-     "last": 78.4,
-     "close": null,
+     "last": 78.7,
+     "close": 78.7,
      "gap_pct": -1.94,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1666.0,
+     "trust_net": 6494.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看空反漲",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 1216 看空（當時 77.4），看空後反漲 +1.68% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+      "short": "K線技術人(11-24看空)看空後反漲 +1.68% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+     }
+    ]
    }
   },
   {
@@ -73145,8 +73443,31 @@
    "target_price": 2090.0,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜位於月線之下（乖離 -3.6%），未觸發八大法則訊號｜跳空向上缺口、長紅吞噬",
    "target_date": "2026-11-25",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -6.9,
+    "reasons": [
+     "預測後收 1485（-6.90%）",
+     "開盤跳空 -5.33%",
+     "觸及停損價 1595"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 1510.0,
+     "high": 1575.0,
+     "low": 1470.0,
+     "last": 1485.0,
+     "close": 1485.0,
+     "gap_pct": -5.33,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1959.0,
+     "trust_net": 2451.0,
+     "inst_unit": "張"
+    }
+   }
   },
   {
    "id": "kline|2395|zhu_auto|2026-11-24 14:00:00",
@@ -73185,30 +73506,37 @@
    "target_price": 120.5,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧④負乖離過大（-11.2%）｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
     "return_pct": 3.5,
     "reasons": [
-     "預測後最新 100.5（+3.50%）",
+     "預測後收 100.5（+3.50%）",
      "開盤跳空 -1.34%",
      "觸及停損價 97.1"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 95.8,
      "high": 103.5,
      "low": 95.5,
      "last": 100.5,
-     "close": null,
+     "close": 100.5,
      "gap_pct": -1.34,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 9268.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看空反漲",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2615 看空（當時 97.1），看空後反漲 +3.50% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+      "short": "K線技術人(11-24看空)看空後反漲 +3.50% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+     }
+    ]
    }
   },
   {
@@ -73248,30 +73576,43 @@
    "target_price": 8645.0,
    "rationale": "盤整趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧④負乖離過大（-19.0%）｜跳空向上缺口、跳空向下缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
     "return_pct": -9.95,
     "reasons": [
-     "預測後最新 5070（-9.95%）",
+     "預測後收 5070（-9.95%）",
      "開盤跳空 -8.17%",
-     "觸及停損價 5630"
+     "觸及停損價 5630",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 5170.0,
      "high": 5300.0,
      "low": 5070.0,
      "last": 5070.0,
-     "close": null,
+     "close": 5070.0,
      "gap_pct": -8.17,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": 18.0,
+     "trust_net": 12.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3443 觀望（當時 5630），觸及停損價 5630 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 5630 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3443 觀望（當時 5630），預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -73291,8 +73632,30 @@
    "target_price": 1875.0,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧⑦假突破賣點｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.67,
+    "reasons": [
+     "預測後收 1475（-0.67%）",
+     "觸及停損價 1485"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 1485.0,
+     "high": 1545.0,
+     "low": 1355.0,
+     "last": 1475.0,
+     "close": 1475.0,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1344.0,
+     "trust_net": 1507.0,
+     "inst_unit": "張"
+    }
+   }
   },
   {
    "id": "kline|1503|zhu_auto|2026-11-24 14:00:00",
@@ -73391,8 +73754,32 @@
    "target_price": 5150.0,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧⑥反彈不過賣點｜跳空向上缺口、長紅吞噬、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -9.92,
+    "reasons": [
+     "預測後收 3770（-9.92%）",
+     "開盤跳空 -9.08%",
+     "觸及停損價 4185",
+     "收在當日最低附近"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 3805.0,
+     "high": 4105.0,
+     "low": 3770.0,
+     "last": 3770.0,
+     "close": 3770.0,
+     "gap_pct": -9.08,
+     "open_below_vwap": false,
+     "close_at_low": true,
+     "foreign_net": -393.0,
+     "trust_net": 320.0,
+     "inst_unit": "張"
+    }
+   }
   },
   {
    "id": "kline|2881|zhu_auto|2026-11-24 14:00:00",
@@ -73420,7 +73807,7 @@
      "開盤跳空 -2.44%",
      "觸及停損價 141.5"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 140.0,
@@ -73454,30 +73841,42 @@
    "target_price": 3330.0,
    "rationale": "盤整趨勢｜四線空頭排列（5<10<20<60）｜位於月線之下（乖離 -5.2%），未觸發八大法則訊號｜跳空向上缺口、長紅吞噬、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": 2.12,
+    "return_pct": -2.12,
     "reasons": [
-     "預測後最新 2655（+2.12%）",
+     "預測後收 2545（-2.12%）",
      "開盤跳空 -4.81%",
      "觸及停損價 2600"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 2475.0,
      "high": 2705.0,
      "low": 2360.0,
-     "last": 2655.0,
-     "close": null,
+     "last": 2545.0,
+     "close": 2545.0,
      "gap_pct": -4.81,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1287.0,
+     "trust_net": 1511.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3017 觀望（當時 2600），觸及停損價 2600 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 2600 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3017 觀望（當時 2600），預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -73497,31 +73896,48 @@
    "target_price": 56.5,
    "rationale": "多頭趨勢｜四線糾結（排列未定）｜位於月線之上（乖離 +2.5%），未觸發八大法則訊號｜近 3 日無關鍵轉折 K",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -9.27,
+    "return_pct": -9.64,
     "reasons": [
-     "預測後最新 49.9（-9.27%）",
+     "預測後收 49.7（-9.64%）",
      "開盤跳空 -4.00%",
      "建議買進價 53.6 失守（最低 49.5）",
      "觸及停損價 53.68"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 52.8,
      "high": 53.7,
      "low": 49.5,
-     "last": 49.9,
-     "close": null,
+     "last": 49.7,
+     "close": 49.7,
      "gap_pct": -4.0,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -44167.0,
+     "trust_net": 33660.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2886 看多（當時 55），11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     },
+     {
+      "pattern": "建議買進價失守",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2886 看多（當時 55），建議買進價 53.6 失守（最低 49.5）→ 下次建議買進價下移至 49.5 附近，買進量減半。",
+      "short": "K線技術人(11-24看多)建議買進價 53.6 失守（最低 49.5）→ 下次建議買進價下移至 49.5 附近，買進量減半"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2886 看多（當時 55），觸及停損價 53.68 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24看多)觸及停損價 53.68 → 依紀律停損，不攤平"
+     }
+    ]
    }
   },
   {
@@ -73581,8 +73997,32 @@
    "target_price": 128.5,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜位於月線之下（乖離 -3.0%），未觸發八大法則訊號｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -9.99,
+    "reasons": [
+     "預測後收 87.4（-9.99%）",
+     "開盤跳空 -7.83%",
+     "觸及停損價 97.1",
+     "收在當日最低附近"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 89.5,
+     "high": 91.0,
+     "low": 87.4,
+     "last": 87.4,
+     "close": 87.4,
+     "gap_pct": -7.83,
+     "open_below_vwap": false,
+     "close_at_low": true,
+     "foreign_net": -60988.0,
+     "trust_net": 20197.0,
+     "inst_unit": "張"
+    }
+   }
   },
   {
    "id": "kline|6442|zhu_auto|2026-11-24 14:00:00",
@@ -73641,30 +74081,42 @@
    "target_price": 4085.0,
    "rationale": "盤整趨勢｜四線糾結（排列未定）｜葛蘭碧⑧正乖離過大（12.2%）｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -5.49,
+    "return_pct": -7.92,
     "reasons": [
-     "預測後最新 3700（-5.49%）",
+     "預測後收 3605（-7.92%）",
      "開盤跳空 -1.53%",
      "觸及停損價 3915"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 3855.0,
      "high": 3970.0,
      "low": 3530.0,
-     "last": 3700.0,
-     "close": null,
+     "last": 3605.0,
+     "close": 3605.0,
      "gap_pct": -1.53,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -279.0,
+     "trust_net": 404.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3661 觀望（當時 3915），觸及停損價 3915 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 3915 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3661 觀望（當時 3915），預期盤整但實際波動 -7.92% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -7.92% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -73724,30 +74176,42 @@
    "target_price": 603.0,
    "rationale": "盤整趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧④負乖離過大（-12.0%）｜跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -2.41,
+    "return_pct": -1.84,
     "reasons": [
-     "預測後最新 425（-2.41%）",
+     "預測後收 427.5（-1.84%）",
      "開盤跳空 -2.07%",
      "觸及停損價 410.5"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 426.5,
      "high": 434.0,
      "low": 406.0,
-     "last": 425.0,
-     "close": null,
+     "last": 427.5,
+     "close": 427.5,
      "gap_pct": -2.07,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 673.0,
+     "trust_net": -324.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3034 觀望（當時 435.5），觸及停損價 410.5 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 410.5 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 3034 觀望（當時 435.5），預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -73767,30 +74231,42 @@
    "target_price": 2430.0,
    "rationale": "盤整趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧⑥反彈不過賣點｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -3.36,
+    "return_pct": -3.59,
     "reasons": [
-     "預測後最新 2155（-3.36%）",
+     "預測後收 2150（-3.59%）",
      "開盤跳空 -3.59%",
      "觸及停損價 2230"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 2150.0,
      "high": 2170.0,
      "low": 2020.0,
-     "last": 2155.0,
-     "close": null,
+     "last": 2150.0,
+     "close": 2150.0,
      "gap_pct": -3.59,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -26972.0,
+     "trust_net": 4791.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2330 觀望（當時 2230），觸及停損價 2230 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 2230 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2330 觀望（當時 2230），預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -73818,7 +74294,7 @@
      "預測後最新 100.5（-3.83%）",
      "觸及停損價 102"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 104.0,
@@ -73852,29 +74328,29 @@
    "target_price": 19.75,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜位於月線之下（乖離 -5.1%），未觸發八大法則訊號｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -3.13,
+    "return_pct": -2.56,
     "reasons": [
-     "預測後最新 17（-3.13%）",
+     "預測後收 17.1（-2.56%）",
      "開盤跳空 -2.28%",
      "觸及停損價 17.5"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
      "high": 17.3,
      "low": 16.85,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -73895,29 +74371,30 @@
    "target_price": 4245.0,
    "rationale": "空頭趨勢｜四線糾結（排列未定）｜位於月線之上（乖離 +6.2%），未觸發八大法則訊號｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
     "return_pct": -10.0,
     "reasons": [
-     "預測後最新 3645（-10.00%）",
+     "預測後收 3645（-10.00%）",
      "開盤跳空 -4.81%",
-     "觸及停損價 4050"
+     "觸及停損價 4050",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 3855.0,
      "high": 3955.0,
      "low": 3645.0,
      "last": 3645.0,
-     "close": null,
+     "close": 3645.0,
      "gap_pct": -4.81,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "close_at_low": true,
+     "foreign_net": -3753.0,
+     "trust_net": 690.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -73938,8 +74415,31 @@
    "target_price": 1515.0,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧④負乖離過大（-24.8%）｜跳空向上缺口、跳空向下缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "OPEN",
-   "grade": null
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -6.56,
+    "reasons": [
+     "預測後收 798（-6.56%）",
+     "開盤跳空 -3.40%",
+     "觸及停損價 854"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 825.0,
+     "high": 892.0,
+     "low": 769.0,
+     "last": 798.0,
+     "close": 798.0,
+     "gap_pct": -3.4,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 161.0,
+     "trust_net": 0.0,
+     "inst_unit": "張"
+    }
+   }
   },
   {
    "id": "kline|2382|zhu_auto|2026-11-24 14:00:00",
@@ -73958,30 +74458,42 @@
    "target_price": 331.0,
    "rationale": "盤整趨勢｜四線空頭排列（5<10<20<60）｜位於月線之下（乖離 -2.3%），未觸發八大法則訊號｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -6.55,
+    "return_pct": -7.61,
     "reasons": [
-     "預測後最新 264（-6.55%）",
+     "預測後收 261（-7.61%）",
      "開盤跳空 -4.42%",
      "觸及停損價 276"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 270.0,
      "high": 273.5,
      "low": 254.5,
-     "last": 264.0,
-     "close": null,
+     "last": 261.0,
+     "close": 261.0,
      "gap_pct": -4.42,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2382 觀望（當時 282.5），觸及停損價 276 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 276 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2382 觀望（當時 282.5），預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -74050,7 +74562,7 @@
      "開盤跳空 -3.02%",
      "觸及停損價 55.5"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 54.6,
@@ -74084,30 +74596,42 @@
    "target_price": 80.6,
    "rationale": "盤整趨勢｜四線糾結（排列未定）｜位於月線之下（乖離 -5.3%），未觸發八大法則訊號｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -6.58,
+    "return_pct": -5.72,
     "reasons": [
-     "預測後最新 65.3（-6.58%）",
+     "預測後收 65.9（-5.72%）",
      "開盤跳空 -3.29%",
      "觸及停損價 67.6"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 67.6,
      "high": 68.4,
      "low": 63.5,
-     "last": 65.3,
-     "close": null,
+     "last": 65.9,
+     "close": 65.9,
      "gap_pct": -3.29,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -4259.0,
+     "trust_net": -512.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2891 觀望（當時 69.9），觸及停損價 67.6 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 67.6 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2891 觀望（當時 69.9），預期盤整但實際波動 -5.72% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -5.72% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -74147,28 +74671,28 @@
    "target_price": 274.5,
    "rationale": "空頭趨勢｜四線糾結（排列未定）｜葛蘭碧⑦假突破賣點｜晨星",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -0.78,
+    "return_pct": -1.75,
     "reasons": [
-     "預測後最新 255（-0.78%）",
+     "預測後收 252.5（-1.75%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 256.5,
      "low": 244.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74209,29 +74733,36 @@
    "target_price": 845.0,
    "rationale": "空頭趨勢｜四線空頭排列（5<10<20<60）｜葛蘭碧⑥反彈不過賣點｜跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": 0.58,
+    "return_pct": 0.72,
     "reasons": [
-     "預測後最新 698（+0.58%）",
+     "預測後收 699（+0.72%）",
      "開盤跳空 -1.15%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 686.0,
      "high": 705.0,
      "low": 661.0,
-     "last": 698.0,
-     "close": null,
+     "last": 699.0,
+     "close": 699.0,
      "gap_pct": -1.15,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 1521.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看空反漲",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2379 看空（當時 694），看空後反漲 +0.72% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+      "short": "K線技術人(11-24看空)看空後反漲 +0.72% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+     }
+    ]
    }
   },
   {
@@ -74260,7 +74791,7 @@
      "開盤跳空 -4.85%",
      "觸及停損價 40.1"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 39.2,
@@ -74294,30 +74825,42 @@
    "target_price": 989.0,
    "rationale": "盤整趨勢｜四線空頭排列（5<10<20<60）｜位於月線之下（乖離 -5.1%），未觸發八大法則訊號｜跳空向上缺口、跳空向下缺口",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -5.36,
+    "return_pct": -6.33,
     "reasons": [
-     "預測後最新 777（-5.36%）",
+     "預測後收 769（-6.33%）",
      "開盤跳空 -3.78%",
      "觸及停損價 800"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 790.0,
      "high": 797.0,
      "low": 742.0,
-     "last": 777.0,
-     "close": null,
+     "last": 769.0,
+     "close": 769.0,
      "gap_pct": -3.78,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -43.0,
+     "trust_net": -485.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2357 觀望（當時 821），觸及停損價 800 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 800 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 14:00收盤後K線技術人對 2357 觀望（當時 821），預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
    }
   },
   {
@@ -74406,7 +74949,7 @@
      "開盤跳空 -8.89%",
      "觸及停損價 1985"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 11:43:11",
     "actual": {
      "date": "2026-11-25",
      "open": 1845.0,
@@ -74440,28 +74983,35 @@
    "target_price": null,
    "rationale": "費半 +14.03%、TSM 溢價 7.21%",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -7.17,
+    "return_pct": -4.78,
     "reasons": [
-     "預測後最新 37245.3（-7.17%）"
+     "預測後收 38202.8（-4.78%）"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
-     "open": 39983.91015625,
-     "high": 39983.91015625,
-     "low": 36681.8984375,
-     "last": 37245.3203125,
-     "close": null,
-     "gap_pct": -0.35,
+     "open": null,
+     "high": 39983.91,
+     "low": 36681.9,
+     "last": 38202.84,
+     "close": 38202.84,
+     "gap_pct": null,
      "open_below_vwap": false,
      "close_at_low": false,
      "foreign_net": null,
      "trust_net": null,
      "inst_unit": null
-    }
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-24 15:08收盤後川大帝MAGA對 TAIEX 看多（當時 40122.3），看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "川大帝MAGA(11-24看多)看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -74481,28 +75031,35 @@
    "target_price": null,
    "rationale": "台股下一交易日預期開高走高，挑戰月線反壓，關鍵點位為收復41959.4點。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -7.17,
+    "return_pct": -4.78,
     "reasons": [
-     "預測後最新 37245.3（-7.17%）"
+     "預測後收 38202.8（-4.78%）"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
-     "open": 39983.91015625,
-     "high": 39983.91015625,
-     "low": 36681.8984375,
-     "last": 37245.3203125,
-     "close": null,
-     "gap_pct": -0.35,
+     "open": null,
+     "high": 39983.91,
+     "low": 36681.9,
+     "last": 38202.84,
+     "close": 38202.84,
+     "gap_pct": null,
      "open_below_vwap": false,
      "close_at_low": false,
      "foreign_net": null,
      "trust_net": null,
      "inst_unit": null
-    }
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-24 15:08收盤後巴董事長對 TAIEX 看多（當時 40122.3），看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "巴董事長(11-24看多)看多後收 38202.8（-4.78%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -74522,28 +75079,28 @@
    "target_price": 82.7,
    "rationale": "大盤處於空頭趨勢且未見明確轉折紅K，暫不建立多單，等待回檔至76.7-78.1區間並觀察五檔與VWAP觸發條件。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 1.29,
+    "return_pct": 1.68,
     "reasons": [
-     "預測後最新 78.4（+1.29%）",
+     "預測後收 78.7（+1.68%）",
      "開盤跳空 -1.94%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 75.9,
      "high": 80.0,
      "low": 75.7,
-     "last": 78.4,
-     "close": null,
+     "last": 78.7,
+     "close": 78.7,
      "gap_pct": -1.94,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -1666.0,
+     "trust_net": 6494.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74564,31 +75121,42 @@
    "target_price": 495.0,
    "rationale": "股價高於買進價，等待回檔至406.0-418.5區間，且需見轉折紅K與成交量支撐方可考慮進場。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "WRONG",
-    "return_pct": -2.41,
+    "return_pct": -1.84,
     "reasons": [
-     "預測後最新 425（-2.41%）",
+     "預測後收 427.5（-1.84%）",
      "開盤跳空 -2.07%",
-     "建議買進價 435.5 失守（最低 406）",
      "觸及停損價 410.5"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 426.5,
      "high": 434.0,
      "low": 406.0,
-     "last": 425.0,
-     "close": null,
+     "last": 427.5,
+     "close": 427.5,
      "gap_pct": -2.07,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 673.0,
+     "trust_net": -324.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 15:10收盤後巴董事長對 3034 看多（當時 435.5），11-25 開盤跳空 -2.07% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "巴董事長(11-24看多)11-25 開盤跳空 -2.07% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 15:10收盤後巴董事長對 3034 看多（當時 435.5），觸及停損價 410.5 → 依紀律停損，不攤平。",
+      "short": "巴董事長(11-24看多)觸及停損價 410.5 → 依紀律停損，不攤平"
+     }
+    ]
    }
   },
   {
@@ -74608,28 +75176,28 @@
    "target_price": 109.5,
    "rationale": "具隔日沖疑慮且高於建議買進價，等待回檔至90.4-93.2區間再行評估。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
     "return_pct": 3.5,
     "reasons": [
-     "預測後最新 100.5（+3.50%）",
+     "預測後收 100.5（+3.50%）",
      "開盤跳空 -1.34%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 95.8,
      "high": 103.5,
      "low": 95.5,
      "last": 100.5,
-     "close": null,
+     "close": 100.5,
      "gap_pct": -1.34,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": 9268.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74650,29 +75218,36 @@
    "target_price": 274.5,
    "rationale": "出現晨星轉折K線，外資連買且融資減。買進價250元，停損239元(-4.4%，符合>3%及>-8%鐵律)，目標274.5元(+9.8%)，風報比2.23，金額12.5萬合規。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "CORRECT",
-    "return_pct": 1.19,
+    "result": "DEVIATED",
+    "return_pct": 0.2,
     "reasons": [
-     "預測後最新 255（+1.19%）",
+     "預測後收 252.5（+0.20%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 249.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-25 11:33盤中巴董事長對 2603 看多（當時 252），看多後收 252.5（+0.20%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "巴董事長(11-25看多)看多後收 252.5（+0.20%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -74692,28 +75267,28 @@
    "target_price": null,
    "rationale": "長榮近3日打出晨星轉折，未跌破硬性停損240元，符合多方守勢，維持持有500股觀望。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "DEVIATED",
-    "return_pct": 2.2,
+    "result": "CORRECT",
+    "return_pct": 1.2,
     "reasons": [
-     "預測後最新 255（+2.20%）",
+     "預測後收 252.5（+1.20%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 249.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74734,28 +75309,29 @@
    "target_price": null,
    "rationale": "晨星轉折形成且位於建議買進區間，持股虧損僅 -0.07%，依鐵律續抱並將停損嚴格鎖定於 240.0 元。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "DEVIATED",
-    "return_pct": 1.59,
+    "result": "CORRECT",
+    "return_pct": 0.6,
     "reasons": [
-     "預測後最新 255（+1.59%）",
-     "開盤跳空 -2.72%"
+     "預測後收 252.5（+0.60%）",
+     "開盤跳空 -2.72%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 252.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "close_at_low": true,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74776,28 +75352,29 @@
    "target_price": null,
    "rationale": "長榮出現晨星轉折紅 K，均價 252.21 微幅獲利，籌碼面雖有隔日沖疑慮但支撐強勁，維持持有並鎖定停損價。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 1.39,
+    "return_pct": 0.4,
     "reasons": [
-     "預測後最新 255（+1.39%）",
-     "開盤跳空 -2.72%"
+     "預測後收 252.5（+0.40%）",
+     "開盤跳空 -2.72%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 252.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "close_at_low": true,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74818,29 +75395,37 @@
    "target_price": null,
    "rationale": "符合轉折紅 K 證據，且股價位於建議買進區間。雖有隔日沖風險，但投信連買中斷後首日轉折，RR 比 1.43 尚可，小幅增持以控制單一持股上限。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "CORRECT",
-    "return_pct": 1.19,
+    "result": "DEVIATED",
+    "return_pct": 0.2,
     "reasons": [
-     "預測後最新 255（+1.19%）",
-     "開盤跳空 -2.72%"
+     "預測後收 252.5（+0.20%）",
+     "開盤跳空 -2.72%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 252.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "尾盤收最低",
+      "text": "【歷史落差檢討與修正原則】11-25 11:56盤中巴董事長對 2603 看多（當時 252），盤中認為有撐，尾盤卻收最低 252.5 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認。",
+      "short": "巴董事長(11-25看多)盤中認為有撐，尾盤卻收最低 252.5 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認"
+     }
+    ]
    }
   },
   {
@@ -74860,28 +75445,28 @@
    "target_price": 18.5,
    "rationale": "股價達建議買進價，五檔比 3.72 顯示外盤主動買進強勁。負乖離 7.4% 具備反彈空間，建倉金額約 9 萬元符合下限規定。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "DEVIATED",
-    "return_pct": 0.24,
+    "result": "CORRECT",
+    "return_pct": 0.83,
     "reasons": [
-     "預測後最新 17（+0.24%）",
+     "預測後收 17.1（+0.83%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
-     "high": 17.05,
+     "high": 17.1,
      "low": 16.95,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74902,28 +75487,29 @@
    "target_price": null,
    "rationale": "原有部位未達停損，且今日出現晨星轉折訊號，續抱觀察能否突破 MA20 壓力。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 1.19,
+    "return_pct": 0.2,
     "reasons": [
-     "預測後最新 255（+1.19%）",
-     "開盤跳空 -2.72%"
+     "預測後收 252.5（+0.20%）",
+     "開盤跳空 -2.72%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 252.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "close_at_low": true,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74944,28 +75530,29 @@
    "target_price": null,
    "rationale": "現價 252.5 位於成本附近，技術面出現晨星轉折，但外資籌碼疑似隔日沖且 MA20 壓力尚存，不符合加碼條件，續抱觀察 240 元支撐。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 0.99,
+    "return_pct": 0.0,
     "reasons": [
-     "預測後最新 255（+0.99%）",
-     "開盤跳空 -2.72%"
+     "預測後收 252.5（+0.00%）",
+     "開盤跳空 -2.72%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 252.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "close_at_low": true,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -74986,28 +75573,28 @@
    "target_price": null,
    "rationale": "股價處於低檔且負乖離達 -7.4%，雖今日下跌 3.42% 觸發禁止加碼條款，但投信連買 4 日，守住 16.0 硬性停損位前提下續抱。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 0.29,
+    "return_pct": 0.88,
     "reasons": [
-     "預測後最新 17（+0.29%）",
+     "預測後收 17.1（+0.88%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
-     "high": 17.05,
+     "high": 17.1,
      "low": 16.95,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -75028,29 +75615,37 @@
    "target_price": null,
    "rationale": "晨星轉折確認，外資急翻 5 次雖有隔日沖嫌疑，但投信同步轉買，RR 值 1.43 尚可，小幅加碼 100 股以符合 100 倍數原則並控制單檔上限。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "CORRECT",
-    "return_pct": 0.59,
+    "result": "DEVIATED",
+    "return_pct": -0.39,
     "reasons": [
-     "預測後最新 255（+0.59%）",
-     "開盤跳空 -2.72%"
+     "預測後收 252.5（-0.39%）",
+     "開盤跳空 -2.72%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 252.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "尾盤收最低",
+      "text": "【歷史落差檢討與修正原則】11-25 12:03盤中巴董事長對 2603 看多（當時 253.5），盤中認為有撐，尾盤卻收最低 252.5 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認。",
+      "short": "巴董事長(11-25看多)盤中認為有撐，尾盤卻收最低 252.5 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認"
+     }
+    ]
    }
   },
   {
@@ -75070,28 +75665,28 @@
    "target_price": null,
    "rationale": "現價 17.05 處於建議區間，五檔比 3.34 買氣旺盛，負乖離 -7.4% 具備反彈空間，續抱等待目標價，停損設於 16.0 符合鐵律。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -0.29,
+    "return_pct": 0.29,
     "reasons": [
-     "預測後最新 17（-0.29%）",
+     "預測後收 17.1（+0.29%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
-     "high": 17.05,
+     "high": 17.1,
      "low": 16.95,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -75112,29 +75707,36 @@
    "target_price": null,
    "rationale": "負乖離 -9.3% 接近地板線，投信連買 6 日籌碼極佳。雖未進監控區，但跳空向上缺口具轉折意義，建倉約 13 萬符合 15 萬上限。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "CORRECT",
-    "return_pct": 0.96,
+    "result": "DEVIATED",
+    "return_pct": -0.19,
     "reasons": [
-     "預測後最新 264（+0.96%）",
+     "預測後收 261（-0.19%）",
      "開盤跳空 -4.42%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 270.0,
-     "high": 264.0,
+     "high": 262.5,
      "low": 260.5,
-     "last": 264.0,
-     "close": null,
+     "last": 261.0,
+     "close": 261.0,
      "gap_pct": -4.42,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-25 12:03盤中巴董事長對 2382 看多（當時 261.5），看多後收 261（-0.19%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "巴董事長(11-25看多)看多後收 261（-0.19%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -75154,29 +75756,37 @@
    "target_price": null,
    "rationale": "出現晨星轉折 K 線且外資急翻多，RR 比 1.43 接近門檻。現價 254 未達 3% 追高禁令，符合加碼條件。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "CORRECT",
-    "return_pct": 0.39,
+    "result": "DEVIATED",
+    "return_pct": -0.59,
     "reasons": [
-     "預測後最新 255（+0.39%）",
-     "開盤跳空 -2.72%"
+     "預測後收 252.5（-0.59%）",
+     "開盤跳空 -2.72%",
+     "收在當日最低附近"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 255.5,
      "low": 252.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
-     "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "close_at_low": true,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "尾盤收最低",
+      "text": "【歷史落差檢討與修正原則】11-25 12:10盤中巴董事長對 2603 看多（當時 254），盤中認為有撐，尾盤卻收最低 252.5 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認。",
+      "short": "巴董事長(11-25看多)盤中認為有撐，尾盤卻收最低 252.5 → 13:00 後未站回 VWAP 不加碼，支撐需收盤確認"
+     }
+    ]
    }
   },
   {
@@ -75196,28 +75806,28 @@
    "target_price": null,
    "rationale": "股價處於超賣區且有跳空向上缺口，雖當日下跌但支撐未破，依鐵律負乖離大時不減碼，續抱觀察。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 0.0,
+    "return_pct": 0.59,
     "reasons": [
-     "預測後最新 17（+0.00%）",
+     "預測後收 17.1（+0.59%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
-     "high": 17.05,
+     "high": 17.1,
      "low": 16.95,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -75238,29 +75848,36 @@
    "target_price": null,
    "rationale": "股價跌破 K 線技術人設定之 17.5 元停損位，且外資持續大賣，空頭排列無扭轉跡象，依鐵律 2 執行止損以回收現金。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": 0.0,
+    "return_pct": 0.59,
     "reasons": [
-     "預測後最新 17（+0.00%）",
+     "預測後收 17.1（+0.59%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
-     "high": 17.05,
-     "low": 17.0,
-     "last": 17.0,
-     "close": null,
+     "high": 17.1,
+     "low": 17.05,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看空反漲",
+      "text": "【歷史落差檢討與修正原則】11-25 12:17盤中巴董事長對 2002 看空（當時 17），看空後反漲 +0.59% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+      "short": "巴董事長(11-25看空)看空後反漲 +0.59% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+     }
+    ]
    }
   },
   {
@@ -75280,28 +75897,28 @@
    "target_price": null,
    "rationale": "技術面出現晨星轉折，目前微幅獲利，但外資有隔日沖嫌疑且五檔賣壓重，不宜加碼。上移停損至 MA5 附近進行移動停利。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": -0.2,
+    "return_pct": -1.17,
     "reasons": [
-     "預測後最新 255（-0.20%）",
+     "預測後收 252.5（-1.17%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
-     "high": 255.0,
-     "low": 254.5,
-     "last": 255.0,
-     "close": null,
+     "high": 254.5,
+     "low": 252.5,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -75322,28 +75939,28 @@
    "target_price": null,
    "rationale": "現價 261 元高於建議買進區間上限 252 元，且當日跌幅達 7.61% 波動過大，不符合分批建倉之穩健原則，等待回檔至區間再行參與。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 1.15,
+    "return_pct": 0.0,
     "reasons": [
-     "預測後最新 264（+1.15%）",
+     "預測後收 261（+0.00%）",
      "開盤跳空 -4.42%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 270.0,
-     "high": 264.0,
-     "low": 262.5,
-     "last": 264.0,
-     "close": null,
+     "high": 262.5,
+     "low": 261.0,
+     "last": 261.0,
+     "close": 261.0,
      "gap_pct": -4.42,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -75364,28 +75981,28 @@
    "target_price": null,
    "rationale": "目前微幅獲利，K線出現晨星轉折且守住支撐，雖外資有隔日沖嫌疑，但投信賣壓已部分消化，RR比1.43接近門檻，續抱觀察。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 0.59,
+    "return_pct": -0.39,
     "reasons": [
-     "預測後最新 255（+0.59%）",
+     "預測後收 252.5（-0.39%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
-     "high": 255.0,
-     "low": 254.5,
-     "last": 255.0,
-     "close": null,
+     "high": 254.5,
+     "low": 252.5,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -75406,29 +76023,36 @@
    "target_price": 289.5,
    "rationale": "投信連 6 買鎖碼，負乖離 9.3% 具反彈空間。今日跳空向上且美股 AI 族群大漲，符合底部共振。建倉約 13 萬元符合 15 萬上限。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": 0.19,
+    "return_pct": -0.95,
     "reasons": [
-     "預測後最新 264（+0.19%）",
+     "預測後收 261（-0.95%）",
      "開盤跳空 -4.42%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 270.0,
-     "high": 264.0,
-     "low": 262.5,
-     "last": 264.0,
-     "close": null,
+     "high": 262.5,
+     "low": 261.0,
+     "last": 261.0,
+     "close": 261.0,
      "gap_pct": -4.42,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-25 12:25盤中巴董事長對 2382 看多（當時 263.5），看多後收 261（-0.95%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "巴董事長(11-25看多)看多後收 261（-0.95%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -75448,28 +76072,28 @@
    "target_price": 18.5,
    "rationale": "負乖離達 7.4% 且五檔顯示外盤主動買進，出現跳空向上缺口止跌。RR 比 1.78 優於門檻，屬低價股補漲操作，建倉 13.6 萬符合規範。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
-    "result": "DEVIATED",
-    "return_pct": 0.0,
+    "result": "CORRECT",
+    "return_pct": 0.59,
     "reasons": [
-     "預測後最新 17（+0.00%）",
+     "預測後收 17.1（+0.59%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
-     "high": 17.05,
-     "low": 17.0,
-     "last": 17.0,
-     "close": null,
+     "high": 17.1,
+     "low": 17.05,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
     }
    }
   },
@@ -75490,29 +76114,36 @@
    "target_price": null,
    "rationale": "股價 17.0 元已跌破 K 線技術人設定之 17.5 元轉折低點，且處於空頭排列，依鐵律執行硬性停損以回收資金。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": -0.29,
+    "return_pct": 0.29,
     "reasons": [
-     "預測後最新 17（-0.29%）",
+     "預測後收 17.1（+0.29%）",
      "開盤跳空 -2.28%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 17.15,
      "high": 17.3,
      "low": 16.85,
-     "last": 17.0,
-     "close": null,
+     "last": 17.1,
+     "close": 17.1,
      "gap_pct": -2.28,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看空反漲",
+      "text": "【歷史落差檢討與修正原則】11-25 12:33盤中巴董事長對 2002 看空（當時 17.05），看空後反漲 +0.29% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+      "short": "巴董事長(11-25看空)看空後反漲 +0.29% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+     }
+    ]
    }
   },
   {
@@ -75532,29 +76163,36 @@
    "target_price": null,
    "rationale": "投信連買 6 日籌碼鎖碼，今日雖跌 6.55% 但符合『禁止追高』鐵律，且出現跳空向上缺口之轉折跡象，微幅加碼 100 股。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "DEVIATED",
-    "return_pct": 0.0,
+    "return_pct": -1.14,
     "reasons": [
-     "預測後最新 264（+0.00%）",
+     "預測後收 261（-1.14%）",
      "開盤跳空 -4.42%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 270.0,
      "high": 273.5,
      "low": 254.5,
-     "last": 264.0,
-     "close": null,
+     "last": 261.0,
+     "close": 261.0,
      "gap_pct": -4.42,
      "open_below_vwap": false,
      "close_at_low": false,
-     "foreign_net": null,
-     "trust_net": null,
-     "inst_unit": null
-    }
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看多落空",
+      "text": "【歷史落差檢討與修正原則】11-25 12:33盤中巴董事長對 2382 看多（當時 264），看多後收 261（-1.14%）→ 給多方前先檢查 Priced-in、隔日沖與量能。",
+      "short": "巴董事長(11-25看多)看多後收 261（-1.14%）→ 給多方前先檢查 Priced-in、隔日沖與量能"
+     }
+    ]
    }
   },
   {
@@ -75574,23 +76212,3255 @@
    "target_price": null,
    "rationale": "技術面出現晨星轉折，股價站穩 MA5，五檔比顯示買盤積極，維持現有部位觀察 274.5 元壓力位。",
    "target_date": "2026-11-25",
-   "status": "PROVISIONAL",
+   "status": "CLOSED",
    "grade": {
     "result": "CORRECT",
-    "return_pct": 0.0,
+    "return_pct": -0.98,
     "reasons": [
-     "預測後最新 255（+0.00%）",
+     "預測後收 252.5（-0.98%）",
      "開盤跳空 -2.72%"
     ],
-    "graded_at": "2026-11-25 12:33:27",
+    "graded_at": "2026-11-26 09:00:20",
     "actual": {
      "date": "2026-11-25",
      "open": 250.0,
      "high": 256.5,
      "low": 244.5,
-     "last": 255.0,
-     "close": null,
+     "last": 252.5,
+     "close": 252.5,
      "gap_pct": -2.72,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "kline|2886|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2886",
+   "name": "兆豐金",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 55.0,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": 52.6,
+   "stop_loss": 50.5,
+   "target_price": 56.5,
+   "rationale": "多頭拉回守月線低接",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": -9.64,
+    "reasons": [
+     "預測後收 49.7（-9.64%）",
+     "開盤跳空 -4.00%",
+     "建議買進價 52.6 失守（最低 49.5）",
+     "觸及停損價 50.5"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 52.8,
+     "high": 53.7,
+     "low": 49.5,
+     "last": 49.7,
+     "close": 49.7,
+     "gap_pct": -4.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -44167.0,
+     "trust_net": 33660.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2886 看多（當時 55），11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     },
+     {
+      "pattern": "建議買進價失守",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2886 看多（當時 55），建議買進價 52.6 失守（最低 49.5）→ 下次建議買進價下移至 49.5 附近，買進量減半。",
+      "short": "K線技術人(11-24看多)建議買進價 52.6 失守（最低 49.5）→ 下次建議買進價下移至 49.5 附近，買進量減半"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2886 看多（當時 55），觸及停損價 50.5 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24看多)觸及停損價 50.5 → 依紀律停損，不攤平"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2886|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2886",
+   "name": "兆豐金",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 55.0,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信連買鎖碼（3 日）｜外資 5 日 +5,322 張、投信 5 日 +28,643 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": -9.64,
+    "reasons": [
+     "預測後收 49.7（-9.64%）",
+     "開盤跳空 -4.00%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 52.8,
+     "high": 53.7,
+     "low": 49.5,
+     "last": 49.7,
+     "close": 49.7,
+     "gap_pct": -4.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -44167.0,
+     "trust_net": 33660.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "外資一日行情",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2886 看多（當時 55），隔日外資反手賣超 -44,167 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方。",
+      "short": "籌碼王(11-24看多)隔日外資反手賣超 -44,167 張（一日行情）→ 此股外資單日買超評分減半，需連買 ≥2 日才計入多方"
+     },
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2886 看多（當時 55），11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "籌碼王(11-24看多)11-25 開盤跳空 -4.00% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2603|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 257.0,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": 250.5,
+   "stop_loss": 240.5,
+   "target_price": 274.5,
+   "rationale": "多頭拉回守月線低接",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": -1.75,
+    "reasons": [
+     "預測後收 252.5（-1.75%）",
+     "開盤跳空 -2.72%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 250.0,
+     "high": 256.5,
+     "low": 244.5,
+     "last": 252.5,
+     "close": 252.5,
+     "gap_pct": -2.72,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2603 看多（當時 257），11-25 開盤跳空 -2.72% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -2.72% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2603|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 257.0,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "外資連買（3 日）｜外資 5 日 +14,249 張、投信 5 日 -14,250 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": -1.75,
+    "reasons": [
+     "預測後收 252.5（-1.75%）",
+     "開盤跳空 -2.72%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 250.0,
+     "high": 256.5,
+     "low": 244.5,
+     "last": 252.5,
+     "close": 252.5,
+     "gap_pct": -2.72,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 11465.0,
+     "trust_net": -10921.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2603 看多（當時 257），11-25 開盤跳空 -2.72% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "籌碼王(11-24看多)11-25 開盤跳空 -2.72% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2891|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2891",
+   "name": "中信金",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 69.9,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 69.5,
+   "stop_loss": 66.9,
+   "target_price": 73.9,
+   "rationale": "跌破月線回測季線",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -5.72,
+    "reasons": [
+     "預測後收 65.9（-5.72%）",
+     "開盤跳空 -3.29%",
+     "建議買進價 69.5 失守（最低 63.5）",
+     "觸及停損價 66.9"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 67.6,
+     "high": 68.4,
+     "low": 63.5,
+     "last": 65.9,
+     "close": 65.9,
+     "gap_pct": -3.29,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -4259.0,
+     "trust_net": -512.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "建議買進價失守",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2891 觀望（當時 69.9），建議買進價 69.5 失守（最低 63.5）→ 下次建議買進價下移至 63.5 附近，買進量減半。",
+      "short": "K線技術人(11-24觀望)建議買進價 69.5 失守（最低 63.5）→ 下次建議買進價下移至 63.5 附近，買進量減半"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2891 觀望（當時 69.9），觸及停損價 66.9 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24觀望)觸及停損價 66.9 → 依紀律停損，不攤平"
+     },
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2891 觀望（當時 69.9），預期盤整但實際波動 -5.72% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -5.72% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2891|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2891",
+   "name": "中信金",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 69.9,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人調節中｜外資 5 日 -8,706 張、投信 5 日 -8,955 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -5.72,
+    "reasons": [
+     "預測後收 65.9（-5.72%）",
+     "開盤跳空 -3.29%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 67.6,
+     "high": 68.4,
+     "low": 63.5,
+     "last": 65.9,
+     "close": 65.9,
+     "gap_pct": -3.29,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -4259.0,
+     "trust_net": -512.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "kline|1216|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "1216",
+   "name": "統一",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 77.4,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": 76.7,
+   "stop_loss": 73.6,
+   "target_price": 82.7,
+   "rationale": "多頭拉回守月線低接",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 1.68,
+    "reasons": [
+     "預測後收 78.7（+1.68%）",
+     "開盤跳空 -1.94%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 75.9,
+     "high": 80.0,
+     "low": 75.7,
+     "last": 78.7,
+     "close": 78.7,
+     "gap_pct": -1.94,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1666.0,
+     "trust_net": 6494.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "chips|1216|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "1216",
+   "name": "統一",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 77.4,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人多空分歧｜外資 5 日 -1,089 張、投信 5 日 +8,874 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 1.68,
+    "reasons": [
+     "預測後收 78.7（+1.68%）",
+     "開盤跳空 -1.94%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 75.9,
+     "high": 80.0,
+     "low": 75.7,
+     "last": 78.7,
+     "close": 78.7,
+     "gap_pct": -1.94,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1666.0,
+     "trust_net": 6494.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 1216 觀望（當時 77.4），預期盤整但實際波動 +1.68% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 +1.68% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2382|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 282.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 245.0,
+   "stop_loss": 235.0,
+   "target_price": 289.5,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -7.61,
+    "reasons": [
+     "預測後收 261（-7.61%）",
+     "開盤跳空 -4.42%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 270.0,
+     "high": 273.5,
+     "low": 254.5,
+     "last": 261.0,
+     "close": 261.0,
+     "gap_pct": -4.42,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2382 觀望（當時 282.5），預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2382|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 282.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信連買鎖碼（6 日）｜外資 5 日 -18,536 張、投信 5 日 +11,777 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -7.61,
+    "reasons": [
+     "預測後收 261（-7.61%）",
+     "開盤跳空 -4.42%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 270.0,
+     "high": 273.5,
+     "low": 254.5,
+     "last": 261.0,
+     "close": 261.0,
+     "gap_pct": -4.42,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1194.0,
+     "trust_net": 1626.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2382 觀望（當時 282.5），預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -7.61% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2002|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2002",
+   "name": "中鋼",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 17.55,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 16.65,
+   "stop_loss": 16.0,
+   "target_price": 18.5,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -2.56,
+    "reasons": [
+     "預測後收 17.1（-2.56%）",
+     "開盤跳空 -2.28%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 17.15,
+     "high": 17.3,
+     "low": 16.85,
+     "last": 17.1,
+     "close": 17.1,
+     "gap_pct": -2.28,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2002 觀望（當時 17.55），預期盤整但實際波動 -2.56% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -2.56% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2002|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2002",
+   "name": "中鋼",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 17.55,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信連買鎖碼（4 日）｜外資 5 日 -59,177 張、投信 5 日 +492 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -2.56,
+    "reasons": [
+     "預測後收 17.1（-2.56%）",
+     "開盤跳空 -2.28%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 17.15,
+     "high": 17.3,
+     "low": 16.85,
+     "last": 17.1,
+     "close": 17.1,
+     "gap_pct": -2.28,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -575.0,
+     "trust_net": 8.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2002 觀望（當時 17.55），預期盤整但實際波動 -2.56% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -2.56% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2881|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2881",
+   "name": "富邦金",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 143.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 123.5,
+   "stop_loss": 118.5,
+   "target_price": 153.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -6.97,
+    "reasons": [
+     "預測後最新 133.5（-6.97%）",
+     "開盤跳空 -2.44%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 140.0,
+     "high": 142.0,
+     "low": 129.5,
+     "last": 133.5,
+     "close": null,
+     "gap_pct": -2.44,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chips|2881|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2881",
+   "name": "富邦金",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 143.5,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "土洋合買｜外資 5 日 +594 張、投信 5 日 +1,582 張",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": -6.97,
+    "reasons": [
+     "預測後最新 133.5（-6.97%）",
+     "開盤跳空 -2.44%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 140.0,
+     "high": 142.0,
+     "low": 129.5,
+     "last": 133.5,
+     "close": null,
+     "gap_pct": -2.44,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "kline|3661|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3661",
+   "name": "世芯-KY",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 3915.0,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": 3630.0,
+   "stop_loss": 3420.0,
+   "target_price": 4085.0,
+   "rationale": "強勢整理回測10日線",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": -7.92,
+    "reasons": [
+     "預測後收 3605（-7.92%）",
+     "開盤跳空 -1.53%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 3855.0,
+     "high": 3970.0,
+     "low": 3530.0,
+     "last": 3605.0,
+     "close": 3605.0,
+     "gap_pct": -1.53,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -279.0,
+     "trust_net": 404.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 3661 看多（當時 3915），11-25 開盤跳空 -1.53% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -1.53% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|3661|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3661",
+   "name": "世芯-KY",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 3915.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "土洋合買｜外資 5 日 +90 張、投信 5 日 +902 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -7.92,
+    "reasons": [
+     "預測後收 3605（-7.92%）",
+     "開盤跳空 -1.53%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 3855.0,
+     "high": 3970.0,
+     "low": 3530.0,
+     "last": 3605.0,
+     "close": 3605.0,
+     "gap_pct": -1.53,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -279.0,
+     "trust_net": 404.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 3661 觀望（當時 3915），預期盤整但實際波動 -7.92% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -7.92% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2357|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2357",
+   "name": "華碩",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 821.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 738.0,
+   "stop_loss": 708.0,
+   "target_price": 866.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -6.33,
+    "reasons": [
+     "預測後收 769（-6.33%）",
+     "開盤跳空 -3.78%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 790.0,
+     "high": 797.0,
+     "low": 742.0,
+     "last": 769.0,
+     "close": 769.0,
+     "gap_pct": -3.78,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -43.0,
+     "trust_net": -485.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2357 觀望（當時 821），預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -6.33% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2357|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2357",
+   "name": "華碩",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 821.0,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人調節中｜外資 5 日 -183 張、投信 5 日 -2,059 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -6.33,
+    "reasons": [
+     "預測後收 769（-6.33%）",
+     "開盤跳空 -3.78%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 790.0,
+     "high": 797.0,
+     "low": 742.0,
+     "last": 769.0,
+     "close": 769.0,
+     "gap_pct": -3.78,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -43.0,
+     "trust_net": -485.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "kline|2882|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2882",
+   "name": "國泰金",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 104.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 90.5,
+   "stop_loss": 86.9,
+   "target_price": 110.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -3.83,
+    "reasons": [
+     "預測後最新 100.5（-3.83%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 104.0,
+     "high": 104.0,
+     "low": 96.2,
+     "last": 100.5,
+     "close": null,
+     "gap_pct": -0.48,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chips|2882|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2882",
+   "name": "國泰金",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 104.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "外資連買（3 日）｜外資 5 日 +5,179 張、投信 5 日 -17,103 張",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -3.83,
+    "reasons": [
+     "預測後最新 100.5（-3.83%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 104.0,
+     "high": 104.0,
+     "low": 96.2,
+     "last": 100.5,
+     "close": null,
+     "gap_pct": -0.48,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "kline|3017|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3017",
+   "name": "奇鋐",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 2600.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 1980.0,
+   "stop_loss": 1900.0,
+   "target_price": 2745.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -2.12,
+    "reasons": [
+     "預測後收 2545（-2.12%）",
+     "開盤跳空 -4.81%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 2475.0,
+     "high": 2705.0,
+     "low": 2360.0,
+     "last": 2545.0,
+     "close": 2545.0,
+     "gap_pct": -4.81,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1287.0,
+     "trust_net": 1511.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 3017 觀望（當時 2600），預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|3017|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3017",
+   "name": "奇鋐",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 2600.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "土洋合買｜外資 5 日 +69 張、投信 5 日 +726 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -2.12,
+    "reasons": [
+     "預測後收 2545（-2.12%）",
+     "開盤跳空 -4.81%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 2475.0,
+     "high": 2705.0,
+     "low": 2360.0,
+     "last": 2545.0,
+     "close": 2545.0,
+     "gap_pct": -4.81,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -1287.0,
+     "trust_net": 1511.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 3017 觀望（當時 2600），預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -2.12% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2330|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2330",
+   "name": "台積電",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 2230.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 1950.0,
+   "stop_loss": 1870.0,
+   "target_price": 2250.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -3.59,
+    "reasons": [
+     "預測後收 2150（-3.59%）",
+     "開盤跳空 -3.59%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 2150.0,
+     "high": 2170.0,
+     "low": 2020.0,
+     "last": 2150.0,
+     "close": 2150.0,
+     "gap_pct": -3.59,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -26972.0,
+     "trust_net": 4791.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2330 觀望（當時 2230），預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2330|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2330",
+   "name": "台積電",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 2230.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "外資連賣（9 日）｜外資 5 日 -51,088 張、投信 5 日 +3,326 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -3.59,
+    "reasons": [
+     "預測後收 2150（-3.59%）",
+     "開盤跳空 -3.59%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 2150.0,
+     "high": 2170.0,
+     "low": 2020.0,
+     "last": 2150.0,
+     "close": 2150.0,
+     "gap_pct": -3.59,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": -26972.0,
+     "trust_net": 4791.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2330 觀望（當時 2230），預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "籌碼王(11-24觀望)預期盤整但實際波動 -3.59% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2615|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2615",
+   "name": "萬海",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 97.1,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 90.4,
+   "stop_loss": 86.8,
+   "target_price": 109.5,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 3.5,
+    "reasons": [
+     "預測後收 100.5（+3.50%）",
+     "開盤跳空 -1.34%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 95.8,
+     "high": 103.5,
+     "low": 95.5,
+     "last": 100.5,
+     "close": 100.5,
+     "gap_pct": -1.34,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 9268.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2615 觀望（當時 97.1），預期盤整但實際波動 +3.50% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 +3.50% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2615|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2615",
+   "name": "萬海",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 97.1,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人多空分歧｜外資 5 日 +1,998 張、投信 5 日 -5,875 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": 3.5,
+    "reasons": [
+     "預測後收 100.5（+3.50%）",
+     "開盤跳空 -1.34%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 95.8,
+     "high": 103.5,
+     "low": 95.5,
+     "last": 100.5,
+     "close": 100.5,
+     "gap_pct": -1.34,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 9268.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看空反漲",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2615 看空（當時 97.1），看空後反漲 +3.50% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+      "short": "籌碼王(11-24看空)看空後反漲 +3.50% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|3443|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3443",
+   "name": "創意",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 5630.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 4810.0,
+   "stop_loss": 4615.0,
+   "target_price": 6955.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -9.95,
+    "reasons": [
+     "預測後收 5070（-9.95%）",
+     "開盤跳空 -8.17%",
+     "收在當日最低附近"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 5170.0,
+     "high": 5300.0,
+     "low": 5070.0,
+     "last": 5070.0,
+     "close": 5070.0,
+     "gap_pct": -8.17,
+     "open_below_vwap": false,
+     "close_at_low": true,
+     "foreign_net": 18.0,
+     "trust_net": 12.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 3443 觀望（當時 5630），預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -9.95% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|3443|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3443",
+   "name": "創意",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 5630.0,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人多空分歧｜外資 5 日 +822 張、投信 5 日 -560 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -9.95,
+    "reasons": [
+     "預測後收 5070（-9.95%）",
+     "開盤跳空 -8.17%",
+     "收在當日最低附近"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 5170.0,
+     "high": 5300.0,
+     "low": 5070.0,
+     "last": 5070.0,
+     "close": 5070.0,
+     "gap_pct": -8.17,
+     "open_below_vwap": false,
+     "close_at_low": true,
+     "foreign_net": 18.0,
+     "trust_net": 12.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "kline|2379|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2379",
+   "name": "瑞昱",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 694.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 649.0,
+   "stop_loss": 623.0,
+   "target_price": 739.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.72,
+    "reasons": [
+     "預測後收 699（+0.72%）",
+     "開盤跳空 -1.15%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 686.0,
+     "high": 705.0,
+     "low": 661.0,
+     "last": 699.0,
+     "close": 699.0,
+     "gap_pct": -1.15,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 1521.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "chips|2379|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2379",
+   "name": "瑞昱",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 694.0,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人多空分歧｜外資 5 日 +1,302 張、投信 5 日 -1,289 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 0.72,
+    "reasons": [
+     "預測後收 699（+0.72%）",
+     "開盤跳空 -1.15%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 686.0,
+     "high": 705.0,
+     "low": 661.0,
+     "last": 699.0,
+     "close": 699.0,
+     "gap_pct": -1.15,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 1521.0,
+     "trust_net": -421.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "看空反漲",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後籌碼王對 2379 看空（當時 694），看空後反漲 +0.72% → 空方訊號需收盤確認，低檔乖離過大時不追空。",
+      "short": "籌碼王(11-24看空)看空後反漲 +0.72% → 空方訊號需收盤確認，低檔乖離過大時不追空"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kline|2884|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2884",
+   "name": "玉山金",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 41.2,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 37.1,
+   "stop_loss": 35.6,
+   "target_price": 45.65,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -5.95,
+    "reasons": [
+     "預測後最新 38.75（-5.95%）",
+     "開盤跳空 -4.85%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 39.2,
+     "high": 40.2,
+     "low": 38.0,
+     "last": 38.75,
+     "close": null,
+     "gap_pct": -4.85,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chips|2884|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2884",
+   "name": "玉山金",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 41.2,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人調節中｜外資 5 日 -72,984 張、投信 5 日 -10,499 張",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -5.95,
+    "reasons": [
+     "預測後最新 38.75（-5.95%）",
+     "開盤跳空 -4.85%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 39.2,
+     "high": 40.2,
+     "low": 38.0,
+     "last": 38.75,
+     "close": null,
+     "gap_pct": -4.85,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "kline|3034|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3034",
+   "name": "聯詠",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 435.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 406.0,
+   "stop_loss": 389.5,
+   "target_price": 495.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -1.84,
+    "reasons": [
+     "預測後收 427.5（-1.84%）",
+     "開盤跳空 -2.07%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 426.5,
+     "high": 434.0,
+     "low": 406.0,
+     "last": 427.5,
+     "close": 427.5,
+     "gap_pct": -2.07,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 673.0,
+     "trust_net": -324.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "盤整失效",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 3034 觀望（當時 435.5），預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷。",
+      "short": "K線技術人(11-24觀望)預期盤整但實際波動 -1.84% → 區間假設失效，改依趨勢方向判斷"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|3034|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3034",
+   "name": "聯詠",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 435.5,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人調節中｜外資 5 日 -885 張、投信 5 日 -1,506 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -1.84,
+    "reasons": [
+     "預測後收 427.5（-1.84%）",
+     "開盤跳空 -2.07%"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 426.5,
+     "high": 434.0,
+     "low": 406.0,
+     "last": 427.5,
+     "close": 427.5,
+     "gap_pct": -2.07,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": 673.0,
+     "trust_net": -324.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "kline|2454|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2454",
+   "name": "聯發科",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 4050.0,
+   "stance": "看多",
+   "action": "買進",
+   "buy_zone": 3775.0,
+   "stop_loss": 3660.0,
+   "target_price": 4245.0,
+   "rationale": "強勢整理回測10日線",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "WRONG",
+    "return_pct": -10.0,
+    "reasons": [
+     "預測後收 3645（-10.00%）",
+     "開盤跳空 -4.81%",
+     "建議買進價 3775 失守（最低 3645）",
+     "觸及停損價 3660",
+     "收在當日最低附近"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 3855.0,
+     "high": 3955.0,
+     "low": 3645.0,
+     "last": 3645.0,
+     "close": 3645.0,
+     "gap_pct": -4.81,
+     "open_below_vwap": false,
+     "close_at_low": true,
+     "foreign_net": -3753.0,
+     "trust_net": 690.0,
+     "inst_unit": "張"
+    },
+    "principles": [
+     {
+      "pattern": "跳空低開",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2454 看多（當時 4050），11-25 開盤跳空 -4.81% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進。",
+      "short": "K線技術人(11-24看多)11-25 開盤跳空 -4.81% → 收盤後看多前先核對美股費半與 TSM ADR，跳空風險高時降為觀望、首筆買進量減半，開盤 15 分鐘站回 VWAP 再買進"
+     },
+     {
+      "pattern": "建議買進價失守",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2454 看多（當時 4050），建議買進價 3775 失守（最低 3645）→ 下次建議買進價下移至 3645 附近，買進量減半。",
+      "short": "K線技術人(11-24看多)建議買進價 3775 失守（最低 3645）→ 下次建議買進價下移至 3645 附近，買進量減半"
+     },
+     {
+      "pattern": "觸及停損",
+      "text": "【歷史落差檢討與修正原則】11-24 23:59收盤後K線技術人對 2454 看多（當時 4050），觸及停損價 3660 → 依紀律停損，不攤平。",
+      "short": "K線技術人(11-24看多)觸及停損價 3660 → 依紀律停損，不攤平"
+     }
+    ]
+   }
+  },
+  {
+   "id": "chips|2454|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2454",
+   "name": "聯發科",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 4050.0,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "外資連賣（7 日）｜外資 5 日 -6,211 張、投信 5 日 +1,167 張",
+   "target_date": "2026-11-25",
+   "status": "CLOSED",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -10.0,
+    "reasons": [
+     "預測後收 3645（-10.00%）",
+     "開盤跳空 -4.81%",
+     "收在當日最低附近"
+    ],
+    "graded_at": "2026-11-26 09:00:20",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 3855.0,
+     "high": 3955.0,
+     "low": 3645.0,
+     "last": 3645.0,
+     "close": 3645.0,
+     "gap_pct": -4.81,
+     "open_below_vwap": false,
+     "close_at_low": true,
+     "foreign_net": -3753.0,
+     "trust_net": 690.0,
+     "inst_unit": "張"
+    }
+   }
+  },
+  {
+   "id": "kline|2609|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2609",
+   "name": "陽明",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 56.3,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 51.5,
+   "stop_loss": 49.45,
+   "target_price": 59.5,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.36,
+    "reasons": [
+     "預測後最新 56.1（-0.36%）",
+     "開盤跳空 -3.02%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 54.6,
+     "high": 57.3,
+     "low": 54.2,
+     "last": 56.1,
+     "close": null,
+     "gap_pct": -3.02,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chips|2609|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "2609",
+   "name": "陽明",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 56.3,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "法人調節中｜外資 5 日 -1,898 張、投信 5 日 -4,126 張",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.36,
+    "reasons": [
+     "預測後最新 56.1（-0.36%）",
+     "開盤跳空 -3.02%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 54.6,
+     "high": 57.3,
+     "low": 54.2,
+     "last": 56.1,
+     "close": null,
+     "gap_pct": -3.02,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "kline|3529|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3529",
+   "name": "力旺",
+   "member": "kline",
+   "member_name": "K線技術人",
+   "source": "standby",
+   "price_at_prediction": 2025.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": 1685.0,
+   "stop_loss": 1615.0,
+   "target_price": 2185.0,
+   "rationale": "觀望等待底部確認",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -6.42,
+    "reasons": [
+     "預測後最新 1895（-6.42%）",
+     "開盤跳空 -8.89%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 1845.0,
+     "high": 2030.0,
+     "low": 1825.0,
+     "last": 1895.0,
+     "close": null,
+     "gap_pct": -8.89,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chips|3529|standby|2026-11-24 23:59:26",
+   "timestamp": "2026-11-24 23:59:26",
+   "session": "收盤後",
+   "stock_id": "3529",
+   "name": "力旺",
+   "member": "chips",
+   "member_name": "籌碼王",
+   "source": "standby",
+   "price_at_prediction": 2025.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信連買鎖碼（3 日）｜外資 5 日 -1,507 張、投信 5 日 +182 張",
+   "target_date": "2026-11-25",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -6.42,
+    "reasons": [
+     "預測後最新 1895（-6.42%）",
+     "開盤跳空 -8.89%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-25",
+     "open": 1845.0,
+     "high": 2030.0,
+     "low": 1825.0,
+     "last": 1895.0,
+     "close": null,
+     "gap_pct": -8.89,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "news|TAIEX|news_brief|2026-11-25 13:40:48",
+   "timestamp": "2026-11-25 13:40:48",
+   "session": "收盤後",
+   "stock_id": "TAIEX",
+   "name": "加權指數",
+   "member": "news",
+   "member_name": "新聞達人",
+   "source": "news_brief",
+   "price_at_prediction": 38202.84,
+   "stance": "看空",
+   "action": "減碼",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "偏空警戒：關稅變數與記憶體利空拖累市場，台股重挫失守萬八，資金湧向低價與防禦型標的。",
+   "target_date": "2026-11-26",
+   "status": "OPEN",
+   "grade": null
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 09:16:19",
+   "timestamp": "2026-11-26 09:16:19",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 261.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信連買 7 日且美股 NVDA 大漲帶動 AI 族群，雖昨日下跌但未破支撐，符合鐵律持有計畫。因當前現金水位 73.7% 接近 70% 下限，且大盤空頭，不進行加碼。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 7.09,
+    "reasons": [
+     "預測後最新 279.5（+7.09%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 266.5,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 09:16:19",
+   "timestamp": "2026-11-26 09:16:19",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 252.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "雖有晨星轉折，但投信連賣 1 日觸發鐵律第 8 條禁止買進限制，故維持持有不加碼。若收盤跌破 244.5 則執行移動停利/停損。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.59,
+    "reasons": [
+     "預測後最新 251（-0.59%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 257.5,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 09:24:25",
+   "timestamp": "2026-11-26 09:24:25",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 252.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "目前微幅獲利，但投信連賣且外資籌碼不穩。依鐵律第 8 條投信連賣嚴禁加碼，維持現有部位並上移停損至 244.5 守住利潤。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.59,
+    "reasons": [
+     "預測後最新 251（-0.59%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 257.5,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 09:24:25",
+   "timestamp": "2026-11-26 09:24:25",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 268.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信連買 7 日具備鎖碼效應，股價站回 MA5，但當日漲幅 2.87% 接近鐵律禁止追高線（3%），且未達建議買進區間，故續抱不加碼。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 4.1,
+    "reasons": [
+     "預測後最新 279.5（+4.10%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 266.5,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 09:35:29",
+   "timestamp": "2026-11-26 09:35:29",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 255.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "現價255.5高於VWAP，基本面穩定，上移停損價至245.0鎖定利潤，符合持有計畫續抱。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": -1.76,
+    "reasons": [
+     "預測後最新 251（-1.76%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 257.5,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 09:35:29",
+   "timestamp": "2026-11-26 09:35:29",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 274.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "今日大漲+5.17%觸發鐵律5禁止加碼，投信連7買鎖碼，上移停損至255.0續抱。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "DEVIATED",
+    "return_pct": 1.82,
+    "reasons": [
+     "預測後最新 279.5（+1.82%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 275.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 09:55:54",
+   "timestamp": "2026-11-26 09:55:54",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 254.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "籌碼面投信連賣但技術面出現晨星轉折，價格於進場區間內，維持持股500股觀察，停損維持245.0元。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -1.38,
+    "reasons": [
+     "預測後最新 251（-1.38%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 254.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 09:55:54",
+   "timestamp": "2026-11-26 09:55:54",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 277.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "今日大漲6.32%觸發鐵律5禁止追高加碼，投信連買7日鎖碼，持有500股上移停損至255.0元鎖定獲利。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.72,
+    "reasons": [
+     "預測後最新 279.5（+0.72%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 275.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 10:15:16",
+   "timestamp": "2026-11-26 10:15:16",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 252.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "股價站穩進場區間與MA5之上，晨星轉折支撐有效，投信賣壓趨緩，符合風報比，持續持有觀望。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.59,
+    "reasons": [
+     "預測後最新 251（-0.59%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 252.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 10:15:16",
+   "timestamp": "2026-11-26 10:15:16",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 275.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "未實現獲利+4.82%，投信連買鎖碼。但當日大漲5.56%觸及禁止追高鐵律，禁止加碼，維持抱牢。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 1.45,
+    "reasons": [
+     "預測後最新 279.5（+1.45%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 275.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 10:21:09",
+   "timestamp": "2026-11-26 10:21:09",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 277.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "廣達今日大漲6.13%觸發當日漲幅≥3%禁止追高鐵律。投信連買7日且未實現獲利5.01%，上移停損至260.0元續抱觀望。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.9,
+    "reasons": [
+     "預測後最新 279.5（+0.90%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 275.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 10:21:09",
+   "timestamp": "2026-11-26 10:21:09",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 251.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "長榮目前微虧0.86%，K線出現晨星轉折但投信連賣且外資疑隔日沖，未達硬性停損點，維持停損245.0元續抱。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 251（+0.00%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 252.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 10:36:12",
+   "timestamp": "2026-11-26 10:36:12",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 251.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "股價於成本252.21元附近震盪，暫守支撐，風報比合規，依計畫繼續持有觀望。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.2,
+    "reasons": [
+     "預測後最新 251（-0.20%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 252.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 10:36:12",
+   "timestamp": "2026-11-26 10:36:12",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 277.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "未實現獲利+5.76%，今日上漲6.32%觸發禁止追高鐵律不可加碼，維持HOLD並上移停損做移動停利。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.72,
+    "reasons": [
+     "預測後最新 279.5（+0.72%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 278.5,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 10:37:43",
+   "timestamp": "2026-11-26 10:37:43",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 251.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "現價251.0元高於停損價245.0，雖投信連賣且外資疑隔日沖，但部位未觸及停損，繼續持有監控。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 251（+0.00%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 252.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 10:37:43",
+   "timestamp": "2026-11-26 10:37:43",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 277.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "現價277.5元未實現獲利+5.76%，今日上漲6.32%觸發鐵律5禁止追高加碼，維持HOLD並鎖定停損。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.72,
+    "reasons": [
+     "預測後最新 279.5（+0.72%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 278.5,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 10:47:53",
+   "timestamp": "2026-11-26 10:47:53",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 250.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "近3日再現晨星轉折，外資買盤仍在，現價守穩於250元以上，續抱等待目標價突破。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.2,
+    "reasons": [
+     "預測後最新 251（+0.20%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 252.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 10:47:53",
+   "timestamp": "2026-11-26 10:47:53",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 277.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信連7日鎖碼，盤中上漲+6.32%觸及禁止追高鐵律，不加碼續抱享受波段獲利。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.72,
+    "reasons": [
+     "預測後最新 279.5（+0.72%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 279.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 10:55:36",
+   "timestamp": "2026-11-26 10:55:36",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 279.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "單日上漲7.09%觸及禁止追高鐵律不可加碼，投信連買7日支撐趨勢，續抱持股並維持停損260元。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 279.5（+0.00%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 280.0,
+     "low": 279.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 10:55:36",
+   "timestamp": "2026-11-26 10:55:36",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 252.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "現價252.0元守住支撐與停損價，外資大買但疑有隔日沖且投信連賣，不加碼維持原部位觀望。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.4,
+    "reasons": [
+     "預測後最新 251（-0.40%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 251.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 11:05:21",
+   "timestamp": "2026-11-26 11:05:21",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 251.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "均價252.21元，現價251.5元未觸及-8%硬性停損（232.0元）與自訂停損245.0元。雖然投信連賣且有隔日沖疑慮，但尚符合持倉規範，維持500股HOLD觀望。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.2,
+    "reasons": [
+     "預測後最新 251（-0.20%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 251.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 11:05:21",
+   "timestamp": "2026-11-26 11:05:21",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 279.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "均價263.72元，現價279.5元未實現獲利+5.01%。今日大漲+7.09%觸發禁追高鐵律無法加碼，停損上移至260.0元鎖定獲利，目標價289.5元（未超過+15%限制），續抱500股。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 279.5（+0.00%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 279.5,
+     "low": 279.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 11:15:09",
+   "timestamp": "2026-11-26 11:15:09",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 279.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "單日大漲6.9%觸發鐵律5禁止追高，投信連買7日支撐趨勢，續抱持股並維持原停損260.0。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.18,
+    "reasons": [
+     "預測後最新 279.5（+0.18%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 279.5,
+     "low": 279.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 11:15:09",
+   "timestamp": "2026-11-26 11:15:09",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 250.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "價位落於買進區間但投信連賣且籌碼混亂，未達停損價245.0，保持現有部位觀察。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.2,
+    "reasons": [
+     "預測後最新 251（+0.20%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 251.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 11:15:25",
+   "timestamp": "2026-11-26 11:15:25",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 251.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "防禦性持股晨星轉折形成，五檔比 2.29 外盤主動買進，符合現金水位 70% 限制，續抱守停損 245.0。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 251（+0.00%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 251.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 11:15:25",
+   "timestamp": "2026-11-26 11:15:25",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 278.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "當日大漲 +6.70% 觸發鐵律第 5 條禁止加碼，投信連 7 買支撐強勁，續抱並上移停損至 260.0 移動停利。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.36,
+    "reasons": [
+     "預測後最新 279.5（+0.36%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 279.5,
+     "low": 279.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 11:31:41",
+   "timestamp": "2026-11-26 11:31:41",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 251.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "長榮呈現晨星轉折且價格於建議買進區間，考量整體大盤空頭及外資隔日沖疑慮，維持原部位續抱並嚴守 245 元停損。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.2,
+    "reasons": [
+     "預測後最新 251（-0.20%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 251.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 11:31:41",
+   "timestamp": "2026-11-26 11:31:41",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 279.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "廣達今日大漲 6.90% 觸發鐵律第 5 條禁止追高加碼，投信連買 7 日籌碼鎖碼，持股盈利中，續抱並守住 260 元移動停損。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.18,
+    "reasons": [
+     "預測後最新 279.5（+0.18%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 282.0,
+     "low": 261.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 11:38:19",
+   "timestamp": "2026-11-26 11:38:19",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 251.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "投信轉賣禁止加碼，現價251元仍在停損點245元之上，續抱觀察250元整數關卡支撐。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 251（+0.00%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 251.0,
+     "low": 251.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 11:38:19",
+   "timestamp": "2026-11-26 11:38:19",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 279.0,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "當日大漲6.90%觸發禁止追高鐵律，投信連7買支撐續抱，獲利中持續朝目標價289.5元推進。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.18,
+    "reasons": [
+     "預測後最新 279.5（+0.18%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 282.0,
+     "low": 261.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2603|sim_committee|2026-11-26 11:43:11",
+   "timestamp": "2026-11-26 11:43:11",
+   "session": "盤中",
+   "stock_id": "2603",
+   "name": "長榮",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 252.0,
+   "stance": "看空",
+   "action": "停損",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "違反鐵律第 8 條：投信連賣標的嚴禁建立多單。雖未觸及硬性停損，但籌碼面轉惡且跌破月線，依 K 線邏輯與鐵律強制出清。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": -0.4,
+    "reasons": [
+     "預測後最新 251（-0.40%）"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 252.5,
+     "high": 258.0,
+     "low": 249.0,
+     "last": 251.0,
+     "close": null,
+     "gap_pct": 0.0,
+     "open_below_vwap": false,
+     "close_at_low": false,
+     "foreign_net": null,
+     "trust_net": null,
+     "inst_unit": null
+    }
+   }
+  },
+  {
+   "id": "chairman|2382|sim_committee|2026-11-26 11:43:11",
+   "timestamp": "2026-11-26 11:43:11",
+   "session": "盤中",
+   "stock_id": "2382",
+   "name": "廣達",
+   "member": "chairman",
+   "member_name": "巴董事長",
+   "source": "sim_committee",
+   "price_at_prediction": 279.5,
+   "stance": "觀望",
+   "action": "續抱",
+   "buy_zone": null,
+   "stop_loss": null,
+   "target_price": null,
+   "rationale": "今日漲幅 7.09% 觸發鐵律第 5 條禁止加碼。目前未實現獲利 +6.14%，上移停損至 276.0（VWAP之上）進行移動停利，觀察是否能站穩 MA20。",
+   "target_date": "2026-11-26",
+   "status": "PROVISIONAL",
+   "grade": {
+    "result": "CORRECT",
+    "return_pct": 0.0,
+    "reasons": [
+     "預測後最新 279.5（+0.00%）",
+     "開盤跳空 +2.87%"
+    ],
+    "graded_at": "2026-11-26 11:43:11",
+    "actual": {
+     "date": "2026-11-26",
+     "open": 268.5,
+     "high": 282.0,
+     "low": 261.0,
+     "last": 279.5,
+     "close": null,
+     "gap_pct": 2.87,
      "open_below_vwap": false,
      "close_at_low": false,
      "foreign_net": null,
@@ -75603,79 +79473,79 @@
  "member_stats": {
   "news": {
    "name": "新聞達人",
-   "total": 33,
+   "total": 34,
    "correct": 10,
    "deviated": 11,
-   "wrong": 12,
-   "accuracy_pct": 30.3,
+   "wrong": 13,
+   "accuracy_pct": 29.4,
    "recent10_pct": 60.0,
-   "last_result": "CORRECT",
+   "last_result": "WRONG",
    "last_wrong": {
     "stock_id": "TAIEX",
-    "date": "2026-11-23",
-    "stance": "看空"
+    "date": "2026-11-25",
+    "stance": "看多"
    }
   },
   "chips": {
    "name": "籌碼王",
-   "total": 300,
-   "correct": 108,
-   "deviated": 161,
-   "wrong": 31,
-   "accuracy_pct": 36.0,
-   "recent10_pct": 10.0,
-   "last_result": "DEVIATED",
+   "total": 331,
+   "correct": 117,
+   "deviated": 178,
+   "wrong": 36,
+   "accuracy_pct": 35.3,
+   "recent10_pct": 40.0,
+   "last_result": "CORRECT",
    "last_wrong": {
-    "stock_id": "2881",
-    "date": "2026-11-24",
+    "stock_id": "2615",
+    "date": "2026-11-25",
     "stance": "看空"
    }
   },
   "kline": {
    "name": "K線技術人",
-   "total": 709,
-   "correct": 247,
-   "deviated": 365,
-   "wrong": 97,
-   "accuracy_pct": 34.8,
-   "recent10_pct": 0.0,
-   "last_result": "DEVIATED",
+   "total": 760,
+   "correct": 259,
+   "deviated": 393,
+   "wrong": 108,
+   "accuracy_pct": 34.1,
+   "recent10_pct": 10.0,
+   "last_result": "WRONG",
    "last_wrong": {
-    "stock_id": "3529",
-    "date": "2026-11-24",
-    "stance": "看空"
+    "stock_id": "2454",
+    "date": "2026-11-25",
+    "stance": "看多"
    }
   },
   "chairman": {
    "name": "巴董事長",
-   "total": 437,
-   "correct": 212,
-   "deviated": 211,
-   "wrong": 14,
-   "accuracy_pct": 48.5,
-   "recent10_pct": 40.0,
-   "last_result": "DEVIATED",
+   "total": 465,
+   "correct": 228,
+   "deviated": 220,
+   "wrong": 17,
+   "accuracy_pct": 49.0,
+   "recent10_pct": 60.0,
+   "last_result": "CORRECT",
    "last_wrong": {
-    "stock_id": "TAIEX",
-    "date": "2026-11-23",
-    "stance": "看空"
+    "stock_id": "3034",
+    "date": "2026-11-25",
+    "stance": "看多"
    }
   },
   "maga": {
    "name": "川大帝MAGA",
-   "total": 26,
+   "total": 28,
    "correct": 13,
    "deviated": 8,
-   "wrong": 5,
-   "accuracy_pct": 50.0,
-   "recent10_pct": 30.0,
+   "wrong": 7,
+   "accuracy_pct": 46.4,
+   "recent10_pct": 20.0,
    "last_result": "WRONG",
    "last_wrong": {
     "stock_id": "TAIEX",
-    "date": "2026-11-24",
-    "stance": "看空"
+    "date": "2026-11-25",
+    "stance": "看多"
    }
   }
  },
- "updated_at": "2026-11-25 12:33:27"
+ "updated_at": "2026-11-26 11:43:11"
 }
