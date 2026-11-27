@@ -1,39 +1,41 @@
 {
-  "date": "2026-11-27",
-  "generated_at": "2026-11-27 13:22:24",
+  "date": "2026-11-30",
+  "generated_at": "2026-11-27 17:28:30",
   "sox_chg_pct": -0.65,
   "tsm_adr_chg_pct": -1.96,
-  "tsm_premium_pct": 4.16,
+  "tsm_premium_pct": 3.44,
   "us_key_drivers": [
-    "科技股自高點回檔修正，市場對AI估值重估引發機構資金調節。",
-    "美國司法部與州級針對輝達展開調查，地緣政治與監管雜音增加。",
-    "半導體個股普遍拉回，美光與輝達跌幅較重，削弱多方續攻力道。"
+    "美光(MU-4.53%)與應材(AMAT-3.89%)同步重挫，顯示資本支出與記憶體循環在機構觀點中出現預期差修正。",
+    "科技巨頭 AI CapEx 流向硬體比例低於先前市場極端樂觀預期，擁擠樂觀部位面臨評價去泡沫化壓力。",
+    "費半與台積電 ADR 溢價同步縮減，顯示外資機構在亞股開盤前傾向降低科技股暴險。"
   ],
-  "tw_index_forecast": "台股下一交易日預期在月線下方震盪，關鍵點位觀察38,890點支撐與39,500點壓力。",
-  "opening_strategy": "開盤建議觀望為主，嚴控部位，不盲目追價。",
+  "tw_index_forecast": "預判加權指數低開震盪，上方壓力 39,500 元，下方支撐 38,800 元。基於 MA20 (40,861 元) 依舊走空，反彈應視為修正乖離，未回升前維持偏空防守格局。",
+  "opening_strategy": "開盤若隨美股科技股低開，勿盲目追空；若有反彈至 39,500 元附近，應嚴格進行減碼並提高可用現金比例，嚴禁摸底。",
   "holdings_alert": [],
   "top_sector_picks": {
     "favor": [
-      "AI散熱：雖受美股科技股拉回影響，但基本面支撐仍在，拉回尋求支撐分批佈局"
+      "AI散熱：Vertiv 表現相對抗跌，長線需求強勁",
+      "ASIC設計服務：受惠個股自點彈性與籌碼鎖碼"
     ],
     "avoid": [
-      "食品：成交量能與資金動能不足，短線建議避開"
+      "記憶體模組：受美光重挫影響評價與報價預期",
+      "半導體設備：應材走弱導致設備次產業缺乏買盤"
     ]
   },
   "us_top10": [
     {
       "ref": "Q1",
-      "title": "費城半導體指數(^SOX) 收8,774.86 -0.65%",
-      "point": "費半小幅收跌，對台股半導體族群傳導偏向中性震盪。",
-      "tag": "中性",
+      "title": "費城半導體指數下跌 0.65%",
+      "point": "SOX 收 8,774.86 點持續小幅修整，壓制台股半導體供應鏈短期反彈動能。",
+      "tag": "利空",
       "url": "https://finance.yahoo.com/quote/%5ESOX",
       "source": "Yahoo Finance",
       "pub_date": "2026-11-26 06:15"
     },
     {
       "ref": "Q2",
-      "title": "台積電 ADR(TSM) 收342.34 -1.96%",
-      "point": "TSM ADR下跌但仍有溢價，對台積電(2330)開盤有牽制作用。",
+      "title": "台積電 ADR 修正且溢價收斂至 +3.44%",
+      "point": "TSM 下跌 1.96% 換算台股為 2255.06 元，溢價空間壓縮將限制台積電(2330)現貨開盤表現。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/TSM",
       "source": "Yahoo Finance",
@@ -41,35 +43,17 @@
     },
     {
       "ref": "Q3",
-      "title": "輝達(NVDA) 收149.30 -3.91%",
-      "point": "NVDA拉回修正，對台股AI伺服器與相關供應鏈帶來壓力。",
+      "title": "輝達(NVDA)重挫 3.91%",
+      "point": "NVDA 跌至 149.30 美元，衝擊台股 AI 伺服器與 ASIC 設計服務概念股的短線評價。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/NVDA",
       "source": "Yahoo Finance",
       "pub_date": "2026-11-26 05:00"
     },
     {
-      "ref": "Q4",
-      "title": "超微(AMD) 收406.03 -1.75%",
-      "point": "AMD股價收低，影響台股相關競品代工廠表現。",
-      "tag": "利空",
-      "url": "https://finance.yahoo.com/quote/AMD",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-26 05:00"
-    },
-    {
-      "ref": "Q5",
-      "title": "博通(AVGO) 收300.86 -0.07%",
-      "point": "AVGO近乎持平，ASIC設計服務族群受此情緒影響波動有限。",
-      "tag": "中性",
-      "url": "https://finance.yahoo.com/quote/AVGO",
-      "source": "Yahoo Finance",
-      "pub_date": "2026-11-26 05:00"
-    },
-    {
       "ref": "Q7",
-      "title": "美光(MU) 收601.25 -4.53%",
-      "point": "MU顯著下跌，記憶體次產業短線面臨調節壓力。",
+      "title": "美光(MU)重挫 4.53%",
+      "point": "MU 跌至 601.25 美元，記憶體板塊賣壓釋放恐傳導至台股記憶體與模組廠。",
       "tag": "利空",
       "url": "https://finance.yahoo.com/quote/MU",
       "source": "Yahoo Finance",
@@ -77,41 +61,59 @@
     },
     {
       "ref": "Q11",
-      "title": "Vertiv(VRT) 收173.37 -0.26%",
-      "point": "VRT小幅收跌，AI散熱次產業動能轉趨觀望。",
+      "title": "Vertiv(VRT)小跌 0.26%",
+      "point": "VRT 呈現抗跌高檔震盪，散熱與機櫃需求穩健，利於台股 AI 散熱次產業信心。",
       "tag": "中性",
       "url": "https://finance.yahoo.com/quote/VRT",
       "source": "Yahoo Finance",
       "pub_date": "2026-11-26 05:00"
     },
     {
-      "ref": "N1",
-      "title": "‘A changed man.’ How will Jensen Huang lead Nvidia now?",
-      "point": "執行長領導風格轉變探討，牽動市場對NVDA後續成長預期。",
-      "tag": "中性",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMmhZNWpCZkQ2NkZfMFNRX3p1TkFPal81d2JibVcxcGgyN2ZBUXlkV1VLZzNtenVOZzlNUW1yM1VVcTFON2dBcTlXZHptMkRESkl0RGVDa0Q0VGhFNnA0eTRNWGY0MUVmRkR2T0lSallESGFhQ0VyQWZzdkZXZWUzYkFQMF8?oc=5",
-      "source": "Financial Times",
-      "pub_date": "2026-11-27 13:02"
+      "ref": "N2",
+      "title": "AI 恐慌情緒趨穩使指數期貨回升",
+      "point": "美股期貨展現抗跌力道，預期差緩和將減輕台股早盤開低壓力。",
+      "tag": "利多",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-27 17:11"
     },
     {
-      "ref": "N3",
-      "title": "AI Bubble Bear Market: Tech 20% Off Highs, Nvidia 9x",
-      "point": "科技股自高點回檔20%，機構評估泡沫風險，影響台股電子權值股評價。",
-      "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzZwbDRLZWxHbFVTVEpNbDdiM0h6SmRKVS1MblZXbHFwT1J4U3lhSEhZbklRMjBfZ2FIbzdqcEhvVVFKNWQwdjhRb2NSeGhpRDV1eGcxQ3NPZkxFeWxaMVZESkYtM0tZN0U5cGNGMGx3WVVQY2N2dUxNWU5nQXJrQXhnMmFjTm1wbURLR1pHNno4c2xwSUl3?oc=5",
-      "source": "shattered.io",
-      "pub_date": "2026-11-27 12:49"
+      "ref": "N5",
+      "title": "川普表示輝達 CEO 非安全威脅",
+      "point": "消除部分政治監管疑慮，對於台股 AI 代工鏈具備長線情緒支撐。",
+      "tag": "利多",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTHlOZ0Rla29qblc1N0tXOTFDczY4blBuVzJEUTJJckdxVE10VndjSktrUnZ2MVNkRGlJMHhtY2dtZ1lQYUo4NDJ0MjMxUHBqMzV0dm1GN0xORnJqWXl1WWtQUTZZRWdqVEVJZHpYLVRrMmYtd2FxM2JvWkktSlZmdS1Wb0hQOXJkbTFHOFhPRFpsbDFYa3hZd2t4MHR1cjhvY0pZ?oc=5",
+      "source": "Hong Kong Free Press HKFP",
+      "pub_date": "2026-11-27 17:05"
     },
     {
-      "ref": "N4",
-      "title": "DOJ subpoenas Nvidia in probe of customer's alleged China chip transfers",
-      "point": "司法部傳喚輝達調查晶片轉移，監管風險升溫波及供應鏈信心。",
+      "ref": "N12",
+      "title": "巨頭 AI 資本支出僅約 25% 注入輝達",
+      "point": "資本支出回報率與比率預期差遭修正，導致美股 AI 權重股拉回，壓制台廠供應鏈評價。",
       "tag": "利空",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNmhZTGtKcUI0SWw5VHdmUUVlUHdZZ3NQRmU0QlJlVm85YnFSbTdVNmVTRUhjaGFqeFQwY3hPQ2ZiTVgtazFITGxYZ3RDSF9Jb2lSeTF1WE1Zd2dYSUFkVFdzVjdIc1p1RThZUEItYXlUb2ZyUVIza1YxUFhYTmJWM0VLZnV6d1Y5VVJJQzZzaGFiRk16ekZFR1c5THM1a2ZYcmpWNks3eENHaDlDQjhocWlySW9ZUQ?oc=5",
-      "source": "cbs19.tv",
-      "pub_date": "2026-11-27 12:30"
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX0ZhbkJhQ0VWMVhmSmJ3aV9MS082N2twbDJST28zZGVuejNVM0FpN0lZTlZ2NS1pN2w2ZUo4eG00T1VweWkwb3hTVjFvVjc3QmJsbU9IZkJReHJZWUdZUjVhOW42cjZ1U01zc1JlUlRWU2J0YTlULUotZmgwSHFTQTRhb01PV3I3ejNNcjVjdkplb2VyV1RuZWF3aXlMLUNkeXpqcnQzSVJMOVBPZEJBNEZybWpWbk9mRzByZTNueU9WdVY3c210Y1lkeG8?oc=5",
+      "source": "Trefis",
+      "pub_date": "2026-11-27 16:33"
+    },
+    {
+      "ref": "Q10",
+      "title": "應用材料(AMAT)下跌 3.89%",
+      "point": "半導體設備龍頭走弱，打壓台股半導體設備與廠務工程股的短線走勢。",
+      "tag": "利空",
+      "url": "https://finance.yahoo.com/quote/AMAT",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-26 05:00"
+    },
+    {
+      "ref": "Q12",
+      "title": "美超微(SMCI)強勢反彈 3.05%",
+      "point": "SMCI 低檔反彈，有利台股伺服器組裝與相關機殼供應商短線止跌。",
+      "tag": "利多",
+      "url": "https://finance.yahoo.com/quote/SMCI",
+      "source": "Yahoo Finance",
+      "pub_date": "2026-11-26 05:00"
     }
   ],
   "generated_by": "fast_team_runner（gemini）",
-  "us_top10_updated_at": "2026-11-27 13:22:24"
+  "us_top10_updated_at": "2026-11-27 17:28:30"
 }

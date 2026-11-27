@@ -25720,7 +25720,58 @@
       "stop_loss": null,
       "chip_view": null,
       "note": "台股下一交易日預期在月線下方震盪，關鍵點位觀察38,890點支撐與39,500點壓力。"
+    },
+    {
+      "key": "maga|TAIEX|premarket|2026-11-27 17:28:30",
+      "member": "maga",
+      "member_name": "川大帝MAGA",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-27 17:28:30",
+      "target_date": "2026-11-30",
+      "price_at": 39308.078125,
+      "direction": "中性",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "費半 -0.65%、TSM 溢價 3.44%"
+    },
+    {
+      "key": "chairman|TAIEX|premarket|2026-11-27 17:28:30",
+      "member": "chairman",
+      "member_name": "巴董事長",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "premarket",
+      "recorded_at": "2026-11-27 17:28:30",
+      "target_date": "2026-11-30",
+      "price_at": 39308.078125,
+      "direction": "偏空",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "預判加權指數低開震盪，上方壓力 39,500 元，下方支撐 38,800 元。基於 MA20 (40,861 元) 依舊走空，反彈應視為修正乖離，未回升前維持偏空防守格局。"
+    },
+    {
+      "key": "news|TAIEX|news_brief|2026-11-27 17:28:35",
+      "member": "news",
+      "member_name": "新聞達人",
+      "stock_id": "TAIEX",
+      "name": "加權指數",
+      "source": "news_brief",
+      "recorded_at": "2026-11-27 17:28:35",
+      "target_date": "2026-11-30",
+      "price_at": 39308.078125,
+      "direction": "中性",
+      "support": null,
+      "resistance": null,
+      "stop_loss": null,
+      "chip_view": null,
+      "note": "分歧震盪：外資持續賣超匯出使大盤承壓，但投信買盤與經濟成長上修支撐科技強勢股。"
     }
   ],
-  "updated_at": "2026-11-27 13:22:24"
+  "updated_at": "2026-11-27 17:28:35"
 }
