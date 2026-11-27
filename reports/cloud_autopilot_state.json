@@ -2,20 +2,22 @@
   "last_run_started_at": "2026-11-10 14:11:21",
   "host": "cloud_tick_cli",
   "can_trade": false,
-  "morning_done_date": "2026-11-26",
+  "morning_done_date": "2026-11-27",
   "last_run": {
-    "finished_at": "2026-11-26 17:15:16",
-    "phase": "CLOSE",
-    "elapsed_sec": 249.7,
+    "finished_at": "2026-11-27 13:22:24",
+    "phase": "TRADING",
+    "elapsed_sec": 79.2,
     "host": "github_actions",
-    "trades_today": 3,
+    "trades_today": 2,
     "errors": [],
     "log_tail": [
-      "[17:11:05] ☁️ 雲端單次排程（github_actions・cloud_master・gemini）｜目前 🧾 收盤後（結算、新聞 TOP 10、明日建議買進價）",
-      "[17:11:06] 💓 Streamlit 輕量 Ping：HTTP 200",
-      "[17:11:06] 🧾 今日已完成收盤結算（sim_nav_history 已有 2026-11-26）",
-      "[17:11:06] 📰 今日財經新聞 TOP 10、收盤重點、明日 20 強建議買進價定錨",
-      "[17:15:16] 🎯 Potential TOP 20：{'0050核心': 17, '高潛力動能': 3}｜保留模擬持倉 ['2382']"
+      "[13:21:04] ☁️ 雲端單次排程（github_actions・cloud_master・gemini）｜目前 ⚡ 盤中（檢查報價與進出場）",
+      "[13:21:05] 💓 Streamlit 輕量 Ping：HTTP 200",
+      "[13:21:50] ⚡ Tick 完成：總淨值 1003748｜持倉 1 檔｜耗時 11.17 秒｜投決會（🎯 達建議買進價 1216、🎯 達建議買進價 2891）成交 0 筆、否決 1 筆",
+      "[13:21:50] 🤫 沒有成交：盤中靜默，不 commit",
+      "[13:21:50] 📚 補課：今日 07:35 川大帝MAGA 早報沒有完成（排程延遲或漏掉），現在補跑一次",
+      "[13:21:50] 🦅 川大帝MAGA：抓取美股收盤（費半、TSM ADR 折溢價、NVDA/MU/VRT、美股新聞）",
+      "[13:22:24] ✅ 早報完成：美股 TOP 10（gemini），已鎖定今日早報"
     ]
   },
   "close_reports_date": "2026-11-26"

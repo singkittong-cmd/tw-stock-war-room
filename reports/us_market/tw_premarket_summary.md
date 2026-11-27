@@ -1,29 +1,29 @@
 # 🌅 今日台股盤前總結與當日走勢預判（2026-11-27）
 
 ## 【🔄 昨日結論覆盤與思考修正】
-昨日預期盤整但實際因低檔乖離過大引發報復性反彈，區間假設失效，今日修正為依趨勢方向判斷，不追空並嚴格執行收盤確認。
+昨日預判區間假設失效導致波動落差，今日起改依趨勢方向嚴格執行風險控管。
 
 ## 🦅 美股收盤後 TOP 10
-1. `[2026-11-26 06:15]` **費半指數收跌 0.65% 延續弱勢**（利空）— 費半指數持續承壓，將壓制台股半導體權值股反彈力道。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/%5ESOX)
-2. `[2026-11-26 05:00]` **台積電 ADR 跌 1.96% 溢價收斂**（利空）— ADR 換算台股約 2255.88 元，溢價縮至 5.17%，2330 面臨補跌壓力。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/TSM)
-3. `[2026-11-26 05:00]` **輝達收跌 3.91% 領跌 AI 族群**（利空）— NVDA 跌破關鍵支撐，對台股 AI 伺服器與供應鏈 2382、2317 形成估值修正壓力。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/NVDA)
-4. `[2026-11-26 05:00]` **美光重挫 4.53% 記憶體展望轉弱**（利空）— MU 股價自六月以來腰斬，直接衝擊台股記憶體族群 2408、3260 信心。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/MU)
-5. `[2026-11-26 05:00]` **Vertiv 微跌 0.26% 相對抗跌**（利多）— 液冷散熱指標 VRT 表現優於大盤，有利台股散熱族群 3324、3017 維持強勢。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/VRT)
-6. `[2026-11-26 16:11]` **輝達傳暫停東南亞 AI 伺服器出貨**（利空）— 出貨節奏調整可能影響台股下游組裝廠短線營收認列預期。 [🔗 來源：Yahoo Finance](https://stocktwits.com/news-articles/markets/equity/nvidia-reportedly-halts-ai-server-shipments-to-southeast-asia-ahead-of-jensen-huang-s-congress-testimony/cNbxLXJR9ZN?.tsrc=rss)
-7. `[2026-11-26 16:00]` **標普考慮下調輝達評級預警**（利空）— 信用評級預警引發機構部位調整，對台股高價電子股產生比價下修壓力。 [🔗 來源：Yahoo Finance](https://beincrypto.com/sp-nvidia-credit-rating-downgrade-watch/?.tsrc=rss)
-8. `[2026-11-26 16:12]` **美光市值自六月以來減半**（利空）— 反映終端需求預期差，台股記憶體模組與代工廠需防範庫存跌價損失。 [🔗 來源：Trefis](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZXJiRURhSmZSMW1OMzhzWE41YkttenVxSTJMOGROdVgwSk1vNkJfNEFfQnB2SmMyNkd5OFE5bnZOMm9HX2FJUksyQ2ZqN3k5M2RvdUlGMFRWWHNPeG94YUxDN1ZaVmw0YjJkWFY4X0tjanhEVU1iRnk0VUsyOEprdHZuVkRSVzNKQnRhTFBZOFZMN0EwNVppWXZvaUNrcW9uLWoyWU9USlJpUQ?oc=5)
-9. `[2026-11-26 05:00]` **美超微逆勢上漲 3.05%**（利多）— SMCI 止跌回穩，緩解市場對 AI 伺服器合規性風險的極端恐慌。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/SMCI)
-10. `[2026-11-26 05:00]` **應材重挫 3.89% 半導體設備疲軟**（利空）— CapEx 支出疑慮升溫，台股半導體設備與耗材 3131、3680 恐受拖累。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/AMAT)
+1. `[2026-11-26 06:15]` **費城半導體指數(^SOX) 收8,774.86 -0.65%**（中性）— 費半小幅收跌，對台股半導體族群傳導偏向中性震盪。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/%5ESOX)
+2. `[2026-11-26 05:00]` **台積電 ADR(TSM) 收342.34 -1.96%**（利空）— TSM ADR下跌但仍有溢價，對台積電(2330)開盤有牽制作用。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/TSM)
+3. `[2026-11-26 05:00]` **輝達(NVDA) 收149.30 -3.91%**（利空）— NVDA拉回修正，對台股AI伺服器與相關供應鏈帶來壓力。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/NVDA)
+4. `[2026-11-26 05:00]` **超微(AMD) 收406.03 -1.75%**（利空）— AMD股價收低，影響台股相關競品代工廠表現。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/AMD)
+5. `[2026-11-26 05:00]` **博通(AVGO) 收300.86 -0.07%**（中性）— AVGO近乎持平，ASIC設計服務族群受此情緒影響波動有限。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/AVGO)
+6. `[2026-11-26 05:00]` **美光(MU) 收601.25 -4.53%**（利空）— MU顯著下跌，記憶體次產業短線面臨調節壓力。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/MU)
+7. `[2026-11-26 05:00]` **Vertiv(VRT) 收173.37 -0.26%**（中性）— VRT小幅收跌，AI散熱次產業動能轉趨觀望。 [🔗 來源：Yahoo Finance](https://finance.yahoo.com/quote/VRT)
+8. `[2026-11-27 13:02]` **‘A changed man.’ How will Jensen Huang lead Nvidia now?**（中性）— 執行長領導風格轉變探討，牽動市場對NVDA後續成長預期。 [🔗 來源：Financial Times](https://news.google.com/rss/articles/CBMihAFBVV95cUxPMmhZNWpCZkQ2NkZfMFNRX3p1TkFPal81d2JibVcxcGgyN2ZBUXlkV1VLZzNtenVOZzlNUW1yM1VVcTFON2dBcTlXZHptMkRESkl0RGVDa0Q0VGhFNnA0eTRNWGY0MUVmRkR2T0lSallESGFhQ0VyQWZzdkZXZWUzYkFQMF8?oc=5)
+9. `[2026-11-27 12:49]` **AI Bubble Bear Market: Tech 20% Off Highs, Nvidia 9x**（利空）— 科技股自高點回檔20%，機構評估泡沫風險，影響台股電子權值股評價。 [🔗 來源：shattered.io](https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzZwbDRLZWxHbFVTVEpNbDdiM0h6SmRKVS1MblZXbHFwT1J4U3lhSEhZbklRMjBfZ2FIbzdqcEhvVVFKNWQwdjhRb2NSeGhpRDV1eGcxQ3NPZkxFeWxaMVZESkYtM0tZN0U5cGNGMGx3WVVQY2N2dUxNWU5nQXJrQXhnMmFjTm1wbURLR1pHNno4c2xwSUl3?oc=5)
+10. `[2026-11-27 12:30]` **DOJ subpoenas Nvidia in probe of customer's alleged China chip transfers**（利空）— 司法部傳喚輝達調查晶片轉移，監管風險升溫波及供應鏈信心。 [🔗 來源：cbs19.tv](https://news.google.com/rss/articles/CBMitgFBVV95cUxQNmhZTGtKcUI0SWw5VHdmUUVlUHdZZ3NQRmU0QlJlVm85YnFSbTdVNmVTRUhjaGFqeFQwY3hPQ2ZiTVgtazFITGxYZ3RDSF9Jb2lSeTF1WE1Zd2dYSUFkVFdzVjdIc1p1RThZUEItYXlUb2ZyUVIza1YxUFhYTmJWM0VLZnV6d1Y5VVJJQzZzaGFiRk16ekZFR1c5THM1a2ZYcmpWNks3eENHaDlDQjhocWlySW9ZUQ?oc=5)
 
 ## 美股驅動因素
-- 機構部位調整：S&P 對 NVDA 的信用評級預警觸發被動基金與機構投資者減碼，造成 AI 權值股擁擠度下降。
-- 預期差修正：MU 與 AMAT 的重挫顯示市場對 2025 年半導體資本支出與記憶體復甦強度產生質疑。
-- 技術面乖離：Nasdaq 跌入修正區間，雖有 N3 亞洲市場穩定訊號，但美股科技股尚未見到底部共振轉折。
+- 科技股自高點回檔修正，市場對AI估值重估引發機構資金調節。
+- 美國司法部與州級針對輝達展開調查，地緣政治與監管雜音增加。
+- 半導體個股普遍拉回，美光與輝達跌幅較重，削弱多方續攻力道。
 
 ## 台股大盤預判
-預計下一交易日台股將受 ADR 拖累低開，關鍵點位看 38,800 支撐，走勢預判為低開後震盪尋找支撐。
+台股下一交易日預期在月線下方震盪，關鍵點位觀察38,890點支撐與39,500點壓力。
 
 ## 開盤策略
-建議買進價：不摸底，待 38,800 守穩；停損價：跌破 38,400；停利目標價：39,500；可用現金：保留 60% 以上，僅針對強勢散熱族群小量操作。
+開盤建議觀望為主，嚴控部位，不盲目追價。
 
-> 由川大帝MAGA（gemini・gemini-3-flash-preview）依 Python 濃縮美股數據產生，出處連結與時間取自 Yahoo Finance／新聞原始資料，0 Claude Token。
+> 由川大帝MAGA（gemini・gemini-3.5-flash-lite）依 Python 濃縮美股數據產生，出處連結與時間取自 Yahoo Finance／新聞原始資料，0 Claude Token。
