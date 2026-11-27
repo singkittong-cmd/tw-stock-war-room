@@ -1,29 +1,29 @@
 {
-  "version": 5,
-  "updated_at": "2026-11-26 22:40:53",
+  "version": 6,
+  "updated_at": "2026-11-27 20:44:01",
   "updated_by": "gemini/gemini-3-flash-preview",
   "rules": {
-    "max_single_position_pct": 15.0,
-    "stop_loss_pct": 5.0,
+    "max_single_position_pct": 20.0,
+    "stop_loss_pct": 7.0,
     "take_profit_pct": 15.0,
     "cash_reserve_pct": 50.0,
-    "min_cash_reserve_pct": 70.0,
+    "min_cash_reserve_pct": 60.0,
     "avoid_chase_pct": 3.0,
-    "min_hold_minutes": 240,
+    "min_hold_minutes": 360,
     "cooldown_minutes_after_stop_loss": 1440,
     "disable_day_trading": true,
     "agent_weights": {
-      "news": 1.4,
-      "chips": 0.4,
-      "kline": 0.2,
-      "maga": 0.6
+      "news": 1.5,
+      "chips": 0.8,
+      "kline": 0.5,
+      "maga": 1.2
     },
     "custom_disciplines": [
-      "停損價位設定與買進價之距離不得小於 3%，以避開盤中隨機噪音。",
-      "買進後若未觸及硬性停損，前 240 分鐘嚴禁以任何主觀理由出清部位。",
-      "單一標的若當日停損，24 小時內嚴禁再次建立同一標的部位。",
-      "所有買進指令必須由新聞達人針對基本面進行二次確認。",
-      "嚴禁在開盤後前 30 分鐘進行任何非觸及硬性停損的出清動作。"
+      "停損價位設定與買進價之距離強制不得小於 3.5%。",
+      "嚴禁在買進後首個 360 分鐘內以主觀理由出清部位。",
+      "廣達等獲利部位若要移動停利，停損價必須設在 MA5 之下 1%。",
+      "單日交易筆數上限不得超過 3 筆，防止過度交易。",
+      "所有買進指令必須由新聞達人確認產業景氣週期處於擴張期。"
     ]
   },
   "history": [
@@ -244,6 +244,58 @@
           "key": "custom_disciplines",
           "before": "嚴禁當日買進後因非觸及硬性停損之主觀理由於同日出清。；投信連賣標的嚴禁建立多單，無論技術面是否超跌。；買進指令必須附帶至少 1 個交易日的持有計畫，禁止當沖化操作。；單一標的若當日止損，次日嚴禁再次建立同一標的部位。；K線技術人權重低於 0.5 時，其買進建議需經新聞達人複核。",
           "after": "停損價位設定與買進價之距離不得小於 3%，以避開盤中隨機噪音。；買進後若未觸及硬性停損，前 240 分鐘嚴禁以任何主觀理由出清部位。；單一標的若當日停損，24 小時內嚴禁再次建立同一標的部位。；所有買進指令必須由新聞達人針對基本面進行二次確認。；嚴禁在開盤後前 30 分鐘進行任何非觸及硬性停損的出清動作。"
+        }
+      ]
+    },
+    {
+      "version": 6,
+      "at": "2026-11-27 20:44:01",
+      "by": "gemini/gemini-3-flash-preview",
+      "changes": [
+        {
+          "key": "max_single_position_pct",
+          "before": 15.0,
+          "after": 20.0
+        },
+        {
+          "key": "stop_loss_pct",
+          "before": 5.0,
+          "after": 7.0
+        },
+        {
+          "key": "min_cash_reserve_pct",
+          "before": 70.0,
+          "after": 60.0
+        },
+        {
+          "key": "min_hold_minutes",
+          "before": 240,
+          "after": 360
+        },
+        {
+          "key": "agent_weights.news",
+          "before": 1.4,
+          "after": 1.5
+        },
+        {
+          "key": "agent_weights.chips",
+          "before": 0.4,
+          "after": 0.8
+        },
+        {
+          "key": "agent_weights.kline",
+          "before": 0.2,
+          "after": 0.5
+        },
+        {
+          "key": "agent_weights.maga",
+          "before": 0.6,
+          "after": 1.2
+        },
+        {
+          "key": "custom_disciplines",
+          "before": "停損價位設定與買進價之距離不得小於 3%，以避開盤中隨機噪音。；買進後若未觸及硬性停損，前 240 分鐘嚴禁以任何主觀理由出清部位。；單一標的若當日停損，24 小時內嚴禁再次建立同一標的部位。；所有買進指令必須由新聞達人針對基本面進行二次確認。；嚴禁在開盤後前 30 分鐘進行任何非觸及硬性停損的出清動作。",
+          "after": "停損價位設定與買進價之距離強制不得小於 3.5%。；嚴禁在買進後首個 360 分鐘內以主觀理由出清部位。；廣達等獲利部位若要移動停利，停損價必須設在 MA5 之下 1%。；單日交易筆數上限不得超過 3 筆，防止過度交易。；所有買進指令必須由新聞達人確認產業景氣週期處於擴張期。"
         }
       ]
     }
